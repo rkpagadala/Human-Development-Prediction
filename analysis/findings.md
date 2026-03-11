@@ -2,7 +2,14 @@
 
 ## What This Analysis Did
 
-Re-examined a machine learning study of human development indicators (life expectancy, TFR, GDP per capita, education completion rates) across ~180 countries from 1960–2015. The original study used Random Forest and Gradient Boosting models. We extended it with permutation importance, mediation analysis, incremental R² testing, generational transmission modelling, and cross-country comparison.
+Re-examined a machine learning study of human development indicators (life expectancy, TFR, GDP per capita, education completion rates) across ~180 countries from 1960–2015. The original study used Random Forest and Gradient Boosting models. We extended it with:
+
+- **Permutation importance and mediation analysis** — to separate education's direct and TFR-mediated effects on life expectancy
+- **Incremental R² testing** — to quantify what each variable adds independently of the other
+- **Generational transmission modelling** — parental education (T−25 years) predicting child education
+- **Six gap-closing robustness tests** — country fixed effects, two-way fixed effects, first differences, 5-year observation points only, lag sensitivity (15–35 years), and Gini as omitted variable control
+- **Full education ladder analysis** — primary → lower secondary → upper secondary → college, testing whether the generational transmission signal holds and strengthens up the ladder
+- **Global education rankings** — 175 countries, 1960–2015, across all four levels with archetype and trajectory classification
 
 ---
 
@@ -71,7 +78,7 @@ Tested across multiple feature combinations. The pattern is consistent: female e
 Serious concern. Both series come from WCDE 5-year data. The high R² may partly reflect that two smoothly interpolated series correlate trivially. Restricting to 5-year observation points reduces sample size by 80% but the directional finding holds. The magnitude (R²=0.816) should be treated cautiously; the rank ordering of predictors (parental edu > GDP) is more reliable than the absolute R².
 
 *"R² of 0.816 could reflect time trends — both parental and child education increase over time in most countries, generating mechanical correlation."*
-Valid. A pooled panel regression without country fixed effects confounds within-country change with between-country differences. We did not run country fixed-effects models. A proper test would regress the *change* in child education on the *change* in parental education controlling for GDP change, within countries. This was not done and represents a genuine gap.
+Valid concern, now tested. Country fixed effects (within-country variation only): parental R²=0.430 vs GDP R²=0.125 — parental edu still leads by 3.5×. Two-way fixed effects (country + year, removing global time trends): 0.177 vs 0.023 — parental edu leads by 7.7×. Year FE alone barely moves the pooled R² (0.829 → 0.827), confirming global time trends are not the driver. CO₂ emissions lagged 25 years (a pure time-trend placebo) achieves FE R²=0.007 vs parental edu FE=0.430 — the finding is not a generic trend artefact. The pooled R²=0.816 overstates the effect due to between-country heterogeneity, but the ranking (parental edu > GDP) is robust under every specification tested.
 
 *"25-year parental lag is approximate — actual parent-child age gaps vary across cultures and time periods."*
 True. We used 25 years as a uniform lag. In high-fertility countries parents are younger; in low-fertility countries older. This introduces measurement error but is unlikely to reverse the main finding given the size of the effect.
@@ -80,7 +87,7 @@ True. We used 25 years as a uniform lag. In high-fertility countries parents are
 
 ### 4. The Asian tigers compressed two generational steps of education into ~30 years through deliberate state policy
 
-**Claim:** South Korea, Singapore, Malaysia, and Thailand achieved what normally takes 50+ years (primary diffusion followed by secondary diffusion 25 years later) in 18–37 years by running primary and secondary expansion simultaneously. This was a policy choice made when they were poor, not a consequence of wealth.
+**Claim:** South Korea and Singapore achieved what normally takes 50+ years (primary diffusion followed by secondary diffusion 25 years later) in 18–23 years by running primary and secondary expansion simultaneously. This was a policy choice made when they were poor, not a consequence of wealth. Malaysia and Thailand followed a fast-sequential path — rapid but not simultaneous.
 
 **Evidence:**
 - South Korea: 10% primary → 60% lower secondary in 18 years (1960–1978); natural generational path would predict 50+ years
@@ -93,7 +100,7 @@ True. We used 25 years as a uniform lag. In high-fertility countries parents are
 **Counterarguments and responses:**
 
 *"Singapore is a city-state — infrastructure costs are incomparable to large continental countries."*
-Valid for Singapore. The finding is stronger for South Korea (48 million people by 1980) and Thailand (population 50 million+). The city-state advantage does not explain Korea, Malaysia, or Thailand.
+Valid for Singapore. The finding rests primarily on South Korea (48 million people by 1980). The city-state advantage does not explain Korea.
 
 *"The education data is from WCDE which reports 5-year cohort intervals — the apparent simultaneity of primary and secondary growth may be an interpolation artefact within each 5-year block."*
 Legitimate concern. Annual co-movement correlations (0.918, 0.904) are calculated on interpolated data where values within each 5-year block are linear by construction. The true test is at 5-year intervals only. At the 5-year level, the qualitative finding holds — Korea's secondary/primary ratio was 0.43 already in 1960 and rose to 0.92 by 1990. The simultaneity is real; the annual precision is not.
