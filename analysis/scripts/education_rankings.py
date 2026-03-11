@@ -25,11 +25,12 @@ Rankings produced:
   6. Sequential vs simultaneous compressors
 """
 
+import os
 import pandas as pd
 import numpy as np
-from io import StringIO
 
-ROOT = "datasets/"
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.join(SCRIPT_DIR, "../../datasets/")
 OBS_YEARS = ["1960","1965","1970","1975","1980","1985","1990","1995","2000","2005","2010","2015"]
 SNAP_YEARS = ["1960","1975","1990","2005","2015"]
 
@@ -195,293 +196,283 @@ df["world_rank_gender"]   = df["gender_gap_primary_2015"].rank(ascending=False, 
 df.sort_values("world_rank_2015", inplace=True)
 df.reset_index(drop=True, inplace=True)
 
-# Save CSV
-csv_path = "education_rankings.csv"
-df.to_csv(csv_path, index=False, float_format="%.1f")
-print(f"  CSV saved: {csv_path}")
+OUT_MD  = os.path.join(SCRIPT_DIR, "../education_rankings.md")
+OUT_CSV = os.path.join(SCRIPT_DIR, "../education_rankings.csv")
+
+df.to_csv(OUT_CSV, index=False, float_format="%.1f")
+print(f"  CSV saved: {OUT_CSV}")
 
 # ── Format helpers ────────────────────────────────────────────────────────────
-def pct(v, width=5):
-    if np.isnan(v): return " " * width + "n/a"
-    return f"{v:>{width}.1f}%"
+def pct(val):
+    return f"{val:.1f}%" if not np.isnan(val) else "n/a"
 
-def fmt_gap(v):
-    if np.isnan(v): return "  n/a"
-    sign = "+" if v >= 0 else ""
-    return f"{sign}{v:.1f}pp"
+def signed(val):
+    if np.isnan(val): return "n/a"
+    return f"+{val:.1f}" if val >= 0 else f"{val:.1f}"
+
+def cn(name, maxlen=32):
+    return name.title()[:maxlen]
 
 # ── Build report ──────────────────────────────────────────────────────────────
 lines = []
-def h(txt): lines.append(txt)
-def hr(char="─", n=100): lines.append(char * n)
-def blank(): lines.append("")
+def h(t=""): lines.append(t)
 
-h("# Global Education Achievement Rankings  |  1960–2015")
-h("*202 countries · Primary / Lower Secondary / Upper Secondary / College*")
-blank()
-h("**Edu Score** = simple mean of 4 completion levels (0–100).")
-h("**Ladder Score** = weighted mean (college weight 2.5×, primary 1×) — rewards climbing higher.")
-h("**Gain** = Edu Score 2015 minus Edu Score 1960.")
-h("**Speed** = year country first crossed 60% primary completion.")
-h("**Sequential Gap** = primary minus lower-secondary completion 2015 (small = simultaneous expansion).")
-blank()
-h("---")
+def pipe_table(headers, rows_data, aligns=None):
+    if aligns is None:
+        aligns = ["left"] + ["right"] * (len(headers) - 1)
+    def sep(a): return ":---" if a == "left" else "---:"
+    h("| " + " | ".join(headers) + " |")
+    h("| " + " | ".join(sep(a) for a in aligns) + " |")
+    for r in rows_data:
+        h("| " + " | ".join(str(x) for x in r) + " |")
+    h()
 
-# ────────────────────────────────────────────────────────────────────────────
-h("## TABLE 1 — World Ranking by 2015 Edu Score (all 202 countries)")
-blank()
-h("Full 4-level composite. Ranked highest to lowest.")
-blank()
-header = (f"{'Rank':>4}  {'Country':<28}  {'Pri':>6}  {'LowSec':>7}  {'UppSec':>7}  {'College':>8}"
-          f"  {'EduScore':>8}  {'Gain60→15':>9}  {'Archetype':<22}  {'PeakDec'}")
-h(header)
-hr("─", len(header))
-
-for _, r in df.iterrows():
-    gain_str = f"{r.gain_1960_2015:>+8.1f}" if not np.isnan(r.gain_1960_2015) else "     n/a"
-    line = (f"{r.world_rank_2015:>4}  {r.country:<28}  "
-            f"{pct(r.pri_2015):>6}  {pct(r.low_2015):>7}  {pct(r.upp_2015):>7}  {pct(r.col_2015):>8}"
-            f"  {r.edu_score_2015:>7.1f}   {gain_str}  {r.archetype:<22}  {r.peak_decade}")
-    h(line)
-
-blank()
-
-# ────────────────────────────────────────────────────────────────────────────
-h("---")
-h("## TABLE 2 — Most Improved 1960→2015 (top 60 by composite gain)")
-blank()
-h("Countries that made the largest absolute jump across the whole education ladder.")
-blank()
-top_gain = df.sort_values("gain_1960_2015", ascending=False).head(60)
-header2 = (f"{'Rank':>4}  {'Country':<28}  {'EduScore1960':>12}  {'EduScore2015':>12}"
-           f"  {'Gain':>6}  {'PeakDecade':>12}  {'PeakGain':>9}  {'Archetype'}")
-h(header2)
-hr("─", len(header2))
-for i, (_, r) in enumerate(top_gain.iterrows(), 1):
-    e60 = f"{r.edu_score_1960:.1f}" if not np.isnan(r.edu_score_1960) else " n/a"
-    e15 = f"{r.edu_score_2015:.1f}" if not np.isnan(r.edu_score_2015) else " n/a"
-    gain = f"{r.gain_1960_2015:+.1f}" if not np.isnan(r.gain_1960_2015) else " n/a"
-    pk = f"{r.peak_decade_gain:.1f}" if not np.isnan(r.peak_decade_gain) else " n/a"
-    h(f"{i:>4}  {r.country:<28}  {e60:>12}  {e15:>12}  {gain:>6}  {r.peak_decade:>12}  {pk:>9}  {r.archetype}")
-blank()
-
-# ────────────────────────────────────────────────────────────────────────────
-h("---")
-h("## TABLE 3 — Archetype Groups")
-blank()
-h("Six archetypes based on 2015 primary and lower-secondary completion.")
-blank()
 archetype_order = ["Universal","Near-Universal","Secondary Transition",
                    "Primary Complete","Primary Building","Low Access"]
-archetype_desc = {
-    "Universal":            "Primary ≥92% AND Lower Secondary ≥85% AND Upper Secondary ≥70%",
-    "Near-Universal":       "Primary ≥85% AND Lower Secondary ≥65%",
-    "Secondary Transition": "Primary ≥80% AND Lower Secondary 40–65%",
-    "Primary Complete":     "Primary ≥70% AND Lower Secondary <40%",
+archetype_desc  = {
+    "Universal":            "Primary ≥92%, Lower Sec ≥85%, Upper Sec ≥70%",
+    "Near-Universal":       "Primary ≥85%, Lower Sec ≥65%",
+    "Secondary Transition": "Primary ≥80%, Lower Sec 40–65%",
+    "Primary Complete":     "Primary ≥70%, Lower Sec <40%",
     "Primary Building":     "Primary 45–70%",
     "Low Access":           "Primary <45%",
 }
-
-for arch in archetype_order:
-    sub = df[df["archetype"] == arch].sort_values("edu_score_2015", ascending=False)
-    if len(sub) == 0:
-        continue
-    h(f"### {arch}  ({len(sub)} countries)")
-    h(f"*{archetype_desc[arch]}*")
-    blank()
-    header3 = (f"  {'Country':<28}  {'Pri':>6}  {'LowSec':>7}  {'UppSec':>7}  {'College':>8}"
-               f"  {'EduScore':>8}  {'Gain':>6}  {'Trajectory'}")
-    h(header3)
-    hr("─", 100)
-    for _, r in sub.iterrows():
-        gain = f"{r.gain_1960_2015:+.1f}" if not np.isnan(r.gain_1960_2015) else " n/a"
-        h(f"  {r.country:<28}  {pct(r.pri_2015):>6}  {pct(r.low_2015):>7}  "
-          f"{pct(r.upp_2015):>7}  {pct(r.col_2015):>8}  {r.edu_score_2015:>7.1f}  {gain:>6}  {r.trajectory}")
-    blank()
-
-# ────────────────────────────────────────────────────────────────────────────
-h("---")
-h("## TABLE 4 — Speed Rankings: Who Crossed 60% Primary First?")
-blank()
-h("Year each country first reached 60% primary completion.")
-h("Countries that never crossed 60% by 2015 are listed separately.")
-blank()
-
-crossed = df.dropna(subset=["year_crossed_60pct_primary"]).sort_values("year_crossed_60pct_primary")
-never   = df[df["year_crossed_60pct_primary"].isna()].sort_values("pri_2015", ascending=False)
-
-h(f"{'Rank':>4}  {'Country':<28}  {'Crossed 60%':>11}  {'Pri 2015':>9}  {'EduScore 2015':>14}")
-hr("─", 75)
-for i, (_, r) in enumerate(crossed.iterrows(), 1):
-    yr = int(r.year_crossed_60pct_primary)
-    h(f"{i:>4}  {r.country:<28}  {yr:>11}  {pct(r.pri_2015):>9}  {r.edu_score_2015:>13.1f}")
-
-blank()
-h(f"  Countries that had NOT crossed 60% primary by 2015 ({len(never)} countries):")
-hr("─", 75)
-for _, r in never.iterrows():
-    h(f"       {r.country:<28}  {'never':>11}  {pct(r.pri_2015):>9}  {r.edu_score_2015:>13.1f}")
-blank()
-
-# ────────────────────────────────────────────────────────────────────────────
-h("---")
-h("## TABLE 5 — Gender Gap Rankings (2015)")
-blank()
-h("Female primary completion minus overall primary completion (2015).")
-h("Positive = girls ahead. Negative = girls behind. Large negative = gender equity gap.")
-blank()
-
-gdf = df.dropna(subset=["gender_gap_primary_2015"]).sort_values("gender_gap_primary_2015")
-h(f"  {'Country':<28}  {'Female Pri':>10}  {'Overall Pri':>11}  {'Gap':>6}  {'Pri 2015':>9}")
-hr("─", 80)
-
-# Bottom 30 (girls most behind)
-h("  WORST gender gaps (girls furthest behind):")
-for _, r in gdf.head(30).iterrows():
-    fp = v(f_pri, r.country, "2015")
-    h(f"  {r.country:<28}  {pct(fp):>10}  {pct(r.pri_2015):>11}  {fmt_gap(r.gender_gap_primary_2015):>6}  {pct(r.pri_2015):>9}")
-
-blank()
-h("  BEST gender parity / girls leading:")
-for _, r in gdf.tail(20).iterrows():
-    fp = v(f_pri, r.country, "2015")
-    h(f"  {r.country:<28}  {pct(fp):>10}  {pct(r.pri_2015):>11}  {fmt_gap(r.gender_gap_primary_2015):>6}  {pct(r.pri_2015):>9}")
-blank()
-
-# ────────────────────────────────────────────────────────────────────────────
-h("---")
-h("## TABLE 6 — Sequential vs Simultaneous Expansion (2015)")
-blank()
-h("Sequential Gap = Primary completion minus Lower Secondary completion (2015).")
-h("Small gap (≤15pp) = countries that expanded primary and secondary together.")
-h("Large gap (>30pp) = sequential expanders: primary done, secondary lagging.")
-blank()
-
-sdf = df.dropna(subset=["sequential_gap_2015"]).sort_values("sequential_gap_2015")
-
-h("  MOST SIMULTANEOUS (gap ≤15pp, sorted smallest gap first):")
-h(f"  {'Country':<28}  {'Pri 2015':>9}  {'LowSec 2015':>12}  {'Gap':>6}  {'EduScore':>9}")
-hr("─", 72)
-for _, r in sdf[sdf["sequential_gap_2015"] <= 15].iterrows():
-    h(f"  {r.country:<28}  {pct(r.pri_2015):>9}  {pct(r.low_2015):>12}  {fmt_gap(r.sequential_gap_2015):>6}  {r.edu_score_2015:>8.1f}")
-
-blank()
-h("  MOST SEQUENTIAL (gap >30pp, sorted largest gap first):")
-h(f"  {'Country':<28}  {'Pri 2015':>9}  {'LowSec 2015':>12}  {'Gap':>6}  {'EduScore':>9}")
-hr("─", 72)
-for _, r in sdf[sdf["sequential_gap_2015"] > 30].sort_values("sequential_gap_2015", ascending=False).iterrows():
-    h(f"  {r.country:<28}  {pct(r.pri_2015):>9}  {pct(r.low_2015):>12}  {fmt_gap(r.sequential_gap_2015):>6}  {r.edu_score_2015:>8.1f}")
-blank()
-
-# ────────────────────────────────────────────────────────────────────────────
-h("---")
-h("## TABLE 7 — Decade-by-Decade Trajectories for 40 Key Countries")
-blank()
-h("Primary / Lower Secondary completion at each 5-year WCDE observation.")
-blank()
-
-key_countries = [
-    # East/SE Asia
-    "south korea","singapore","japan","china","malaysia","thailand",
-    "indonesia","vietnam","philippines","myanmar",
-    # South Asia
-    "india","bangladesh","pakistan","nepal","sri lanka",
-    # Sub-Saharan Africa
-    "kenya","ghana","nigeria","ethiopia","tanzania","senegal",
-    "mozambique","mali","niger","burkina faso","south africa","rwanda",
-    # Middle East / N Africa
-    "egypt","morocco","algeria","iran","turkey","saudi arabia",
-    # Latin America
-    "brazil","mexico","colombia","peru","bolivia","guatemala",
-    # Developed (benchmarks)
-    "united states","germany","finland","france",
-]
-key_countries = [c for c in key_countries if c in df["country"].values]
-
-h(f"  {'Country':<22}  "
-  f"{'─────── Primary ──────────────────'}  "
-  f"{'─── Lower Secondary ──────────────'}")
-h(f"  {'':22}  "
-  f"{'1960':>6}{'1975':>7}{'1990':>7}{'2005':>7}{'2015':>7}  "
-  f"{'1960':>6}{'1975':>7}{'1990':>7}{'2005':>7}{'2015':>7}  "
-  f"{'EduScore':>9}  {'Arch'}")
-hr("─", 120)
-
-for c in key_countries:
-    row = df[df["country"] == c]
-    if len(row) == 0:
-        continue
-    r = row.iloc[0]
-    def fv(val): return f"{val:>6.1f}" if not np.isnan(val) else "   n/a"
-    h(f"  {c:<22}  "
-      f"{fv(r.pri_1960)}{fv(r.pri_1975)}{fv(r.pri_1990)}{fv(r.pri_2005)}{fv(r.pri_2015)}  "
-      f"{fv(r.low_1960)}{fv(r.low_1975)}{fv(r.low_1990)}{fv(r.low_2005)}{fv(r.low_2015)}  "
-      f"{r.edu_score_2015:>8.1f}  {r.archetype}")
-blank()
-
-# ────────────────────────────────────────────────────────────────────────────
-h("---")
-h("## TABLE 8 — Trajectory Classification Summary")
-blank()
 traj_order = ["Early Achiever","Breakthrough","Strong Progress",
               "Moderate Progress","Minimal Progress","Insufficient Data"]
-traj_desc = {
-    "Early Achiever":    "Edu Score ≥65 already in 1960 — started near the top",
-    "Breakthrough":      "Gained ≥40pp composite 1960→2015",
-    "Strong Progress":   "Gained 22–40pp",
-    "Moderate Progress": "Gained 10–22pp",
-    "Minimal Progress":  "Gained <10pp (or started low, remained low)",
+traj_desc  = {
+    "Early Achiever":    "Edu Score ≥65 already in 1960",
+    "Breakthrough":      "Gained ≥40 pp",
+    "Strong Progress":   "Gained 22–40 pp",
+    "Moderate Progress": "Gained 10–22 pp",
+    "Minimal Progress":  "Gained <10 pp",
     "Insufficient Data": "Missing 1960 data",
 }
 
+h("# Global Education Achievement Rankings — 1960–2015")
+h()
+h("**175 countries** with complete data across all four levels.")
+h("Data source: WCDE (5-year cohorts, linearly interpolated between observations).")
+h()
+h("| Metric | Definition |")
+h("|---|---|")
+h("| **Edu Score** | Simple mean of 4 completion levels (0–100) |")
+h("| **Ladder Score** | Weighted mean — college 2.5×, upper-sec 2×, lower-sec 1.5×, primary 1× |")
+h("| **Gain** | Edu Score 2015 minus Edu Score 1960 |")
+h("| **Speed** | First year country crossed 60% primary completion |")
+h("| **Sequential Gap** | Primary minus lower-secondary 2015 (small = simultaneous expansion) |")
+h()
+h("---")
+h()
+h("## Summary Statistics")
+h()
+h("| | |")
+h("|---|---|")
+h(f"| Global Edu Score 1960 | {df['edu_score_1960'].mean():.1f} |")
+h(f"| Global Edu Score 2015 | {df['edu_score_2015'].mean():.1f} |")
+h(f"| Global Gain 1960→2015 | +{df['gain_1960_2015'].mean():.1f} pp |")
+h(f"| Countries never reaching 60% primary by 2015 | {df['year_crossed_60pct_primary'].isna().sum()} |")
+h(f"| Countries with gender gap >5 pp (girls behind) | {(df['gender_gap_primary_2015'] < -5).sum()} |")
+h()
+pipe_table(["Archetype","Countries","Definition"],
+           [[a, len(df[df["archetype"]==a]), archetype_desc.get(a,"")] for a in archetype_order])
+pipe_table(["Trajectory","Countries","Definition"],
+           [[t, len(df[df["trajectory"]==t]), traj_desc.get(t,"")] for t in traj_order])
+h("---")
+h()
+
+h("## Table 1 — World Ranking by 2015 Edu Score")
+h()
+h("All 175 countries with complete data, ranked highest to lowest.")
+h()
+pipe_table(
+    ["Rank","Country","Primary","Lower Sec","Upper Sec","College","Edu Score","Gain 60→15","Archetype","Peak Decade"],
+    [[r.world_rank_2015, cn(r.country),
+      pct(r.pri_2015), pct(r.low_2015), pct(r.upp_2015), pct(r.col_2015),
+      f"{r.edu_score_2015:.1f}", signed(r.gain_1960_2015), r.archetype, r.peak_decade]
+     for _, r in df.iterrows()],
+    ["right","left","right","right","right","right","right","right","left","left"]
+)
+
+# ────────────────────────────────────────────────────────────────────────────
+h("---")
+h()
+h("## Table 2 — Most Improved 1960→2015")
+h()
+h("Top 60 countries by composite gain across all four levels.")
+h()
+top_gain = df.sort_values("gain_1960_2015", ascending=False).head(60)
+pipe_table(
+    ["Rank","Country","Edu Score 1960","Edu Score 2015","Gain","Peak Decade","Peak Gain","Archetype"],
+    [[i+1, cn(r.country),
+      f"{r.edu_score_1960:.1f}" if not np.isnan(r.edu_score_1960) else "n/a",
+      f"{r.edu_score_2015:.1f}" if not np.isnan(r.edu_score_2015) else "n/a",
+      signed(r.gain_1960_2015), r.peak_decade,
+      f"{r.peak_decade_gain:.1f}" if not np.isnan(r.peak_decade_gain) else "n/a",
+      r.archetype]
+     for i, (_, r) in enumerate(top_gain.iterrows())],
+    ["right","left","right","right","right","left","right","left"]
+)
+
+# ────────────────────────────────────────────────────────────────────────────
+h("---")
+h()
+h("## Table 3 — Archetype Groups")
+h()
+h("Countries grouped by 2015 primary and lower-secondary completion levels.")
+h()
+for arch in archetype_order:
+    sub = df[df["archetype"] == arch].sort_values("edu_score_2015", ascending=False)
+    if len(sub) == 0: continue
+    h(f"### {arch} ({len(sub)} countries)")
+    h(f"*{archetype_desc[arch]}*")
+    h()
+    pipe_table(
+        ["Country","Primary","Lower Sec","Upper Sec","College","Edu Score","Gain","Trajectory"],
+        [[cn(r.country), pct(r.pri_2015), pct(r.low_2015), pct(r.upp_2015), pct(r.col_2015),
+          f"{r.edu_score_2015:.1f}", signed(r.gain_1960_2015), r.trajectory]
+         for _, r in sub.iterrows()],
+        ["left","right","right","right","right","right","right","left"]
+    )
+
+# ────────────────────────────────────────────────────────────────────────────
+h("---")
+h()
+h("## Table 4 — Speed Rankings: First to Cross 60% Primary Completion")
+h()
+crossed = df.dropna(subset=["year_crossed_60pct_primary"]).sort_values("year_crossed_60pct_primary")
+never   = df[df["year_crossed_60pct_primary"].isna()].sort_values("pri_2015", ascending=False)
+h(f"{len(crossed)} countries crossed the threshold. {len(never)} had not crossed 60% primary by 2015.")
+h()
+h("**Countries that crossed 60% primary (ranked by speed):**")
+h()
+pipe_table(
+    ["Rank","Country","Crossed 60%","Primary 2015","Edu Score 2015"],
+    [[i+1, cn(r.country), int(r.year_crossed_60pct_primary), pct(r.pri_2015), f"{r.edu_score_2015:.1f}"]
+     for i, (_, r) in enumerate(crossed.iterrows())],
+    ["right","left","right","right","right"]
+)
+h("**Countries that never crossed 60% primary by 2015:**")
+h()
+pipe_table(
+    ["Country","Primary 2015","Edu Score 2015"],
+    [[cn(r.country), pct(r.pri_2015), f"{r.edu_score_2015:.1f}"] for _, r in never.iterrows()],
+    ["left","right","right"]
+)
+
+# ────────────────────────────────────────────────────────────────────────────
+h("---")
+h()
+h("## Table 5 — Gender Gap Rankings (2015 Primary)")
+h()
+h("Female primary completion minus overall primary completion. **Negative** = girls behind.")
+h()
+gdf = df.dropna(subset=["gender_gap_primary_2015"]).sort_values("gender_gap_primary_2015")
+h("**Worst 30 gender gaps (girls furthest behind):**")
+h()
+pipe_table(
+    ["Country","Female Primary","Overall Primary","Gap (pp)"],
+    [[cn(r.country), pct(v(f_pri,r.country,"2015")), pct(r.pri_2015), signed(r.gender_gap_primary_2015)]
+     for _, r in gdf.head(30).iterrows()],
+    ["left","right","right","right"]
+)
+h("**Best 20: gender parity or girls leading:**")
+h()
+pipe_table(
+    ["Country","Female Primary","Overall Primary","Gap (pp)"],
+    [[cn(r.country), pct(v(f_pri,r.country,"2015")), pct(r.pri_2015), signed(r.gender_gap_primary_2015)]
+     for _, r in gdf.tail(20).iterrows()],
+    ["left","right","right","right"]
+)
+
+# ────────────────────────────────────────────────────────────────────────────
+h("---")
+h()
+h("## Table 6 — Sequential vs Simultaneous Expansion (2015)")
+h()
+h("Primary minus lower-secondary completion. **Small gap** (≤15 pp) = simultaneous. **Large gap** (>30 pp) = sequential.")
+h()
+sdf = df.dropna(subset=["sequential_gap_2015"]).sort_values("sequential_gap_2015")
+h("**Most simultaneous (gap ≤15 pp):**")
+h()
+pipe_table(
+    ["Country","Primary","Lower Sec","Gap (pp)","Edu Score"],
+    [[cn(r.country), pct(r.pri_2015), pct(r.low_2015), signed(r.sequential_gap_2015), f"{r.edu_score_2015:.1f}"]
+     for _, r in sdf[sdf["sequential_gap_2015"] <= 15].iterrows()],
+    ["left","right","right","right","right"]
+)
+h("**Most sequential (gap >30 pp):**")
+h()
+pipe_table(
+    ["Country","Primary","Lower Sec","Gap (pp)","Edu Score"],
+    [[cn(r.country), pct(r.pri_2015), pct(r.low_2015), signed(r.sequential_gap_2015), f"{r.edu_score_2015:.1f}"]
+     for _, r in sdf[sdf["sequential_gap_2015"] > 30].sort_values("sequential_gap_2015", ascending=False).iterrows()],
+    ["left","right","right","right","right"]
+)
+
+# ────────────────────────────────────────────────────────────────────────────
+h("---")
+h()
+h("## Table 7 — Decade-by-Decade Trajectories (40 Key Countries)")
+h()
+h("Primary and Lower Secondary completion at each 5-year WCDE observation point.")
+h()
+key_countries = [
+    "south korea","singapore","japan","china","malaysia","thailand",
+    "indonesia","vietnam","philippines","myanmar",
+    "india","bangladesh","pakistan","nepal","sri lanka",
+    "kenya","ghana","nigeria","ethiopia","tanzania","senegal",
+    "mozambique","mali","niger","burkina faso","south africa","rwanda",
+    "egypt","morocco","algeria","iran","turkey","saudi arabia",
+    "brazil","mexico","colombia","peru","bolivia","guatemala",
+    "united states","germany","finland","france",
+]
+key_countries = [c for c in key_countries if c in df["country"].values]
+kdf = df[df["country"].isin(key_countries)].set_index("country").loc[key_countries].reset_index()
+pipe_table(
+    ["Country",
+     "Pri 1960","Pri 1975","Pri 1990","Pri 2005","Pri 2015",
+     "Low 1960","Low 1975","Low 1990","Low 2005","Low 2015",
+     "Edu Score","Archetype"],
+    [[cn(r.country),
+      pct(r.pri_1960),pct(r.pri_1975),pct(r.pri_1990),pct(r.pri_2005),pct(r.pri_2015),
+      pct(r.low_1960),pct(r.low_1975),pct(r.low_1990),pct(r.low_2005),pct(r.low_2015),
+      f"{r.edu_score_2015:.1f}", r.archetype]
+     for _, r in kdf.iterrows()],
+    ["left"] + ["right"]*10 + ["right","left"]
+)
+
+# ────────────────────────────────────────────────────────────────────────────
+h("---")
+h()
+h("## Table 8 — Trajectory Classification")
+h()
 for traj in traj_order:
     sub = df[df["trajectory"] == traj].sort_values("edu_score_2015", ascending=False)
     if len(sub) == 0: continue
-    h(f"### {traj}  ({len(sub)} countries)")
-    h(f"*{traj_desc[traj]}*")
-    h("  " + ",  ".join(sub["country"].tolist()))
-    blank()
+    h(f"**{traj} ({len(sub)})** — *{traj_desc[traj]}*")
+    h()
+    h(", ".join(cn(c) for c in sub["country"]))
+    h()
 
-# ────────────────────────────────────────────────────────────────────────────
 h("---")
-h("## TABLE 9 — Ladder Score Ranking (rewards climbing higher, not just primary)")
-blank()
-h("Weighted: College 2.5× | Upper Sec 2× | Lower Sec 1.5× | Primary 1×")
-h("Reveals countries that moved beyond primary universality into secondary/tertiary.")
-blank()
-
+h()
+h("## Table 9 — Ladder Score Ranking (Top 60)")
+h()
+h("Weighted: College 2.5× | Upper Sec 2× | Lower Sec 1.5× | Primary 1×. Rewards climbing beyond primary.")
+h()
 ldf = df.dropna(subset=["ladder_score_2015"]).sort_values("ladder_score_2015", ascending=False).head(60)
-h(f"{'Rank':>4}  {'Country':<28}  {'Pri':>6}  {'LowSec':>7}  {'UppSec':>7}  {'College':>8}  {'LadderScore':>11}  {'EduScore':>9}")
-hr("─", 95)
-for i, (_, r) in enumerate(ldf.iterrows(), 1):
-    h(f"{i:>4}  {r.country:<28}  {pct(r.pri_2015):>6}  {pct(r.low_2015):>7}  "
-      f"{pct(r.upp_2015):>7}  {pct(r.col_2015):>8}  {r.ladder_score_2015:>10.1f}  {r.edu_score_2015:>8.1f}")
-blank()
-
-# ────────────────────────────────────────────────────────────────────────────
-h("---")
-h("## SUMMARY STATISTICS")
-blank()
-
-for arch in archetype_order:
-    sub = df[df["archetype"]==arch]
-    h(f"  {arch:<26} {len(sub):>3} countries")
-blank()
-for traj in traj_order:
-    sub = df[df["trajectory"]==traj]
-    h(f"  {traj:<26} {len(sub):>3} countries")
-blank()
-h(f"  Global Edu Score 1960:  {df['edu_score_1960'].mean():.1f}")
-h(f"  Global Edu Score 2015:  {df['edu_score_2015'].mean():.1f}")
-h(f"  Global Gain 1960→2015:  {df['gain_1960_2015'].mean():+.1f}pp")
-h(f"  Countries never reaching 60% primary:  {df['year_crossed_60pct_primary'].isna().sum()}")
-h(f"  Countries with gender gap > 5pp (girls behind, primary):  "
-  f"{(df['gender_gap_primary_2015'] < -5).sum()}")
+pipe_table(
+    ["Rank","Country","Primary","Lower Sec","Upper Sec","College","Ladder Score","Edu Score"],
+    [[i+1, cn(r.country),
+      pct(r.pri_2015), pct(r.low_2015), pct(r.upp_2015), pct(r.col_2015),
+      f"{r.ladder_score_2015:.1f}", f"{r.edu_score_2015:.1f}"]
+     for i, (_, r) in enumerate(ldf.iterrows())],
+    ["right","left","right","right","right","right","right","right"]
+)
 
 # ── Write report ──────────────────────────────────────────────────────────────
-report = "\n".join(lines)
-with open("education_rankings.md", "w") as f:
-    f.write(report)
-print(f"  Report saved: education_rankings.md")
-print(f"  Total lines: {len(lines)}")
+with open(OUT_MD, "w") as f:
+    f.write("\n".join(lines))
+print(f"  Markdown saved: {OUT_MD}")
+print(f"  Lines: {len(lines)}")
 print("\nDone.")
