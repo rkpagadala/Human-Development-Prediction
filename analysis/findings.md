@@ -17,7 +17,7 @@ Re-examined a machine learning study of human development indicators (life expec
 
 ### 1. Education is a stronger predictor of development outcomes than GDP
 
-**Claim:** Female primary education explains more of the variation in TFR and life expectancy than GDP per capita, and contributes more independent information once both compete in the same model.
+**Claim:** Female primary education explains more of the variation in TFR and life expectancy than GDP per capita, and contributes more independent information once both compete in the same model. This is consistent with Lutz & Kebede (2018), who show that replacing income with education on the x-axis of the Preston Curve produces a tighter, less noisy relationship — and that the upward shift of the curve over time (countries living longer at the same income) largely disappears when education is substituted, implying education explains both the level and improvement in life expectancy that income alone cannot account for.
 
 **Evidence:**
 - Education alone predicts TFR with NRMSE 0.150 vs GDP alone at 0.209 — education is 40% more accurate standalone
@@ -118,7 +118,7 @@ Taiwan is absent from the dataset. It would be the strongest test case given its
 
 ### 5. GDP's role in life expectancy is primarily contemporaneous, not structural
 
-**Claim:** GDP retains independent predictive value for life expectancy (not TFR) through a contemporaneous channel, likely healthcare access and nutrition spending. This is a different mechanism from the long-run structural pathway of education.
+**Claim:** GDP retains independent predictive value for life expectancy (not TFR) through a contemporaneous channel, likely healthcare access and nutrition spending. This is a different mechanism from the long-run structural pathway of education. Lutz & Kebede (2018) make the same distinction: income has a contemporaneous health-purchasing effect (the original Preston relationship), but education has a structural effect that operates through behaviour, knowledge, and the next generation — and the structural effect dominates over longer time horizons.
 
 **Evidence:**
 - Education alone: NRMSE 0.083 for life expectancy; GDP alone: 0.093 — education is slightly better standalone
