@@ -1,0 +1,4 @@
+# Raw WCDE downloads — too large for git (172MB prop files)
+# Regenerate with: Rscript wcde/scripts/01_download.R
+prop_both.csv
+prop_female.csv
