@@ -95,7 +95,7 @@ True. We used 25 years as a uniform lag. In high-fertility countries parents are
 - Annual growth rate correlation between primary and secondary: South Korea 0.918, Singapore 0.904 — they grew in lockstep, not sequentially
 - China: -0.343 correlation — sequential expansion, primary first then secondary, which explains the persistent 40pp primary→secondary dropout gap
 - GDP when tigers crossed 30% lower secondary completion: South Korea $1,390 (26% of world average), Malaysia $3,030 (29%), Thailand $3,140 (31%) — all firmly poor countries
-- India crossed 30% lower secondary in 2003 at only $845 (6% of world average) — even poorer than the tigers — but stopped there, never reaching 60%
+- India crossed 30% lower secondary in 2003 at only $845 (6% of world average) — even poorer than the tigers — and continued climbing to 49% by 2015. The dataset ends at 2015; India's trajectory was still rising at ~1.5pp/year
 
 **Counterarguments and responses:**
 

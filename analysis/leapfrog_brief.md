@@ -76,7 +76,7 @@ These were not wealthy nations making easy investments. They were poor nations m
 
 Malaysia and Thailand expanded rapidly too, but sequentially — primary first, secondary later. Their primary-to-lower-secondary gap stayed wide (Malaysia: 28pp in 1980, still 15pp in 2015; Thailand's gap actually grew during 1990–2010). They are fast-movers, not simultaneous compressors. The distinction matters: the sequential path is faster than doing nothing, but it still leaves a generational gap between primary universality and secondary completion.
 
-The contrast with China is instructive: China expanded primary first, then secondary — the sequential path. The result is a persistent 40-percentage-point gap between primary and lower-secondary completion that has proved slow to close. India crossed the same secondary completion threshold (30%), but at even lower income — and then stopped there.
+The contrast with China is instructive: China expanded primary first, then secondary — the sequential path. The result is a persistent 40-percentage-point gap between primary and lower-secondary completion that has proved slow to close. India crossed the same 30% lower secondary threshold in 2003 at only $845 GDP per capita (6% of world average) — even poorer than the tigers when they crossed it — and continued climbing to 49% by 2015. The data ends there; India's trajectory was still rising.
 
 **The leapfrog strategy in practice:**
 1. Do not wait for primary to reach near-universal before building secondary schools.
