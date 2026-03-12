@@ -67,15 +67,16 @@ Most countries expand education *sequentially*: primary first, then — one gene
 
 **South Korea and Singapore did not follow this path.** They ran primary and secondary expansion *simultaneously*, compressing what normally takes two generations into one. Korea moved from 10% lower-secondary completion to 60% in 18 years. Singapore did it in 23 years. Critically, they did this when they were *poor*:
 
-| Country | GDP per capita when secondary expansion began | World average at the time |
+| Country | GDP per capita when secondary expansion began | As % of world average |
 |---|---|---|
-| South Korea | $1,390 | 26% of world average |
-| Malaysia | $3,030 | 29% of world average |
-| Thailand | $3,140 | 31% of world average |
+| South Korea | $1,390 | 26% |
+| Singapore | $4,210 | ~40% |
 
 These were not wealthy nations making easy investments. They were poor nations making a strategic choice to skip the waiting period.
 
-The contrast with China is instructive: China expanded primary first, then secondary — the sequential path. The result is a persistent 40-percentage-point gap between primary and lower-secondary completion that has proved slow to close. India crossed the same secondary completion threshold as the tigers (30%), but later and at even lower income — and then stopped there.
+Malaysia and Thailand expanded rapidly too, but sequentially — primary first, secondary later. Their primary-to-lower-secondary gap stayed wide (Malaysia: 28pp in 1980, still 15pp in 2015; Thailand's gap actually grew during 1990–2010). They are fast-movers, not simultaneous compressors. The distinction matters: the sequential path is faster than doing nothing, but it still leaves a generational gap between primary universality and secondary completion.
+
+The contrast with China is instructive: China expanded primary first, then secondary — the sequential path. The result is a persistent 40-percentage-point gap between primary and lower-secondary completion that has proved slow to close. India crossed the same secondary completion threshold (30%), but at even lower income — and then stopped there.
 
 **The leapfrog strategy in practice:**
 1. Do not wait for primary to reach near-universal before building secondary schools.
@@ -169,8 +170,8 @@ The data shows this waiting strategy has a compounding cost. Every year of delay
 This analysis identifies patterns across 182 countries over 55 years. The findings are robust across many statistical tests. But several important caveats apply:
 
 - **Causality is demonstrated by structure, not by experiment.** We cannot run the counterfactual. The causal direction (education → growth) is consistent with the evidence, and the reverse (wealth → education) is much weaker — but the analysis cannot rule out every alternative explanation.
-- **Education quality is unobserved.** The data measures completion rates, not learning. Countries that expanded access rapidly without ensuring quality may see weaker effects. Completion is a floor, not a ceiling.
-- **Context matters.** Korea and Singapore benefited from geopolitical circumstances — Cold War US investment, colonial-era institutional inheritance — that are not replicable. The *pattern* of their strategy (simultaneous expansion, sustained political commitment, investment before wealth) is replicable. The exact scale and speed may not be.
+- **Education quality co-moves with parental education.** Quality is not independent of the mechanism — parents who completed education are more likely to engage with their children's schooling, hold teachers accountable, and sustain demand for quality. The specific risk is rapid access expansion in a generation with very low parental completion, where schools are built before the social foundation that sustains them. That is a real risk for low-base countries expanding fast. It is not a reason to delay.
+- **Colonial infrastructure is a partial, not sufficient, explanation.** Korea had Japanese colonial-era school infrastructure, which was a real head-start. But the Philippines had the deepest US colonial education presence in Asia — English-language instruction, US-modelled universities, Cold War ally — and achieved no simultaneous compression. Latin America received sustained US economic engagement across the 20th century with no tiger-pattern outcomes. Singapore outperformed Malaysia despite identical British colonial inheritance. The geopolitical argument cannot explain who succeeded and who did not. The replicable elements of the Korean and Singaporean strategy — simultaneous expansion, investment before wealth, sustained political commitment — are the explanatory factors the data supports.
 
 ---
 
