@@ -23,6 +23,8 @@ When we test which variable better predicts a country's development outcomes —
 - **For predicting the next generation's education:** Parental education from 25 years ago predicts children's education today far better than income does — and this holds *within* countries over time, not just as a cross-country comparison.
 - **For child survival:** Each 1 percentage point increase in parental primary completion is associated with a 2% reduction in child mortality within that same country — independent of income growth.
 
+The standard counterargument is the Preston Curve — the well-known observation that richer countries have longer-lived populations, which is often read as "wealth buys health, so grow first." Lutz & Kebede (2018, *Population and Development Review*) show this reading is wrong: when you replace income with education on the Preston Curve's x-axis, the relationship becomes tighter, and the upward shift of the curve over time — the fact that countries live longer today at the same income than they did in 1960 — largely disappears. That upward shift is education, not wealth. The Preston Curve is an education curve that income was proxying for.
+
 **What this means for policy:** Income growth is a *result* of educational investment, not its prerequisite. Waiting for your economy to grow before funding schools inverts the causal order.
 
 ---
