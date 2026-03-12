@@ -377,6 +377,134 @@ walking distance of their village.
 
 ---
 
+## 9. China Versus the World During the Cultural Revolution
+
+The "lost decade" framing only makes sense against a counterfactual — what would China
+have achieved without the CR? One way to ground that is to ask: compared to what other
+developing countries were actually doing at the same time, was China's CR-era record a
+catastrophe, a mediocrity, or something else entirely?
+
+### 9.1 Lower Secondary: China Was One of the Fastest-Moving Countries in the World
+
+Lower secondary completion gain 1965→1980 cohort (the CR era), selected countries:
+
+| Country | 1965 cohort % | 1980 cohort % | Gain (pp) | Notes |
+|:--------|:-------------:|:-------------:|:---------:|:------|
+| Taiwan | 36.8% | 83.3% | **+46.5** | Post-land-reform investment + US aid |
+| Republic of Korea | 51.5% | 87.2% | **+35.7** | Park Chung-hee state-directed expansion |
+| **China** | **31.5%** | **62.1%** | **+30.6** | **Cultural Revolution community schools** |
+| Mexico | 21.0% | 45.6% | +24.6 | Oil boom spending |
+| Algeria | 11.2% | 33.0% | +21.8 | Post-independence expansion |
+| Viet Nam | 29.3% | 50.8% | +21.5 | War and Communist mass education |
+| Turkey | 16.5% | 38.9% | +22.4 | State secular schools |
+| Brazil | 24.1% | 44.6% | +20.5 | Military government investment |
+| Iran | 16.5% | 37.4% | +20.9 | Shah's White Revolution |
+| India | 18.1% | 30.2% | +12.1 | Democratic drift, no forcing mechanism |
+| Indonesia | 15.1% | 28.7% | +13.6 | New Order (Suharto) |
+| Nigeria | 8.9% | 22.8% | +13.9 | Oil revenue, uneven distribution |
+| Bangladesh | 12.9% | 18.1% | +5.2 | Post-independence collapse |
+| Ethiopia | 1.2% | 3.8% | +2.6 | Haile Selassie → Derg, chronic instability |
+| Cambodia | 7.3% | 9.4% | +2.1 | Khmer Rouge (1975–79) near-total destruction |
+
+China's +30.6 pp gain during the CR ranks **third in the world**, behind only Taiwan and
+South Korea — both of which received massive US aid and had authoritarian governments
+specifically oriented toward education as an economic strategy. Among countries without
+that external financial subsidy, China's CR-era lower-secondary expansion was arguably
+the fastest in the world.
+
+India — China's most natural comparator, similar income level in 1965, similarly large
+population, democratic governance — gained only +12.1 pp. No Cultural Revolution, no
+deliberate destruction of "bourgeois" education. Just slow drift. By 1980, India sat at
+30.2% lower secondary completion; China at 62.1%. That 32-percentage-point gap did not
+come from China's success after Deng — it opened *during the CR*.
+
+### 9.2 College: The "Stagnation" in Global Context
+
+China's college completion during the CR:
+- 1965 cohort: 2.54%
+- 1970 cohort: 2.42% (slight fall, universities closed)
+- 1975 cohort: 2.79% (worker-peasant-soldier admissions)
+- 1980 cohort: 3.76% (gaokao restored 1977)
+
+Now compare that to the developing world in 1975 — countries with no Cultural Revolution,
+no deliberate disruption of higher education, simply going about their normal affairs:
+
+| Country | College 1975 cohort % | College 1980 cohort % |
+|:--------|:---------------------:|:---------------------:|
+| USA | 15.8% | 15.3% |
+| UK | 15.3% | 16.0% |
+| Argentina | 10.5% | 12.2% |
+| Philippines | 10.6% | 11.8% |
+| India | 5.6% | 6.2% |
+| Egypt | 7.9% | 9.5% |
+| Iran | 6.3% | 7.1% |
+| South Korea | 4.7% | 6.6% |
+| Mexico | 4.8% | 6.2% |
+| **China (CR)** | **2.8%** | **3.8%** |
+| Brazil | 3.5% | 3.8% |
+| Nigeria | 2.3% | 3.7% |
+| Pakistan | 3.4% | 3.9% |
+| Ghana | 2.9% | 2.5% |
+| Indonesia | 1.7% | 2.2% |
+| Bangladesh | 0.9% | 1.0% |
+| Ethiopia | 0.7% | 0.9% |
+| Cambodia | 0.9% | 0.9% |
+
+China's 2.8% college completion for the 1975 cohort placed it at roughly the **30th
+percentile globally** — below India, Egypt, South Korea, and Latin America, but above
+Indonesia, Nigeria (without oil-era expansion), Bangladesh, Ghana, and Cambodia.
+
+**This is stagnation, not catastrophe.** The countries below China in college completion
+had no Cultural Revolution. Bangladesh was at 0.9%. Ethiopia 0.7%. Cambodia 0.9%.
+These countries were not closing universities — they simply never had an educated
+population to attend them. China's "stagnated" college rate was still 3× Bangladesh's
+normal functioning rate.
+
+### 9.3 The Counterfactual That Wasn't Asked
+
+The standard critique compares China-during-CR to China-without-CR (an imagined
+trajectory). But that counterfactual country does not exist and cannot be observed.
+What *can* be observed is China relative to:
+
+1. **Peer developing countries at the same time**: China outperformed most of Asia and
+   Africa at the lower-secondary level during the CR by a wide margin.
+
+2. **China's own trajectory before the CR**: Primary and lower secondary continued
+   accelerating. The CR did not reverse a prior trend — it continued it at the mass level
+   while disrupting the elite level.
+
+3. **What followed**: The Deng-era explosion in secondary and tertiary education was built
+   on the literate, partially-secondary-educated workforce that the Mao era — including
+   the CR — produced. By 1980, China had 62% lower secondary completion. That is the
+   platform from which the world's largest sustained educational expansion was launched.
+
+### 9.4 Whose History Was Being Written
+
+The "lost decade" narrative was constructed by:
+- Urban intellectuals who were personally disrupted — sent to the countryside, humiliated,
+  sometimes imprisoned
+- Western journalists and academics who had access to this group
+- Post-1978 Chinese state, which needed to delegitimise the CR to justify Deng's reforms
+- The international academic literature which drew on urban memoirs and official statistics
+  that emphasised university closures
+
+What was not recorded with equal force:
+- Rural communities gaining their first secondary school
+- Girls in Sichuan villages learning to read
+- Village health workers learning basic medicine
+- The cohort data, which was not reconstructed at all until the WCDE series made it possible
+
+The WCDE cohort reconstruction is, in a sense, the first time the rural 80% have a
+quantitative voice in this debate. And what they say, in percentage points, is that the
+Cultural Revolution era was one of the fastest periods of educational expansion in Chinese
+history for the people who had previously had nothing.
+
+That does not make the CR's violence, the persecution of intellectuals, or the destruction
+of universities acceptable. It makes the label "educational catastrophe" a category error —
+the catastrophe for 2–3% of the population, the expansion for the other 80%.
+
+---
+
 ## Data Notes
 
 - All completion rates are from WCDE v3, cohort reconstruction (script 02b).
