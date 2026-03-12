@@ -132,7 +132,7 @@ for c in all_countries:
         if   p15 >= 92 and l15 >= 85 and (np.isnan(u15) or u15 >= 70):
             archetype = "Universal"
         elif p15 >= 85 and l15 >= 65:
-            archetype = "Near-Universal"
+            archetype = "Secondary Building"   # primary achieved; ~35% still not completing lower sec
         elif p15 >= 80 and l15 >= 40:
             archetype = "Secondary Transition"
         elif p15 >= 70 and l15 < 40:
@@ -146,10 +146,12 @@ for c in all_countries:
 
     # Trajectory (gain-based)
     if not np.isnan(gain):
-        if edu60 >= 65:
-            trajectory = "Early Achiever"      # already high, less room to gain
+        if gain <= -10:
+            trajectory = "Regression"          # education declined over the period
+        elif edu60 >= 65:
+            trajectory = "Early Achiever"      # already high in 1960, maintained
         elif gain >= 40:
-            trajectory = "Breakthrough"
+            trajectory = "Large Gain"          # 40pp+ gain; endpoint quality varies
         elif gain >= 22:
             trajectory = "Strong Progress"
         elif gain >= 10:
@@ -227,21 +229,22 @@ def pipe_table(headers, rows_data, aligns=None):
         h("| " + " | ".join(str(x) for x in r) + " |")
     h()
 
-archetype_order = ["Universal","Near-Universal","Secondary Transition",
+archetype_order = ["Universal","Secondary Building","Secondary Transition",
                    "Primary Complete","Primary Building","Low Access"]
 archetype_desc  = {
     "Universal":            "Primary ≥92%, Lower Sec ≥85%, Upper Sec ≥70%",
-    "Near-Universal":       "Primary ≥85%, Lower Sec ≥65%",
+    "Secondary Building":   "Primary ≥85%, Lower Sec 65–85% — primary mostly done, secondary still incomplete",
     "Secondary Transition": "Primary ≥80%, Lower Sec 40–65%",
     "Primary Complete":     "Primary ≥70%, Lower Sec <40%",
     "Primary Building":     "Primary 45–70%",
     "Low Access":           "Primary <45%",
 }
-traj_order = ["Early Achiever","Breakthrough","Strong Progress",
+traj_order = ["Regression","Early Achiever","Large Gain","Strong Progress",
               "Moderate Progress","Minimal Progress","Insufficient Data"]
 traj_desc  = {
-    "Early Achiever":    "Edu Score ≥65 already in 1960",
-    "Breakthrough":      "Gained ≥40 pp",
+    "Regression":        "Edu Score declined ≥10 pp — education contracted over the period",
+    "Early Achiever":    "Edu Score ≥65 already in 1960, maintained",
+    "Large Gain":        "Gained ≥40 pp — endpoint quality varies widely",
     "Strong Progress":   "Gained 22–40 pp",
     "Moderate Progress": "Gained 10–22 pp",
     "Minimal Progress":  "Gained <10 pp",
@@ -259,7 +262,7 @@ h("| **Edu Score** | Simple mean of 4 completion levels (0–100) |")
 h("| **Ladder Score** | Weighted mean — college 2.5×, upper-sec 2×, lower-sec 1.5×, primary 1× |")
 h("| **Gain** | Edu Score 2015 minus Edu Score 1960 |")
 h("| **Speed** | First year country crossed 60% primary completion |")
-h("| **Sequential Gap** | Primary minus lower-secondary 2015 (small = simultaneous expansion) |")
+h("| **Sequential Gap** | Primary minus lower-secondary 2015. Small gap at high primary = simultaneous expansion. Small gap at low primary = both levels underdeveloped. |")
 h()
 h("---")
 h()
@@ -389,18 +392,35 @@ h("---")
 h()
 h("## Table 6 — Sequential vs Simultaneous Expansion (2015)")
 h()
-h("Primary minus lower-secondary completion. **Small gap** (≤15 pp) = simultaneous. **Large gap** (>30 pp) = sequential.")
+h("Primary minus lower-secondary completion gap.")
+h("A **small gap at high primary (≥80%)** means both levels were expanded together — genuine simultaneous strategy.")
+h("A **small gap at low primary (<60%)** means both levels are equally underdeveloped — not a success.")
+h("A **large gap (>30 pp)** means primary was expanded first and secondary lagged — sequential path.")
 h()
 sdf = df.dropna(subset=["sequential_gap_2015"]).sort_values("sequential_gap_2015")
-h("**Most simultaneous (gap ≤15 pp):**")
+
+# Simultaneous at scale: primary ≥80% AND gap ≤15pp
+simul_high = sdf[(sdf["sequential_gap_2015"] <= 15) & (sdf["pri_2015"] >= 80)]
+# Low-base tie: both levels underdeveloped, primary <60%
+simul_low  = sdf[(sdf["sequential_gap_2015"] <= 15) & (sdf["pri_2015"] < 60)]
+
+h("**Simultaneous at scale — primary ≥80%, gap ≤15 pp (expansion ran in parallel):**")
 h()
 pipe_table(
     ["Country","Primary","Lower Sec","Gap (pp)","Edu Score"],
     [[cn(r.country), pct(r.pri_2015), pct(r.low_2015), signed(r.sequential_gap_2015), f"{r.edu_score_2015:.1f}"]
-     for _, r in sdf[sdf["sequential_gap_2015"] <= 15].iterrows()],
+     for _, r in simul_high.iterrows()],
     ["left","right","right","right","right"]
 )
-h("**Most sequential (gap >30 pp):**")
+h("**Low-base tied — primary <60%, gap ≤15 pp (both levels underdeveloped equally):**")
+h()
+pipe_table(
+    ["Country","Primary","Lower Sec","Gap (pp)","Edu Score"],
+    [[cn(r.country), pct(r.pri_2015), pct(r.low_2015), signed(r.sequential_gap_2015), f"{r.edu_score_2015:.1f}"]
+     for _, r in simul_low.sort_values("pri_2015", ascending=False).iterrows()],
+    ["left","right","right","right","right"]
+)
+h("**Most sequential — gap >30 pp (primary expanded first, secondary lagged):**")
 h()
 pipe_table(
     ["Country","Primary","Lower Sec","Gap (pp)","Edu Score"],
