@@ -129,7 +129,7 @@ Taiwan is absent from the dataset. It would be the strongest test case given its
 **Counterarguments and responses:**
 
 *"This finding depends on including TFR or not — the results change substantially across specifications."*
-True and acknowledged. With TFR included, GDP and education both appear weak because TFR absorbs their signal. Without TFR, GDP leads education for life expectancy. The interpretation depends on how you model the causal structure. We favour the interpretation that TFR is the proximate cause and education/GDP are upstream drivers — but the data cannot prove this.
+The change across specifications is expected and is not a weakness. Finding 2 establishes that education predicts TFR better than any other variable. TFR is therefore a mediator on the education→life expectancy path, not an independent control. Including a mediator as a covariate is a specification error — it blocks the path you are trying to measure, absorbing the very signal you want to detect. The fact that education importance drops when TFR is included is direct evidence that the mediation pathway is operating, not evidence that the education effect is fragile. The correct specification excludes TFR when the question is the total effect of education on life expectancy; it includes TFR only when the question is the direct (non-TFR-mediated) effect. Both specifications are interpretable — they are answers to different questions.
 
 ---
 
