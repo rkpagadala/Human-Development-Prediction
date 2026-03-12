@@ -188,8 +188,8 @@ for c in all_countries:
 
 df = pd.DataFrame(rows)
 
-# World rank by 2015 edu score
-df["world_rank_2015"]     = df["edu_score_2015"].rank(ascending=False, na_option="bottom").astype(int)
+# Primary rank by Ladder Score (rewards climbing beyond primary)
+df["world_rank_2015"]     = df["ladder_score_2015"].rank(ascending=False, na_option="bottom").astype(int)
 df["world_rank_gain"]     = df["gain_1960_2015"].rank(ascending=False, na_option="bottom").astype(int)
 df["world_rank_ladder"]   = df["ladder_score_2015"].rank(ascending=False, na_option="bottom").astype(int)
 df["world_rank_speed"]    = df["year_crossed_60pct_primary"].rank(ascending=True, na_option="bottom").astype(int)
@@ -258,9 +258,9 @@ h("Data source: WCDE (5-year cohorts, linearly interpolated between observations
 h()
 h("| Metric | Definition |")
 h("|---|---|")
-h("| **Edu Score** | Simple mean of 4 completion levels (0–100) |")
-h("| **Ladder Score** | Weighted mean — college 2.5×, upper-sec 2×, lower-sec 1.5×, primary 1× |")
-h("| **Gain** | Edu Score 2015 minus Edu Score 1960 |")
+h("| **Ladder Score** | Primary ranking metric. Weighted mean — college 2.5×, upper-sec 2×, lower-sec 1.5×, primary 1×. Rewards climbing beyond primary. |")
+h("| **Edu Score** | Simple mean of 4 completion levels. Secondary metric — shown for reference but does not drive rankings. |")
+h("| **Gain** | Edu Score 2015 minus Edu Score 1960 — tracks absolute improvement across all levels |")
 h("| **Speed** | First year country crossed 60% primary completion |")
 h("| **Sequential Gap** | Primary minus lower-secondary 2015. Small gap at high primary = simultaneous expansion. Small gap at low primary = both levels underdeveloped. |")
 h()
@@ -270,8 +270,10 @@ h("## Summary Statistics")
 h()
 h("| | |")
 h("|---|---|")
-h(f"| Global Edu Score 1960 | {df['edu_score_1960'].mean():.1f} |")
-h(f"| Global Edu Score 2015 | {df['edu_score_2015'].mean():.1f} |")
+h(f"| Global Ladder Score 1960 | {df['ladder_score_1960'].mean():.1f} |")
+h(f"| Global Ladder Score 2015 | {df['ladder_score_2015'].mean():.1f} |")
+h(f"| Global Edu Score 1960 (mean completion) | {df['edu_score_1960'].mean():.1f} |")
+h(f"| Global Edu Score 2015 (mean completion) | {df['edu_score_2015'].mean():.1f} |")
 h(f"| Global Gain 1960→2015 | +{df['gain_1960_2015'].mean():.1f} pp |")
 h(f"| Countries never reaching 60% primary by 2015 | {df['year_crossed_60pct_primary'].isna().sum()} |")
 h(f"| Countries with gender gap >5 pp (girls behind) | {(df['gender_gap_primary_2015'] < -5).sum()} |")
@@ -283,17 +285,18 @@ pipe_table(["Trajectory","Countries","Definition"],
 h("---")
 h()
 
-h("## Table 1 — World Ranking by 2015 Edu Score")
+h("## Table 1 — World Ranking by 2015 Ladder Score")
 h()
-h("All 175 countries with complete data, ranked highest to lowest.")
+h("All 175 countries ranked by Ladder Score (college 2.5×, upper-sec 2×, lower-sec 1.5×, primary 1×).")
+h("Edu Score (simple mean) shown as secondary reference.")
 h()
 pipe_table(
-    ["Rank","Country","Primary","Lower Sec","Upper Sec","College","Edu Score","Gain 60→15","Archetype","Peak Decade"],
+    ["Rank","Country","Primary","Lower Sec","Upper Sec","College","Ladder Score","Edu Score","Archetype"],
     [[r.world_rank_2015, cn(r.country),
       pct(r.pri_2015), pct(r.low_2015), pct(r.upp_2015), pct(r.col_2015),
-      f"{r.edu_score_2015:.1f}", signed(r.gain_1960_2015), r.archetype, r.peak_decade]
+      f"{r.ladder_score_2015:.1f}", f"{r.edu_score_2015:.1f}", r.archetype]
      for _, r in df.iterrows()],
-    ["right","left","right","right","right","right","right","right","left","left"]
+    ["right","left","right","right","right","right","right","right","left"]
 )
 
 # ────────────────────────────────────────────────────────────────────────────
@@ -474,21 +477,6 @@ for traj in traj_order:
     h(", ".join(cn(c) for c in sub["country"]))
     h()
 
-h("---")
-h()
-h("## Table 9 — Ladder Score Ranking (Top 60)")
-h()
-h("Weighted: College 2.5× | Upper Sec 2× | Lower Sec 1.5× | Primary 1×. Rewards climbing beyond primary.")
-h()
-ldf = df.dropna(subset=["ladder_score_2015"]).sort_values("ladder_score_2015", ascending=False).head(60)
-pipe_table(
-    ["Rank","Country","Primary","Lower Sec","Upper Sec","College","Ladder Score","Edu Score"],
-    [[i+1, cn(r.country),
-      pct(r.pri_2015), pct(r.low_2015), pct(r.upp_2015), pct(r.col_2015),
-      f"{r.ladder_score_2015:.1f}", f"{r.edu_score_2015:.1f}"]
-     for i, (_, r) in enumerate(ldf.iterrows())],
-    ["right","left","right","right","right","right","right","right"]
-)
 
 # ── Write report ──────────────────────────────────────────────────────────────
 with open(OUT_MD, "w") as f:
