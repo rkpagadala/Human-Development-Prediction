@@ -94,7 +94,8 @@ True. We used 25 years as a uniform lag. In high-fertility countries parents are
 - Singapore: same journey in 23 years
 - Annual growth rate correlation between primary and secondary: South Korea 0.918, Singapore 0.904 — they grew in lockstep, not sequentially
 - China: -0.343 correlation — sequential expansion, primary first then secondary, which explains the persistent 40pp primary→secondary dropout gap
-- GDP when tigers crossed 30% lower secondary completion: South Korea $1,390 (26% of world average), Malaysia $3,030 (29%), Thailand $3,140 (31%) — all firmly poor countries
+- GDP when Korea and Singapore crossed 30% lower secondary completion: South Korea $1,390 (26% of world average), Singapore $4,210 (~40%) — poor countries making the push before wealth arrived
+- Malaysia ($3,030) and Thailand ($3,140) crossed the same threshold at similar income levels but via sequential expansion — primary first, secondary later — with persistent wide gaps between the two levels
 - India crossed 30% lower secondary in 2003 at only $845 (6% of world average) — even poorer than the tigers — and continued climbing to 49% by 2015. The dataset ends at 2015; India's trajectory was still rising at ~1.5pp/year
 
 **Counterarguments and responses:**
@@ -267,9 +268,9 @@ The "tiger" category, as used in this analysis, conflates two distinct groups. K
 | Parental education predicts child education more than GDP | **High** | Survives country FE, two-way FE, 5-yr obs points, lag sensitivity, Gini control |
 | Female education predicts TFR better than GDP | **High** | Cohort definition already makes this causally proximate |
 | TFR mediates education→life expectancy | **High** | Circular feature inclusion in original models |
-| Asian tigers compressed two generational education steps in ~30 years | **High** | Annual data is interpolated; colonial inheritance uncontrolled |
+| Asian tigers compressed two generational education steps in ~30 years | **High** | Annual data is interpolated; colonial infrastructure was a head-start but cannot explain who succeeded (Philippines had deepest US colonial education; no tiger outcome) |
 | Tigers made the push when poor, not when wealthy | **High** | City-state caveat for Singapore |
-| GDP is secondary to education for TFR | **High** | Education data quality unobserved |
+| GDP is secondary to education for TFR | **High** | Education quality co-moves with parental education; quality is not independent of the mechanism |
 | GDP retains independent role for life expectancy | Moderate | Specification-sensitive result |
 | India's recent education gains are mostly generational echo | Moderate | Fixed-effects test now done; finding holds directionally |
 | China's slower secondary expansion was sequential, not compressed | Moderate | WCDE interpolation affects co-movement analysis |
