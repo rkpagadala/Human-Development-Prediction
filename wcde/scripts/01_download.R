@@ -79,6 +79,22 @@ e0_female <- get_wcde(
 write.csv(e0_female, file.path(OUT, "e0_female.csv"), row.names=FALSE)
 cat("  Saved e0_female.csv —", nrow(e0_female), "rows\n")
 
+cat("Downloading pop (population counts in thousands) — both sexes...\n")
+pop_both <- get_wcde(
+  indicator   = "pop",
+  scenario    = 2,
+  pop_age     = "all",
+  pop_sex     = "both",
+  pop_edu     = "six",
+  version     = "wcde-v3"
+)
+write.csv(pop_both, file.path(OUT, "pop_both.csv"), row.names=FALSE)
+cat("  Saved pop_both.csv —", nrow(pop_both), "rows\n")
+
+cat("Downloading pop (population counts in thousands) — female (via both, sex disaggregated)...\n")
+# pop indicator uses pop_sex="both" which includes female/male breakdown in the data
+cat("  Note: pop_both.csv already contains female breakdown by sex column\n")
+
 cat("\nDownload complete. Files in:", OUT, "\n")
 cat("Countries in prop_both:", length(unique(prop_both$name)), "\n")
 cat("Years:", paste(sort(unique(prop_both$year)), collapse=", "), "\n")
