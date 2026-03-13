@@ -6,6 +6,7 @@ Input:  wcde/data/raw/*.csv
 Output: wcde/data/processed/
   completion_both.csv    — wide: country × year, columns = pri/lowsec/uppsec/college (both sexes)
   completion_female.csv  — same for female only
+  completion_male.csv    — same for male only
   tfr.csv                — country × year TFR
   e0.csv                 — country × year life expectancy (both)
   country_list.csv       — country codes + names (all 228 entities)
@@ -80,10 +81,11 @@ def process_prop(path, label, sex_filter):
     print(f"  Wide CSVs saved for {list(LEVELS_FOR.keys())}")
     return long
 
-# Process both and female completion rates
+# Process both, female, and male completion rates
 # Note: both raw files contain rows for sex=Both/Male/Female; sex_filter selects the correct rows.
 prop_both   = process_prop(os.path.join(RAW, "prop_both.csv"),   "both",   sex_filter="Both")
 prop_female = process_prop(os.path.join(RAW, "prop_female.csv"), "female", sex_filter="Female")
+prop_male   = process_prop(os.path.join(RAW, "prop_female.csv"), "male",   sex_filter="Male")
 
 # Save country list
 countries = prop_both[["country"]].drop_duplicates().sort_values("country")
