@@ -162,7 +162,7 @@ notes = {
     1955: "First 5yr PRC expansion",
     1960: "Great Leap Forward famine (e0 falls to 45)",
     1965: "Recovery; upper_sec slow (+1.1pp)",
-    1970: "**CR begins 1966. Lower_sec slows to +5.0pp; upper_sec near-stagnant (+0.1pp)**",
+    1970: "**1970 cohort lower sec was 1960–63 (pre-CR); slowdown reflects GLF aftermath. Upper sec 1963–66 overlaps CR onset. Lower_sec +5.0pp; upper_sec stalls (+0.1pp)**",
     1975: "**CR peak. Lower_sec SURGES +10.6pp — community schools. Upper_sec +3.3pp**",
     1980: "**CR cohort. Largest lower_sec jump: +15.0pp. Upper_sec +8.1pp (high schools rebuilt)**",
     1985: "Late CR / early Deng. Lower_sec +10.7pp; upper_sec only +1.6pp",
@@ -229,7 +229,7 @@ cr1980 = china_coh.loc[1980]
 p("**Primary education: no scar.** Primary completion grew steadily through the entire CR")
 p(f"period — from {cr1970['primary']:.1f}% for the 1970 cohort to {cr1975['primary']:.1f}% (1975)")
 p(f"to {cr1980['primary']:.1f}% (1980). The 1980 cohort (born ~1958, primary school age")
-p("1964–1970, entirely during CR) had HIGHER primary completion than any previous cohort.")
+p("1964–1970, mostly during the CR) had HIGHER primary completion than any previous cohort.")
 p("This is consistent with Gao Mobo's claim that rural schools expanded, not contracted,")
 p("during the CR — 'barefoot teachers' (赤脚教师) were dispatched to villages that had")
 p("never had a permanent school.")
@@ -304,17 +304,16 @@ for yr in [1950, 1955, 1960, 1965, 1970, 1975, 1980, 1985, 1990, 1995, 2000]:
         prev_tfr = tfrv
 
 p()
-p("Life expectancy grew by **+8.1 years** from 1965 to 1980, the exact CR period.")
+e0_1960 = china_e0['1960']
+e0_1965 = china_e0['1965']
+e0_1980 = china_e0['1980']
+p(f"Life expectancy grew by **+{e0_1980-e0_1965:.1f} years** from 1965 to 1980, the exact CR period.")
 p("This is one of the fastest e0 gains China recorded in any 15-year window outside of")
 p("the post-famine recovery. The barefoot doctor (赤脚医生) programme, launched in 1965")
 p("and massively scaled during the CR, trained approximately 1 million village-level")
 p("health workers by 1975. They provided vaccinations, basic sanitation education, and")
 p("maternal care in areas where no medical infrastructure had previously existed.")
 p()
-
-e0_1965 = china_e0['1965']
-e0_1980 = china_e0['1980']
-e0_1960 = china_e0['1960']
 p(f"For comparison: e0 in 1960 was {e0_1960:.1f} (the Great Leap Forward famine nadir);")
 p(f"by 1965 it had recovered to {e0_1965:.1f}; by 1975 it was {china_e0['1975']:.1f};")
 p(f"by 1980 it was {e0_1980:.1f}. The CR period added ~{e0_1980-e0_1965:.0f} years of")
@@ -561,16 +560,17 @@ p("The college data does not contradict Gao — it confirms the second half of h
 p("Gao explicitly acknowledges that the urban educated class was disrupted; that was the")
 p("*point* of the CR from the perspective of its designers. His claim was never that")
 p("university closures were good policy. It was that the standard narrative mistakes the")
-p("experience of the 2–3% who aspired to university for the history of China, while ignoring")
-p("the 80% who were rural peasants. The college stagnation is exactly what he describes:")
-p("the urban elite were hit hard. The data adds precision — 2–4 million graduates not")
-p("produced, a real and serious cost — but it falls entirely within the population Gao")
-p("says bore the disruption.")
+p("experience of the 2–3% who aspired to university for the history of China.")
 p()
-p("The standard narrative is correct for urban educated families — the 2–3% who aspired to")
-p("university. Gao Mobo is correct for rural peasants — the 80% who for the first time got")
-p("a school within walking distance of their village. These are not contradictory readings")
-p("of the same evidence; they describe different people.")
+p("The data vindicates Gao's account as a description of what the Cultural Revolution did")
+p("to Chinese society. China in 1966 was approximately 80% rural peasant. The history of")
+p("Chinese society is first and foremost the history of that majority. For that majority,")
+p("the data shows the CR era as one of the fastest periods of educational expansion, life-")
+p("expectancy improvement, and fertility transition in Chinese history. The college")
+p("stagnation is real and its cost was real — 2–4 million graduates not produced — but it")
+p("describes what happened to a small urban class, not to the country.")
+p()
+p("The standard narrative is not wrong. It is just not about China.")
 p()
 p("---")
 p()
@@ -586,7 +586,8 @@ p()
 p("## Key References")
 p()
 p("- Gao Mobo (2008). *The Battle for China's Past: Mao and the Cultural Revolution*.")
-p("  London: Pluto Press. — Core revisionist account; rural beneficiaries of CR.")
+p("  London: Pluto Press. — Argues the 'ten lost years' narrative is an urban-elite"  )
+p("  projection; the majority-peasant experience of the CR was educational expansion.")
 p("- Meng X, Gregory R (2002). 'The impact of interrupted education on subsequent educational")
 p("  attainment.' *Economic Development and Cultural Change* 50(4): 935–959.")
 p("  — Quantifies earnings penalties for CR-affected cohorts.")

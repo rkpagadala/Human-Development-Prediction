@@ -14,10 +14,12 @@ been sold, uncritically, as the history of China.
 
 Gao Mobo (2008, *The Battle for China's Past*) argues that the Cultural Revolution narrative
 was constructed from the perspective of the urban educated elite — the very people whose
-status was most disrupted. For the rural peasantry, who comprised roughly 80% of China's
-population in 1966, the story was different. Rural schools expanded. Barefoot teachers
-(赤脚教师) brought basic literacy to villages that had none. Urban-rural inequality in access
-to education decreased, not increased.
+status was most disrupted. His claim is not merely that a different group had a different
+experience. It is that the standard narrative mistakes elite history for national history.
+China in 1966 was approximately 80% rural peasant. What happened to Chinese society is
+first and foremost what happened to that majority. And for that majority — rural schools
+expanded, barefoot teachers (赤脚教师) brought literacy to villages that had none, and
+urban-rural inequality in access to education decreased, not increased.
 
 The WCDE cohort data makes it possible to test this claim quantitatively for the first time.
 The cohort reconstruction reads what each generation achieved in education by age 20–24, and
@@ -53,7 +55,7 @@ at university, at high school, and at village primary school were three differen
 
 **At the primary level, the CR left no scar at all.** Primary completion grew from 70% for
 the cohort that was primary-school age just before the CR, to 76% for those in school at its
-onset, to 80% at its peak, to 86% for the cohort whose primary schooling fell entirely within
+onset, to 80% at its peak, to 86% for the cohort whose primary schooling fell mostly within
 the CR years. The children of peasant villages were learning to read faster during the
 Cultural Revolution than before it. This is exactly consistent with Gao Mobo's account of
 barefoot teachers dispatched to villages that had never had a permanent school.
@@ -144,8 +146,7 @@ voluntary fertility transitions in history, and it happened not because of coerc
 because rising female education and the CR's gender-equality rhetoric shifted norms in
 rural communities. A society consuming its human capital does not show these numbers.
 
-The gender data makes this concrete. China's lower secondary completion by sex, measured
-at observation years (% of 20–24 population):
+The gender data makes this concrete. China's lower secondary cohort completion rates, by sex:
 
 | Year | Both sexes | Female | Female/Both |
 |:----:|:----------:|:------:|:-----------:|
@@ -252,10 +253,10 @@ Chinese history — for the people who had previously had nothing.
 
 That does not make the CR's violence acceptable, the persecution of intellectuals justified,
 or the destruction of universities a good policy. It makes the label "educational catastrophe"
-a category error: the catastrophe for the 2–3% who aspired to university; the expansion for
-the other 80%.
+a category error. For the 2–3% who aspired to university it was a catastrophe. For the other
+80% it was an expansion. And a society is not its elite.
 
-We were sold elite history as the history of China. The data says otherwise.
+The standard narrative is not wrong. It is just not about China.
 
 ---
 

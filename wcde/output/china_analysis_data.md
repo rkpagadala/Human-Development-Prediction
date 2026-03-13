@@ -80,7 +80,7 @@ Positive values = progress; negative = regression. Bold rows span CR schooling y
 | 1955 | +16.6 | +7.2 | +2.6 | +1.0 | First 5yr PRC expansion |
 | 1960 | +11.1 | +6.7 | +2.5 | +0.9 | Great Leap Forward famine (e0 falls to 45) |
 | 1965 | +10.2 | +7.6 | +1.1 | -0.0 | Recovery; upper_sec slow (+1.1pp) |
-| 1970 | +5.2 | +5.0 | +0.1 | -0.1 | **CR begins 1966. Lower_sec slows to +5.0pp; upper_sec near-stagnant (+0.1pp)** |
+| 1970 | +5.2 | +5.0 | +0.1 | -0.1 | **1970 cohort lower sec was 1960–63 (pre-CR); slowdown reflects GLF aftermath. Upper sec 1963–66 overlaps CR onset. Lower_sec +5.0pp; upper_sec stalls (+0.1pp)** |
 | 1975 | +4.5 | +10.6 | +3.3 | +0.4 | **CR peak. Lower_sec SURGES +10.6pp — community schools. Upper_sec +3.3pp** |
 | 1980 | +6.0 | +15.0 | +8.1 | +1.0 | **CR cohort. Largest lower_sec jump: +15.0pp. Upper_sec +8.1pp (high schools rebuilt)** |
 | 1985 | +5.6 | +10.7 | +1.6 | +1.4 | Late CR / early Deng. Lower_sec +10.7pp; upper_sec only +1.6pp |
@@ -112,7 +112,7 @@ that is invisible if you look only at aggregate 'educational disruption':
 **Primary education: no scar.** Primary completion grew steadily through the entire CR
 period — from 75.1% for the 1970 cohort to 79.6% (1975)
 to 85.6% (1980). The 1980 cohort (born ~1958, primary school age
-1964–1970, entirely during CR) had HIGHER primary completion than any previous cohort.
+1964–1970, mostly during the CR) had HIGHER primary completion than any previous cohort.
 This is consistent with Gao Mobo's claim that rural schools expanded, not contracted,
 during the CR — 'barefoot teachers' (赤脚教师) were dispatched to villages that had
 never had a permanent school.
@@ -171,7 +171,7 @@ not for most Chinese people.
 | 1995–1999 | 70.8 | +2.0 | 1.545 | -0.364 |
 | 2000–2004 | 73.1 | +2.3 | 1.586 | +0.041 |
 
-Life expectancy grew by **+8.1 years** from 1965 to 1980, the exact CR period.
+Life expectancy grew by **+11.1 years** from 1965 to 1980, the exact CR period.
 This is one of the fastest e0 gains China recorded in any 15-year window outside of
 the post-famine recovery. The barefoot doctor (赤脚医生) programme, launched in 1965
 and massively scaled during the CR, trained approximately 1 million village-level
@@ -368,16 +368,17 @@ The college data does not contradict Gao — it confirms the second half of his 
 Gao explicitly acknowledges that the urban educated class was disrupted; that was the
 *point* of the CR from the perspective of its designers. His claim was never that
 university closures were good policy. It was that the standard narrative mistakes the
-experience of the 2–3% who aspired to university for the history of China, while ignoring
-the 80% who were rural peasants. The college stagnation is exactly what he describes:
-the urban elite were hit hard. The data adds precision — 2–4 million graduates not
-produced, a real and serious cost — but it falls entirely within the population Gao
-says bore the disruption.
+experience of the 2–3% who aspired to university for the history of China.
 
-The standard narrative is correct for urban educated families — the 2–3% who aspired to
-university. Gao Mobo is correct for rural peasants — the 80% who for the first time got
-a school within walking distance of their village. These are not contradictory readings
-of the same evidence; they describe different people.
+The data vindicates Gao's account as a description of what the Cultural Revolution did
+to Chinese society. China in 1966 was approximately 80% rural peasant. The history of
+Chinese society is first and foremost the history of that majority. For that majority,
+the data shows the CR era as one of the fastest periods of educational expansion, life-
+expectancy improvement, and fertility transition in Chinese history. The college
+stagnation is real and its cost was real — 2–4 million graduates not produced — but it
+describes what happened to a small urban class, not to the country.
+
+The standard narrative is not wrong. It is just not about China.
 
 ---
 
@@ -393,7 +394,8 @@ of the same evidence; they describe different people.
 ## Key References
 
 - Gao Mobo (2008). *The Battle for China's Past: Mao and the Cultural Revolution*.
-  London: Pluto Press. — Core revisionist account; rural beneficiaries of CR.
+  London: Pluto Press. — Argues the 'ten lost years' narrative is an urban-elite
+  projection; the majority-peasant experience of the CR was educational expansion.
 - Meng X, Gregory R (2002). 'The impact of interrupted education on subsequent educational
   attainment.' *Economic Development and Cultural Change* 50(4): 935–959.
   — Quantifies earnings penalties for CR-affected cohorts.
