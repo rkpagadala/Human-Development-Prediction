@@ -1,371 +1,370 @@
-# Policy-Adjusted Education Ranking
+# Policy-Adjusted Education Ranking — WCDE v3
 
-*Which countries delivered more lower-secondary education than their income and parental education predict?*
+*Supersedes prior analysis/policy_residual_ranking.md (old model included GDP as predictor — bad control: education causes income, so controlling for income blocks the education signal). This version uses country fixed effects on parental education only. Source: wcde/output/policy_residual.md.*
+
+
+*Which countries delivered more lower-secondary education than their parental education history predicts?*
 
 ## Method
 
 **Target:** lower secondary completion rate (% of 20–24 cohort) at year T
-**Predictors:** parental lower secondary completion at T−25, log GDP per capita at T
+**Predictor:** parental lower secondary completion at T−25
 **Model:** country fixed effects (within-country variation only)
 
-Fixed effects coefficients:
-- Parental lower secondary: **0.615** pp per 1 pp of parental completion
-- Log GDP: **6.864** pp per 1% GDP
+GDP is intentionally excluded as a predictor. Because education causes GDP
+(see education_outcomes.md), controlling for current income would block part of the
+education signal via the income channel — a bad control / mediation problem. Countries
+like Korea and Singapore that invested early in education, grew rich as a result, and
+continued investing would otherwise show as under-performers because the model assigns
+credit for their education gains to their income. The residual here measures policy
+contribution above the intergenerational inheritance baseline only. GDP is shown in
+the tables for context.
 
-**Residual = actual − predicted.** Positive residual = country delivered more education than its
-income and parental history predict. This is the policy signal.
+Fixed effects coefficient:
+- Parental lower secondary: **0.458** pp per 1 pp of parental completion
+- Panel: 1323 obs, 189 countries
 
-Two residuals are shown:
-- **FE residual**: within-country deviation — how much did the country outperform its own predicted trajectory?
-- **OLS residual**: cross-country deviation — how much did the country outperform the global prediction?
-The FE residual is more demanding: it asks whether the country accelerated beyond its own trend.
+**Residual = actual − predicted.** Positive residual = policy over-performance.
 
 ---
 
 ## Table 1 — Biggest Over-Performers in 2015 (FE Residual)
 
-Countries whose lower secondary completion in 2015 most exceeded what their own
-historical trajectory and income level predict.
-
 | Rank | Country | Low Sec 2015 | FE Residual | OLS Residual | GDP/capita 2015 |
 | ---: | :--- | ---: | ---: | ---: | ---: |
-| 1 | Yemen | 33.6% | +25.4 pp | +15.8 pp | $1,600 |
-| 2 | Tunisia | 52.2% | +19.6 pp | +21.1 pp | $3,860 |
-| 3 | Kiribati | 63.6% | +16.3 pp | +26.9 pp | $1,540 |
-| 4 | Haiti | 33.3% | +16.1 pp | +12.7 pp | $1,390 |
-| 5 | Algeria | 64.4% | +15.9 pp | +24.6 pp | $4,180 |
-| 6 | Morocco | 36.6% | +15.9 pp | +11.4 pp | $3,220 |
-| 7 | Nepal | 45.8% | +14.9 pp | +23.4 pp | $902 |
-| 8 | Gambia | 25.8% | +14.8 pp | +10.0 pp | $661 |
-| 9 | Cuba | 66.8% | +14.4 pp | +17.7 pp | $7,690 |
-| 10 | Comoros | 28.3% | +14.0 pp | +7.1 pp | $1,240 |
-| 11 | Nigeria | 43.9% | +12.8 pp | +15.3 pp | $2,690 |
-| 12 | El Salvador | 38.9% | +12.8 pp | +8.4 pp | $3,710 |
-| 13 | Aruba | 49.9% | +12.4 pp | +2.2 pp | $28,400 |
-| 14 | Botswana | 53.8% | +12.3 pp | +15.5 pp | $6,800 |
-| 15 | Bolivia | 52.4% | +11.9 pp | +15.5 pp | $3,040 |
-| 16 | Eswatini | 45.4% | +11.9 pp | +10.6 pp | $3,680 |
-| 17 | Indonesia | 58.1% | +11.5 pp | +21.4 pp | $3,330 |
-| 18 | Fiji | 61.3% | +11.3 pp | +13.1 pp | $5,390 |
-| 19 | Curaçao | 49.9% | +11.0 pp | -0.8 pp | $20,000 |
-| 20 | Zimbabwe | 52.6% | +10.8 pp | +14.8 pp | $1,450 |
-| 21 | Paraguay | 43.9% | +10.5 pp | +7.8 pp | $5,410 |
-| 22 | Denmark | 66.2% | +10.0 pp | -3.3 pp | $53,300 |
-| 23 | Iran | 54.6% | +9.9 pp | +13.5 pp | $4,900 |
-| 24 | South Africa | 53.6% | +9.9 pp | +9.8 pp | $5,730 |
-| 25 | India | 48.6% | +9.8 pp | +18.3 pp | $1,610 |
-| 26 | Oman | 57.6% | +9.7 pp | +12.0 pp | $16,000 |
-| 27 | Timor-Leste | 56.4% | +9.5 pp | +32.4 pp | $1,330 |
-| 28 | Saudi Arabia | 69.5% | +9.5 pp | +16.0 pp | $20,600 |
-| 29 | Thailand | 65.7% | +9.5 pp | +22.2 pp | $5,840 |
-| 30 | Guyana | 60.6% | +9.3 pp | +12.3 pp | $5,580 |
+| 1 | Maldives | 87.2% | +34.9 pp | +47.5 pp | $9,030 |
+| 2 | Cape Verde | 64.9% | +26.3 pp | +25.1 pp | $3,040 |
+| 3 | Bhutan | 66.0% | +26.1 pp | +24.1 pp | $2,750 |
+| 4 | Tunisia | 93.7% | +25.5 pp | +35.7 pp | $3,860 |
+| 5 | Yemen | 49.1% | +24.6 pp | +16.3 pp | $1,600 |
+| 6 | Sierra Leone | 48.3% | +20.2 pp | +7.8 pp | $588 |
+| 7 | Bahrain | 87.3% | +19.6 pp | +17.9 pp | $22,600 |
+| 8 | Kuwait | 87.7% | +17.9 pp | +13.4 pp | $29,900 |
+| 9 | Nepal | 65.0% | +17.8 pp | +16.1 pp | $902 |
+| 10 | Botswana | 86.1% | +16.5 pp | +25.0 pp | $6,800 |
+| 11 | Benin | 37.3% | +16.5 pp | +0.8 pp | $1,080 |
+| 12 | Viet Nam | 80.8% | +16.0 pp | +12.1 pp | $2,090 |
+| 13 | Bangladesh | 52.6% | +15.8 pp | +7.1 pp | $1,250 |
+| 14 | Thailand | 89.5% | +15.8 pp | +25.8 pp | $5,840 |
+| 15 | India | 67.1% | +14.1 pp | +10.2 pp | $1,610 |
+| 16 | Mauritius | 80.5% | +13.7 pp | +14.3 pp | $9,260 |
+| 17 | Kiribati | 82.5% | +13.6 pp | +17.6 pp | $1,540 |
+| 18 | Bolivia (Plurinational State of) | 84.4% | +13.4 pp | +16.6 pp | $3,040 |
+| 19 | Sao Tome and Principe | 39.1% | +13.4 pp | -1.1 pp | $1,580 |
+| 20 | Angola | 33.8% | +13.3 pp | -2.9 pp | $4,170 |
+| 21 | Gambia | 50.5% | +13.0 pp | +6.2 pp | $661 |
+| 22 | Guinea | 29.6% | +12.6 pp | -4.3 pp | $769 |
+| 23 | Morocco | 51.9% | +12.6 pp | +3.6 pp | $3,220 |
+| 24 | Guatemala | 49.5% | +12.5 pp | +3.1 pp | $3,990 |
+| 25 | Timor-Leste | 68.8% | +12.4 pp | +15.2 pp | $1,330 |
+| 26 | Colombia | 78.4% | +12.4 pp | +14.0 pp | $6,180 |
+| 27 | Saint Vincent and the Grenadines | 73.1% | +12.3 pp | +12.6 pp | n/a |
+| 28 | Malawi | 54.3% | +12.2 pp | +3.9 pp | $381 |
+| 29 | United Republic of Tanzania | 29.6% | +12.1 pp | -4.8 pp | $872 |
+| 30 | Myanmar | 43.5% | +11.7 pp | -1.5 pp | $1,140 |
 
 ## Table 2 — Biggest Under-Performers in 2015 (FE Residual)
 
-Countries whose lower secondary completion in 2015 most fell short of what their
-income and parental trajectory predict — structural failure or policy neglect.
-
 | Rank | Country | Low Sec 2015 | FE Residual | OLS Residual | GDP/capita 2015 |
 | ---: | :--- | ---: | ---: | ---: | ---: |
-| 1 | Mauritania | 15.9% | -72.6 pp | -79.9 pp | $1,520 |
-| 2 | Papua New Guinea | 30.6% | -61.5 pp | -67.8 pp | $2,680 |
-| 3 | Brunei | 58.1% | -35.2 pp | -51.6 pp | $31,200 |
-| 4 | Libya | 54.9% | -30.9 pp | -45.7 pp | $4,340 |
-| 5 | Seychelles | 70.2% | -28.1 pp | -36.1 pp | $14,700 |
-| 6 | Grenada | 72.2% | -26.2 pp | -31.9 pp | $9,100 |
-| 7 | Guam | 61.3% | -26.0 pp | -49.0 pp | $35,800 |
-| 8 | Antigua And Barbuda | 72.7% | -24.2 pp | -33.4 pp | $14,300 |
-| 9 | Barbados | 72.5% | -24.0 pp | -34.3 pp | $16,500 |
-| 10 | South Korea | 96.3% | -21.8 pp | -5.1 pp | $28,700 |
-| 11 | Virgin Islands (U.S.) | 72.2% | -17.2 pp | -38.0 pp | $34,800 |
-| 12 | Singapore | 96.2% | -14.8 pp | +1.2 pp | $55,600 |
-| 13 | Ireland | 88.7% | -11.5 pp | -3.5 pp | $62,000 |
-| 14 | Uzbekistan | 90.8% | -11.2 pp | -7.5 pp | $2,620 |
-| 15 | Austria | 80.0% | -8.4 pp | -13.2 pp | $44,200 |
-| 16 | Turkmenistan | 97.0% | -8.1 pp | +3.1 pp | $6,430 |
-| 17 | Georgia | 91.1% | -7.9 pp | -0.6 pp | $4,010 |
-| 18 | Bahamas | 96.5% | -7.1 pp | +0.0 pp | $31,300 |
-| 19 | Azerbaijan | 91.6% | -7.0 pp | +2.7 pp | $5,500 |
-| 20 | Mongolia | 82.5% | -6.1 pp | +6.3 pp | $3,920 |
-| 21 | New Zealand | 87.9% | -5.1 pp | -3.7 pp | $38,600 |
-| 22 | Australia | 95.5% | -5.1 pp | -8.7 pp | $56,800 |
-| 23 | Cyprus | 85.3% | -5.1 pp | +0.7 pp | $27,900 |
-| 24 | Belarus | 95.1% | -4.9 pp | +1.8 pp | $5,950 |
-| 25 | Lithuania | 79.3% | -4.9 pp | -7.9 pp | $14,300 |
-| 26 | Germany | 76.8% | -4.8 pp | -13.5 pp | $41,100 |
-| 27 | Kazakhstan | 94.1% | -4.6 pp | +1.9 pp | $10,500 |
-| 28 | Sweden | 82.3% | -4.6 pp | -10.8 pp | $51,500 |
-| 29 | Bosnia And Herzegovina | 90.5% | -4.2 pp | +14.9 pp | $4,730 |
-| 30 | Russia | 92.5% | -4.1 pp | -0.8 pp | $11,400 |
+| 1 | Malta | 99.9% | -15.5 pp | -9.2 pp | $24,900 |
+| 2 | Taiwan Province of China | 99.7% | -13.4 pp | -7.3 pp | n/a |
+| 3 | Zimbabwe | 71.2% | -11.5 pp | -12.3 pp | $1,450 |
+| 4 | Republic of Korea | 99.9% | -10.0 pp | -8.0 pp | $28,700 |
+| 5 | Finland | 99.5% | -9.8 pp | -9.7 pp | $42,800 |
+| 6 | Spain | 89.2% | -8.7 pp | -9.7 pp | $25,700 |
+| 7 | Bosnia and Herzegovina | 98.8% | -8.2 pp | -7.9 pp | $4,730 |
+| 8 | Micronesia (Federated States of) | 81.2% | -7.8 pp | -12.7 pp | n/a |
+| 9 | Cyprus | 97.4% | -7.7 pp | -5.2 pp | $27,900 |
+| 10 | Mongolia | 90.6% | -7.6 pp | -13.0 pp | $3,920 |
+| 11 | Swaziland | 46.0% | -7.6 pp | -17.2 pp | n/a |
+| 12 | Italy | 99.5% | -7.3 pp | -4.9 pp | $30,200 |
+| 13 | Greece | 93.2% | -7.3 pp | -3.3 pp | $18,100 |
+| 14 | Albania | 96.3% | -7.0 pp | -10.1 pp | $3,950 |
+| 15 | Singapore | 99.2% | -6.9 pp | -1.1 pp | $55,600 |
+| 16 | Montenegro | 96.3% | -6.5 pp | -11.2 pp | $6,520 |
+| 17 | Ireland | 98.8% | -6.5 pp | -5.2 pp | $62,000 |
+| 18 | Jamaica | 95.3% | -6.4 pp | -1.5 pp | $4,910 |
+| 19 | Serbia | 97.8% | -6.2 pp | -9.5 pp | $5,590 |
+| 20 | The former Yugoslav Republic of  | 96.0% | -6.0 pp | -4.6 pp | n/a |
+| 21 | Hong Kong Special Administrative | 97.7% | -5.9 pp | +0.9 pp | n/a |
+| 22 | Macao Special Administrative Reg | 93.4% | -5.4 pp | +3.2 pp | n/a |
+| 23 | Bahamas | 99.0% | -5.3 pp | -6.5 pp | $31,300 |
+| 24 | Chile | 96.6% | -5.1 pp | +0.1 pp | $13,600 |
+| 25 | Kenya | 62.4% | -4.8 pp | -6.2 pp | $1,340 |
+| 26 | Qatar | 53.8% | -4.8 pp | -16.8 pp | $63,000 |
+| 27 | Malaysia | 96.3% | -4.6 pp | +3.2 pp | $9,960 |
+| 28 | New Caledonia | 98.4% | -4.5 pp | +1.6 pp | n/a |
+| 29 | Republic of Moldova | 97.9% | -4.5 pp | -9.6 pp | $2,730 |
+| 30 | Curaçao | 89.5% | -4.3 pp | -9.3 pp | $20,000 |
 
 ## Table 3 — Chronic Over-Performers (Mean OLS Residual Across All Years)
 
 Countries that consistently outperformed the global cross-country prediction across all years.
-OLS residual = actual minus predicted by pooled model (income + parental education).
-This measures how much more education a country delivered than a country with the same income
-and parental history would deliver on average globally.
 
 | Rank | Country | Low Sec 2015 | Mean OLS Residual | 2015 OLS Residual | 2015 FE Residual |
 | ---: | :--- | ---: | ---: | ---: | ---: |
-| 1 | Timor-Leste | 56.4% | +23.3 pp | +32.4 pp | +9.5 pp |
-| 2 | South Korea | 96.3% | +21.2 pp | -5.1 pp | -21.8 pp |
-| 3 | Malaysia | 80.3% | +20.7 pp | +15.7 pp | -1.7 pp |
-| 4 | Singapore | 96.2% | +20.6 pp | +1.2 pp | -14.8 pp |
-| 5 | Tajikistan | 94.1% | +20.6 pp | +16.0 pp | -2.5 pp |
-| 6 | Philippines | 79.1% | +20.4 pp | +20.3 pp | +2.5 pp |
-| 7 | Bosnia And Herzegovina | 90.5% | +20.0 pp | +14.9 pp | -4.2 pp |
-| 8 | Egypt | 75.9% | +18.8 pp | +23.8 pp | +7.6 pp |
-| 9 | Mongolia | 82.5% | +14.3 pp | +6.3 pp | -6.1 pp |
-| 10 | Thailand | 65.7% | +14.1 pp | +22.2 pp | +9.5 pp |
-| 11 | St. Lucia | 72.2% | +13.7 pp | +19.6 pp | +8.8 pp |
-| 12 | North Macedonia | 78.6% | +13.7 pp | +9.4 pp | -1.8 pp |
-| 13 | Sri Lanka | 65.8% | +13.5 pp | +14.9 pp | +2.5 pp |
-| 14 | Kyrgyz Republic | 84.1% | +12.7 pp | +8.3 pp | -3.3 pp |
-| 15 | Kiribati | 63.6% | +12.7 pp | +26.9 pp | +16.3 pp |
-| 16 | Colombia | 63.9% | +12.4 pp | +16.7 pp | +6.2 pp |
-| 17 | Peru | 71.7% | +12.2 pp | +12.3 pp | +2.2 pp |
-| 18 | Hong Kong, China | 83.0% | +11.9 pp | +6.5 pp | -2.3 pp |
-| 19 | Turkmenistan | 97.0% | +11.5 pp | +3.1 pp | -8.1 pp |
-| 20 | Moldova | 76.8% | +11.3 pp | +18.0 pp | +7.0 pp |
-| 21 | Bahamas | 96.5% | +11.3 pp | +0.0 pp | -7.1 pp |
-| 22 | Ireland | 88.7% | +11.3 pp | -3.5 pp | -11.5 pp |
-| 23 | Indonesia | 58.1% | +10.8 pp | +21.4 pp | +11.5 pp |
-| 24 | Trinidad And Tobago | 70.8% | +10.7 pp | +8.7 pp | +0.5 pp |
-| 25 | Algeria | 64.4% | +10.7 pp | +24.6 pp | +15.9 pp |
-| 26 | Greece | 79.3% | +10.2 pp | +3.6 pp | -2.5 pp |
-| 27 | Azerbaijan | 91.6% | +9.7 pp | +2.7 pp | -7.0 pp |
-| 28 | Cyprus | 85.3% | +9.5 pp | +0.7 pp | -5.1 pp |
-| 29 | Saudi Arabia | 69.5% | +9.3 pp | +16.0 pp | +9.5 pp |
-| 30 | Nepal | 45.8% | +8.5 pp | +23.4 pp | +14.9 pp |
+| 1 | Macao Special Administrative Reg | 93.4% | +20.0 pp | +3.2 pp | -5.4 pp |
+| 2 | Malaysia | 96.3% | +19.6 pp | +3.2 pp | -4.6 pp |
+| 3 | Malta | 99.9% | +19.2 pp | -9.2 pp | -15.5 pp |
+| 4 | Portugal | 90.8% | +18.7 pp | +18.5 pp | +8.1 pp |
+| 5 | Taiwan Province of China | 99.7% | +18.6 pp | -7.3 pp | -13.4 pp |
+| 6 | Turkey | 92.8% | +18.1 pp | +17.3 pp | +9.2 pp |
+| 7 | Hong Kong Special Administrative | 97.7% | +17.9 pp | +0.9 pp | -5.9 pp |
+| 8 | Algeria | 82.0% | +17.9 pp | +10.2 pp | +2.3 pp |
+| 9 | Thailand | 89.5% | +17.1 pp | +25.8 pp | +15.8 pp |
+| 10 | Trinidad and Tobago | 97.5% | +16.8 pp | +8.1 pp | +1.0 pp |
+| 11 | China | 94.6% | +16.7 pp | +5.9 pp | -1.4 pp |
+| 12 | Botswana | 86.1% | +16.7 pp | +25.0 pp | +16.5 pp |
+| 13 | Tunisia | 93.7% | +16.5 pp | +35.7 pp | +25.5 pp |
+| 14 | Maldives | 87.2% | +16.2 pp | +47.5 pp | +34.9 pp |
+| 15 | Oman | 82.5% | +15.9 pp | +18.8 pp | +10.8 pp |
+| 16 | New Caledonia | 98.4% | +15.6 pp | +1.6 pp | -4.5 pp |
+| 17 | Fiji | 88.2% | +15.6 pp | +3.8 pp | -1.9 pp |
+| 18 | Samoa | 95.3% | +15.6 pp | +15.7 pp | +8.7 pp |
+| 19 | Singapore | 99.2% | +15.6 pp | -1.1 pp | -6.9 pp |
+| 20 | Jamaica | 95.3% | +14.9 pp | -1.5 pp | -6.4 pp |
+| 21 | Chile | 96.6% | +14.6 pp | +0.1 pp | -5.1 pp |
+| 22 | Mexico | 86.1% | +14.6 pp | +6.7 pp | +1.8 pp |
+| 23 | Reunion | 88.9% | +14.5 pp | +9.1 pp | +2.7 pp |
+| 24 | Polynesia | 95.7% | +14.2 pp | +7.9 pp | +2.3 pp |
+| 25 | Greece | 93.2% | +14.2 pp | -3.3 pp | -7.3 pp |
+| 26 | South Africa | 86.5% | +13.4 pp | +6.6 pp | +1.3 pp |
+| 27 | Tonga | 95.3% | +13.1 pp | -0.6 pp | -3.9 pp |
+| 28 | Saint Lucia | 83.1% | +13.1 pp | +17.4 pp | +10.6 pp |
+| 29 | Iran (Islamic Republic of) | 82.5% | +12.8 pp | +15.7 pp | +10.0 pp |
+| 30 | French Polynesia | 96.2% | +12.6 pp | +5.9 pp | +0.8 pp |
 
-## Table 4 — Chronic Under-Performers (Mean OLS Residual Across All Years)
-
-Countries that consistently delivered less education than their income and parental history predict.
+## Table 4 — Chronic Under-Performers (Mean OLS Residual)
 
 | Rank | Country | Low Sec 2015 | Mean OLS Residual | 2015 OLS Residual | 2015 FE Residual |
 | ---: | :--- | ---: | ---: | ---: | ---: |
-| 1 | Djibouti | 20.5% | -77.9 pp | -77.9 pp | +0.0 pp |
-| 2 | Guam | 61.3% | -23.1 pp | -49.0 pp | -26.0 pp |
-| 3 | Virgin Islands (U.S.) | 72.2% | -20.4 pp | -38.0 pp | -17.2 pp |
-| 4 | Gabon | 20.6% | -19.0 pp | -11.5 pp | +8.3 pp |
-| 5 | Qatar | 43.5% | -18.9 pp | -17.4 pp | +2.2 pp |
-| 6 | Angola | 6.1% | -18.8 pp | -16.7 pp | +1.5 pp |
-| 7 | Kuwait | 36.9% | -18.7 pp | -15.9 pp | +4.0 pp |
-| 8 | Brunei | 58.1% | -16.2 pp | -51.6 pp | -35.2 pp |
-| 9 | Maldives | 18.7% | -14.9 pp | -8.0 pp | +6.5 pp |
-| 10 | Libya | 54.9% | -13.9 pp | -45.7 pp | -30.9 pp |
-| 11 | Iceland | 60.3% | -13.1 pp | -7.2 pp | +6.5 pp |
-| 12 | Cote D'Ivoire | 15.1% | -12.7 pp | -6.4 pp | +6.6 pp |
-| 13 | Equatorial Guinea | 20.7% | -12.7 pp | -9.9 pp | +0.1 pp |
-| 14 | Denmark | 66.2% | -12.2 pp | -3.3 pp | +10.0 pp |
-| 15 | Norway | 69.8% | -11.4 pp | -15.9 pp | -3.1 pp |
-| 16 | Curaçao | 49.9% | -11.0 pp | -0.8 pp | +11.0 pp |
-| 17 | Niger | 2.9% | -10.9 pp | -9.8 pp | +1.0 pp |
-| 18 | Barbados | 72.5% | -10.4 pp | -34.3 pp | -24.0 pp |
-| 19 | Finland | 68.0% | -10.4 pp | -8.1 pp | +3.8 pp |
-| 20 | Tanzania | 8.7% | -10.2 pp | -8.1 pp | +1.4 pp |
-| 21 | Chad | 7.9% | -10.0 pp | -6.9 pp | +2.2 pp |
-| 22 | Senegal | 15.9% | -9.9 pp | -4.3 pp | +5.7 pp |
-| 23 | Benin | 13.6% | -9.8 pp | -4.5 pp | +5.2 pp |
-| 24 | Uruguay | 38.1% | -9.8 pp | -9.2 pp | +1.2 pp |
-| 25 | Congo, Rep. | 20.3% | -9.6 pp | -12.7 pp | -1.6 pp |
-| 26 | Antigua And Barbuda | 72.7% | -9.5 pp | -33.4 pp | -24.2 pp |
-| 27 | Mali | 9.5% | -9.4 pp | -6.1 pp | +3.0 pp |
-| 28 | Cape Verde | 18.7% | -9.3 pp | -5.1 pp | +3.3 pp |
-| 29 | Burkina Faso | 8.3% | -9.3 pp | -6.0 pp | +2.5 pp |
-| 30 | Yemen | 33.6% | -8.9 pp | +15.8 pp | +25.4 pp |
+| 1 | Niger | 8.9% | -22.6 pp | -21.0 pp | +2.4 pp |
+| 2 | Burkina Faso | 10.3% | -20.9 pp | -23.0 pp | -0.5 pp |
+| 3 | Central African Republic | 15.5% | -20.6 pp | -19.5 pp | +1.8 pp |
+| 4 | Madagascar | 23.1% | -20.1 pp | -18.3 pp | +3.6 pp |
+| 5 | Burundi | 14.2% | -19.6 pp | -16.4 pp | +4.2 pp |
+| 6 | Ethiopia | 15.2% | -19.4 pp | -16.2 pp | +4.3 pp |
+| 7 | Afghanistan | 22.4% | -19.0 pp | -11.6 pp | +8.5 pp |
+| 8 | Mali | 24.0% | -18.1 pp | -8.0 pp | +10.7 pp |
+| 9 | Somalia | 20.0% | -18.0 pp | -21.8 pp | -0.8 pp |
+| 10 | Senegal | 27.1% | -17.6 pp | -10.7 pp | +8.3 pp |
+| 11 | Rwanda | 22.5% | -17.4 pp | -8.8 pp | +9.7 pp |
+| 12 | Chad | 21.4% | -17.1 pp | -11.0 pp | +7.2 pp |
+| 13 | South Sudan | 21.2% | -16.9 pp | -15.2 pp | +3.7 pp |
+| 14 | Guinea | 29.6% | -16.1 pp | -4.3 pp | +12.6 pp |
+| 15 | United Republic of Tanzania | 29.6% | -15.8 pp | -4.8 pp | +12.1 pp |
+| 16 | Mozambique | 26.0% | -15.3 pp | -8.7 pp | +8.2 pp |
+| 17 | Liberia | 30.3% | -14.5 pp | -21.9 pp | -4.0 pp |
+| 18 | Benin | 37.3% | -14.2 pp | +0.8 pp | +16.5 pp |
+| 19 | Angola | 33.8% | -14.1 pp | -2.9 pp | +13.3 pp |
+| 20 | Cote d'Ivoire | 31.6% | -13.6 pp | -7.4 pp | +8.4 pp |
+| 21 | Equatorial Guinea | 36.5% | -13.5 pp | -12.6 pp | +3.9 pp |
+| 22 | Togo | 35.5% | -13.4 pp | -3.7 pp | +11.2 pp |
+| 23 | Uganda | 32.6% | -12.5 pp | -5.8 pp | +8.7 pp |
+| 24 | Sao Tome and Principe | 39.1% | -11.9 pp | -1.1 pp | +13.4 pp |
+| 25 | Zambia | 45.8% | -11.6 pp | -11.4 pp | +2.2 pp |
+| 26 | Guinea-Bissau | 28.0% | -11.1 pp | -11.1 pp | +2.8 pp |
+| 27 | Myanmar | 43.5% | -11.0 pp | -1.5 pp | +11.7 pp |
+| 28 | Iraq | 43.5% | -9.9 pp | -14.5 pp | -0.0 pp |
+| 29 | Sierra Leone | 48.3% | -9.8 pp | +7.8 pp | +20.2 pp |
+| 30 | Germany | 98.9% | -9.5 pp | -7.8 pp | +1.7 pp |
 
 ## Table 5 — Full Country Ranking by 2015 FE Residual
 
 | Rank | Country | Low Sec 2015 | FE Residual | OLS Residual |
 | ---: | :--- | ---: | ---: | ---: |
-| 1 | Yemen | 33.6% | +25.4 pp | +15.8 pp |
-| 2 | Tunisia | 52.2% | +19.6 pp | +21.1 pp |
-| 3 | Kiribati | 63.6% | +16.3 pp | +26.9 pp |
-| 4 | Haiti | 33.3% | +16.1 pp | +12.7 pp |
-| 5 | Algeria | 64.4% | +15.9 pp | +24.6 pp |
-| 6 | Morocco | 36.6% | +15.9 pp | +11.4 pp |
-| 7 | Nepal | 45.8% | +14.9 pp | +23.4 pp |
-| 8 | Gambia | 25.8% | +14.8 pp | +10.0 pp |
-| 9 | Cuba | 66.8% | +14.4 pp | +17.7 pp |
-| 10 | Comoros | 28.3% | +14.0 pp | +7.1 pp |
-| 11 | Nigeria | 43.9% | +12.8 pp | +15.3 pp |
-| 12 | El Salvador | 38.9% | +12.8 pp | +8.4 pp |
-| 13 | Aruba | 49.9% | +12.4 pp | +2.2 pp |
-| 14 | Botswana | 53.8% | +12.3 pp | +15.5 pp |
-| 15 | Bolivia | 52.4% | +11.9 pp | +15.5 pp |
-| 16 | Eswatini | 45.4% | +11.9 pp | +10.6 pp |
-| 17 | Indonesia | 58.1% | +11.5 pp | +21.4 pp |
-| 18 | Fiji | 61.3% | +11.3 pp | +13.1 pp |
-| 19 | Curaçao | 49.9% | +11.0 pp | -0.8 pp |
-| 20 | Zimbabwe | 52.6% | +10.8 pp | +14.8 pp |
-| 21 | Paraguay | 43.9% | +10.5 pp | +7.8 pp |
-| 22 | Denmark | 66.2% | +10.0 pp | -3.3 pp |
-| 23 | Iran | 54.6% | +9.9 pp | +13.5 pp |
-| 24 | South Africa | 53.6% | +9.9 pp | +9.8 pp |
-| 25 | India | 48.6% | +9.8 pp | +18.3 pp |
-| 26 | Oman | 57.6% | +9.7 pp | +12.0 pp |
-| 27 | Timor-Leste | 56.4% | +9.5 pp | +32.4 pp |
-| 28 | Saudi Arabia | 69.5% | +9.5 pp | +16.0 pp |
-| 29 | Thailand | 65.7% | +9.5 pp | +22.2 pp |
-| 30 | Guyana | 60.6% | +9.3 pp | +12.3 pp |
-| 31 | Sudan | 36.4% | +9.3 pp | +10.5 pp |
-| 32 | Pakistan | 36.7% | +9.2 pp | +10.9 pp |
-| 33 | Bangladesh | 29.3% | +9.1 pp | +8.0 pp |
-| 34 | Portugal | 61.4% | +9.1 pp | +8.9 pp |
-| 35 | Brazil | 56.2% | +8.9 pp | +10.9 pp |
-| 36 | Guatemala | 28.4% | +8.9 pp | +0.0 pp |
-| 37 | St. Lucia | 72.2% | +8.8 pp | +19.6 pp |
-| 38 | Central African Republic | 12.9% | +8.8 pp | +0.7 pp |
-| 39 | Cameroon | 29.8% | +8.4 pp | +5.8 pp |
-| 40 | Gabon | 20.6% | +8.3 pp | -11.5 pp |
-| 41 | Belize | 49.9% | +8.3 pp | +9.5 pp |
-| 42 | Solomon Islands | 30.6% | +8.2 pp | +3.4 pp |
-| 43 | Jamaica | 46.5% | +7.8 pp | +4.0 pp |
-| 44 | Spain | 66.7% | +7.6 pp | +4.4 pp |
-| 45 | Egypt | 75.9% | +7.6 pp | +23.8 pp |
-| 46 | Samoa | 43.8% | +7.5 pp | +4.0 pp |
-| 47 | Guinea | 19.0% | +7.1 pp | +1.9 pp |
-| 48 | Kenya | 34.4% | +7.0 pp | +7.8 pp |
-| 49 | Moldova | 76.8% | +7.0 pp | +18.0 pp |
-| 50 | Malawi | 19.7% | +6.9 pp | +5.2 pp |
-| 51 | China | 53.6% | +6.8 pp | +13.1 pp |
-| 52 | Vanuatu | 26.1% | +6.8 pp | -2.2 pp |
-| 53 | Argentina | 60.3% | +6.7 pp | +7.2 pp |
-| 54 | Tonga | 45.5% | +6.7 pp | +5.4 pp |
-| 55 | Lebanon | 57.0% | +6.6 pp | +9.7 pp |
-| 56 | Cote D'Ivoire | 15.1% | +6.6 pp | -6.4 pp |
-| 57 | Maldives | 18.7% | +6.5 pp | -8.0 pp |
-| 58 | St. Vincent And The Grenadines | 54.9% | +6.5 pp | +9.0 pp |
-| 59 | Iceland | 60.3% | +6.5 pp | -7.2 pp |
-| 60 | Lao | 37.0% | +6.5 pp | +8.1 pp |
-| 61 | Colombia | 63.9% | +6.2 pp | +16.7 pp |
-| 62 | Mauritius | 57.6% | +5.9 pp | +10.7 pp |
-| 63 | Togo | 19.6% | +5.9 pp | +1.6 pp |
-| 64 | Dominican Republic | 54.6% | +5.8 pp | +11.3 pp |
-| 65 | Ukraine | 90.5% | +5.7 pp | +12.4 pp |
-| 66 | Honduras | 23.2% | +5.7 pp | -1.9 pp |
-| 67 | Senegal | 15.9% | +5.7 pp | -4.3 pp |
-| 68 | Belgium | 74.8% | +5.4 pp | +1.3 pp |
-| 69 | Costa Rica | 49.0% | +5.4 pp | +1.1 pp |
-| 70 | Burundi | 7.0% | +5.4 pp | -3.2 pp |
-| 71 | Congo, Dem. Rep. | 24.8% | +5.3 pp | +4.6 pp |
-| 72 | United Arab Emirates | 63.7% | +5.2 pp | -4.4 pp |
-| 73 | Benin | 13.6% | +5.2 pp | -4.5 pp |
-| 74 | South Sudan | 22.3% | +5.2 pp | +4.3 pp |
-| 75 | Nicaragua | 37.6% | +5.1 pp | +5.8 pp |
-| 76 | Czech Republic | 80.6% | +5.0 pp | -0.4 pp |
-| 77 | Bahrain | 58.9% | +5.0 pp | +2.9 pp |
-| 78 | Mexico | 46.5% | +4.7 pp | +3.0 pp |
-| 79 | Ecuador | 54.7% | +4.7 pp | +9.1 pp |
-| 80 | Bhutan | 21.6% | +4.4 pp | -0.6 pp |
-| 81 | Guinea-Bissau | 13.9% | +4.2 pp | -2.0 pp |
-| 82 | Sierra Leone | 17.7% | +4.2 pp | -0.6 pp |
-| 83 | Chile | 71.4% | +4.2 pp | +8.6 pp |
-| 84 | Rwanda | 12.7% | +4.1 pp | -2.1 pp |
-| 85 | Namibia | 32.2% | +4.1 pp | +0.6 pp |
-| 86 | Kuwait | 36.9% | +4.0 pp | -15.9 pp |
-| 87 | Finland | 68.0% | +3.8 pp | -8.1 pp |
-| 88 | Israel | 75.1% | +3.7 pp | +5.7 pp |
-| 89 | Afghanistan | 18.4% | +3.6 pp | +3.1 pp |
-| 90 | Myanmar | 31.0% | +3.5 pp | +7.4 pp |
-| 91 | Cape Verde | 18.7% | +3.3 pp | -5.1 pp |
-| 92 | Ghana | 30.2% | +3.3 pp | +1.6 pp |
-| 93 | Vietnam | 36.4% | +3.2 pp | +4.6 pp |
-| 94 | Cambodia | 19.3% | +3.1 pp | +1.1 pp |
-| 95 | Uganda | 13.5% | +3.0 pp | -3.8 pp |
-| 96 | Mali | 9.5% | +3.0 pp | -6.1 pp |
-| 97 | Ethiopia | 12.4% | +2.7 pp | -2.1 pp |
-| 98 | Canada | 83.7% | +2.6 pp | -4.7 pp |
-| 99 | Lesotho | 24.1% | +2.5 pp | -0.1 pp |
-| 100 | Sri Lanka | 65.8% | +2.5 pp | +14.9 pp |
-| 101 | Turkey | 58.8% | +2.5 pp | +7.3 pp |
-| 102 | Burkina Faso | 8.3% | +2.5 pp | -6.0 pp |
-| 103 | Suriname | 39.9% | +2.5 pp | -4.0 pp |
-| 104 | Philippines | 79.1% | +2.5 pp | +20.3 pp |
-| 105 | Malta | 71.2% | +2.2 pp | +7.6 pp |
-| 106 | Chad | 7.9% | +2.2 pp | -6.9 pp |
-| 107 | Qatar | 43.5% | +2.2 pp | -17.4 pp |
-| 108 | Peru | 71.7% | +2.2 pp | +12.3 pp |
-| 109 | Liberia | 20.6% | +1.7 pp | -2.0 pp |
-| 110 | Estonia | 65.8% | +1.7 pp | -6.3 pp |
-| 111 | Serbia | 81.3% | +1.7 pp | +5.4 pp |
-| 112 | Zambia | 28.7% | +1.5 pp | -3.1 pp |
-| 113 | Angola | 6.1% | +1.5 pp | -16.7 pp |
-| 114 | Mozambique | 11.3% | +1.5 pp | -3.0 pp |
-| 115 | Tanzania | 8.7% | +1.4 pp | -8.1 pp |
-| 116 | Madagascar | 8.5% | +1.4 pp | -7.8 pp |
-| 117 | Hungary | 78.2% | +1.3 pp | +2.2 pp |
-| 118 | Uruguay | 38.1% | +1.2 pp | -9.2 pp |
-| 119 | Sao Tome And Principe | 11.9% | +1.2 pp | -7.4 pp |
-| 120 | Niger | 2.9% | +1.0 pp | -9.8 pp |
-| 121 | Panama | 61.4% | +0.8 pp | +4.6 pp |
-| 122 | Romania | 71.0% | +0.8 pp | +3.7 pp |
-| 123 | Albania | 58.8% | +0.6 pp | +4.2 pp |
-| 124 | Trinidad And Tobago | 70.8% | +0.5 pp | +8.7 pp |
-| 125 | United Kingdom | 81.0% | +0.5 pp | -3.2 pp |
-| 126 | Poland | 81.0% | +0.3 pp | +0.4 pp |
-| 127 | Montenegro | 81.2% | +0.2 pp | +2.0 pp |
-| 128 | Equatorial Guinea | 20.7% | +0.1 pp | -9.9 pp |
-| 129 | Luxembourg | 77.5% | +0.0 pp | -6.0 pp |
-| 130 | Djibouti | 20.5% | +0.0 pp | -77.9 pp |
-| 131 | Somalia | 12.7% | +0.0 pp | -2.0 pp |
-| 132 | Italy | 72.7% | -0.5 pp | -2.1 pp |
-| 133 | Slovak Republic | 83.4% | -0.8 pp | -3.9 pp |
-| 134 | Croatia | 84.5% | -0.8 pp | -0.1 pp |
-| 135 | France | 80.7% | -1.1 pp | -0.8 pp |
-| 136 | Micronesia, Fed. Sts. | 55.6% | -1.1 pp | +2.7 pp |
-| 137 | Japan | 93.6% | -1.1 pp | -4.7 pp |
-| 138 | Jordan | 58.8% | -1.2 pp | +3.2 pp |
-| 139 | Bulgaria | 74.9% | -1.2 pp | +0.5 pp |
-| 140 | Congo, Rep. | 20.3% | -1.6 pp | -12.7 pp |
-| 141 | Netherlands | 76.9% | -1.7 pp | -4.9 pp |
-| 142 | Malaysia | 80.3% | -1.7 pp | +15.7 pp |
-| 143 | North Macedonia | 78.6% | -1.8 pp | +9.4 pp |
-| 144 | Puerto Rico | 87.7% | -1.9 pp | +2.1 pp |
-| 145 | Hong Kong, China | 83.0% | -2.3 pp | +6.5 pp |
-| 146 | Greece | 79.3% | -2.5 pp | +3.6 pp |
-| 147 | Tajikistan | 94.1% | -2.5 pp | +16.0 pp |
-| 148 | Slovenia | 86.5% | -2.8 pp | -4.6 pp |
-| 149 | Norway | 69.8% | -3.1 pp | -15.9 pp |
-| 150 | Switzerland | 82.9% | -3.2 pp | -11.3 pp |
-| 151 | Kyrgyz Republic | 84.1% | -3.3 pp | +8.3 pp |
-| 152 | United States | 89.1% | -3.3 pp | -11.5 pp |
-| 153 | Armenia | 89.7% | -3.8 pp | +2.4 pp |
-| 154 | Latvia | 74.7% | -3.8 pp | -8.2 pp |
-| 155 | Iraq | 28.1% | -3.9 pp | -12.5 pp |
-| 156 | Russia | 92.5% | -4.1 pp | -0.8 pp |
-| 157 | Bosnia And Herzegovina | 90.5% | -4.2 pp | +14.9 pp |
-| 158 | Sweden | 82.3% | -4.6 pp | -10.8 pp |
-| 159 | Kazakhstan | 94.1% | -4.6 pp | +1.9 pp |
-| 160 | Germany | 76.8% | -4.8 pp | -13.5 pp |
-| 161 | Lithuania | 79.3% | -4.9 pp | -7.9 pp |
-| 162 | Belarus | 95.1% | -4.9 pp | +1.8 pp |
-| 163 | Cyprus | 85.3% | -5.1 pp | +0.7 pp |
-| 164 | Australia | 95.5% | -5.1 pp | -8.7 pp |
-| 165 | New Zealand | 87.9% | -5.1 pp | -3.7 pp |
-| 166 | Mongolia | 82.5% | -6.1 pp | +6.3 pp |
-| 167 | Azerbaijan | 91.6% | -7.0 pp | +2.7 pp |
-| 168 | Bahamas | 96.5% | -7.1 pp | +0.0 pp |
-| 169 | Georgia | 91.1% | -7.9 pp | -0.6 pp |
-| 170 | Turkmenistan | 97.0% | -8.1 pp | +3.1 pp |
-| 171 | Austria | 80.0% | -8.4 pp | -13.2 pp |
-| 172 | Uzbekistan | 90.8% | -11.2 pp | -7.5 pp |
-| 173 | Ireland | 88.7% | -11.5 pp | -3.5 pp |
-| 174 | Singapore | 96.2% | -14.8 pp | +1.2 pp |
-| 175 | Virgin Islands (U.S.) | 72.2% | -17.2 pp | -38.0 pp |
-| 176 | South Korea | 96.3% | -21.8 pp | -5.1 pp |
-| 177 | Barbados | 72.5% | -24.0 pp | -34.3 pp |
-| 178 | Antigua And Barbuda | 72.7% | -24.2 pp | -33.4 pp |
-| 179 | Guam | 61.3% | -26.0 pp | -49.0 pp |
-| 180 | Grenada | 72.2% | -26.2 pp | -31.9 pp |
-| 181 | Seychelles | 70.2% | -28.1 pp | -36.1 pp |
-| 182 | Libya | 54.9% | -30.9 pp | -45.7 pp |
-| 183 | Brunei | 58.1% | -35.2 pp | -51.6 pp |
-| 184 | Papua New Guinea | 30.6% | -61.5 pp | -67.8 pp |
-| 185 | Mauritania | 15.9% | -72.6 pp | -79.9 pp |
+| 1 | Maldives | 87.2% | +34.9 pp | +47.5 pp |
+| 2 | Cape Verde | 64.9% | +26.3 pp | +25.1 pp |
+| 3 | Bhutan | 66.0% | +26.1 pp | +24.1 pp |
+| 4 | Tunisia | 93.7% | +25.5 pp | +35.7 pp |
+| 5 | Yemen | 49.1% | +24.6 pp | +16.3 pp |
+| 6 | Sierra Leone | 48.3% | +20.2 pp | +7.8 pp |
+| 7 | Bahrain | 87.3% | +19.6 pp | +17.9 pp |
+| 8 | Kuwait | 87.7% | +17.9 pp | +13.4 pp |
+| 9 | Nepal | 65.0% | +17.8 pp | +16.1 pp |
+| 10 | Botswana | 86.1% | +16.5 pp | +25.0 pp |
+| 11 | Benin | 37.3% | +16.5 pp | +0.8 pp |
+| 12 | Viet Nam | 80.8% | +16.0 pp | +12.1 pp |
+| 13 | Bangladesh | 52.6% | +15.8 pp | +7.1 pp |
+| 14 | Thailand | 89.5% | +15.8 pp | +25.8 pp |
+| 15 | India | 67.1% | +14.1 pp | +10.2 pp |
+| 16 | Mauritius | 80.5% | +13.7 pp | +14.3 pp |
+| 17 | Kiribati | 82.5% | +13.6 pp | +17.6 pp |
+| 18 | Bolivia (Plurinational State of) | 84.4% | +13.4 pp | +16.6 pp |
+| 19 | Sao Tome and Principe | 39.1% | +13.4 pp | -1.1 pp |
+| 20 | Angola | 33.8% | +13.3 pp | -2.9 pp |
+| 21 | Gambia | 50.5% | +13.0 pp | +6.2 pp |
+| 22 | Guinea | 29.6% | +12.6 pp | -4.3 pp |
+| 23 | Morocco | 51.9% | +12.6 pp | +3.6 pp |
+| 24 | Guatemala | 49.5% | +12.5 pp | +3.1 pp |
+| 25 | Timor-Leste | 68.8% | +12.4 pp | +15.2 pp |
+| 26 | Colombia | 78.4% | +12.4 pp | +14.0 pp |
+| 27 | Saint Vincent and the Grenadines | 73.1% | +12.3 pp | +12.6 pp |
+| 28 | Malawi | 54.3% | +12.2 pp | +3.9 pp |
+| 29 | United Republic of Tanzania | 29.6% | +12.1 pp | -4.8 pp |
+| 30 | Myanmar | 43.5% | +11.7 pp | -1.5 pp |
+| 31 | Costa Rica | 67.9% | +11.2 pp | +5.4 pp |
+| 32 | Togo | 35.5% | +11.2 pp | -3.7 pp |
+| 33 | Oman | 82.5% | +10.8 pp | +18.8 pp |
+| 34 | Mali | 24.0% | +10.7 pp | -8.0 pp |
+| 35 | United Arab Emirates | 87.8% | +10.7 pp | +8.0 pp |
+| 36 | Paraguay | 64.1% | +10.7 pp | +7.3 pp |
+| 37 | Saint Lucia | 83.1% | +10.6 pp | +17.4 pp |
+| 38 | Cameroon | 52.9% | +10.6 pp | +2.7 pp |
+| 39 | Comoros | 51.1% | +10.5 pp | +3.4 pp |
+| 40 | Saudi Arabia | 88.0% | +10.1 pp | +13.8 pp |
+| 41 | Iran (Islamic Republic of) | 82.5% | +10.0 pp | +15.7 pp |
+| 42 | Rwanda | 22.5% | +9.7 pp | -8.8 pp |
+| 43 | Lao People's Democratic Republic | 41.7% | +9.6 pp | -2.9 pp |
+| 44 | Honduras | 43.6% | +9.5 pp | -2.3 pp |
+| 45 | Turkey | 92.8% | +9.2 pp | +17.3 pp |
+| 46 | Belize | 59.9% | +8.7 pp | +2.2 pp |
+| 47 | Samoa | 95.3% | +8.7 pp | +15.7 pp |
+| 48 | Uganda | 32.6% | +8.7 pp | -5.8 pp |
+| 49 | Brazil | 79.0% | +8.5 pp | +9.3 pp |
+| 50 | Afghanistan | 22.4% | +8.5 pp | -11.6 pp |
+| 51 | Cote d'Ivoire | 31.6% | +8.4 pp | -7.4 pp |
+| 52 | Senegal | 27.1% | +8.3 pp | -10.7 pp |
+| 53 | Mozambique | 26.0% | +8.2 pp | -8.7 pp |
+| 54 | Portugal | 90.8% | +8.1 pp | +18.5 pp |
+| 55 | Egypt | 76.8% | +7.9 pp | +10.3 pp |
+| 56 | Vanuatu | 48.1% | +7.8 pp | -2.0 pp |
+| 57 | Pakistan | 47.9% | +7.7 pp | -1.6 pp |
+| 58 | Indonesia | 76.6% | +7.3 pp | +10.6 pp |
+| 59 | Chad | 21.4% | +7.2 pp | -11.0 pp |
+| 60 | Lesotho | 42.8% | +7.1 pp | -3.4 pp |
+| 61 | Solomon Islands | 49.7% | +6.8 pp | -0.4 pp |
+| 62 | El Salvador | 65.2% | +6.7 pp | +4.2 pp |
+| 63 | Nigeria | 59.9% | +6.5 pp | +3.6 pp |
+| 64 | Nicaragua | 49.3% | +6.4 pp | -3.6 pp |
+| 65 | Sri Lanka | 90.7% | +5.5 pp | +8.0 pp |
+| 66 | Syrian Arab Republic | 46.6% | +5.0 pp | -7.3 pp |
+| 67 | Dominican Republic | 78.4% | +4.6 pp | +5.4 pp |
+| 68 | Ecuador | 72.1% | +4.5 pp | +2.3 pp |
+| 69 | Luxembourg | 98.2% | +4.4 pp | +3.1 pp |
+| 70 | Ethiopia | 15.2% | +4.3 pp | -16.2 pp |
+| 71 | Burundi | 14.2% | +4.2 pp | -16.4 pp |
+| 72 | Peru | 87.0% | +4.2 pp | +5.7 pp |
+| 73 | Argentina | 73.0% | +4.0 pp | +1.0 pp |
+| 74 | Jordan | 76.5% | +4.0 pp | -2.6 pp |
+| 75 | Equatorial Guinea | 36.5% | +3.9 pp | -12.6 pp |
+| 76 | Occupied Palestinian Territory | 90.8% | +3.8 pp | +8.0 pp |
+| 77 | Haiti | 45.5% | +3.8 pp | -3.8 pp |
+| 78 | South Sudan | 21.2% | +3.7 pp | -15.2 pp |
+| 79 | Madagascar | 23.1% | +3.6 pp | -18.3 pp |
+| 80 | Ghana | 60.9% | +3.0 pp | -5.8 pp |
+| 81 | Guyana | 91.0% | +2.9 pp | +2.8 pp |
+| 82 | Cambodia | 38.6% | +2.8 pp | -7.8 pp |
+| 83 | Guinea-Bissau | 28.0% | +2.8 pp | -11.1 pp |
+| 84 | Reunion | 88.9% | +2.7 pp | +9.1 pp |
+| 85 | Niger | 8.9% | +2.4 pp | -21.0 pp |
+| 86 | Polynesia | 95.7% | +2.3 pp | +7.9 pp |
+| 87 | Panama | 76.9% | +2.3 pp | -0.4 pp |
+| 88 | Algeria | 82.0% | +2.3 pp | +10.2 pp |
+| 89 | Zambia | 45.8% | +2.2 pp | -11.4 pp |
+| 90 | Democratic Republic of the Congo | 59.6% | +1.9 pp | -5.5 pp |
+| 91 | Mexico | 86.1% | +1.8 pp | +6.7 pp |
+| 92 | Central African Republic | 15.5% | +1.8 pp | -19.5 pp |
+| 93 | Germany | 98.9% | +1.7 pp | -7.8 pp |
+| 94 | Micronesia | 81.8% | +1.6 pp | +1.1 pp |
+| 95 | Venezuela (Bolivarian Republic o | 87.3% | +1.5 pp | +3.2 pp |
+| 96 | Uruguay | 72.5% | +1.4 pp | -3.8 pp |
+| 97 | Suriname | 82.2% | +1.4 pp | -0.6 pp |
+| 98 | United States of America | 98.0% | +1.3 pp | -7.3 pp |
+| 99 | South Africa | 86.5% | +1.3 pp | +6.6 pp |
+| 100 | Switzerland | 97.8% | +1.1 pp | -6.2 pp |
+| 101 | French Guiana | 64.9% | +1.1 pp | -11.1 pp |
+| 102 | Trinidad and Tobago | 97.5% | +1.0 pp | +8.1 pp |
+| 103 | French Polynesia | 96.2% | +0.8 pp | +5.9 pp |
+| 104 | Denmark | 100.0% | +0.6 pp | -8.7 pp |
+| 105 | Norway | 99.9% | +0.6 pp | -8.9 pp |
+| 106 | Sudan | 38.6% | +0.5 pp | -10.4 pp |
+| 107 | United Kingdom of Great Britain  | 100.0% | +0.1 pp | -9.1 pp |
+| 108 | Slovakia | 100.0% | +0.1 pp | -9.3 pp |
+| 109 | Czech Republic | 99.5% | +0.1 pp | -9.3 pp |
+| 110 | Iceland | 100.0% | +0.0 pp | -9.4 pp |
+| 111 | Iraq | 43.5% | -0.0 pp | -14.5 pp |
+| 112 | Hungary | 99.4% | -0.2 pp | -8.5 pp |
+| 113 | Israel | 90.2% | -0.3 pp | -5.4 pp |
+| 114 | Lebanon | 85.0% | -0.3 pp | +3.4 pp |
+| 115 | Burkina Faso | 10.3% | -0.5 pp | -23.0 pp |
+| 116 | Poland | 99.1% | -0.6 pp | -10.0 pp |
+| 117 | Canada | 99.2% | -0.7 pp | -7.0 pp |
+| 118 | Aruba | 80.4% | -0.8 pp | -4.3 pp |
+| 119 | Somalia | 20.0% | -0.8 pp | -21.8 pp |
+| 120 | Philippines | 75.3% | -1.0 pp | -2.9 pp |
+| 121 | Georgia | 98.6% | -1.0 pp | -9.8 pp |
+| 122 | Japan | 99.9% | -1.1 pp | -9.4 pp |
+| 123 | Armenia | 99.1% | -1.2 pp | -9.5 pp |
+| 124 | Latvia | 97.7% | -1.4 pp | -11.1 pp |
+| 125 | China | 94.6% | -1.4 pp | +5.9 pp |
+| 126 | Estonia | 98.3% | -1.5 pp | -10.5 pp |
+| 127 | Melanesia | 72.3% | -1.7 pp | -2.6 pp |
+| 128 | Turkmenistan | 99.9% | -1.7 pp | -8.8 pp |
+| 129 | Fiji | 88.2% | -1.9 pp | +3.8 pp |
+| 130 | Slovenia | 99.7% | -2.0 pp | -8.7 pp |
+| 131 | Netherlands | 95.1% | -2.1 pp | -8.2 pp |
+| 132 | Democratic People's Republic of  | 100.0% | -2.1 pp | -9.4 pp |
+| 133 | New Zealand | 96.5% | -2.2 pp | -7.1 pp |
+| 134 | Azerbaijan | 99.4% | -2.2 pp | -9.3 pp |
+| 135 | Puerto Rico | 96.7% | -2.2 pp | -4.8 pp |
+| 136 | Belarus | 99.9% | -2.3 pp | -9.0 pp |
+| 137 | Ukraine | 99.9% | -2.5 pp | -9.1 pp |
+| 138 | Gabon | 47.1% | -2.5 pp | -10.4 pp |
+| 139 | Australia and New Zealand | 98.7% | -2.5 pp | -8.0 pp |
+| 140 | Australia | 99.1% | -2.6 pp | -8.2 pp |
+| 141 | Bulgaria | 93.2% | -2.8 pp | -13.0 pp |
+| 142 | Kazakhstan | 99.0% | -2.9 pp | -9.6 pp |
+| 143 | Namibia | 59.4% | -2.9 pp | -6.0 pp |
+| 144 | Russian Federation | 98.5% | -3.0 pp | -10.0 pp |
+| 145 | Martinique | 91.1% | -3.2 pp | -1.0 pp |
+| 146 | Sweden | 99.3% | -3.2 pp | -8.1 pp |
+| 147 | Guadeloupe | 88.0% | -3.2 pp | -2.4 pp |
+| 148 | Kyrgyzstan | 98.4% | -3.3 pp | -10.2 pp |
+| 149 | Tajikistan | 95.8% | -3.4 pp | -10.5 pp |
+| 150 | Belgium | 96.3% | -3.4 pp | -6.5 pp |
+| 151 | Congo | 42.1% | -3.7 pp | -16.1 pp |
+| 152 | Romania | 97.7% | -3.8 pp | -9.2 pp |
+| 153 | Austria | 98.2% | -3.8 pp | -10.0 pp |
+| 154 | Lithuania | 98.0% | -3.9 pp | -10.9 pp |
+| 155 | Tonga | 95.3% | -3.9 pp | -0.6 pp |
+| 156 | Liberia | 30.3% | -4.0 pp | -21.9 pp |
+| 157 | Croatia | 99.5% | -4.1 pp | -8.8 pp |
+| 158 | France | 95.2% | -4.2 pp | -4.6 pp |
+| 159 | Cuba | 96.8% | -4.3 pp | -3.9 pp |
+| 160 | Curaçao | 89.5% | -4.3 pp | -9.3 pp |
+| 161 | Republic of Moldova | 97.9% | -4.5 pp | -9.6 pp |
+| 162 | New Caledonia | 98.4% | -4.5 pp | +1.6 pp |
+| 163 | Malaysia | 96.3% | -4.6 pp | +3.2 pp |
+| 164 | Qatar | 53.8% | -4.8 pp | -16.8 pp |
+| 165 | Kenya | 62.4% | -4.8 pp | -6.2 pp |
+| 166 | Chile | 96.6% | -5.1 pp | +0.1 pp |
+| 167 | Bahamas | 99.0% | -5.3 pp | -6.5 pp |
+| 168 | Macao Special Administrative Reg | 93.4% | -5.4 pp | +3.2 pp |
+| 169 | Hong Kong Special Administrative | 97.7% | -5.9 pp | +0.9 pp |
+| 170 | The former Yugoslav Republic of  | 96.0% | -6.0 pp | -4.6 pp |
+| 171 | Serbia | 97.8% | -6.2 pp | -9.5 pp |
+| 172 | Jamaica | 95.3% | -6.4 pp | -1.5 pp |
+| 173 | Ireland | 98.8% | -6.5 pp | -5.2 pp |
+| 174 | Montenegro | 96.3% | -6.5 pp | -11.2 pp |
+| 175 | Singapore | 99.2% | -6.9 pp | -1.1 pp |
+| 176 | Albania | 96.3% | -7.0 pp | -10.1 pp |
+| 177 | Greece | 93.2% | -7.3 pp | -3.3 pp |
+| 178 | Italy | 99.5% | -7.3 pp | -4.9 pp |
+| 179 | Swaziland | 46.0% | -7.6 pp | -17.2 pp |
+| 180 | Mongolia | 90.6% | -7.6 pp | -13.0 pp |
+| 181 | Cyprus | 97.4% | -7.7 pp | -5.2 pp |
+| 182 | Micronesia (Federated States of) | 81.2% | -7.8 pp | -12.7 pp |
+| 183 | Bosnia and Herzegovina | 98.8% | -8.2 pp | -7.9 pp |
+| 184 | Spain | 89.2% | -8.7 pp | -9.7 pp |
+| 185 | Finland | 99.5% | -9.8 pp | -9.7 pp |
+| 186 | Republic of Korea | 99.9% | -10.0 pp | -8.0 pp |
+| 187 | Zimbabwe | 71.2% | -11.5 pp | -12.3 pp |
+| 188 | Taiwan Province of China | 99.7% | -13.4 pp | -7.3 pp |
+| 189 | Malta | 99.9% | -15.5 pp | -9.2 pp |
 
 ---
 
-*Method: country fixed effects regression of lower secondary completion on parental lower secondary (T−25) and log GDP.*
-*Residual represents within-country deviation from predicted trajectory.*
+*Method: country fixed effects regression of lower secondary completion on parental lower secondary (T−25) only.*
+*GDP excluded to avoid bad-control bias (education → GDP). GDP shown for context only. WCDE v3 education data.*

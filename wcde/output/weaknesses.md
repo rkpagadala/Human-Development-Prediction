@@ -219,17 +219,22 @@ does not bias the β estimate in a systematic direction.
 
 ---
 
-## W10. World history document mixes data and inference without labelling
+## W10. World history document mixes data and inference without labelling ✓ FIXED
 **Affects:** world_education_history.md
 **Severity:** Low — presentational
 
 Specific historical claims in the world history document ("1 million barefoot doctors by
-1975", "540 Thomasites in 1901") come from secondary sources, not WCDE data. A reader
+1975", "600 Thomasites in 1901") come from secondary sources, not WCDE data. A reader
 cannot tell which statements are derived from the data and which are historical background.
-This is fine for an essay but is a problem if the document is read as a data analysis.
 
-**Fix:** Add a note at the top distinguishing data-derived findings from historical
-context, or mark each claim with its source type.
+**Fixed.** Implemented a three-track paragraph system in `08_world_education_history.py`:
+- `p_data()` — plain paragraph: verifiable from WCDE CSV data
+- `p_context()` — blockquote: historical secondary source claim, tagged `[B_n]`
+- `p_inference()` — bold "Interpretation —" prefix: analytical inference combining data + history
+
+All ~200 `p()` calls migrated to typed versions. Added Appendix C: Verified Sourced Claims
+(B1–B12) with web-verified historical facts, sources, and confidence ratings.
+Two factual corrections applied: "500 Thomasites" → **600 [B1]**; "17 graduates, Congo" → **16 [B5]**.
 
 ---
 
@@ -246,4 +251,4 @@ context, or mark each claim with its source type.
 | W7 | Female data error | Fix processing or remove | Medium — section is currently wrong |
 | W8 | Pre-1950 data reliability | Country quality table added ✓ | Addressed — large countries reliable, small ones flagged |
 | W9 | 25-year lag assumed | Sensitivity test | Low — likely robust |
-| W10 | History doc mixing sources | Add note | Low — presentational |
+| W10 | History doc mixing sources | Three-track system ✓ | Fixed — data/context/inference visually distinguished |

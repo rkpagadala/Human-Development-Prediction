@@ -59,12 +59,24 @@ def cohort_table(countries, col="lower_sec", label=None):
 
 
 def find_crossing(country, col="lower_sec", threshold=50.0):
-    """First cohort_year where col >= threshold."""
+    """First cohort_year where col >= threshold.
+    Returns None if never crossed.
+    Returns -1 as sentinel if already above threshold at first observation
+    (meaning the actual crossing predates the data).
+    """
     df = get_country_cohort(country)
+    if df.empty:
+        return None
     above = df[df[col] >= threshold]
     if above.empty:
         return None
-    return int(above.index[0])
+    first_cross = int(above.index[0])
+    # If the very first data point is already above threshold, the crossing
+    # predates the data window — flag as pre-data rather than reporting a
+    # misleading year that is just the start of the series.
+    if first_cross == int(df.index[0]):
+        return -1  # sentinel: pre-data
+    return first_cross
 
 
 def find_crossing_10(country, col="lower_sec"):
@@ -102,8 +114,11 @@ def summary_stats_block(countries, col="lower_sec"):
         c10 = find_crossing_10(c, col)
         c50 = find_crossing_50(c, col)
         yd, gain = acceleration_decade(c, col)
-        c10s = str(c10) if c10 else ">2015"
-        c50s = str(c50) if c50 else ">2015"
+        # Get first year in data for this country to label pre-data crossings accurately
+        _df = get_country_cohort(c)
+        first_yr = int(_df.index[0]) if not _df.empty else 1870
+        c10s = f"<{first_yr}" if c10 == -1 else (str(c10) if c10 else ">2015")
+        c50s = f"<{first_yr}" if c50 == -1 else (str(c50) if c50 else ">2015")
         yds  = f"{yd}–{yd+10}" if yd else "—"
         gs   = f"+{gain}pp" if gain and gain > 0 else "—"
         lines.append(f"| {c} | {c10s} | {c50s} | {yds} | {gs} |")

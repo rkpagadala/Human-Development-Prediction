@@ -55,7 +55,7 @@ Of all the variables tested, female education has the strongest and most consist
 - Female primary completion predicts **fertility rates** better than any other variable — including income, inequality, or urbanisation.
 - Female education's effect on fertility operates directly, not through income. Richer countries have lower fertility partly *because* they are more educated, not independently of education.
 - When female education rises, child mortality falls, life expectancy rises, and the next generation's education rises — simultaneously.
-- The mother's education level is the primary carrier of the generational transmission signal. Nearly the entire intergenerational education effect flows through maternal education.
+- The mother's education level is theoretically the primary carrier of the generational transmission signal — through household investment decisions, health behaviours, and educational expectations passed to children. This is consistent with the broader literature. This analysis uses combined-sex data; female-specific transmission coefficients are not directly estimated here.
 
 The mechanism is not mysterious: educated women have fewer children later, invest more in each child's health and schooling, and are better positioned to navigate health systems, labour markets, and civic institutions.
 
@@ -67,18 +67,18 @@ The mechanism is not mysterious: educated women have fewer children later, inves
 
 Most countries expand education *sequentially*: primary first, then — one generation later, once primary is near-universal — secondary. This is the natural path. It is also slow: 50+ years to move a population from basic literacy to secondary completion.
 
-**South Korea and Singapore did not follow this path.** They ran primary and secondary expansion *simultaneously*, compressing what normally takes two generations into one. Korea moved from 10% lower-secondary completion to 60% in 18 years. Singapore did it in 23 years. Critically, they did this when they were *poor*:
+**South Korea and Singapore did not follow this path.** They ran primary and secondary expansion *simultaneously*, compressing what normally takes two generations into one. What enabled this was not wealth or even prior infrastructure — it was an **educational rupture**: a decisive, sustained commitment by the state to treat education as the primary national objective, above all competing priorities. Korea's lower-secondary completion was already 41% for the 1960 cohort and reached 77% by the 1975 cohort: a +36 percentage-point gain in 15 years, second only to Taiwan's +46 pp over the same interval. Singapore did it in 23 years. Critically, they did this when they were *poor*:
 
 | Country | GDP per capita when secondary expansion began | As % of world average |
 |---|---|---|
 | South Korea | $1,390 | 26% |
 | Singapore | $4,210 | ~40% |
 
-These were not wealthy nations making easy investments. They were poor nations making a strategic choice to skip the waiting period.
+These were not wealthy nations making easy investments. They were poor nations that made an educational rupture — a non-negotiable commitment to education as the primary development mechanism — and sustained it across successive governments and decades.
 
 Malaysia and Thailand expanded rapidly too, but sequentially — primary first, secondary later. Their primary-to-lower-secondary gap stayed wide (Malaysia: 28pp in 1980, still 15pp in 2015; Thailand's gap actually grew during 1990–2010). They are fast-movers, not simultaneous compressors. The distinction matters: the sequential path is faster than doing nothing, but it still leaves a generational gap between primary universality and secondary completion.
 
-The contrast with China is instructive: China expanded primary first, then secondary — the sequential path. The result is a persistent 40-percentage-point gap between primary and lower-secondary completion that has proved slow to close. India crossed the same 30% lower secondary threshold in 2003 at only $845 GDP per capita (6% of world average) — even poorer than the tigers when they crossed it — and continued climbing to 49% by 2015. The data ends there; India's trajectory was still rising.
+The contrast with China is instructive: China expanded primary first, then secondary — the sequential path. By 1985, China's primary completion (87%) stood 25 percentage points above its lower-secondary completion (62%). Closing that gap took another quarter century; China crossed 90% lower secondary only around 2010. India crossed the same 30% lower secondary threshold in 2003 at only $845 GDP per capita (6% of world average) — even poorer than the tigers when they crossed it — and continued climbing to 67% by 2015.
 
 **The leapfrog strategy in practice:**
 1. Do not wait for primary to reach near-universal before building secondary schools.
@@ -101,21 +101,25 @@ For a developing country today: if your primary completion is already above 80%,
 
 ## Finding 6: The Over-Performers — Policy Can Beat the Prediction
 
-The data identifies countries that delivered significantly more education than their income level and parental education history would predict. These are countries where deliberate policy overcame structural disadvantage:
+The data identifies countries that delivered significantly more lower-secondary education than their parental education history alone predicts. GDP is intentionally excluded as a predictor here: because education causes income (Finding 1), controlling for current income would credit part of each country's educational achievement to its income rather than to its policy choices. The residual measures pure policy contribution above the intergenerational inheritance baseline.
 
-| Country | Education delivered above prediction |
-|---|---|
-| China | +25 percentage points |
-| Malaysia | +21 percentage points |
-| Algeria | +20 percentage points |
-| Thailand | +17 percentage points |
-| South Korea | +13 percentage points |
+These are countries where deliberate policy overcame structural disadvantage:
 
-These gaps are large. They cannot be explained by luck or demographics. They represent genuine policy choices — resource allocation, compulsory education laws, teacher deployment, and sustained political priority — that delivered education faster than income alone would predict.
+| Country | Education delivered above parental baseline | GDP per capita |
+|---|---|---|
+| Bhutan | +26 percentage points | $2,750 |
+| Tunisia | +26 percentage points | $3,860 |
+| Nepal | +18 percentage points | $902 |
+| Viet Nam | +16 percentage points | $2,090 |
+| Bangladesh | +16 percentage points | $1,250 |
 
-India's story is the counter-example: its recent primary completion gains look large in absolute terms, but once you control for what the previous generation's education alone would predict, the genuine policy-driven gain drops to only +7 percentage points. Most of India's recent improvement is generational echo — the automatic transmission of the prior generation's educational gains — not new policy achievement.
+All five were poor when they built their secondary systems. These gaps are large. They cannot be explained by luck or demographics. They represent genuine policy choices — resource allocation, compulsory education laws, teacher deployment, and sustained political priority. India also ranks in the top 15, delivering +14 percentage points above its parental baseline at $1,610 per capita.
 
-**What this means for policy:** The question is not just "are we building schools?" It is "are we delivering education above what our income and demographic trajectory would produce automatically?" The over-performers above answered yes. The gap between the automatic trajectory and the policy-driven trajectory is where leadership actually matters.
+Chronically over-performing across the full 1970–2015 period (not just 2015), the standout cases include Malaysia (+20 pp average), Algeria (+18 pp), Thailand (+17 pp), and China (+17 pp). South Korea and Singapore do not appear in this table — by 2015 they had reached near-universal secondary completion, leaving no gap left to over-perform on. Their over-performance was historical, concentrated in the 1960s–1990s.
+
+The failure mode is also visible: Qatar, with $63,000 per capita income in 2015, delivered 4.8 percentage points *below* what its parental education baseline predicts. Oil wealth without deliberate education investment does not automatically produce educated populations.
+
+**What this means for policy:** The question is not just "are we building schools?" It is "are we delivering education above what our demographic trajectory would produce automatically?" The over-performers above answered yes. The gap between the automatic trajectory and the policy-driven trajectory is where leadership actually matters.
 
 ---
 
@@ -147,9 +151,9 @@ These are not separate effects requiring separate interventions. They are one ch
 
 ## The Failure Mode to Avoid
 
-The most common failure mode is **sequential thinking**: get the economy moving first, then invest in education; finish primary before starting secondary; wait for urban schools to be good before improving rural ones.
+The most common failure mode is the absence of an **educational rupture** — treating education as one priority among many rather than the primary mechanism through which everything else becomes possible. This manifests as sequential thinking: get the economy moving first, then invest in education; finish primary before starting secondary; wait for schools to be better-resourced before expanding access. The history of the fast compressors shows this logic is backwards at every step. You do not need income to start; starting is how you eventually get income. You do not need good schools to begin; the first generation of low-quality schools produces the teachers and parents who build the second generation of better ones. The T-25 compounding does the work — but only if you start.
 
-The data shows this waiting strategy has a compounding cost. Every year of delayed secondary expansion is a generation of parents who will pass on lower educational expectations to their children. The gap between where you are and where you could be does not close on its own — it compounds in the wrong direction.
+The cost of not making the educational rupture is not just slow progress. It is that the intergenerational baseline compounds in the wrong direction. Every year of delayed secondary expansion is a cohort of parents who transmit lower educational expectations to their children, who transmit less to theirs. The gap between where you are and where you could be widens automatically without the rupture.
 
 ---
 
@@ -159,7 +163,7 @@ The data shows this waiting strategy has a compounding cost. Every year of delay
 
 2. **Secondary teacher supply** — secondary expansion fails without teachers. Teachers require tertiary education. Begin investing in teacher training colleges before secondary demand peaks, not after.
 
-3. **Remove barriers specific to girls' secondary attendance** — the data shows maternal education is the primary carrier of the intergenerational signal. Distance to school, safety, cost of uniforms, early marriage laws — these are the specific frictions that, when removed, have the highest development multiplier.
+3. **Remove barriers specific to girls' secondary attendance** — the mechanism and external literature identify maternal education as the primary carrier of the intergenerational signal. Distance to school, safety, cost of uniforms, early marriage laws — these are the specific frictions that, when removed, have the highest development multiplier.
 
 4. **Do not pause at primary universality** — begin secondary and tertiary investment before primary is complete. The simultaneous strategy is the leapfrog strategy.
 
@@ -173,7 +177,7 @@ This analysis identifies patterns across 182 countries over 55 years. The findin
 
 - **Causality is demonstrated by structure, not by experiment.** The credible alternative explanations are state capacity (governments that build schools also build roads and enforce contracts) and cultural selection (families that value education may also have other characteristics that drive development). Neither actually bypasses education: state capacity requires literate, numerate people to function; cultural shifts toward modernity operate substantially *through* what schooling does to a person. Education occupies years of a child's cognitive and social development — literacy, numeracy, institutional experience, access to written knowledge. These are direct capability changes, not passive correlations. The remaining uncertainty is whether the education variable partly proxies for state capacity rather than being the sole mechanism. That is a real question. It does not change the policy implication, because you cannot build state capacity without educating people.
 - **Education quality co-moves with parental education.** Quality is not independent of the mechanism — parents who completed education are more likely to engage with their children's schooling, hold teachers accountable, and sustain demand for quality. The specific risk is rapid access expansion in a generation with very low parental completion, where schools are built before the social foundation that sustains them. That is a real risk for low-base countries expanding fast. It is not a reason to delay.
-- **Colonial infrastructure is a partial, not sufficient, explanation.** Korea had Japanese colonial-era school infrastructure, which was a real head-start. But the Philippines had the deepest US colonial education presence in Asia — English-language instruction, US-modelled universities, Cold War ally — and achieved no simultaneous compression. Latin America received sustained US economic engagement across the 20th century with no tiger-pattern outcomes. Singapore outperformed Malaysia despite identical British colonial inheritance. The geopolitical argument cannot explain who succeeded and who did not. The replicable elements of the Korean and Singaporean strategy — simultaneous expansion, investment before wealth, sustained political commitment — are the explanatory factors the data supports.
+- **The simultaneous expansion strategy requires an educational rupture — and political change alone does not produce one.** Every fast compressor in the data underwent an educational rupture: a decisive, sustained reorientation where the state treated education as the primary national objective and maintained that commitment across governments and decades. Political changes — wars, revolutions, independence, regime shifts — can create the opportunity for an educational rupture, but they do not cause one. The Philippines had more political ruptures than Korea (Spanish colonialism → American administration → independence → Marcos → People Power) and none produced a sustained education-first trajectory, because no post-independence government internalised education as the primary lever rather than one priority among many. Korea and Japan after Meiji did. Cuba after 1961 did. Zimbabwe after 1980 briefly did. The replicable variable is not the political change; it is whether the government that emerges from it treats education as non-negotiable. Prior educational investment — whatever its source — creates a useful starting base, but it is not the constraint. The Philippines over-performs its income peers on education metrics today (reaching 50% lower-secondary earlier than Indonesia or Myanmar despite similar or lower GDP) precisely because its colonial foundation persisted, yet it did not compound into a tiger trajectory because the educational rupture never followed. The constraint is commitment, not infrastructure or income.
 
 ---
 

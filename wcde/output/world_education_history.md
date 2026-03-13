@@ -232,12 +232,16 @@ the goal. The system that produced Confucius, Zhu Xi, and the great Qing scholar
 > real growth.
 
 > **Phase 3 (1949–1980): Mao era.** The People's Republic made mass literacy a revolutionary goal,
-> conducting massive literacy campaigns in the 1950s. Primary enrollment expanded rapidly. **But the
-> Cultural Revolution (1966–1976) deliberately destroyed the educational infrastructure.** Schools
-> were closed, teachers were imprisoned or killed, university entrance examinations were abolished,
-> and "educated youth" (知识青年) were sent to the countryside for "re-education." The cohort born
-> around 1960–1965 shows the scar of this disruption in slightly slower lower-secondary growth —
-> this cohort was of school age precisely during the Cultural Revolution years.
+> conducting massive literacy campaigns in the 1950s. Primary enrollment expanded rapidly, and
+> lower secondary also continued to grow through the Mao era — the WCDE cohort data shows no
+> reversal in primary or lower-secondary completion rates. **The Cultural Revolution (1966–1976)
+> disrupted education selectively by level.** University entrance examinations were abolished and
+> universities effectively shut; "educated youth" (知识青年) — urban high school graduates — were
+> sent to the countryside for "re-education," gutting the tertiary pipeline for a decade. Primary
+> and lower-secondary schools remained open and enrollment continued to grow, though quality
+> and teacher supply were degraded. The scar is visible in slightly slower lower-secondary
+> growth for the 1960–1965 birth cohorts — this cohort was in secondary school precisely during
+> the CR years — but the disruption did not reverse the upward trend; it slowed it.
 
 **Phase 4 (1980–2015): Deng explosion.** The post-1978 reforms restored examinations, rebuilt
 universities, and made education central to the modernisation agenda. The 1990–2015 cohorts show
@@ -1490,8 +1494,8 @@ its pre-modern educational heritage:
 
 | Country | 10% crossing | 50% crossing | Peak decade | Gain |
 |---------|:------------:|:------------:|:-----------:|:----:|
-| United Kingdom of Great Britain and Northern Ireland | 1870 | 1870 | 1995–2005 | +0.2pp |
-| Germany | 1870 | 1895 | 1885–1895 | +16.2pp |
+| United Kingdom of Great Britain and Northern Ireland | <1870 | <1870 | 1995–2005 | +0.2pp |
+| Germany | <1870 | 1895 | 1885–1895 | +16.2pp |
 | Japan | 1915 | 1925 | 1920–1930 | +50.9pp |
 | Republic of Korea | 1935 | 1965 | 1965–1975 | +25.6pp |
 | Turkey | 1960 | 1990 | 2000–2010 | +22.2pp |

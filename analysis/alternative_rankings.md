@@ -1,593 +1,640 @@
-# Alternative Education Rankings and Progress Analysis
+# Alternative Education Rankings — WCDE v3
 
-*175 countries, 1960–2015. WCDE data. Companion to education_rankings.md.*
+*Supersedes prior analysis/alternative_rankings.md (old World Bank-sourced analysis, 175 countries). This version uses WCDE v3 data, 204 countries. Source: wcde/output/alternative_rankings.md.*
+
+
+*204 countries, 1960–2025. WCDE v3. Companion to rankings.md.*
 
 ---
 
 ## A. Mean Years of Schooling (2015)
 
-Population-distribution view. Assigns years to each stopped level:
-no education = 0 yr, primary only = 6 yr, lower sec only = 9 yr, upper sec only = 12 yr, college = 16 yr.
-This converts the 4 completion rates into a single number that is commensurable with
-standard Barro-Lee estimates and avoids the arbitrary averaging problem.
+Population-distribution view. No education=0yr, primary only=6yr, lower sec only=9yr,
+upper sec only=12yr, college=16yr.
+
+**Global mean years of schooling 2015: 9.64 years (204 countries)**
 
 **Top 40 — highest mean years of schooling:**
 
 | Rank | Country | MYS | Primary | Lower Sec | Upper Sec | College |
 | ---: | :--- | ---: | ---: | ---: | ---: | ---: |
-| 1 | Singapore | 15.26 | 99.3% | 96.2% | 97.2% | 85.2% |
-| 2 | Canada | 14.64 | 98.4% | 83.7% | 92.1% | 67.6% |
-| 3 | Japan | 14.46 | 99.4% | 93.6% | 97.3% | 61.0% |
-| 4 | Ireland | 14.08 | 96.7% | 88.7% | 92.3% | 63.2% |
-| 5 | Australia | 13.90 | 98.8% | 95.5% | 97.9% | 48.8% |
-| 6 | Poland | 13.84 | 94.3% | 81.0% | 95.0% | 41.1% |
-| 7 | Lithuania | 13.78 | 93.7% | 79.3% | 89.2% | 55.2% |
-| 8 | Cyprus | 13.75 | 97.7% | 85.3% | 90.9% | 52.4% |
-| 9 | Georgia | 13.71 | 98.3% | 91.1% | 94.4% | 48.8% |
-| 10 | Hungary | 13.62 | 98.4% | 78.2% | 89.4% | 41.9% |
-| 11 | Finland | 13.57 | 94.3% | 68.0% | 89.2% | 32.1% |
-| 12 | Czech Republic | 13.56 | 99.4% | 80.6% | 93.8% | 29.4% |
-| 13 | Croatia | 13.38 | 99.0% | 84.5% | 95.3% | 26.8% |
-| 14 | France | 13.37 | 95.0% | 80.7% | 88.7% | 46.8% |
-| 15 | Germany | 13.36 | 95.4% | 76.8% | 88.2% | 41.4% |
-| 16 | Armenia | 13.32 | 99.0% | 89.7% | 95.5% | 32.6% |
-| 17 | Estonia | 13.27 | 92.2% | 65.8% | 83.1% | 42.9% |
-| 18 | Netherlands | 13.25 | 95.1% | 76.9% | 87.1% | 42.6% |
-| 19 | Belarus | 13.24 | 99.4% | 95.1% | 97.3% | 32.6% |
-| 20 | Slovenia | 13.23 | 99.1% | 86.5% | 93.2% | 32.2% |
-| 21 | Denmark | 13.22 | 99.8% | 66.2% | 81.6% | 35.4% |
-| 22 | Sweden | 13.17 | 98.5% | 82.3% | 86.4% | 45.8% |
-| 23 | Norway | 13.17 | 99.6% | 69.8% | 79.2% | 46.9% |
-| 24 | Bahamas | 13.15 | 99.3% | 96.5% | 95.6% | 35.8% |
-| 25 | Switzerland | 13.09 | 97.0% | 82.9% | 88.9% | 39.5% |
-| 26 | New Zealand | 13.08 | 95.5% | 87.9% | 87.7% | 52.1% |
-| 27 | Greece | 13.04 | 93.2% | 79.3% | 86.3% | 46.3% |
-| 28 | Montenegro | 13.00 | 97.9% | 81.2% | 91.0% | 27.0% |
-| 29 | Puerto Rico | 12.96 | 96.9% | 87.7% | 89.7% | 41.1% |
-| 30 | Serbia | 12.89 | 98.0% | 81.3% | 90.5% | 25.6% |
-| 31 | Belgium | 12.84 | 96.8% | 74.8% | 83.4% | 37.9% |
-| 32 | Tajikistan | 12.84 | 99.6% | 94.1% | 96.1% | 24.4% |
-| 33 | Ukraine | 12.83 | 99.6% | 90.5% | 94.5% | 23.7% |
-| 34 | Kazakhstan | 12.83 | 99.2% | 94.1% | 93.5% | 31.3% |
-| 35 | Channel Islands | 12.82 | 100.0% | 81.0% | 82.2% | 45.5% |
-| 36 | Luxembourg | 12.75 | 93.2% | 77.5% | 84.7% | 41.0% |
-| 37 | Uzbekistan | 12.63 | 98.1% | 90.8% | 93.5% | 24.4% |
-| 38 | Macao Special Administrative Regio | 12.62 | 93.9% | 76.0% | 81.4% | 44.4% |
-| 39 | Austria | 12.59 | 97.2% | 80.0% | 83.6% | 38.1% |
-| 40 | Latvia | 12.58 | 95.1% | 74.7% | 82.6% | 36.2% |
+| 1 | Singapore | 14.73 | 99.5% | 99.2% | 95.5% | 73.1% |
+| 2 | Canada | 13.55 | 99.5% | 99.2% | 89.6% | 48.0% |
+| 3 | Taiwan Province of China | 13.32 | 100.0% | 99.7% | 95.7% | 36.6% |
+| 4 | Hong Kong Special Administrative R | 13.31 | 99.8% | 97.7% | 90.7% | 41.8% |
+| 5 | Ireland | 13.21 | 99.5% | 98.8% | 93.2% | 37.0% |
+| 6 | Japan | 13.05 | 99.9% | 99.9% | 91.6% | 32.8% |
+| 7 | Armenia | 13.05 | 99.7% | 99.1% | 95.2% | 31.0% |
+| 8 | Australia | 13.03 | 99.9% | 99.1% | 97.6% | 28.4% |
+| 9 | Australia and New Zealand | 13.02 | 99.8% | 98.7% | 96.4% | 29.6% |
+| 10 | Bahamas | 13.01 | 99.5% | 99.0% | 96.1% | 29.7% |
+| 11 | New Zealand | 12.99 | 99.5% | 96.5% | 90.4% | 35.4% |
+| 12 | Georgia | 12.97 | 99.5% | 98.6% | 93.8% | 30.8% |
+| 13 | Cyprus | 12.95 | 99.7% | 97.4% | 93.0% | 31.5% |
+| 14 | Republic of Korea | 12.92 | 99.9% | 99.9% | 95.4% | 26.8% |
+| 15 | Chile | 12.86 | 98.2% | 96.6% | 85.6% | 37.6% |
+| 16 | France | 12.83 | 99.6% | 95.2% | 87.4% | 34.5% |
+| 17 | Hungary | 12.80 | 99.7% | 99.4% | 86.3% | 31.1% |
+| 18 | Malaysia | 12.77 | 97.6% | 96.3% | 89.2% | 33.8% |
+| 19 | New Caledonia | 12.76 | 99.0% | 98.4% | 85.4% | 32.7% |
+| 20 | Trinidad and Tobago | 12.69 | 99.0% | 97.5% | 77.6% | 37.6% |
+| 21 | Kazakhstan | 12.69 | 99.4% | 99.0% | 94.0% | 23.4% |
+| 22 | Democratic People's Republic of Ko | 12.68 | 100.0% | 100.0% | 100.0% | 17.2% |
+| 23 | Sweden | 12.68 | 100.0% | 99.3% | 85.9% | 28.1% |
+| 24 | Austria | 12.67 | 100.0% | 98.2% | 83.4% | 30.6% |
+| 25 | Malta | 12.61 | 100.0% | 99.9% | 75.5% | 33.8% |
+| 26 | United Kingdom of Great Britain an | 12.55 | 100.0% | 100.0% | 80.9% | 28.3% |
+| 27 | Lithuania | 12.54 | 98.3% | 98.0% | 88.5% | 26.1% |
+| 28 | Russian Federation | 12.54 | 99.5% | 98.5% | 91.1% | 21.9% |
+| 29 | Slovakia | 12.47 | 100.0% | 100.0% | 91.8% | 17.8% |
+| 30 | Belarus | 12.46 | 99.9% | 99.9% | 96.2% | 14.6% |
+| 31 | Poland | 12.45 | 100.0% | 99.1% | 90.3% | 19.2% |
+| 32 | United States of America | 12.45 | 99.7% | 98.0% | 88.2% | 22.1% |
+| 33 | Greece | 12.41 | 98.3% | 93.2% | 87.5% | 27.2% |
+| 34 | Luxembourg | 12.32 | 100.0% | 98.2% | 85.0% | 20.6% |
+| 35 | French Polynesia | 12.31 | 99.3% | 96.2% | 81.0% | 25.8% |
+| 36 | Bosnia and Herzegovina | 12.30 | 99.1% | 98.8% | 93.7% | 14.4% |
+| 37 | Belgium | 12.28 | 100.0% | 96.3% | 81.7% | 23.5% |
+| 38 | Azerbaijan | 12.26 | 99.9% | 99.4% | 93.2% | 12.3% |
+| 39 | Ukraine | 12.24 | 99.9% | 99.9% | 89.9% | 13.7% |
+| 40 | Croatia | 12.24 | 99.5% | 99.5% | 94.9% | 10.9% |
 
 **Bottom 30 — lowest mean years of schooling:**
 
 | Rank | Country | MYS | Primary | Lower Sec | Upper Sec | College |
 | ---: | :--- | ---: | ---: | ---: | ---: | ---: |
-| 146 | Liberia | 3.88 | 37.8% | 20.6% | 23.1% | 1.9% |
-| 147 | Guinea | 3.86 | 34.2% | 19.0% | 21.6% | 9.0% |
-| 148 | Cambodia | 3.82 | 43.3% | 19.3% | 16.1% | 4.0% |
-| 149 | Yemen | 3.77 | 33.6% | 33.6% | 23.3% | 1.1% |
-| 150 | Djibouti | 3.31 | 31.7% | 20.5% | 18.4% | 6.1% |
-| 151 | Eritrea | 3.30 | 31.6% | 20.4% | 18.4% | 6.1% |
-| 152 | Central African Republic | 3.28 | 40.4% | 12.9% | 11.7% | 3.0% |
-| 153 | Togo | 3.23 | 30.6% | 19.6% | 17.0% | 7.4% |
-| 154 | Sierra Leone | 3.13 | 32.3% | 17.7% | 16.2% | 4.3% |
-| 155 | Cote D'Ivoire | 3.11 | 30.0% | 15.1% | 16.0% | 7.5% |
-| 156 | Guinea-Bissau | 3.06 | 28.5% | 13.9% | 17.9% | 1.0% |
-| 157 | Western Sahara | 2.84 | 28.4% | 15.9% | 15.0% | 5.1% |
-| 158 | Mauritania | 2.83 | 28.4% | 15.9% | 14.9% | 5.1% |
-| 159 | Senegal | 2.82 | 28.3% | 15.9% | 14.8% | 5.0% |
-| 160 | South Sudan | 2.74 | 22.3% | 22.3% | 20.0% | 3.3% |
-| 161 | Benin | 2.71 | 28.3% | 13.6% | 13.8% | 4.2% |
-| 162 | Uganda | 2.63 | 27.8% | 13.5% | 12.1% | 4.8% |
-| 163 | Sao Tome And Principe | 2.54 | 30.6% | 11.9% | 9.8% | 1.3% |
-| 164 | Mozambique | 2.47 | 29.6% | 11.3% | 10.5% | 0.9% |
-| 165 | Angola | 2.45 | 29.2% | 6.1% | 8.7% | 0.4% |
-| 166 | Somalia | 2.42 | 26.7% | 12.7% | 11.0% | 2.7% |
-| 167 | Afghanistan | 2.37 | 18.4% | 18.4% | 17.7% | 4.5% |
-| 168 | Rwanda | 2.23 | 22.5% | 12.7% | 12.0% | 3.5% |
-| 169 | Ethiopia | 2.00 | 19.5% | 12.4% | 11.9% | 2.4% |
-| 170 | Chad | 1.81 | 19.6% | 7.9% | 8.3% | 2.9% |
-| 171 | Burkina Faso | 1.81 | 20.5% | 8.3% | 8.1% | 2.1% |
-| 172 | Madagascar | 1.74 | 19.2% | 8.5% | 7.5% | 2.7% |
-| 173 | Mali | 1.73 | 17.5% | 9.5% | 8.2% | 3.7% |
-| 174 | Burundi | 1.56 | 16.0% | 7.0% | 7.6% | 2.8% |
-| 175 | Niger | 0.75 | 8.6% | 2.9% | 2.9% | 1.4% |
-
-**Global mean years of schooling 2015: 8.70 years**
+| 160 | Equatorial Guinea | 6.18 | 79.0% | 36.5% | 9.0% | 2.0% |
+| 161 | Zambia | 6.14 | 64.2% | 45.8% | 23.4% | 5.2% |
+| 162 | Togo | 6.01 | 68.2% | 35.5% | 22.3% | 4.6% |
+| 163 | United Republic of Tanzania | 5.94 | 76.7% | 29.6% | 9.5% | 4.0% |
+| 164 | Yemen | 5.82 | 49.4% | 49.1% | 46.0% | 0.0% |
+| 165 | Cambodia | 5.79 | 64.5% | 38.6% | 19.9% | 4.1% |
+| 166 | Sao Tome and Principe | 5.77 | 67.8% | 39.1% | 17.2% | 0.3% |
+| 167 | Haiti | 5.43 | 57.4% | 45.5% | 20.5% | 0.3% |
+| 168 | Uganda | 5.36 | 59.4% | 32.6% | 18.3% | 6.7% |
+| 169 | Angola | 5.16 | 66.2% | 33.8% | 5.9% | 0.0% |
+| 170 | Benin | 5.15 | 57.0% | 37.3% | 16.3% | 3.0% |
+| 171 | Sudan | 4.75 | 39.8% | 38.6% | 30.3% | 7.4% |
+| 172 | Guinea-Bissau | 4.30 | 51.1% | 28.0% | 12.6% | 0.3% |
+| 173 | Cote d'Ivoire | 4.24 | 46.2% | 31.6% | 14.6% | 2.0% |
+| 174 | Liberia | 4.22 | 50.0% | 30.3% | 10.3% | 0.2% |
+| 175 | Afghanistan | 4.09 | 43.7% | 22.4% | 21.4% | 3.8% |
+| 176 | Guinea | 4.08 | 42.7% | 29.6% | 14.3% | 4.9% |
+| 177 | Mozambique | 3.92 | 44.2% | 26.0% | 13.6% | 1.9% |
+| 178 | Madagascar | 3.92 | 47.6% | 23.1% | 9.7% | 2.0% |
+| 179 | Rwanda | 3.77 | 44.0% | 22.5% | 11.3% | 3.0% |
+| 180 | Senegal | 3.76 | 42.3% | 27.1% | 10.0% | 2.7% |
+| 181 | South Sudan | 3.73 | 40.6% | 21.2% | 19.6% | 1.7% |
+| 182 | Chad | 3.36 | 40.5% | 21.4% | 8.1% | 1.1% |
+| 183 | Mali | 3.20 | 32.7% | 24.0% | 12.2% | 3.9% |
+| 184 | Central African Republic | 3.01 | 38.0% | 15.5% | 6.2% | 2.1% |
+| 185 | Burundi | 2.83 | 37.8% | 14.2% | 4.0% | 0.6% |
+| 186 | Ethiopia | 2.61 | 31.1% | 15.2% | 7.8% | 1.4% |
+| 187 | Somalia | 2.50 | 25.8% | 20.0% | 9.5% | 1.8% |
+| 188 | Niger | 1.85 | 24.8% | 8.9% | 2.4% | 0.7% |
+| 189 | Burkina Faso | 1.43 | 17.6% | 10.3% | 2.0% | 0.2% |
 
 ---
 
 ## B. Bottleneck Analysis — Where Does Each Country Lose Students?
 
-The biggest drop on the education ladder for each country.
-pri→low = primary to lower secondary dropout. low→upp = lower to upper secondary. upp→col = upper secondary to college.
+The largest drop on the education ladder for each country in 2015.
 
-**Bottleneck distribution across all 175 countries:**
+**Bottleneck distribution:**
 
 | Bottleneck | Countries | Description |
 |---|---|---|
-| pri→low | 59 | Biggest loss is primary→lower secondary |
-| low→upp | 0 | Biggest loss is lower→upper secondary |
-| upp→col | 116 | Biggest loss is upper secondary→college |
+| pri→low | 28 | Biggest loss at primary→lower secondary |
+| low→upp | 31 | Biggest loss at lower→upper secondary |
+| upp→col | 130 | Biggest loss at upper secondary→college |
 
-**pri→low bottleneck — worst 25 countries (biggest gap at primary to lower secondary):**
+**pri→low — worst 25 countries (biggest gap at primary to lower secondary):**
 
-| Country | Primary | Lower Sec | Upper Sec | College | Bottleneck Gap |
+| Country | Primary | Lower Sec | Upper Sec | College | Gap |
 | :--- | ---: | ---: | ---: | ---: | ---: |
-| Jamaica | 96.6% | 46.5% | 44.1% | 23.3% | 50.1 pp |
-| Tonga | 93.3% | 45.5% | 45.1% | 18.6% | 47.8 pp |
-| Suriname | 83.1% | 39.9% | 36.1% | 9.1% | 43.2 pp |
-| China | 94.9% | 53.6% | 46.6% | 24.0% | 41.3 pp |
-| Samoa | 82.9% | 43.8% | 42.6% | 20.0% | 39.1 pp |
-| Maldives | 57.2% | 18.7% | 17.1% | 10.7% | 38.5 pp |
-| Tunisia | 90.3% | 52.2% | 46.5% | 26.2% | 38.1 pp |
-| Iceland | 97.4% | 60.3% | 71.8% | 34.9% | 37.1 pp |
-| Albania | 95.5% | 58.8% | 57.1% | 23.5% | 36.7 pp |
-| Occupied Palestinian Territory | 91.5% | 55.0% | 55.4% | 27.7% | 36.5 pp |
-| Ghana | 66.3% | 30.2% | 30.3% | 7.5% | 36.1 pp |
-| Mexico | 81.2% | 46.5% | 44.2% | 21.1% | 34.7 pp |
-| Turkey | 92.8% | 58.8% | 62.5% | 31.8% | 34.0 pp |
-| Cape Verde | 52.7% | 18.7% | 16.6% | 6.9% | 34.0 pp |
-| Uruguay | 72.1% | 38.1% | 42.0% | 12.0% | 34.0 pp |
-| Kenya | 68.2% | 34.4% | 37.7% | 10.2% | 33.8 pp |
-| Kuwait | 69.1% | 36.9% | 35.5% | 15.9% | 32.2 pp |
-| Aruba | 81.9% | 49.9% | 47.5% | 33.1% | 32.0 pp |
-| Equatorial Guinea | 52.7% | 20.7% | 20.8% | 7.0% | 32.0 pp |
-| Lebanon | 86.7% | 57.0% | 58.6% | 32.5% | 29.7 pp |
-| Malawi | 48.6% | 19.7% | 18.5% | 1.9% | 28.9 pp |
-| Gabon | 48.9% | 20.6% | 25.4% | 12.0% | 28.3 pp |
-| El Salvador | 66.8% | 38.9% | 41.3% | 15.8% | 27.9 pp |
-| Central African Republic | 40.4% | 12.9% | 11.7% | 3.0% | 27.5 pp |
-| Bhutan | 48.2% | 21.6% | 18.7% | 10.9% | 26.6 pp |
+| United Republic of Tanzania | 76.7% | 29.6% | 9.5% | 4.0% | 47.0 pp |
+| Equatorial Guinea | 79.0% | 36.5% | 9.0% | 2.0% | 42.5 pp |
+| Lao People's Democratic Republic | 80.9% | 41.7% | 26.2% | 7.8% | 39.2 pp |
+| Congo | 81.3% | 42.1% | 17.2% | 4.8% | 39.1 pp |
+| Gabon | 85.0% | 47.1% | 13.7% | 2.8% | 37.8 pp |
+| Myanmar | 77.8% | 43.5% | 26.2% | 10.4% | 34.3 pp |
+| Togo | 68.2% | 35.5% | 22.3% | 4.6% | 32.7 pp |
+| Angola | 66.2% | 33.8% | 5.9% | 0.0% | 32.3 pp |
+| Lesotho | 74.0% | 42.8% | 24.3% | 5.5% | 31.2 pp |
+| Honduras | 73.9% | 43.6% | 25.7% | 4.2% | 30.3 pp |
+| Sao Tome and Principe | 67.8% | 39.1% | 17.2% | 0.3% | 28.7 pp |
+| Uganda | 59.4% | 32.6% | 18.3% | 6.7% | 26.8 pp |
+| Swaziland | 71.9% | 46.0% | 26.7% | 4.2% | 26.0 pp |
+| Cambodia | 64.5% | 38.6% | 19.9% | 4.1% | 25.9 pp |
+| Guatemala | 74.2% | 49.5% | 27.5% | 6.7% | 24.6 pp |
+| Madagascar | 47.6% | 23.1% | 9.7% | 2.0% | 24.5 pp |
+| Burundi | 37.8% | 14.2% | 4.0% | 0.6% | 23.6 pp |
+| Guinea-Bissau | 51.1% | 28.0% | 12.6% | 0.3% | 23.1 pp |
+| Central African Republic | 38.0% | 15.5% | 6.2% | 2.1% | 22.5 pp |
+| Iraq | 65.2% | 43.5% | 28.4% | 9.1% | 21.7 pp |
+| Rwanda | 44.0% | 22.5% | 11.3% | 3.0% | 21.5 pp |
+| Afghanistan | 43.7% | 22.4% | 21.4% | 3.8% | 21.3 pp |
+| Morocco | 71.8% | 51.9% | 32.1% | 13.7% | 19.9 pp |
+| South Sudan | 40.6% | 21.2% | 19.6% | 1.7% | 19.4 pp |
+| Chad | 40.5% | 21.4% | 8.1% | 1.1% | 19.1 pp |
 
-**low→upp bottleneck — worst 0 countries (biggest gap at lower to upper secondary):**
+**low→upp — worst 25 countries (biggest gap at lower to upper secondary):**
 
-| Country | Primary | Lower Sec | Upper Sec | College | Bottleneck Gap |
+| Country | Primary | Lower Sec | Upper Sec | College | Gap |
 | :--- | ---: | ---: | ---: | ---: | ---: |
+| Maldives | 97.3% | 87.2% | 32.6% | 11.8% | 54.6 pp |
+| Jamaica | 99.3% | 95.3% | 45.7% | 24.7% | 49.6 pp |
+| Tonga | 99.5% | 95.3% | 46.0% | 15.5% | 49.2 pp |
+| Samoa | 99.5% | 95.3% | 47.6% | 15.8% | 47.6 pp |
+| Kuwait | 97.4% | 87.7% | 41.5% | 7.7% | 46.2 pp |
+| Curaçao | 98.5% | 89.5% | 43.5% | 5.7% | 46.0 pp |
+| Tunisia | 97.7% | 93.7% | 50.7% | 17.0% | 43.0 pp |
+| Cape Verde | 84.1% | 64.9% | 22.7% | 3.7% | 42.2 pp |
+| Suriname | 97.3% | 82.2% | 41.7% | 8.8% | 40.5 pp |
+| China | 97.9% | 94.6% | 55.8% | 36.4% | 38.8 pp |
+| Bhutan | 68.3% | 66.0% | 29.0% | 12.5% | 37.0 pp |
+| Viet Nam | 94.1% | 80.8% | 44.2% | 11.0% | 36.6 pp |
+| Democratic Republic of the Congo | 74.7% | 59.6% | 25.7% | 3.4% | 33.9 pp |
+| Malawi | 69.8% | 54.3% | 20.4% | 1.4% | 33.9 pp |
+| Ghana | 72.9% | 60.9% | 27.3% | 3.1% | 33.6 pp |
+| Kenya | 74.5% | 62.4% | 30.6% | 5.1% | 31.8 pp |
+| Algeria | 88.9% | 82.0% | 54.0% | 28.0% | 28.0 pp |
+| El Salvador | 79.8% | 65.2% | 37.9% | 11.0% | 27.3 pp |
+| Comoros | 74.0% | 51.1% | 25.8% | 6.5% | 25.2 pp |
+| Haiti | 57.4% | 45.5% | 20.5% | 0.3% | 25.0 pp |
+| Gambia | 62.9% | 50.5% | 26.1% | 4.0% | 24.4 pp |
+| Sierra Leone | 64.8% | 48.3% | 25.3% | 6.0% | 23.0 pp |
+| Zambia | 64.2% | 45.8% | 23.4% | 5.2% | 22.3 pp |
+| Benin | 57.0% | 37.3% | 16.3% | 3.0% | 21.0 pp |
+| Liberia | 50.0% | 30.3% | 10.3% | 0.2% | 20.0 pp |
 
-**upp→col bottleneck — worst 25 countries (biggest gap at upper secondary to college):**
+**upp→col — worst 25 countries (biggest gap at upper secondary to college):**
 
-| Country | Primary | Lower Sec | Upper Sec | College | Bottleneck Gap |
+| Country | Primary | Lower Sec | Upper Sec | College | Gap |
 | :--- | ---: | ---: | ---: | ---: | ---: |
-| Turkmenistan | 99.6% | 97.0% | 97.4% | 15.9% | 81.5 pp |
-| Azerbaijan | 99.6% | 91.6% | 92.9% | 18.7% | 74.2 pp |
-| Tajikistan | 99.6% | 94.1% | 96.1% | 24.4% | 71.7 pp |
-| Ukraine | 99.6% | 90.5% | 94.5% | 23.7% | 70.8 pp |
-| Uzbekistan | 98.1% | 90.8% | 93.5% | 24.4% | 69.1 pp |
-| Croatia | 99.0% | 84.5% | 95.3% | 26.8% | 68.5 pp |
-| Bosnia And Herzegovina | 98.4% | 90.5% | 90.4% | 24.1% | 66.3 pp |
-| Serbia | 98.0% | 81.3% | 90.5% | 25.6% | 64.9 pp |
-| Belarus | 99.4% | 95.1% | 97.3% | 32.6% | 64.7 pp |
-| Czech Republic | 99.4% | 80.6% | 93.8% | 29.4% | 64.4 pp |
-| Montenegro | 97.9% | 81.2% | 91.0% | 27.0% | 64.0 pp |
-| Armenia | 99.0% | 89.7% | 95.5% | 32.6% | 62.9 pp |
-| Kazakhstan | 99.2% | 94.1% | 93.5% | 31.3% | 62.2 pp |
-| Slovenia | 99.1% | 86.5% | 93.2% | 32.2% | 61.0 pp |
-| Bahamas | 99.3% | 96.5% | 95.6% | 35.8% | 59.8 pp |
-| Zimbabwe | 75.8% | 52.6% | 68.1% | 10.0% | 58.1 pp |
-| Finland | 94.3% | 68.0% | 89.2% | 32.1% | 57.1 pp |
-| Cuba | 94.5% | 66.8% | 70.6% | 14.1% | 56.5 pp |
-| Kiribati | 84.3% | 63.6% | 59.3% | 3.8% | 55.5 pp |
-| Poland | 94.3% | 81.0% | 95.0% | 41.1% | 53.9 pp |
-| Italy | 98.7% | 72.7% | 78.9% | 26.1% | 52.8 pp |
-| Bulgaria | 94.0% | 74.9% | 83.4% | 31.2% | 52.2 pp |
-| Chile | 95.2% | 71.4% | 74.7% | 22.8% | 51.9 pp |
-| Philippines | 83.8% | 79.1% | 77.0% | 25.4% | 51.6 pp |
-| French Polynesia | 97.1% | 80.4% | 78.8% | 27.4% | 51.4 pp |
+| Turkmenistan | 100.0% | 99.9% | 95.5% | 5.1% | 90.5 pp |
+| Croatia | 99.5% | 99.5% | 94.9% | 10.9% | 84.0 pp |
+| Democratic People's Republic of Ko | 100.0% | 100.0% | 100.0% | 17.2% | 82.8 pp |
+| Kyrgyzstan | 99.1% | 98.4% | 90.6% | 8.1% | 82.5 pp |
+| Belarus | 99.9% | 99.9% | 96.2% | 14.6% | 81.6 pp |
+| Azerbaijan | 99.9% | 99.4% | 93.2% | 12.3% | 80.9 pp |
+| Serbia | 97.9% | 97.8% | 90.3% | 9.8% | 80.5 pp |
+| Finland | 100.0% | 99.5% | 84.9% | 4.4% | 80.5 pp |
+| Bosnia and Herzegovina | 99.1% | 98.8% | 93.7% | 14.4% | 79.3 pp |
+| The former Yugoslav Republic of Ma | 97.5% | 96.0% | 86.1% | 6.9% | 79.2 pp |
+| Montenegro | 97.3% | 96.3% | 90.7% | 13.6% | 77.1 pp |
+| Slovenia | 99.9% | 99.7% | 89.6% | 13.3% | 76.3 pp |
+| Ukraine | 99.9% | 99.9% | 89.9% | 13.7% | 76.2 pp |
+| Czech Republic | 99.7% | 99.5% | 90.0% | 13.9% | 76.1 pp |
+| Slovakia | 100.0% | 100.0% | 91.8% | 17.8% | 74.0 pp |
+| Switzerland | 99.2% | 97.8% | 85.9% | 13.9% | 72.0 pp |
+| Italy | 99.6% | 99.5% | 81.5% | 9.6% | 71.8 pp |
+| Poland | 100.0% | 99.1% | 90.3% | 19.2% | 71.1 pp |
+| Kazakhstan | 99.4% | 99.0% | 94.0% | 23.4% | 70.7 pp |
+| Bulgaria | 97.0% | 93.2% | 82.9% | 12.4% | 70.5 pp |
+| Russian Federation | 99.5% | 98.5% | 91.1% | 21.9% | 69.2 pp |
+| Australia | 99.9% | 99.1% | 97.6% | 28.4% | 69.2 pp |
+| Republic of Korea | 99.9% | 99.9% | 95.4% | 26.8% | 68.6 pp |
+| Australia and New Zealand | 99.8% | 98.7% | 96.4% | 29.6% | 66.8 pp |
+| Bahamas | 99.5% | 99.0% | 96.1% | 29.7% | 66.5 pp |
 
 ---
 
 ## C. Transition Efficiency (2015)
 
-Of those who completed a given level, what % continued to the next?
-High efficiency = the system retains students who enter it. Low efficiency = students stop even after completing a level.
+Of those who completed a level, what % continued to the next?
 
-**Primary→Lower Secondary transition efficiency (top and bottom 20):**
+**Primary→Lower Secondary — top and bottom 20:**
 
-*Top 20 — highest continuation from primary to lower secondary:*
-
-| Rank | Country | Primary | Lower Sec | Continuation % |
-| ---: | :--- | ---: | ---: | ---: |
-| 1 | Afghanistan | 18.4% | 18.4% | 100.0% |
-| 2 | Yemen | 33.6% | 33.6% | 100.0% |
-| 3 | South Sudan | 22.3% | 22.3% | 100.0% |
-| 4 | Turkmenistan | 99.6% | 97.0% | 97.4% |
-| 5 | Bahamas | 99.3% | 96.5% | 97.2% |
-| 6 | Singapore | 99.3% | 96.2% | 96.9% |
-| 7 | Australia | 98.8% | 95.5% | 96.7% |
-| 8 | Belarus | 99.4% | 95.1% | 95.7% |
-| 9 | Kazakhstan | 99.2% | 94.1% | 94.9% |
-| 10 | Tajikistan | 99.6% | 94.1% | 94.5% |
-| 11 | Philippines | 83.8% | 79.1% | 94.4% |
-| 12 | Japan | 99.4% | 93.6% | 94.2% |
-| 13 | Georgia | 98.3% | 91.1% | 92.7% |
-| 14 | Uzbekistan | 98.1% | 90.8% | 92.6% |
-| 15 | New Zealand | 95.5% | 87.9% | 92.0% |
-| 16 | Bosnia And Herzegovina | 98.4% | 90.5% | 92.0% |
-| 17 | Azerbaijan | 99.6% | 91.6% | 92.0% |
-| 18 | Ireland | 96.7% | 88.7% | 91.7% |
-| 19 | Ukraine | 99.6% | 90.5% | 90.9% |
-| 20 | Armenia | 99.0% | 89.7% | 90.6% |
-
-*Bottom 20 — lowest continuation:*
+*Top 20:*
 
 | Rank | Country | Primary | Lower Sec | Continuation % |
 | ---: | :--- | ---: | ---: | ---: |
-| 156 | Benin | 28.3% | 13.6% | 48.1% |
-| 157 | Suriname | 83.1% | 39.9% | 48.0% |
-| 158 | Somalia | 26.7% | 12.7% | 47.6% |
-| 159 | Ghana | 66.3% | 30.2% | 45.6% |
-| 160 | Bhutan | 48.2% | 21.6% | 44.8% |
-| 161 | Cambodia | 43.3% | 19.3% | 44.6% |
-| 162 | Madagascar | 19.2% | 8.5% | 44.3% |
-| 163 | Burundi | 16.0% | 7.0% | 43.8% |
-| 164 | Gabon | 48.9% | 20.6% | 42.1% |
-| 165 | Malawi | 48.6% | 19.7% | 40.5% |
-| 166 | Burkina Faso | 20.5% | 8.3% | 40.5% |
-| 167 | Chad | 19.6% | 7.9% | 40.3% |
-| 168 | Equatorial Guinea | 52.7% | 20.7% | 39.3% |
-| 169 | Sao Tome And Principe | 30.6% | 11.9% | 38.9% |
-| 170 | Mozambique | 29.6% | 11.3% | 38.2% |
-| 171 | Cape Verde | 52.7% | 18.7% | 35.5% |
-| 172 | Niger | 8.6% | 2.9% | 33.7% |
-| 173 | Maldives | 57.2% | 18.7% | 32.7% |
-| 174 | Central African Republic | 40.4% | 12.9% | 31.9% |
-| 175 | Angola | 29.2% | 6.1% | 20.9% |
+| 1 | Slovakia | 100.0% | 100.0% | 100.0% |
+| 2 | Democratic People's Republic of Ko | 100.0% | 100.0% | 100.0% |
+| 3 | United Kingdom of Great Britain an | 100.0% | 100.0% | 100.0% |
+| 4 | Iceland | 100.0% | 100.0% | 100.0% |
+| 5 | Turkmenistan | 100.0% | 99.9% | 100.0% |
+| 6 | Ukraine | 99.9% | 99.9% | 100.0% |
+| 7 | Belarus | 99.9% | 99.9% | 100.0% |
+| 8 | Japan | 99.9% | 99.9% | 100.0% |
+| 9 | Denmark | 100.0% | 100.0% | 100.0% |
+| 10 | Croatia | 99.5% | 99.5% | 100.0% |
+| 11 | Serbia | 97.9% | 97.8% | 100.0% |
+| 12 | Norway | 99.9% | 99.9% | 99.9% |
+| 13 | Republic of Korea | 99.9% | 99.9% | 99.9% |
+| 14 | Italy | 99.6% | 99.5% | 99.9% |
+| 15 | Malta | 100.0% | 99.9% | 99.9% |
+| 16 | Czech Republic | 99.7% | 99.5% | 99.9% |
+| 17 | Slovenia | 99.9% | 99.7% | 99.8% |
+| 18 | Hungary | 99.7% | 99.4% | 99.7% |
+| 19 | Bosnia and Herzegovina | 99.1% | 98.8% | 99.7% |
+| 20 | Taiwan Province of China | 100.0% | 99.7% | 99.7% |
 
-**Lower Secondary→Upper Secondary transition efficiency (bottom 20):**
+*Bottom 20:*
+
+| Rank | Country | Primary | Lower Sec | Continuation % |
+| ---: | :--- | ---: | ---: | ---: |
+| 170 | Sao Tome and Principe | 67.8% | 39.1% | 57.7% |
+| 171 | Myanmar | 77.8% | 43.5% | 55.9% |
+| 172 | Gabon | 85.0% | 47.1% | 55.5% |
+| 173 | Uganda | 59.4% | 32.6% | 54.9% |
+| 174 | Guinea-Bissau | 51.1% | 28.0% | 54.8% |
+| 175 | Chad | 40.5% | 21.4% | 52.7% |
+| 176 | South Sudan | 40.6% | 21.2% | 52.2% |
+| 177 | Togo | 68.2% | 35.5% | 52.0% |
+| 178 | Congo | 81.3% | 42.1% | 51.8% |
+| 179 | Lao People's Democratic Republic | 80.9% | 41.7% | 51.5% |
+| 180 | Afghanistan | 43.7% | 22.4% | 51.3% |
+| 181 | Rwanda | 44.0% | 22.5% | 51.1% |
+| 182 | Angola | 66.2% | 33.8% | 51.1% |
+| 183 | Ethiopia | 31.1% | 15.2% | 48.9% |
+| 184 | Madagascar | 47.6% | 23.1% | 48.5% |
+| 185 | Equatorial Guinea | 79.0% | 36.5% | 46.2% |
+| 186 | Central African Republic | 38.0% | 15.5% | 40.8% |
+| 187 | United Republic of Tanzania | 76.7% | 29.6% | 38.7% |
+| 188 | Burundi | 37.8% | 14.2% | 37.6% |
+| 189 | Niger | 24.8% | 8.9% | 35.8% |
+
+**Lower Secondary→Upper Secondary — bottom 20:**
 
 | Rank | Country | Lower Sec | Upper Sec | Continuation % |
 | ---: | :--- | ---: | ---: | ---: |
-| 156 | Yemen | 33.6% | 23.3% | 69.3% |
-| 157 | Myanmar | 31.0% | 23.3% | 75.2% |
-| 158 | Sao Tome And Principe | 11.9% | 9.8% | 82.4% |
-| 159 | Cambodia | 19.3% | 16.1% | 83.4% |
-| 160 | Mali | 9.5% | 8.2% | 86.3% |
-| 161 | Bhutan | 21.6% | 18.7% | 86.6% |
-| 162 | Somalia | 12.7% | 11.0% | 86.6% |
-| 163 | Togo | 19.6% | 17.0% | 86.7% |
-| 164 | China | 53.6% | 46.6% | 86.9% |
-| 165 | Cameroon | 29.8% | 26.0% | 87.2% |
-| 166 | Sudan | 36.4% | 32.1% | 88.2% |
-| 167 | Madagascar | 8.5% | 7.5% | 88.2% |
-| 168 | Pakistan | 36.7% | 32.4% | 88.3% |
-| 169 | Morocco | 36.6% | 32.4% | 88.5% |
-| 170 | Cape Verde | 18.7% | 16.6% | 88.8% |
-| 171 | Tunisia | 52.2% | 46.5% | 89.1% |
-| 172 | Bangladesh | 29.3% | 26.2% | 89.4% |
-| 173 | Timor-Leste | 56.4% | 50.5% | 89.5% |
-| 174 | Uganda | 13.5% | 12.1% | 89.6% |
-| 175 | Indonesia | 58.1% | 52.1% | 89.7% |
+| 170 | Angola | 33.8% | 5.9% | 17.4% |
+| 171 | Burkina Faso | 10.3% | 2.0% | 19.5% |
+| 172 | Equatorial Guinea | 36.5% | 9.0% | 24.7% |
+| 173 | Niger | 8.9% | 2.4% | 27.2% |
+| 174 | Burundi | 14.2% | 4.0% | 27.9% |
+| 175 | Gabon | 47.1% | 13.7% | 29.0% |
+| 176 | United Republic of Tanzania | 29.6% | 9.5% | 32.1% |
+| 177 | Liberia | 30.3% | 10.3% | 33.9% |
+| 178 | Cape Verde | 64.9% | 22.7% | 35.0% |
+| 179 | Senegal | 27.1% | 10.0% | 36.8% |
+| 180 | Maldives | 87.2% | 32.6% | 37.4% |
+| 181 | Malawi | 54.3% | 20.4% | 37.6% |
+| 182 | Chad | 21.4% | 8.1% | 38.0% |
+| 183 | Central African Republic | 15.5% | 6.2% | 39.9% |
+| 184 | Congo | 42.1% | 17.2% | 40.9% |
+| 185 | Madagascar | 23.1% | 9.7% | 41.9% |
+| 186 | Democratic Republic of the Congo | 59.6% | 25.7% | 43.1% |
+| 187 | Benin | 37.3% | 16.3% | 43.7% |
+| 188 | Sao Tome and Principe | 39.1% | 17.2% | 43.9% |
+| 189 | Bhutan | 66.0% | 29.0% | 44.0% |
 
 ---
 
 ## D. Velocity — 2005→2015 Progress Rate (pp per year)
 
-Where is momentum now? Countries are ranked by mean annual gain across all 4 levels.
-This identifies who is currently climbing fastest regardless of starting position.
+Where is momentum now? Ranked by mean annual gain across all 4 levels.
 
-**Top 30 — fastest current climbers (mean pp/year across all levels, 2005–2015):**
+**Top 30 — fastest current climbers:**
 
 | Rank | Country | Pri/yr | Low/yr | Upp/yr | Col/yr | Mean/yr | Primary 2015 | Low Sec 2015 |
 | ---: | :--- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 1 | Morocco | 2.15 | 2.00 | 1.66 | 0.76 | 1.64 | 53.8% | 36.6% |
-| 2 | Tunisia | 1.57 | 2.22 | 1.48 | 1.30 | 1.64 | 90.3% | 52.2% |
-| 3 | Turkey | 1.88 | 1.39 | 1.58 | 1.29 | 1.53 | 92.8% | 58.8% |
-| 4 | Yemen | 2.60 | 2.60 | 0.53 | 0.10 | 1.46 | 33.6% | 33.6% |
-| 5 | Timor-Leste | 1.48 | 1.92 | 1.56 | 0.69 | 1.41 | 69.5% | 56.4% |
-| 6 | Algeria | 0.86 | 1.89 | 1.65 | 0.58 | 1.25 | 89.1% | 64.4% |
-| 7 | El Salvador | 1.34 | 1.75 | 1.08 | 0.55 | 1.18 | 66.8% | 38.9% |
-| 8 | Egypt | 1.04 | 1.42 | 1.23 | 1.02 | 1.18 | 84.0% | 75.9% |
-| 9 | Kiribati | 1.17 | 1.62 | 1.67 | 0.20 | 1.17 | 84.3% | 63.6% |
-| 10 | Gambia | 1.57 | 1.41 | 1.09 | 0.46 | 1.13 | 46.8% | 25.8% |
-| 11 | Sudan | 1.54 | 1.34 | 1.10 | 0.44 | 1.10 | 48.9% | 36.4% |
-| 12 | Mauritius | 1.33 | 1.37 | 1.26 | 0.45 | 1.10 | 77.6% | 57.6% |
-| 13 | India | 1.32 | 1.47 | 0.96 | 0.65 | 1.10 | 67.4% | 48.6% |
-| 14 | United Arab Emirates | 1.73 | 1.07 | 1.02 | 0.54 | 1.09 | 87.4% | 63.7% |
-| 15 | Cuba | 0.48 | 2.02 | 1.32 | 0.52 | 1.08 | 94.5% | 66.8% |
-| 16 | Fiji | 0.70 | 2.04 | 1.10 | 0.49 | 1.08 | 90.6% | 61.3% |
-| 17 | Indonesia | 1.08 | 1.33 | 1.35 | 0.55 | 1.08 | 78.6% | 58.1% |
-| 18 | Samoa | 1.32 | 1.49 | 1.10 | 0.40 | 1.08 | 82.9% | 43.8% |
-| 19 | Nepal | 1.27 | 1.55 | 1.19 | 0.27 | 1.07 | 61.0% | 45.8% |
-| 20 | Lebanon | 0.92 | 1.62 | 1.00 | 0.71 | 1.06 | 86.7% | 57.0% |
-| 21 | China | 0.43 | 1.47 | 1.41 | 0.88 | 1.05 | 94.9% | 53.6% |
-| 22 | Macao Special Administrative Regio | 0.08 | 1.33 | 1.02 | 1.74 | 1.04 | 93.9% | 76.0% |
-| 23 | Thailand | 0.61 | 1.21 | 1.47 | 0.85 | 1.03 | 85.0% | 65.7% |
-| 24 | Bahrain | 1.61 | 0.97 | 0.99 | 0.50 | 1.02 | 77.4% | 58.9% |
-| 25 | Philippines | 1.12 | 1.17 | 1.08 | 0.68 | 1.01 | 83.8% | 79.1% |
-| 26 | Haiti | 1.38 | 1.50 | 1.07 | 0.08 | 1.01 | 53.8% | 33.3% |
-| 27 | Nigeria | 0.97 | 1.45 | 0.98 | 0.61 | 1.00 | 55.7% | 43.9% |
-| 28 | Dominican Republic | 0.89 | 1.16 | 1.25 | 0.70 | 1.00 | 79.9% | 54.6% |
-| 29 | Peru | 0.86 | 1.46 | 0.80 | 0.86 | 0.99 | 84.3% | 71.7% |
-| 30 | Myanmar | 0.97 | 1.28 | 0.82 | 0.90 | 0.99 | 53.9% | 31.0% |
+| 1 | Sierra Leone | 3.10 | 2.51 | 1.58 | 0.45 | 1.91 | 64.8% | 48.3% |
+| 2 | Bhutan | 2.72 | 2.69 | 1.32 | 0.60 | 1.83 | 68.3% | 66.0% |
+| 3 | Yemen | 2.17 | 2.19 | 2.00 | 0.00 | 1.59 | 49.4% | 49.1% |
+| 4 | United Arab Emirates | 1.34 | 1.69 | 1.66 | 0.36 | 1.26 | 95.1% | 87.8% |
+| 5 | Benin | 2.16 | 1.81 | 0.86 | 0.13 | 1.24 | 57.0% | 37.3% |
+| 6 | Timor-Leste | 1.34 | 1.48 | 1.56 | 0.53 | 1.23 | 74.5% | 68.8% |
+| 7 | Nepal | 1.52 | 1.68 | 1.59 | 0.09 | 1.22 | 78.5% | 65.0% |
+| 8 | Bahrain | 1.02 | 1.49 | 1.79 | 0.49 | 1.20 | 96.3% | 87.3% |
+| 9 | Sao Tome and Principe | 1.62 | 1.98 | 0.97 | 0.03 | 1.15 | 67.8% | 39.1% |
+| 10 | Morocco | 1.44 | 1.38 | 1.23 | 0.49 | 1.13 | 71.8% | 51.9% |
+| 11 | Tunisia | 0.40 | 2.07 | 1.43 | 0.59 | 1.12 | 97.7% | 93.7% |
+| 12 | Guatemala | 1.68 | 1.34 | 0.98 | 0.48 | 1.12 | 74.2% | 49.5% |
+| 13 | Mauritius | 0.93 | 1.52 | 1.73 | 0.29 | 1.12 | 95.7% | 80.5% |
+| 14 | Viet Nam | 0.76 | 2.25 | 1.57 | -0.13 | 1.11 | 94.1% | 80.8% |
+| 15 | Egypt | 0.97 | 0.95 | 1.14 | 1.26 | 1.08 | 80.0% | 76.8% |
+| 16 | China | 0.20 | 0.48 | 1.75 | 1.88 | 1.08 | 97.9% | 94.6% |
+| 17 | India | 1.17 | 1.33 | 1.26 | 0.51 | 1.07 | 80.1% | 67.1% |
+| 18 | Cape Verde | 1.50 | 1.80 | 0.78 | 0.11 | 1.05 | 84.1% | 64.9% |
+| 19 | Saudi Arabia | 0.78 | 1.33 | 1.64 | 0.35 | 1.03 | 94.7% | 88.0% |
+| 20 | Kuwait | 1.51 | 1.23 | 0.94 | 0.15 | 0.96 | 97.4% | 87.7% |
+| 21 | Occupied Palestinian Territory | 0.24 | 0.68 | 1.40 | 1.50 | 0.95 | 97.7% | 90.8% |
+| 22 | Bangladesh | 1.48 | 1.37 | 0.78 | 0.08 | 0.93 | 75.8% | 52.6% |
+| 23 | Togo | 1.52 | 1.13 | 0.89 | 0.16 | 0.93 | 68.2% | 35.5% |
+| 24 | Peru | 0.50 | 0.90 | 1.09 | 1.22 | 0.92 | 95.3% | 87.0% |
+| 25 | Guinea | 1.61 | 1.23 | 0.65 | 0.20 | 0.92 | 42.7% | 29.6% |
+| 26 | Turkey | -0.19 | 1.85 | 1.47 | 0.51 | 0.91 | 93.3% | 92.8% |
+| 27 | Afghanistan | 1.59 | 0.97 | 0.92 | 0.15 | 0.91 | 43.7% | 22.4% |
+| 28 | Angola | 1.92 | 1.34 | 0.23 | 0.00 | 0.87 | 66.2% | 33.8% |
+| 29 | Comoros | 1.31 | 1.25 | 0.78 | 0.13 | 0.87 | 74.0% | 51.1% |
+| 30 | Gambia | 1.39 | 1.25 | 0.72 | 0.10 | 0.87 | 62.9% | 50.5% |
 
-**Top 20 — fastest lower-secondary growth 2005–2015 (pp/year):**
+**Top 20 — fastest lower-secondary growth 2005–2015:**
 
 | Rank | Country | Low Sec 2005 | Low Sec 2015 | Growth/yr | Primary 2015 |
 | ---: | :--- | ---: | ---: | ---: | ---: |
-| 1 | Yemen | 7.6% | 33.6% | 2.60 pp/yr | 33.6% |
-| 2 | Tunisia | 30.0% | 52.2% | 2.22 pp/yr | 90.3% |
-| 3 | Fiji | 40.9% | 61.3% | 2.04 pp/yr | 90.6% |
-| 4 | Cuba | 46.6% | 66.8% | 2.02 pp/yr | 94.5% |
-| 5 | Morocco | 16.6% | 36.6% | 2.00 pp/yr | 53.8% |
-| 6 | Timor-Leste | 37.2% | 56.4% | 1.92 pp/yr | 69.5% |
-| 7 | Algeria | 45.5% | 64.4% | 1.89 pp/yr | 89.1% |
-| 8 | El Salvador | 21.4% | 38.9% | 1.75 pp/yr | 66.8% |
-| 9 | Aruba | 32.7% | 49.9% | 1.72 pp/yr | 81.9% |
-| 10 | Curaçao | 32.7% | 49.9% | 1.72 pp/yr | 86.7% |
-| 11 | Tonga | 28.6% | 45.5% | 1.69 pp/yr | 93.3% |
-| 12 | Denmark | 49.5% | 66.2% | 1.67 pp/yr | 99.8% |
-| 13 | Lebanon | 40.8% | 57.0% | 1.62 pp/yr | 86.7% |
-| 14 | Kiribati | 47.4% | 63.6% | 1.62 pp/yr | 84.3% |
-| 15 | Portugal | 45.3% | 61.4% | 1.61 pp/yr | 89.1% |
-| 16 | Comoros | 12.2% | 28.3% | 1.61 pp/yr | 48.5% |
-| 17 | Finland | 52.3% | 68.0% | 1.57 pp/yr | 94.3% |
-| 18 | Nepal | 30.3% | 45.8% | 1.55 pp/yr | 61.0% |
-| 19 | Guyana | 45.2% | 60.6% | 1.54 pp/yr | 90.1% |
-| 20 | Haiti | 18.3% | 33.3% | 1.50 pp/yr | 53.8% |
+| 1 | Bhutan | 39.1% | 66.0% | 2.69 pp/yr | 68.3% |
+| 2 | Sierra Leone | 23.2% | 48.3% | 2.51 pp/yr | 64.8% |
+| 3 | Viet Nam | 58.3% | 80.8% | 2.25 pp/yr | 94.1% |
+| 4 | Yemen | 27.3% | 49.1% | 2.19 pp/yr | 49.4% |
+| 5 | Tunisia | 73.0% | 93.7% | 2.07 pp/yr | 97.7% |
+| 6 | Sao Tome and Principe | 19.3% | 39.1% | 1.98 pp/yr | 67.8% |
+| 7 | Maldives | 68.3% | 87.2% | 1.89 pp/yr | 97.3% |
+| 8 | Turkey | 74.2% | 92.8% | 1.85 pp/yr | 93.3% |
+| 9 | Benin | 19.1% | 37.3% | 1.81 pp/yr | 57.0% |
+| 10 | Cape Verde | 46.9% | 64.9% | 1.80 pp/yr | 84.1% |
+| 11 | United Arab Emirates | 70.8% | 87.8% | 1.69 pp/yr | 95.1% |
+| 12 | Nepal | 48.3% | 65.0% | 1.68 pp/yr | 78.5% |
+| 13 | Botswana | 69.6% | 86.1% | 1.65 pp/yr | 93.2% |
+| 14 | Mauritius | 65.3% | 80.5% | 1.52 pp/yr | 95.7% |
+| 15 | Bahrain | 72.4% | 87.3% | 1.49 pp/yr | 96.3% |
+| 16 | Timor-Leste | 54.0% | 68.8% | 1.48 pp/yr | 74.5% |
+| 17 | Samoa | 80.6% | 95.3% | 1.47 pp/yr | 99.5% |
+| 18 | Cameroon | 38.3% | 52.9% | 1.46 pp/yr | 77.7% |
+| 19 | Morocco | 38.0% | 51.9% | 1.38 pp/yr | 71.8% |
+| 20 | Bangladesh | 38.9% | 52.6% | 1.37 pp/yr | 75.8% |
 
 ---
 
 ## E. Speed to 50% Lower Secondary Completion
 
-Analogous to the 60%-primary speed ranking, but for lower secondary.
-Directly tests the leapfrog thesis: did the same countries that crossed primary early also cross secondary early?
+When did each country cross 50% lower secondary completion (20–24 cohort)?
+Tests the leapfrog thesis: did countries that invested in primary early also cross secondary early?
 
-105 countries have crossed 50% lower secondary. 70 had not by 2015.
-
-**Countries that crossed 50% lower secondary (ranked by speed):**
+175 countries crossed 50% lower secondary. 29 had not by 2025.
 
 | Rank | Country | Crossed 50% Low Sec | Low Sec 2015 | Primary 2015 |
 | ---: | :--- | ---: | ---: | ---: |
-| 1 | Antigua And Barbuda | 1960 | 72.7% | 82.7% |
-| 2 | Armenia | 1960 | 89.7% | 99.0% |
-| 3 | Australia | 1960 | 95.5% | 98.8% |
-| 4 | Barbados | 1960 | 72.5% | 82.6% |
-| 5 | Czech Republic | 1960 | 80.6% | 99.4% |
-| 6 | Djibouti | 1960 | 20.5% | 31.7% |
-| 7 | Eritrea | 1960 | 20.4% | 31.6% |
-| 8 | Channel Islands | 1960 | 81.0% | 100.0% |
-| 9 | Japan | 1960 | 93.6% | 99.4% |
-| 10 | Kazakhstan | 1960 | 94.1% | 99.2% |
-| 11 | Latvia | 1960 | 74.7% | 95.1% |
-| 12 | Lithuania | 1960 | 79.3% | 93.7% |
-| 13 | Grenada | 1960 | 72.2% | 82.3% |
-| 14 | Guam | 1960 | 61.3% | 90.6% |
-| 15 | Georgia | 1960 | 91.1% | 98.3% |
-| 16 | Germany | 1960 | 76.8% | 95.4% |
-| 17 | Mauritania | 1960 | 15.9% | 28.4% |
-| 18 | Uzbekistan | 1960 | 90.8% | 98.1% |
-| 19 | Western Sahara | 1960 | 15.9% | 28.4% |
-| 20 | Switzerland | 1960 | 82.9% | 97.0% |
-| 21 | Slovenia | 1960 | 86.5% | 99.1% |
-| 22 | Seychelles | 1960 | 70.2% | 87.5% |
-| 23 | Papua New Guinea | 1960 | 30.6% | 52.7% |
-| 24 | Mayotte | 1960 | 70.4% | 87.7% |
-| 25 | Sweden | 1965 | 82.3% | 98.5% |
-| 26 | Azerbaijan | 1965 | 91.6% | 99.6% |
-| 27 | Belarus | 1965 | 95.1% | 99.4% |
-| 28 | Austria | 1965 | 80.0% | 97.2% |
-| 29 | Canada | 1965 | 83.7% | 98.4% |
-| 30 | Poland | 1965 | 81.0% | 94.3% |
-| 31 | Ukraine | 1965 | 90.5% | 99.6% |
-| 32 | Turkmenistan | 1965 | 97.0% | 99.6% |
-| 33 | Tajikistan | 1965 | 94.1% | 99.6% |
-| 34 | Serbia | 1970 | 81.3% | 98.0% |
-| 35 | Montenegro | 1970 | 81.2% | 97.9% |
-| 36 | New Zealand | 1970 | 87.9% | 95.5% |
-| 37 | Bahamas | 1970 | 96.5% | 99.3% |
-| 38 | Bulgaria | 1970 | 74.9% | 94.0% |
-| 39 | Estonia | 1970 | 65.8% | 92.2% |
-| 40 | Croatia | 1970 | 84.5% | 99.0% |
-| 41 | Puerto Rico | 1975 | 87.7% | 96.9% |
-| 42 | Norway | 1975 | 69.8% | 99.6% |
-| 43 | Mongolia | 1975 | 82.5% | 92.5% |
-| 44 | France | 1980 | 80.7% | 95.0% |
-| 45 | Singapore | 1980 | 96.2% | 99.3% |
-| 46 | Netherlands | 1980 | 76.9% | 95.1% |
-| 47 | Cyprus | 1980 | 85.3% | 97.7% |
-| 48 | Hungary | 1980 | 78.2% | 98.4% |
-| 49 | Ireland | 1980 | 88.7% | 96.7% |
-| 50 | Bosnia And Herzegovina | 1980 | 90.5% | 98.4% |
-| 51 | Finland | 1980 | 68.0% | 94.3% |
-| 52 | Luxembourg | 1985 | 77.5% | 93.2% |
-| 53 | Italy | 1985 | 72.7% | 98.7% |
-| 54 | Greece | 1985 | 79.3% | 93.2% |
-| 55 | Belgium | 1990 | 74.8% | 96.8% |
-| 56 | French Polynesia | 1990 | 80.4% | 97.1% |
-| 57 | Romania | 1990 | 71.0% | 95.7% |
-| 58 | New Caledonia | 1990 | 83.9% | 98.0% |
-| 59 | Macao Special Administrative Regio | 1995 | 76.0% | 93.9% |
-| 60 | Peru | 1995 | 71.7% | 84.3% |
-| 61 | Guadeloupe | 1995 | 76.3% | 89.1% |
-| 62 | Martinique | 1995 | 80.3% | 92.5% |
-| 63 | Malaysia | 1995 | 80.3% | 94.9% |
-| 64 | Israel | 1995 | 75.1% | 91.1% |
-| 65 | Philippines | 1995 | 79.1% | 83.8% |
-| 66 | Reunion | 2000 | 70.2% | 87.5% |
-| 67 | Trinidad And Tobago | 2000 | 70.8% | 95.0% |
-| 68 | Saudi Arabia | 2000 | 69.5% | 88.0% |
-| 69 | Malta | 2000 | 71.2% | 99.7% |
-| 70 | Chile | 2000 | 71.4% | 95.2% |
-| 71 | Egypt | 2000 | 75.9% | 84.0% |
-| 72 | Jordan | 2005 | 58.8% | 76.5% |
-| 73 | United Arab Emirates | 2005 | 63.7% | 87.4% |
-| 74 | Albania | 2005 | 58.8% | 95.5% |
-| 75 | Colombia | 2005 | 63.9% | 74.0% |
-| 76 | Spain | 2005 | 66.7% | 90.4% |
-| 77 | Thailand | 2005 | 65.7% | 85.0% |
-| 78 | Sri Lanka | 2005 | 65.8% | 89.6% |
-| 79 | Panama | 2005 | 61.4% | 77.8% |
-| 80 | Oman | 2005 | 57.6% | 74.5% |
-| 81 | Argentina | 2010 | 60.3% | 75.1% |
-| 82 | Turkey | 2010 | 58.8% | 92.8% |
-| 83 | Portugal | 2010 | 61.4% | 89.1% |
-| 84 | Mauritius | 2010 | 57.6% | 77.6% |
-| 85 | Fiji | 2010 | 61.3% | 90.6% |
-| 86 | Guyana | 2010 | 60.6% | 90.1% |
-| 87 | Indonesia | 2010 | 58.1% | 78.6% |
-| 88 | Kiribati | 2010 | 63.6% | 84.3% |
-| 89 | Denmark | 2010 | 66.2% | 99.8% |
-| 90 | Cuba | 2010 | 66.8% | 94.5% |
-| 91 | Bahrain | 2010 | 58.9% | 77.4% |
-| 92 | Algeria | 2010 | 64.4% | 89.1% |
-| 93 | Brazil | 2015 | 56.2% | 77.8% |
-| 94 | China | 2015 | 53.6% | 94.9% |
-| 95 | Dominican Republic | 2015 | 54.6% | 79.9% |
-| 96 | Botswana | 2015 | 53.8% | 83.2% |
-| 97 | Lebanon | 2015 | 57.0% | 86.7% |
-| 98 | Iceland | 2015 | 60.3% | 97.4% |
-| 99 | Ecuador | 2015 | 54.7% | 71.8% |
-| 100 | Occupied Palestinian Territory | 2015 | 55.0% | 91.5% |
-| 101 | Timor-Leste | 2015 | 56.4% | 69.5% |
-| 102 | South Africa | 2015 | 53.6% | 86.9% |
-| 103 | Tunisia | 2015 | 52.2% | 90.3% |
-| 104 | World | 2015 | 52.6% | 74.3% |
-| 105 | Zimbabwe | 2015 | 52.6% | 75.8% |
+| 1 | Australia | 1960 | 99.1% | 99.9% |
+| 2 | Australia and New Zealand | 1960 | 98.7% | 99.8% |
+| 3 | Armenia | 1960 | 99.1% | 99.7% |
+| 4 | Belarus | 1960 | 99.9% | 99.9% |
+| 5 | Belgium | 1960 | 96.3% | 100.0% |
+| 6 | Bahamas | 1960 | 99.0% | 99.5% |
+| 7 | Azerbaijan | 1960 | 99.4% | 99.9% |
+| 8 | Austria | 1960 | 98.2% | 100.0% |
+| 9 | Bulgaria | 1960 | 93.2% | 97.0% |
+| 10 | Canada | 1960 | 99.2% | 99.5% |
+| 11 | Denmark | 1960 | 100.0% | 100.0% |
+| 12 | Estonia | 1960 | 98.3% | 99.8% |
+| 13 | Curaçao | 1960 | 89.5% | 98.5% |
+| 14 | Czech Republic | 1960 | 99.5% | 99.7% |
+| 15 | Democratic People's Republic of Ko | 1960 | 100.0% | 100.0% |
+| 16 | Croatia | 1960 | 99.5% | 99.5% |
+| 17 | Georgia | 1960 | 98.6% | 99.5% |
+| 18 | Germany | 1960 | 98.9% | 100.0% |
+| 19 | Montenegro | 1960 | 96.3% | 97.3% |
+| 20 | Norway | 1960 | 99.9% | 99.9% |
+| 21 | Poland | 1960 | 99.1% | 100.0% |
+| 22 | Puerto Rico | 1960 | 96.7% | 99.2% |
+| 23 | Netherlands | 1960 | 95.1% | 99.6% |
+| 24 | Lithuania | 1960 | 98.0% | 98.3% |
+| 25 | Kyrgyzstan | 1960 | 98.4% | 99.1% |
+| 26 | Latvia | 1960 | 97.7% | 99.0% |
+| 27 | Luxembourg | 1960 | 98.2% | 100.0% |
+| 28 | Kazakhstan | 1960 | 99.0% | 99.4% |
+| 29 | Israel | 1960 | 90.2% | 96.5% |
+| 30 | Japan | 1960 | 99.9% | 99.9% |
+| 31 | Hungary | 1960 | 99.4% | 99.7% |
+| 32 | Iceland | 1960 | 100.0% | 100.0% |
+| 33 | New Zealand | 1960 | 96.5% | 99.5% |
+| 34 | Sweden | 1960 | 99.3% | 100.0% |
+| 35 | Slovenia | 1960 | 99.7% | 99.9% |
+| 36 | United Kingdom of Great Britain an | 1960 | 100.0% | 100.0% |
+| 37 | Turkmenistan | 1960 | 99.9% | 100.0% |
+| 38 | Ukraine | 1960 | 99.9% | 99.9% |
+| 39 | United States of America | 1960 | 98.0% | 99.7% |
+| 40 | Tajikistan | 1960 | 95.8% | 96.9% |
+| 41 | Switzerland | 1960 | 97.8% | 99.2% |
+| 42 | Russian Federation | 1960 | 98.5% | 99.5% |
+| 43 | Romania | 1960 | 97.7% | 98.9% |
+| 44 | Slovakia | 1960 | 100.0% | 100.0% |
+| 45 | Serbia | 1960 | 97.8% | 97.9% |
+| 46 | Republic of Moldova | 1960 | 97.9% | 99.8% |
+| 47 | Albania | 1965 | 96.3% | 96.9% |
+| 48 | Ireland | 1965 | 98.8% | 99.5% |
+| 49 | Republic of Korea | 1965 | 99.9% | 99.9% |
+| 50 | Mongolia | 1965 | 90.6% | 96.6% |
+| 51 | Finland | 1965 | 99.5% | 100.0% |
+| 52 | Bosnia and Herzegovina | 1965 | 98.8% | 99.1% |
+| 53 | Guyana | 1965 | 91.0% | 96.6% |
+| 54 | Cuba | 1965 | 96.8% | 99.0% |
+| 55 | France | 1965 | 95.2% | 99.6% |
+| 56 | Spain | 1970 | 89.2% | 97.7% |
+| 57 | French Polynesia | 1970 | 96.2% | 99.3% |
+| 58 | Sri Lanka | 1970 | 90.7% | 95.8% |
+| 59 | Cyprus | 1970 | 97.4% | 99.7% |
+| 60 | New Caledonia | 1970 | 98.4% | 99.0% |
+| 61 | Martinique | 1970 | 91.1% | 99.3% |
+| 62 | Italy | 1970 | 99.5% | 99.6% |
+| 63 | Micronesia (Federated States of) | 1970 | 81.2% | 94.5% |
+| 64 | Jordan | 1970 | 76.5% | 88.4% |
+| 65 | The former Yugoslav Republic of Ma | 1970 | 96.0% | 97.5% |
+| 66 | Singapore | 1970 | 99.2% | 99.5% |
+| 67 | United Arab Emirates | 1970 | 87.8% | 95.1% |
+| 68 | Occupied Palestinian Territory | 1975 | 90.8% | 97.7% |
+| 69 | Micronesia | 1975 | 81.8% | 91.4% |
+| 70 | Malaysia | 1975 | 96.3% | 97.6% |
+| 71 | Jamaica | 1975 | 95.3% | 99.3% |
+| 72 | Polynesia | 1975 | 95.7% | 99.4% |
+| 73 | Chile | 1975 | 96.6% | 98.2% |
+| 74 | Tonga | 1975 | 95.3% | 99.5% |
+| 75 | Suriname | 1975 | 82.2% | 97.3% |
+| 76 | Taiwan Province of China | 1975 | 99.7% | 100.0% |
+| 77 | Venezuela (Bolivarian Republic of) | 1975 | 87.3% | 93.1% |
+| 78 | Uruguay | 1975 | 72.5% | 98.0% |
+| 79 | Malta | 1975 | 99.9% | 100.0% |
+| 80 | Kuwait | 1975 | 87.7% | 97.4% |
+| 81 | Guadeloupe | 1975 | 88.0% | 98.2% |
+| 82 | Hong Kong Special Administrative R | 1975 | 97.7% | 99.8% |
+| 83 | Greece | 1975 | 93.2% | 98.3% |
+| 84 | French Guiana | 1975 | 64.9% | 87.3% |
+| 85 | Aruba | 1975 | 80.4% | 98.0% |
+| 86 | Macao Special Administrative Regio | 1980 | 93.4% | 99.0% |
+| 87 | Trinidad and Tobago | 1980 | 97.5% | 99.0% |
+| 88 | Viet Nam | 1980 | 80.8% | 94.1% |
+| 89 | Samoa | 1980 | 95.3% | 99.5% |
+| 90 | Panama | 1980 | 76.9% | 93.4% |
+| 91 | Peru | 1980 | 87.0% | 95.3% |
+| 92 | Philippines | 1980 | 75.3% | 88.9% |
+| 93 | Lebanon | 1980 | 85.0% | 97.6% |
+| 94 | China | 1980 | 94.6% | 97.9% |
+| 95 | Fiji | 1980 | 88.2% | 99.2% |
+| 96 | Melanesia | 1985 | 72.3% | 85.3% |
+| 97 | Argentina | 1985 | 73.0% | 89.8% |
+| 98 | Dominican Republic | 1985 | 78.4% | 85.5% |
+| 99 | Zimbabwe | 1985 | 71.2% | 85.4% |
+| 100 | Reunion | 1985 | 88.9% | 98.8% |
+| 101 | Saudi Arabia | 1985 | 88.0% | 94.7% |
+| 102 | South Africa | 1985 | 86.5% | 92.6% |
+| 103 | Mexico | 1985 | 86.1% | 96.3% |
+| 104 | Qatar | 1985 | 53.8% | 73.9% |
+| 105 | Ecuador | 1990 | 72.1% | 89.5% |
+| 106 | Turkey | 1990 | 92.8% | 93.3% |
+| 107 | Kenya | 1990 | 62.4% | 74.5% |
+| 108 | Brazil | 1990 | 79.0% | 93.5% |
+| 109 | Bahrain | 1990 | 87.3% | 96.3% |
+| 110 | Algeria | 1990 | 82.0% | 88.9% |
+| 111 | Portugal | 1990 | 90.8% | 96.8% |
+| 112 | Saint Lucia | 1995 | 83.1% | 95.8% |
+| 113 | Egypt | 1995 | 76.8% | 80.0% |
+| 114 | Iran (Islamic Republic of) | 1995 | 82.5% | 93.8% |
+| 115 | Indonesia | 1995 | 76.6% | 95.2% |
+| 116 | Kiribati | 1995 | 82.5% | 88.3% |
+| 117 | Mauritius | 1995 | 80.5% | 95.7% |
+| 118 | Colombia | 1995 | 78.4% | 91.1% |
+| 119 | Ghana | 1995 | 60.9% | 72.9% |
+| 120 | Bolivia (Plurinational State of) | 1995 | 84.4% | 95.5% |
+| 121 | Oman | 1995 | 82.5% | 96.3% |
+| 122 | Namibia | 1995 | 59.4% | 83.9% |
+| 123 | Thailand | 1995 | 89.5% | 97.3% |
+| 124 | Botswana | 2000 | 86.1% | 93.2% |
+| 125 | El Salvador | 2000 | 65.2% | 79.8% |
+| 126 | Tunisia | 2000 | 93.7% | 97.7% |
+| 127 | Saint Vincent and the Grenadines | 2000 | 73.1% | 99.3% |
+| 128 | Costa Rica | 2000 | 67.9% | 93.7% |
+| 129 | India | 2005 | 67.1% | 80.1% |
+| 130 | Belize | 2005 | 59.9% | 82.6% |
+| 131 | Democratic Republic of the Congo | 2005 | 59.6% | 74.7% |
+| 132 | Timor-Leste | 2005 | 68.8% | 74.5% |
+| 133 | Paraguay | 2005 | 64.1% | 85.9% |
+| 134 | Maldives | 2005 | 87.2% | 97.3% |
+| 135 | Nigeria | 2005 | 59.9% | 71.3% |
+| 136 | Nepal | 2010 | 65.0% | 78.5% |
+| 137 | Bhutan | 2010 | 66.0% | 68.3% |
+| 138 | Cape Verde | 2010 | 64.9% | 84.1% |
+| 139 | Malawi | 2015 | 54.3% | 69.8% |
+| 140 | Morocco | 2015 | 51.9% | 71.8% |
+| 141 | Comoros | 2015 | 51.1% | 74.0% |
+| 142 | Bangladesh | 2015 | 52.6% | 75.8% |
+| 143 | Cameroon | 2015 | 52.9% | 77.7% |
+| 144 | Gambia | 2015 | 50.5% | 62.9% |
+| 145 | Haiti | 2020 | 45.5% | 57.4% |
+| 146 | Brunei Darussalam | 2020 | n/a | n/a |
+| 147 | Antigua and Barbuda | 2020 | n/a | n/a |
+| 148 | Barbados | 2020 | n/a | n/a |
+| 149 | Sierra Leone | 2020 | 48.3% | 64.8% |
+| 150 | Seychelles | 2020 | n/a | n/a |
+| 151 | Solomon Islands | 2020 | 49.7% | 67.1% |
+| 152 | Mayotte | 2020 | n/a | n/a |
+| 153 | Libyan Arab Jamahiriya | 2020 | n/a | n/a |
+| 154 | Iraq | 2020 | 43.5% | 65.2% |
+| 155 | Guatemala | 2020 | 49.5% | 74.2% |
+| 156 | Grenada | 2020 | n/a | n/a |
+| 157 | Guam | 2020 | n/a | n/a |
+| 158 | Pakistan | 2020 | 47.9% | 59.1% |
+| 159 | Nicaragua | 2020 | 49.3% | 71.3% |
+| 160 | Papua New Guinea | 2020 | n/a | n/a |
+| 161 | Uzbekistan | 2020 | n/a | n/a |
+| 162 | Yemen | 2020 | 49.1% | 49.4% |
+| 163 | United States Virgin Islands | 2020 | n/a | n/a |
+| 164 | Vanuatu | 2020 | 48.1% | 68.3% |
+| 165 | Zambia | 2020 | 45.8% | 64.2% |
+| 166 | Syrian Arab Republic | 2020 | 46.6% | 65.9% |
+| 167 | Gabon | 2025 | 47.1% | 85.0% |
+| 168 | Benin | 2025 | 37.3% | 57.0% |
+| 169 | Myanmar | 2025 | 43.5% | 77.8% |
+| 170 | Honduras | 2025 | 43.6% | 73.9% |
+| 171 | Lesotho | 2025 | 42.8% | 74.0% |
+| 172 | Lao People's Democratic Republic | 2025 | 41.7% | 80.9% |
+| 173 | Congo | 2025 | 42.1% | 81.3% |
+| 174 | Sao Tome and Principe | 2025 | 39.1% | 67.8% |
+| 175 | Swaziland | 2025 | 46.0% | 71.9% |
 
-**Countries that never crossed 50% lower secondary by 2015:**
+**Countries that never crossed 50% lower secondary by 2025:**
 
-| Country | Low Sec 2015 | Primary 2015 |
-| :--- | ---: | ---: |
-| Belize | 49.9% | 63.2% |
-| Aruba | 49.9% | 81.9% |
-| Curaçao | 49.9% | 86.7% |
-| Costa Rica | 49.0% | 65.7% |
-| French Guiana | 48.8% | 65.3% |
-| India | 48.6% | 67.4% |
-| Jamaica | 46.5% | 96.6% |
-| Mexico | 46.5% | 81.2% |
-| Nepal | 45.8% | 61.0% |
-| Tonga | 45.5% | 93.3% |
-| Nigeria | 43.9% | 55.7% |
-| Paraguay | 43.9% | 62.6% |
-| Samoa | 43.8% | 82.9% |
-| Qatar | 43.5% | 60.2% |
-| Suriname | 39.9% | 83.1% |
-| El Salvador | 38.9% | 66.8% |
-| Uruguay | 38.1% | 72.1% |
-| Nicaragua | 37.6% | 50.9% |
-| Kuwait | 36.9% | 69.1% |
-| Pakistan | 36.7% | 51.0% |
-| Morocco | 36.6% | 53.8% |
-| Sudan | 36.4% | 48.9% |
-| Kenya | 34.4% | 68.2% |
-| Yemen | 33.6% | 33.6% |
-| Haiti | 33.3% | 53.8% |
-| Namibia | 32.2% | 58.0% |
-| Myanmar | 31.0% | 53.9% |
-| Solomon Islands | 30.6% | 52.7% |
-| Ghana | 30.2% | 66.3% |
-| Cameroon | 29.8% | 52.0% |
-| Bangladesh | 29.3% | 54.6% |
-| Zambia | 28.7% | 52.6% |
-| Guatemala | 28.4% | 45.0% |
-| Comoros | 28.3% | 48.5% |
-| Iraq | 28.1% | 45.1% |
-| Vanuatu | 26.1% | 49.7% |
-| Gambia | 25.8% | 46.8% |
-| Lesotho | 24.1% | 39.8% |
-| Honduras | 23.2% | 38.8% |
-| South Sudan | 22.3% | 22.3% |
-| Bhutan | 21.6% | 48.2% |
-| Equatorial Guinea | 20.7% | 52.7% |
-| Liberia | 20.6% | 37.8% |
-| Gabon | 20.6% | 48.9% |
-| Malawi | 19.7% | 48.6% |
-| Togo | 19.6% | 30.6% |
-| Cambodia | 19.3% | 43.3% |
-| Guinea | 19.0% | 34.2% |
-| Maldives | 18.7% | 57.2% |
-| Cape Verde | 18.7% | 52.7% |
-| Afghanistan | 18.4% | 18.4% |
-| Sierra Leone | 17.7% | 32.3% |
-| Senegal | 15.9% | 28.3% |
-| Cote D'Ivoire | 15.1% | 30.0% |
-| Guinea-Bissau | 13.9% | 28.5% |
-| Benin | 13.6% | 28.3% |
-| Uganda | 13.5% | 27.8% |
-| Central African Republic | 12.9% | 40.4% |
-| Rwanda | 12.7% | 22.5% |
-| Somalia | 12.7% | 26.7% |
-| Ethiopia | 12.4% | 19.5% |
-| Sao Tome And Principe | 11.9% | 30.6% |
-| Mozambique | 11.3% | 29.6% |
-| Mali | 9.5% | 17.5% |
-| Madagascar | 8.5% | 19.2% |
-| Burkina Faso | 8.3% | 20.5% |
-| Chad | 7.9% | 19.6% |
-| Burundi | 7.0% | 16.0% |
-| Angola | 6.1% | 29.2% |
-| Niger | 2.9% | 8.6% |
+| Country | Low Sec 2015 | Low Sec 2025 | Primary 2015 |
+| :--- | ---: | ---: | ---: |
+| Cambodia | 38.6% | 49.5% | 64.5% |
+| Sudan | 38.6% | 45.1% | 39.8% |
+| Equatorial Guinea | 36.5% | 45.7% | 79.0% |
+| Togo | 35.5% | 47.6% | 68.2% |
+| Angola | 33.8% | 49.9% | 66.2% |
+| Uganda | 32.6% | 48.8% | 59.4% |
+| Cote d'Ivoire | 31.6% | 45.3% | 46.2% |
+| Liberia | 30.3% | 39.6% | 50.0% |
+| United Republic of Tanzania | 29.6% | 43.1% | 76.7% |
+| Guinea | 29.6% | 37.6% | 42.7% |
+| Guinea-Bissau | 28.0% | 29.8% | 51.1% |
+| Senegal | 27.1% | 39.6% | 42.3% |
+| Mozambique | 26.0% | 27.6% | 44.2% |
+| Mali | 24.0% | 37.5% | 32.7% |
+| Madagascar | 23.1% | 34.3% | 47.6% |
+| Rwanda | 22.5% | 33.5% | 44.0% |
+| Afghanistan | 22.4% | 36.9% | 43.7% |
+| Chad | 21.4% | 27.6% | 40.5% |
+| South Sudan | 21.2% | 30.2% | 40.6% |
+| Somalia | 20.0% | 30.5% | 25.8% |
+| Central African Republic | 15.5% | 19.2% | 38.0% |
+| Ethiopia | 15.2% | 25.2% | 31.1% |
+| Burundi | 14.2% | 22.2% | 37.8% |
+| Burkina Faso | 10.3% | 17.8% | 17.6% |
+| Niger | 8.9% | 17.1% | 24.8% |
+| Djibouti | n/a | 33.6% | n/a |
+| Eritrea | n/a | 33.6% | n/a |
+| Mauritania | n/a | 39.5% | n/a |
+| Western Sahara | n/a | 41.3% | n/a |
 
 ---
 
 ## F. Female Education Deficit (2015)
 
-Female completion minus overall completion. Negative = girls behind.
-Note: female data available only for primary and lower secondary.
-Given findings.md (maternal education is the primary carrier of intergenerational transmission),
-countries with large female deficits have a structural handicap that headline completion rates hide.
+Female completion minus overall completion. **Negative** = girls behind.
+Female data available for primary and lower secondary.
 
-**Worst 30 combined female deficits (girls behind at both primary and lower secondary):**
+**Worst 30 combined female deficits:**
 
-| Rank | Country | Female–Overall Primary | Female–Overall Low Sec | Combined Deficit | Overall Low Sec 2015 |
+| Rank | Country | F−Overall Primary | F−Overall Low Sec | Combined Deficit | Low Sec 2015 |
 | ---: | :--- | ---: | ---: | ---: | ---: |
-| 1 | Yemen | -20.3 | -20.3 | -20.3 pp | 33.6% |
-| 2 | Equatorial Guinea | -13.2 | -12.1 | -12.7 pp | 20.7% |
-| 3 | Togo | -9.9 | -7.7 | -8.8 pp | 19.6% |
-| 4 | Nigeria | -9.3 | -8.0 | -8.6 pp | 43.9% |
-| 5 | Central African Republic | -8.9 | -5.4 | -7.2 pp | 12.9% |
-| 6 | Guinea | -8.8 | -5.2 | -7.0 pp | 19.0% |
-| 7 | Afghanistan | -6.8 | -6.8 | -6.8 pp | 18.4% |
-| 8 | Benin | -8.3 | -4.6 | -6.4 pp | 13.6% |
-| 9 | Chad | -8.9 | -3.7 | -6.3 pp | 7.9% |
-| 10 | Liberia | -7.3 | -4.7 | -6.0 pp | 20.6% |
-| 11 | South Sudan | -5.9 | -5.9 | -5.9 pp | 22.3% |
-| 12 | Pakistan | -6.7 | -3.9 | -5.3 pp | 36.7% |
-| 13 | Malawi | -5.9 | -4.0 | -4.9 pp | 19.7% |
-| 14 | Angola | -7.7 | -2.0 | -4.9 pp | 6.1% |
-| 15 | Guinea-Bissau | -6.3 | -3.3 | -4.8 pp | 13.9% |
-| 16 | Sierra Leone | -6.2 | -3.3 | -4.8 pp | 17.7% |
-| 17 | Cote D'Ivoire | -5.6 | -3.8 | -4.7 pp | 15.1% |
-| 18 | Gambia | -5.5 | -3.7 | -4.6 pp | 25.8% |
-| 19 | Cambodia | -5.2 | -3.6 | -4.4 pp | 19.3% |
-| 20 | Somalia | -4.3 | -4.0 | -4.1 pp | 12.7% |
-| 21 | Cameroon | -3.8 | -4.4 | -4.1 pp | 29.8% |
-| 22 | Nepal | -4.1 | -3.6 | -3.8 pp | 45.8% |
-| 23 | Ghana | -4.0 | -3.4 | -3.7 pp | 30.2% |
-| 24 | Zambia | -4.3 | -2.8 | -3.6 pp | 28.7% |
-| 25 | Mali | -4.3 | -2.7 | -3.5 pp | 9.5% |
-| 26 | Bhutan | -3.8 | -3.1 | -3.4 pp | 21.6% |
-| 27 | Papua New Guinea | -3.4 | -2.9 | -3.1 pp | 30.6% |
-| 28 | Solomon Islands | -3.4 | -2.9 | -3.1 pp | 30.6% |
-| 29 | Western Sahara | -3.2 | -2.6 | -2.9 pp | 15.9% |
-| 30 | Mauritania | -3.2 | -2.6 | -2.9 pp | 15.9% |
+| 1 | Yemen | -21.5 | -21.5 | -21.5 pp | 49.1% |
+| 2 | Afghanistan | -16.0 | -9.3 | -12.7 pp | 22.4% |
+| 3 | Guinea | -11.4 | -9.7 | -10.6 pp | 29.6% |
+| 4 | Sierra Leone | -8.9 | -12.0 | -10.4 pp | 48.3% |
+| 5 | Chad | -11.5 | -8.5 | -10.0 pp | 21.4% |
+| 6 | Democratic Republic of the Congo | -8.4 | -10.8 | -9.6 pp | 59.6% |
+| 7 | Angola | -10.4 | -7.7 | -9.0 pp | 33.8% |
+| 8 | Malawi | -7.1 | -9.9 | -8.5 pp | 54.3% |
+| 9 | Cote d'Ivoire | -8.6 | -8.2 | -8.4 pp | 31.6% |
+| 10 | Guinea-Bissau | -9.9 | -6.8 | -8.4 pp | 28.0% |
+| 11 | Benin | -7.5 | -8.6 | -8.1 pp | 37.3% |
+| 12 | Nigeria | -6.9 | -8.6 | -7.8 pp | 59.9% |
+| 13 | Togo | -6.6 | -8.2 | -7.4 pp | 35.5% |
+| 14 | Pakistan | -7.6 | -6.7 | -7.2 pp | 47.9% |
+| 15 | Central African Republic | -8.7 | -3.7 | -6.2 pp | 15.5% |
+| 16 | Mozambique | -7.3 | -4.9 | -6.1 pp | 26.0% |
+| 17 | Mali | -6.3 | -5.7 | -6.0 pp | 24.0% |
+| 18 | Somalia | -5.9 | -5.7 | -5.8 pp | 20.0% |
+| 19 | Niger | -8.3 | -2.8 | -5.5 pp | 8.9% |
+| 20 | South Sudan | -6.4 | -4.5 | -5.4 pp | 21.2% |
+| 21 | Equatorial Guinea | -0.3 | -9.5 | -4.9 pp | 36.5% |
+| 22 | Rwanda | -8.7 | -1.0 | -4.8 pp | 22.5% |
+| 23 | Lao People's Democratic Republic | -3.6 | -5.1 | -4.3 pp | 41.7% |
+| 24 | French Guiana | -3.8 | -4.6 | -4.2 pp | 64.9% |
+| 25 | Cameroon | -3.7 | -3.8 | -3.7 pp | 52.9% |
+| 26 | Nepal | -3.4 | -3.7 | -3.6 pp | 65.0% |
+| 27 | Morocco | -4.4 | -2.7 | -3.5 pp | 51.9% |
+| 28 | Guatemala | -3.5 | -3.1 | -3.3 pp | 49.5% |
+| 29 | India | -3.0 | -3.3 | -3.1 pp | 67.1% |
+| 30 | Congo | -1.0 | -5.2 | -3.1 pp | 42.1% |
 
 **Best 20 — countries where girls lead at both levels:**
 
-| Rank | Country | Female–Overall Primary | Female–Overall Low Sec | Combined Surplus | Overall Low Sec 2015 |
+| Rank | Country | F−Overall Primary | F−Overall Low Sec | Combined Surplus | Low Sec 2015 |
 | ---: | :--- | ---: | ---: | ---: | ---: |
-| 1 | Qatar | +21.2 | +19.5 | +20.4 pp | 43.5% |
-| 2 | United Arab Emirates | +2.4 | +16.2 | +9.3 pp | 63.7% |
-| 3 | Grenada | +4.8 | +6.3 | +5.5 pp | 72.2% |
-| 4 | Dominican Republic | +4.2 | +6.8 | +5.5 pp | 54.6% |
-| 5 | Aruba | +3.3 | +7.5 | +5.4 pp | 49.9% |
-| 6 | Barbados | +4.5 | +6.0 | +5.2 pp | 72.5% |
-| 7 | Lesotho | +6.8 | +3.5 | +5.2 pp | 24.1% |
-| 8 | Antigua And Barbuda | +4.4 | +5.8 | +5.1 pp | 72.7% |
-| 9 | Jamaica | +1.5 | +8.3 | +4.9 pp | 46.5% |
-| 10 | Bahrain | +1.1 | +8.3 | +4.7 pp | 58.9% |
-| 11 | Kuwait | +3.1 | +6.2 | +4.7 pp | 36.9% |
-| 12 | Uruguay | +4.0 | +4.9 | +4.4 pp | 38.1% |
-| 13 | Mauritius | +4.2 | +4.5 | +4.4 pp | 57.6% |
-| 14 | Kiribati | +3.5 | +4.8 | +4.2 pp | 63.6% |
-| 15 | Israel | +2.3 | +5.7 | +4.0 pp | 75.1% |
-| 16 | Argentina | +3.5 | +4.5 | +4.0 pp | 60.3% |
-| 17 | Brazil | +3.4 | +4.5 | +4.0 pp | 56.2% |
-| 18 | Samoa | +3.5 | +4.3 | +3.9 pp | 43.8% |
-| 19 | Portugal | +2.2 | +5.4 | +3.8 pp | 61.4% |
-| 20 | Oman | +2.0 | +5.6 | +3.8 pp | 57.6% |
+| 1 | Qatar | +14.8 | +28.1 | +21.4 pp | 53.8% |
+| 2 | Lesotho | +11.4 | +8.6 | +10.0 pp | 42.8% |
+| 3 | Namibia | +5.0 | +5.8 | +5.4 pp | 59.4% |
+| 4 | Dominican Republic | +4.1 | +5.7 | +4.9 pp | 78.4% |
+| 5 | Saint Vincent and the Grenadines | +0.2 | +9.5 | +4.9 pp | 73.1% |
+| 6 | Nicaragua | +3.8 | +5.8 | +4.8 pp | 49.3% |
+| 7 | Philippines | +3.5 | +5.9 | +4.7 pp | 75.3% |
+| 8 | Kiribati | +3.3 | +4.5 | +3.9 pp | 82.5% |
+| 9 | Argentina | +1.9 | +5.5 | +3.7 pp | 73.0% |
+| 10 | Honduras | +2.6 | +4.2 | +3.4 pp | 43.6% |
+| 11 | Bahrain | +0.7 | +5.8 | +3.3 pp | 87.3% |
+| 12 | Sao Tome and Principe | +5.3 | +0.9 | +3.1 pp | 39.1% |
+| 13 | Oman | -0.4 | +6.3 | +3.0 pp | 82.5% |
+| 14 | Micronesia | +2.3 | +3.5 | +2.9 pp | 81.8% |
+| 15 | Saint Lucia | +0.5 | +5.2 | +2.9 pp | 83.1% |
+| 16 | Brazil | +1.2 | +4.4 | +2.8 pp | 79.0% |
+| 17 | Costa Rica | +0.7 | +4.8 | +2.8 pp | 67.9% |
+| 18 | Venezuela (Bolivarian Republic of) | +1.9 | +3.6 | +2.8 pp | 87.3% |
+| 19 | Uruguay | +0.6 | +4.9 | +2.7 pp | 72.5% |
+| 20 | Occupied Palestinian Territory | +1.0 | +4.4 | +2.7 pp | 90.8% |
 
 ---
 
-*Analysis based on WCDE 5-year cohort data, linearly interpolated between observations.*
-*Female data available for primary and lower secondary only.*
+*WCDE v3 data. Age group 20–24. Female data from female cohort completion rates.*
