@@ -27,7 +27,7 @@ The target population is girls aged 15–19 currently not completing lower secon
 | 60–80% — near threshold | 21 | 81.9M | 18.6M |
 | Above 80% — self-sustaining | 70 | 51.7M | 3.3M |
 
-**The philanthropic target is all 22 countries below 40% lower-secondary completion: 19.2 million girls aged 15–19 not completing lower secondary.** These are the countries that have not crossed the self-sustaining threshold. Without sustained intervention, the T-25 mechanism runs in the wrong direction — each under-educated generation sets a lower baseline for the next. With it, crossing 40% tips the system into self-sustaining growth.
+**The philanthropic target is all 22 countries below 40% lower-secondary completion: 19.2 million girls aged 15–19 not completing lower secondary.** These are the countries that have not crossed the self-sustaining threshold. Without sustained intervention, progress continues — but slowly, constrained by the low parental base that limits how fast the T-25 compounding can accelerate. Crossing 40% is where the flywheel begins to turn on its own: fertility falls, household resources per child increase, and families pull children into school rather than needing to be pushed. The philanthropic investment buys speed — compressing what would otherwise take two generations into one.
 
 **All 22 target countries (2025 WCDE data), ranked by girls not completing:**
 
