@@ -10,7 +10,8 @@ Gao Mobo (2008, "The Battle for China's Past") argues the "ten lost years"
 narrative is an urban-elite projection onto a predominantly rural society.
 This script tests that claim against the WCDE data.
 
-Output: wcde/output/china_analysis.md
+Output: wcde/output/china_analysis_data.md (tables/data appendix)
+         wcde/output/china_analysis.md (narrative — edit by hand, not regenerated)
 """
 
 import os
@@ -594,7 +595,7 @@ p("- Bramall C (2009). *Chinese Economic Development*. Routledge.")
 p("  — Documents rural school expansion statistics from CR-era county records.")
 
 # ── Save output ─────────────────────────────────────────────────────────────────
-out_path = os.path.join(OUT, "china_analysis.md")
+out_path = os.path.join(OUT, "china_analysis_data.md")
 with open(out_path, "w") as f:
     f.write("\n".join(lines))
 

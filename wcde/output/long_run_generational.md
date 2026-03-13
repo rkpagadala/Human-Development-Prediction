@@ -50,6 +50,32 @@ transmits literacy to their child).
 in education, making pre-1960 attainment relatively high and explaining Sri Lanka's
 persistent over-performance in later cohort regressions.
 
+### Data Quality — Pre-1950 Estimates
+
+WCDE v3 is officially in **Beta** status. The reconstruction uses census microdata
+(IPUMS-International), DHS surveys, and historical census anchor points — not a
+purely algorithmic extrapolation — but reliability degrades for older cohorts and
+thinner data environments.
+
+**Reliability is country-dependent:**
+
+| Country type | Pre-1950 reliability | Reason |
+|:---|:---:|:---|
+| USA, UK, Germany, France | Moderate–good | Multiple pre-1940 census anchor points |
+| Japan | Good | Meiji-era education statistics are among the best in the world for the period |
+| Korea, Taiwan | Moderate | Japanese colonial census data available from ~1920s |
+| Large Latin American countries | Moderate | Census traditions from early 20th century |
+| Small island states, Sub-Saharan Africa | Poor | Few or no pre-1950 census anchor points; WCDE extrapolates |
+
+The 28-country panel used in this document was selected for historical depth and
+consists of countries with reasonable pre-1950 data quality. **Small countries with
+thin census histories should not be added to pre-1920 analysis** — their data is
+largely modelled, not measured.
+
+For the specific historical comparisons in this document (USA vs UK, Japan's Meiji
+foundation, Korea's post-independence acceleration), the WCDE data is sufficiently
+anchored in independent historical records to support the conclusions drawn.
+
 ---
 
 ## Regression Results

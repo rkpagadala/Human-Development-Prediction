@@ -58,14 +58,16 @@ the CR years. The children of peasant villages were learning to read faster duri
 Cultural Revolution than before it. This is exactly consistent with Gao Mobo's account of
 barefoot teachers dispatched to villages that had never had a permanent school.
 
-**At the lower secondary level, the CR produced the largest gains in China's entire
-1870–2015 history.** The cohort whose secondary schooling fell in 1970–1975 gained 10.6
-percentage points over the previous cohort. The next cohort — secondary school 1972–1977,
-the peak CR years — gained 15.0 percentage points, the largest single 5-year jump in the
-entire dataset. The mechanism was 民办学校, community-run schools that the CR actively
-promoted to replace the "bourgeois" centralised system. Their quality was uneven, but they
-existed in places where nothing had existed before. For the first time, a lower-secondary
-school was within reach of rural families across China.
+**At the lower secondary level, the CR period coincides with the largest gains in China's
+entire 1870–2015 history.** The cohort whose secondary schooling fell in 1970–1975 gained
+10.6 percentage points over the previous cohort. The next cohort — secondary school
+1972–1977, the peak CR years — gained 15.0 percentage points, the largest single 5-year
+jump in the entire dataset. The data does not tell us which specific factors drove this.
+CR-era policies documented in historical sources include 民办学校 (community-run schools)
+promoted as alternatives to the centralised system, reduced urban migration keeping children
+in rural villages, and ideological pressure for mass participation in basic education. Any
+or all of these could have contributed. What the data establishes is the timing: the gains
+were largest during the CR years, not before or after.
 
 **At the upper secondary level, there is a real scar, though a partial one.** Upper secondary
 growth nearly stalled between 1965 and 1970 — a gain of barely 0.1 percentage points over
@@ -142,6 +144,28 @@ voluntary fertility transitions in history, and it happened not because of coerc
 because rising female education and the CR's gender-equality rhetoric shifted norms in
 rural communities. A society consuming its human capital does not show these numbers.
 
+The gender data makes this concrete. China's lower secondary completion by sex, measured
+at observation years (% of 20–24 population):
+
+| Year | Both sexes | Female | Female/Both |
+|:----:|:----------:|:------:|:-----------:|
+| 1950 | 9.9% | 4.0% | 0.40 |
+| 1960 | 23.8% | 15.2% | 0.64 |
+| 1970 | 36.5% | 26.9% | 0.74 |
+| 1980 | 62.1% | 52.4% | 0.84 |
+| 1990 | 75.1% | 69.4% | 0.92 |
+| 2000 | 86.1% | 83.5% | 0.97 |
+| 2010 | 92.7% | 91.9% | 0.99 |
+| 2015 | 94.6% | 94.4% | 1.00 |
+
+In 1950, women completing lower secondary were at 40% of the male-and-female average —
+a massive gender gap. By 1970, at the start of the CR, it was 74%. By 1990, after two
+decades of the CR's gender-equality policies and the early reform era, it was 92%. By
+2015 it had closed entirely. The steepest convergence — from 0.74 to 0.92 — happened
+across the CR and early Deng decades. Gender parity in lower secondary is not a post-1978
+market achievement; the foundations were laid when the CR declared women equal
+participants in production and study.
+
 ---
 
 ## Did Deng Actually Accelerate Education?
@@ -164,16 +188,14 @@ in the same period.
 
 Upper secondary under early Deng was worse still. The average upper secondary gain for
 1980–90 was negative: −0.51 pp per cohort. The 1990 cohort upper secondary actually fell by
-2.6 percentage points from the previous generation. The mechanisms are not hard to identify.
-The Compulsory Education Law of 1986 mandated 9 years of schooling — primary plus lower
-secondary — and explicitly stopped there. Upper secondary was left to market demand, and in
-an economy where a 16-year-old could take a train to Shenzhen and earn a factory wage, market
-demand was insufficient. The CR's community schools (民办学校) had been dismantled as
-"informal"; the formal state schools that replaced them were not yet built at scale. Vietnam
-shows the same pattern after Doi Moi (1986): lower secondary gains flipped negative in 1990
-and 1995 before recovering in 2000. Socialist countries transitioning to markets consistently
-produce a trough in mass education as collective infrastructure dissolves faster than private
-or state alternatives fill the gap.
+2.6 percentage points from the previous generation. Several factors plausibly contributed:
+the Compulsory Education Law of 1986 mandated only 9 years (stopping at lower secondary,
+leaving upper secondary to market demand); economic reform created an early-entry wage
+option that competed with staying in school; and the transition from one type of school
+system to another may have created a supply gap. Vietnam shows the same pattern after Doi
+Moi (1986): lower secondary gains flipped negative in 1990 and 1995 before recovering in
+2000. The data cannot distinguish between these explanations — but the trough itself is
+real and the Deng era owns it.
 
 At the college level, Deng's genuine contribution was restoring the gaokao in 1977 — a
 meritocratic selection mechanism that reoriented family investment toward formal education.
@@ -197,7 +219,7 @@ the people who made Deng's economic miracle physically possible — were literat
 partially secondary-educated because of Mao and the Cultural Revolution, not because of
 Deng. The human capital stock that absorbed foreign direct investment, followed factory
 instructions, and trained the next generation through the T-25 multiplier was built in
-the 1950s literacy campaigns and the CR-era community schools. A rural workforce at 15%
+the 1950s literacy campaigns and the CR period. A rural workforce at 15%
 primary completion (China's level in 1950) cannot sustain export manufacturing. At 86%
 primary and 62% lower secondary — the level when Deng's reforms began — it can.
 

@@ -42,13 +42,14 @@ LEVELS_FOR = {
     "college":  ["Short Post Secondary","Post Secondary","Bachelor","Master and higher"],
 }
 
-def process_prop(path, label):
-    print(f"Processing {os.path.basename(path)} -> {label}...")
+def process_prop(path, label, sex_filter):
+    print(f"Processing {os.path.basename(path)} -> {label} (sex={sex_filter})...")
     df = pd.read_csv(path)
 
-    # Keep only 20-24 age group and years of interest
+    # Keep only 20-24 age group, years of interest, and correct sex
     df = df[df["age"] == "20--24"].copy()
     df = df[df["year"].isin(YEARS_KEEP)].copy()
+    df = df[df["sex"] == sex_filter].copy()
 
     # Normalise country name
     df["country"] = df["name"].str.strip()
@@ -80,8 +81,9 @@ def process_prop(path, label):
     return long
 
 # Process both and female completion rates
-prop_both   = process_prop(os.path.join(RAW, "prop_both.csv"),   "both")
-prop_female = process_prop(os.path.join(RAW, "prop_female.csv"), "female")
+# Note: both raw files contain rows for sex=Both/Male/Female; sex_filter selects the correct rows.
+prop_both   = process_prop(os.path.join(RAW, "prop_both.csv"),   "both",   sex_filter="Both")
+prop_female = process_prop(os.path.join(RAW, "prop_female.csv"), "female", sex_filter="Female")
 
 # Save country list
 countries = prop_both[["country"]].drop_duplicates().sort_values("country")

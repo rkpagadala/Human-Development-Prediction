@@ -31,21 +31,21 @@ but have a different interpretation depending on country history:
 
 | Model | Specification | Parental β | GDP β | R² |
 |---|---|---|---|---|
-| 1 | OLS: child ~ parent (pooled) | 0.864 | — | 0.773 |
-| 2 | OLS: child ~ parent + log GDP (pooled) | 0.701 | 5.791 | 0.829 |
-| 3 | FE: child ~ parent (within-country) | 0.493 | — | 0.423 |
-| 4 | FE: child ~ parent + log GDP (within-country) | 0.468 | 7.306 | 0.478 |
-| 5 | FE: child ~ log GDP only | — | 17.784 | 0.264 |
+| 1 | OLS: child ~ parent (pooled) | 0.847 | — | 0.800 |
+| 2 | OLS: child ~ parent + log GDP (pooled) | 0.704 | 4.788 | 0.845 |
+| 3 | FE: child ~ parent (within-country) | 0.485 | — | 0.464 |
+| 4 | FE: child ~ parent + log GDP (within-country) | 0.490 | 5.142 | 0.531 |
+| 5 | FE: child ~ log GDP only | — | 15.808 | 0.266 |
 
 ### Interpretation
 
-- **Model 1**: Every 1 pp increase in parental lower-secondary completion predicts **0.86 pp** gain in child completion (pooled). R²=0.77 — parental education alone explains 77% of cross-country variance.
+- **Model 1**: Every 1 pp increase in parental lower-secondary completion predicts **0.85 pp** gain in child completion (pooled). R²=0.80 — parental education alone explains 80% of cross-country variance.
 
-- **Model 3 (FE)**: Within the same country over time, a 1 pp rise in parental completion predicts **0.49 pp** gain in child completion. This controls for all fixed country characteristics (culture, institutions, colonial history).
+- **Model 3 (FE)**: Within the same country over time, a 1 pp rise in parental completion predicts **0.48 pp** gain in child completion. This controls for all fixed country characteristics (culture, institutions, colonial history).
 
-- **Model 4 vs 3**: Adding log GDP raises R² from 0.423 to 0.478. Parental education remains the dominant predictor; GDP adds marginal explanatory power.
+- **Model 4 vs 3**: Adding log GDP raises R² from 0.464 to 0.531. Parental education remains the dominant predictor; GDP adds marginal explanatory power.
 
-- **Model 5**: Log GDP alone (FE) explains only R²=0.264 of within-country education variation — far less than parental education (R²=0.423). **Income growth cannot substitute for the generational transmission pathway.**
+- **Model 5**: Log GDP alone (FE) explains only R²=0.266 of within-country education variation — far less than parental education (R²=0.464). **Income growth cannot substitute for the generational transmission pathway.**
 
 ---
 
@@ -55,36 +55,36 @@ Per-country OLS β of child lower-sec on parent lower-sec. High β = strong tran
 
 | Rank | Country | Parental β | R² | Low Sec 2015 | Obs |
 | ---: | :--- | ---: | ---: | ---: | ---: |
-| 1 | Yemen | 29.227 | 0.929 | 27.6% | 9 |
-| 2 | Maldives | 8.065 | 0.836 | 91.7% | 9 |
-| 3 | Bhutan | 7.046 | 0.959 | 65.1% | 9 |
-| 4 | Rwanda | 6.078 | 0.948 | 21.5% | 9 |
-| 5 | Chad | 5.653 | 0.857 | 12.9% | 9 |
-| 6 | Nepal | 4.761 | 0.955 | 61.4% | 9 |
-| 7 | Cape Verde | 4.626 | 0.933 | 66.8% | 9 |
-| 8 | Burundi | 4.136 | 0.977 | 12.9% | 9 |
-| 9 | Gambia | 3.921 | 0.889 | 48.1% | 9 |
-| 10 | Ethiopia | 3.739 | 0.972 | 14.6% | 9 |
-| 11 | Angola | 3.496 | 0.934 | 26.1% | 9 |
-| 12 | Uganda | 3.464 | 0.970 | 29.4% | 9 |
-| 13 | Mozambique | 3.408 | 0.959 | 21.1% | 9 |
-| 14 | Bangladesh | 3.353 | 0.999 | 54.5% | 9 |
-| 15 | Mali | 3.297 | 0.790 | 18.2% | 9 |
-| 16 | Niger | 3.234 | 0.880 | 6.1% | 9 |
-| 17 | Sierra Leone | 3.141 | 0.793 | 36.4% | 9 |
-| 18 | Tunisia | 3.096 | 0.957 | 93.3% | 9 |
-| 19 | United Republic of Tanzania | 2.948 | 0.922 | 26.5% | 9 |
-| 20 | Sao Tome and Principe | 2.866 | 0.920 | 40.0% | 9 |
-| 21 | Timor-Leste | 2.733 | 0.695 | 68.0% | 9 |
-| 22 | Comoros | 2.564 | 0.921 | 52.5% | 9 |
-| 23 | Guinea-Bissau | 2.477 | 0.843 | 21.2% | 9 |
-| 24 | Benin | 2.418 | 0.587 | 28.6% | 9 |
-| 25 | Togo | 2.416 | 0.755 | 27.4% | 9 |
-| 26 | Solomon Islands | 2.377 | 0.904 | 49.9% | 9 |
-| 27 | South Sudan | 2.340 | 0.945 | 16.7% | 9 |
-| 28 | Cote d'Ivoire | 2.193 | 0.964 | 23.5% | 9 |
-| 29 | Cambodia | 2.138 | 0.809 | 34.6% | 9 |
-| 30 | Guatemala | 2.094 | 0.988 | 46.5% | 9 |
+| 1 | Maldives | 5.742 | 0.922 | 87.2% | 9 |
+| 2 | Yemen | 5.662 | 0.830 | 49.1% | 9 |
+| 3 | Rwanda | 3.953 | 0.971 | 22.5% | 9 |
+| 4 | Bhutan | 3.217 | 0.983 | 66.0% | 9 |
+| 5 | Cape Verde | 3.061 | 0.777 | 64.9% | 9 |
+| 6 | Burundi | 2.694 | 0.966 | 14.2% | 9 |
+| 7 | Chad | 2.485 | 0.992 | 21.4% | 9 |
+| 8 | Bangladesh | 2.364 | 0.959 | 52.6% | 9 |
+| 9 | Ethiopia | 2.165 | 0.975 | 15.2% | 9 |
+| 10 | Nepal | 2.092 | 0.983 | 65.0% | 9 |
+| 11 | Mozambique | 2.071 | 0.975 | 26.0% | 9 |
+| 12 | Mali | 1.920 | 0.638 | 24.0% | 9 |
+| 13 | Uganda | 1.920 | 0.952 | 32.6% | 9 |
+| 14 | Tunisia | 1.898 | 0.915 | 93.7% | 9 |
+| 15 | United Republic of Tanzania | 1.896 | 0.715 | 29.6% | 9 |
+| 16 | Gambia | 1.890 | 0.975 | 50.5% | 9 |
+| 17 | Angola | 1.856 | 0.881 | 33.8% | 9 |
+| 18 | Benin | 1.770 | 0.699 | 37.3% | 9 |
+| 19 | Guatemala | 1.767 | 0.989 | 49.5% | 9 |
+| 20 | Sierra Leone | 1.761 | 0.773 | 48.3% | 9 |
+| 21 | Botswana | 1.746 | 0.939 | 86.1% | 9 |
+| 22 | Timor-Leste | 1.701 | 0.709 | 68.8% | 9 |
+| 23 | Thailand | 1.633 | 0.953 | 89.5% | 9 |
+| 24 | Kiribati | 1.534 | 0.987 | 82.5% | 9 |
+| 25 | Paraguay | 1.513 | 0.991 | 64.1% | 9 |
+| 26 | Lesotho | 1.503 | 0.975 | 42.8% | 9 |
+| 27 | Cambodia | 1.462 | 0.538 | 38.6% | 9 |
+| 28 | India | 1.445 | 0.984 | 67.1% | 9 |
+| 29 | Solomon Islands | 1.445 | 0.897 | 49.7% | 9 |
+| 30 | Bolivia (Plurinational State of) | 1.416 | 0.992 | 84.4% | 9 |
 
 ## Table 2 — Countries Where Parental Transmission Broke Down
 
@@ -92,26 +92,26 @@ Low β means child education is not well predicted by parental education — eit
 
 | Rank | Country | Parental β | R² | Low Sec 2015 | Obs |
 | ---: | :--- | ---: | ---: | ---: | ---: |
-| 170 | Romania | 0.043 | 0.265 | 97.9% | 9 |
-| 171 | Georgia | 0.031 | 0.711 | 98.6% | 9 |
-| 172 | Kazakhstan | 0.024 | 0.607 | 99.2% | 9 |
-| 173 | Tajikistan | 0.023 | 0.315 | 96.2% | 9 |
-| 174 | Republic of Moldova | 0.018 | 0.390 | 98.1% | 9 |
-| 175 | Kyrgyzstan | 0.015 | 0.378 | 98.5% | 9 |
-| 176 | Armenia | 0.014 | 0.860 | 99.3% | 9 |
-| 177 | Belarus | 0.007 | 0.585 | 99.9% | 9 |
-| 178 | Russian Federation | 0.004 | 0.060 | 98.9% | 9 |
-| 179 | Ukraine | 0.003 | 0.376 | 100.0% | 9 |
-| 180 | Democratic People's Republic of Ko | 0.001 | 0.763 | 100.0% | 9 |
-| 181 | Estonia | -0.003 | 0.015 | 98.7% | 9 |
-| 182 | Lithuania | -0.008 | 0.153 | 98.0% | 9 |
-| 183 | Japan | -0.013 | 0.064 | 99.9% | 9 |
-| 184 | Poland | -0.019 | 0.074 | 99.2% | 9 |
-| 185 | Bulgaria | -0.047 | 0.183 | 92.6% | 9 |
-| 186 | Latvia | -0.050 | 0.324 | 97.8% | 9 |
-| 187 | Iceland | -0.160 | 0.023 | 99.9% | 9 |
-| 188 | Denmark | -1.020 | 0.718 | 100.0% | 9 |
-| 189 | Norway | -1.390 | 0.321 | 99.9% | 9 |
+| 170 | Hungary | 0.041 | 0.580 | 99.4% | 9 |
+| 171 | Romania | 0.029 | 0.134 | 97.7% | 9 |
+| 172 | Kazakhstan | 0.023 | 0.606 | 99.0% | 9 |
+| 173 | Tajikistan | 0.017 | 0.188 | 95.8% | 9 |
+| 174 | Republic of Moldova | 0.016 | 0.364 | 97.9% | 9 |
+| 175 | Georgia | 0.015 | 0.396 | 98.6% | 9 |
+| 176 | Armenia | 0.009 | 0.785 | 99.1% | 9 |
+| 177 | Kyrgyzstan | 0.009 | 0.196 | 98.4% | 9 |
+| 178 | Belarus | 0.009 | 0.578 | 99.9% | 9 |
+| 179 | Ukraine | 0.007 | 0.554 | 99.9% | 9 |
+| 180 | Russian Federation | 0.003 | 0.023 | 98.5% | 9 |
+| 181 | Democratic People's Republic of Ko | 0.001 | 0.798 | 100.0% | 9 |
+| 182 | Estonia | -0.010 | 0.056 | 98.3% | 9 |
+| 183 | Japan | -0.011 | 0.057 | 99.9% | 9 |
+| 184 | Lithuania | -0.013 | 0.263 | 98.0% | 9 |
+| 185 | Poland | -0.035 | 0.079 | 99.1% | 9 |
+| 186 | Bulgaria | -0.068 | 0.280 | 93.2% | 9 |
+| 187 | Latvia | -0.082 | 0.419 | 97.7% | 9 |
+| 188 | Norway | -0.938 | 0.088 | 99.9% | 9 |
+| 189 | Denmark | -0.997 | 0.771 | 100.0% | 9 |
 
 ## Table 3 — Countries Outperforming Their Parental + Income Prediction (2015)
 
@@ -120,51 +120,51 @@ Positive = country delivered more lower-secondary completion than income and par
 
 | Rank | Country | Low Sec 2015 | Parental Low Sec | Residual |
 | ---: | :--- | ---: | ---: | ---: |
-| 1 | Maldives | 91.7% | 12.2% | +46.2 pp |
-| 2 | Tunisia | 93.3% | 28.1% | +41.6 pp |
-| 3 | Kiribati | 87.0% | 44.1% | +29.4 pp |
-| 4 | Nepal | 61.4% | 13.0% | +28.6 pp |
-| 5 | Bhutan | 65.1% | 9.7% | +28.3 pp |
-| 6 | Thailand | 92.1% | 42.6% | +27.8 pp |
-| 7 | Cape Verde | 66.8% | 13.4% | +26.7 pp |
-| 8 | Timor-Leste | 68.0% | 22.6% | +26.3 pp |
-| 9 | Botswana | 88.2% | 39.1% | +25.5 pp |
-| 10 | Bolivia (Plurinational State of) | 83.6% | 43.7% | +22.3 pp |
-| 11 | Oman | 88.8% | 38.8% | +21.4 pp |
-| 12 | Iran (Islamic Republic of) | 82.4% | 40.7% | +20.5 pp |
-| 13 | Turkey | 90.1% | 45.8% | +19.9 pp |
-| 14 | India | 63.8% | 25.8% | +18.8 pp |
-| 15 | Bangladesh | 54.5% | 15.5% | +18.2 pp |
-| 16 | Gambia | 48.1% | 11.9% | +18.0 pp |
-| 17 | Indonesia | 77.0% | 41.1% | +17.1 pp |
-| 18 | Egypt | 74.5% | 38.7% | +15.8 pp |
-| 19 | Samoa | 96.4% | 69.4% | +15.5 pp |
-| 20 | Comoros | 52.5% | 16.7% | +15.4 pp |
+| 1 | Maldives | 87.2% | 16.0% | +40.3 pp |
+| 2 | Tunisia | 93.7% | 38.1% | +35.4 pp |
+| 3 | Thailand | 89.5% | 44.9% | +24.4 pp |
+| 4 | Cape Verde | 64.9% | 16.2% | +23.2 pp |
+| 5 | Bhutan | 66.0% | 18.7% | +22.9 pp |
+| 6 | Kiribati | 82.5% | 46.3% | +22.7 pp |
+| 7 | Botswana | 86.1% | 41.9% | +22.4 pp |
+| 8 | Nepal | 65.0% | 27.2% | +21.4 pp |
+| 9 | Timor-Leste | 68.8% | 32.8% | +19.3 pp |
+| 10 | Bolivia (Plurinational State of) | 84.4% | 49.8% | +18.9 pp |
+| 11 | Samoa | 95.3% | 64.1% | +18.4 pp |
+| 12 | Yemen | 49.1% | 7.7% | +16.4 pp |
+| 13 | Iran (Islamic Republic of) | 82.5% | 48.8% | +15.6 pp |
+| 14 | Turkey | 92.8% | 59.1% | +14.6 pp |
+| 15 | India | 67.1% | 36.7% | +13.9 pp |
+| 16 | Sierra Leone | 48.3% | 17.1% | +13.8 pp |
+| 17 | Malawi | 54.3% | 29.0% | +13.5 pp |
+| 18 | Portugal | 90.8% | 55.3% | +12.6 pp |
+| 19 | Oman | 82.5% | 45.0% | +12.5 pp |
+| 20 | Colombia | 78.4% | 45.8% | +12.4 pp |
 
 ## Table 4 — Countries Underperforming Their Parental + Income Prediction (2015)
 
 | Rank | Country | Low Sec 2015 | Parental Low Sec | Residual |
 | ---: | :--- | ---: | ---: | ---: |
-| 1 | Equatorial Guinea | 27.0% | 13.3% | -20.6 pp |
-| 2 | Norway | 99.9% | 99.0% | -18.6 pp |
-| 3 | Iceland | 99.9% | 99.9% | -17.2 pp |
-| 4 | Switzerland | 97.8% | 92.7% | -17.1 pp |
-| 5 | Australia | 99.3% | 97.7% | -16.7 pp |
-| 6 | Denmark | 100.0% | 98.8% | -16.5 pp |
-| 7 | United States of America | 98.4% | 95.6% | -16.1 pp |
-| 8 | Burkina Faso | 9.0% | 4.8% | -16.1 pp |
-| 9 | Finland | 100.0% | 99.8% | -15.9 pp |
-| 10 | Sweden | 99.4% | 97.2% | -15.7 pp |
-| 11 | Austria | 99.4% | 98.3% | -15.7 pp |
-| 12 | Niger | 6.1% | 1.7% | -15.1 pp |
-| 13 | Netherlands | 96.1% | 92.4% | -14.9 pp |
-| 14 | Japan | 99.9% | 99.9% | -14.9 pp |
-| 15 | Ireland | 98.9% | 93.8% | -14.9 pp |
-| 16 | Spain | 90.1% | 88.3% | -14.7 pp |
-| 17 | Germany | 99.1% | 96.5% | -14.3 pp |
-| 18 | Canada | 99.4% | 96.4% | -14.2 pp |
-| 19 | Belgium | 96.0% | 91.8% | -14.0 pp |
-| 20 | New Zealand | 97.1% | 93.8% | -14.0 pp |
+| 1 | Qatar | 53.8% | 53.3% | -28.6 pp |
+| 2 | Equatorial Guinea | 36.5% | 27.4% | -19.4 pp |
+| 3 | Burkina Faso | 10.3% | 8.3% | -18.5 pp |
+| 4 | Iraq | 43.5% | 38.1% | -15.7 pp |
+| 5 | Norway | 99.9% | 99.2% | -15.7 pp |
+| 6 | Niger | 8.9% | 4.2% | -15.6 pp |
+| 7 | Liberia | 30.3% | 31.1% | -15.0 pp |
+| 8 | Iceland | 100.0% | 99.9% | -14.5 pp |
+| 9 | Austria | 98.2% | 98.7% | -14.4 pp |
+| 10 | Switzerland | 97.8% | 93.5% | -14.4 pp |
+| 11 | Australia | 99.1% | 97.6% | -14.0 pp |
+| 12 | Gabon | 47.1% | 37.6% | -13.9 pp |
+| 13 | Denmark | 100.0% | 99.1% | -13.9 pp |
+| 14 | Finland | 99.5% | 99.7% | -13.8 pp |
+| 15 | Netherlands | 95.1% | 92.7% | -13.4 pp |
+| 16 | United States of America | 98.0% | 95.1% | -13.4 pp |
+| 17 | Sweden | 99.3% | 97.6% | -13.4 pp |
+| 18 | Spain | 89.2% | 87.3% | -12.9 pp |
+| 19 | South Sudan | 21.2% | 12.0% | -12.9 pp |
+| 20 | Japan | 99.9% | 99.9% | -12.6 pp |
 
 ---
 

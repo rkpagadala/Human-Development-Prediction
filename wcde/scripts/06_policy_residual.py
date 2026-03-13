@@ -2,16 +2,20 @@
 06_policy_residual.py
 Policy-adjusted education ranking on WCDE v3 data.
 
-Which countries delivered more lower-secondary education than their income
-and parental education history predict?
+Which countries delivered more lower-secondary education than their
+parental education history predicts?
 
 Method:
   For each country-year, regress lower secondary completion on:
     - parental lower secondary (T-25)
-    - log GDP per capita
   The residual = actual - predicted = policy over/under-performance.
 
-Uses World Bank GDP data from datasets/ for income control.
+GDP is NOT used as a predictor: education causes GDP (education_outcomes.md),
+so controlling for GDP would block part of the education signal via the income
+channel (bad control / mediation problem). The residual here measures pure
+policy contribution above the intergenerational inheritance baseline.
+
+GDP is loaded for display in the output tables only.
 Country name matching: WCDE names → World Bank lowercase names.
 
 Outputs: wcde/output/policy_residual.md
@@ -135,15 +139,13 @@ for c in low_w.index:
 
         if any(np.isnan(x) for x in [child_low, parent_low]):
             continue
-        if np.isnan(gdp_val):
-            continue
 
         panel_rows.append({
             "country": c,
             "year": child_yr,
             "child_low": child_low,
             "parent_low": parent_low,
-            "log_gdp": np.log(gdp_val),
+            "log_gdp": np.log(gdp_val) if not np.isnan(gdp_val) else np.nan,  # display only
             "pri": pri_val,
         })
 
@@ -154,12 +156,11 @@ if len(panel) < 10:
     print("  WARNING: too few observations for regression. Check GDP data.")
     exit(1)
 
-# Country FE regression
+# Country FE regression — parental education only (no GDP: bad control / mediation)
 panel["child_low_dm"]  = panel["child_low"]  - panel.groupby("country")["child_low"].transform("mean")
 panel["parent_low_dm"] = panel["parent_low"] - panel.groupby("country")["parent_low"].transform("mean")
-panel["log_gdp_dm"]    = panel["log_gdp"]    - panel.groupby("country")["log_gdp"].transform("mean")
 
-X_fe = panel[["parent_low_dm","log_gdp_dm"]].values
+X_fe = panel[["parent_low_dm"]].values
 y_fe = panel["child_low_dm"].values
 ok   = ~np.isnan(X_fe).any(axis=1) & ~np.isnan(y_fe)
 reg_fe = LinearRegression(fit_intercept=False).fit(X_fe[ok], y_fe[ok])
@@ -169,17 +170,17 @@ panel["child_mean"] = panel.groupby("country")["child_low"].transform("mean")
 panel["fitted"]     = panel["child_mean"] + panel["fitted_dm"].fillna(0)
 panel["residual"]   = panel["child_low"] - panel["fitted"]
 
-print(f"  FE coefs: parental={reg_fe.coef_[0]:.3f}, log_gdp={reg_fe.coef_[1]:.3f}")
+print(f"  FE coef: parental={reg_fe.coef_[0]:.3f}")
 
-# Pooled OLS residual
-X_ols = panel[["parent_low","log_gdp"]].values
+# Pooled OLS residual — parental education only
+X_ols = panel[["parent_low"]].values
 y_ols = panel["child_low"].values
 ok2   = ~np.isnan(X_ols).any(axis=1) & ~np.isnan(y_ols)
 reg_ols = LinearRegression().fit(X_ols[ok2], y_ols[ok2])
 panel.loc[ok2, "fitted_ols"] = reg_ols.predict(X_ols[ok2])
 panel["resid_ols"] = panel["child_low"] - panel["fitted_ols"]
 
-print(f"  OLS coefs: parental={reg_ols.coef_[0]:.3f}, log_gdp={reg_ols.coef_[1]:.3f}")
+print(f"  OLS coef: parental={reg_ols.coef_[0]:.3f}")
 
 # Country summaries
 summary_rows = []
@@ -227,17 +228,25 @@ def pipe_table(headers, rows_data, aligns=None):
 
 h("# Policy-Adjusted Education Ranking — WCDE v3")
 h()
-h("*Which countries delivered more lower-secondary education than their income and parental education predict?*")
+h("*Which countries delivered more lower-secondary education than their parental education history predicts?*")
 h()
 h("## Method")
 h()
 h("**Target:** lower secondary completion rate (% of 20–24 cohort) at year T")
-h("**Predictors:** parental lower secondary completion at T−25, log GDP per capita at T")
+h("**Predictor:** parental lower secondary completion at T−25")
 h("**Model:** country fixed effects (within-country variation only)")
 h()
-h(f"Fixed effects coefficients:")
+h("GDP is intentionally excluded as a predictor. Because education causes GDP")
+h("(see education_outcomes.md), controlling for current income would block part of the")
+h("education signal via the income channel — a bad control / mediation problem. Countries")
+h("like Korea and Singapore that invested early in education, grew rich as a result, and")
+h("continued investing would otherwise show as under-performers because the model assigns")
+h("credit for their education gains to their income. The residual here measures policy")
+h("contribution above the intergenerational inheritance baseline only. GDP is shown in")
+h("the tables for context.")
+h()
+h(f"Fixed effects coefficient:")
 h(f"- Parental lower secondary: **{reg_fe.coef_[0]:.3f}** pp per 1 pp of parental completion")
-h(f"- Log GDP: **{reg_fe.coef_[1]:.3f}** pp per 1% GDP")
 h(f"- Panel: {len(panel)} obs, {panel['country'].nunique()} countries")
 h()
 h("**Residual = actual − predicted.** Positive residual = policy over-performance.")
@@ -299,8 +308,8 @@ pipe_table(
 
 h("---")
 h()
-h("*Method: country fixed effects regression of lower secondary completion on parental lower secondary (T−25) and log GDP.*")
-h("*GDP: World Bank inflation-adjusted USD per capita. WCDE v3 education data.*")
+h("*Method: country fixed effects regression of lower secondary completion on parental lower secondary (T−25) only.*")
+h("*GDP excluded to avoid bad-control bias (education → GDP). GDP shown for context only. WCDE v3 education data.*")
 
 with open(os.path.join(OUT, "policy_residual.md"), "w") as f:
     f.write("\n".join(lines))
