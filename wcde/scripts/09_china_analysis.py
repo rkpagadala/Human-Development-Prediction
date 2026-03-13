@@ -160,7 +160,7 @@ p("|:------:|:---------:|:-----------:|:-----------:|:---------:|:-----|")
 
 notes = {
     1955: "First 5yr PRC expansion",
-    1960: "Great Leap Forward famine (e0 falls to 45)",
+    1960: "Great Leap Forward famine (life expectancy falls to 45)",
     1965: "Recovery; upper_sec slow (+1.1pp)",
     1970: "**1970 cohort lower sec was 1960–63 (pre-CR); slowdown reflects GLF aftermath. Upper sec 1963–66 overlaps CR onset. Lower_sec +5.0pp; upper_sec stalls (+0.1pp)**",
     1975: "**CR peak. Lower_sec SURGES +10.6pp — community schools. Upper_sec +3.3pp**",
@@ -283,7 +283,7 @@ p("---")
 p()
 p("## 4. Life Expectancy and Fertility Through the CR — The Barefoot Doctor Effect")
 p()
-p("| Period | Life expectancy (e0) | Δ e0 | TFR | Δ TFR |")
+p("| Period | Life expectancy at birth | Δ LE | TFR | Δ TFR |")
 p("|:------:|:-------------------:|:----:|:---:|:-----:|")
 prev_e0 = None
 prev_tfr = None
@@ -308,13 +308,13 @@ e0_1960 = china_e0['1960']
 e0_1965 = china_e0['1965']
 e0_1980 = china_e0['1980']
 p(f"Life expectancy grew by **+{e0_1980-e0_1965:.1f} years** from 1965 to 1980, the exact CR period.")
-p("This is one of the fastest e0 gains China recorded in any 15-year window outside of")
+p("This is one of the fastest life expectancy gains China recorded in any 15-year window outside of")
 p("the post-famine recovery. The barefoot doctor (赤脚医生) programme, launched in 1965")
 p("and massively scaled during the CR, trained approximately 1 million village-level")
 p("health workers by 1975. They provided vaccinations, basic sanitation education, and")
 p("maternal care in areas where no medical infrastructure had previously existed.")
 p()
-p(f"For comparison: e0 in 1960 was {e0_1960:.1f} (the Great Leap Forward famine nadir);")
+p(f"For comparison: life expectancy in 1960 was {e0_1960:.1f} (the Great Leap Forward famine nadir);")
 p(f"by 1965 it had recovered to {e0_1965:.1f}; by 1975 it was {china_e0['1975']:.1f};")
 p(f"by 1980 it was {e0_1980:.1f}. The CR period added ~{e0_1980-e0_1965:.0f} years of")
 p("life expectancy. This is not a record of a society consuming its human capital —")
@@ -530,7 +530,7 @@ p("|:-------|:--------------|:------------|:------------|")
 p("| 1949–1966 | Maoist mass literacy campaigns | Entire rural population | Primary: 0% → 60% in 15 years |")
 p("| 1966–1976 | Community schools (民办学校); barefoot teachers | Rural lower secondary | Biggest lower_sec gains in dataset |")
 p("| 1966–1976 | University closure / worker-peasant-soldier admission | Urban elite (negative) | College stagnation at 2–3% |")
-p("| 1966–1976 | Barefoot doctors (赤脚医生); 晚稀少 campaign | Rural health and fertility | e0 +8 yrs; TFR -2.1 in 10 years |")
+p("| 1966–1976 | Barefoot doctors (赤脚医生); 晚稀少 campaign | Rural health and fertility | LE +11 yrs; TFR -2.1 in 10 years |")
 p("| 1978–1999 | Gaokao restoration; Compulsory Education Law 1986 | Upper secondary and university | Upper_sec 12% → 24%; college 3% → 12% |")
 p("| 1999–2015 | University massification (高校扩招) | University | College 12% → 36% in 15 years |")
 p()
@@ -580,7 +580,7 @@ p("- All completion rates are from WCDE v3, cohort reconstruction (script 02b)."
 p("- Cohort year = the year the cohort was approximately 20–24 (completed secondary).")
 p("- Survivorship bias in pre-1980 data: modest upward bias for education rates, making")
 p("  the CR-era gains slightly overstated; direction does not change conclusions.")
-p("- e0 and TFR from WCDE SSP2 historical series.")
+p("- Life expectancy and TFR from WCDE SSP2 historical series.")
 p("- GDP data not used directly; income context from World Bank background knowledge.")
 p()
 p("## Key References")

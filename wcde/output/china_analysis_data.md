@@ -78,7 +78,7 @@ Positive values = progress; negative = regression. Bold rows span CR schooling y
 | Cohort | Δ Primary | Δ Lower Sec | Δ Upper Sec | Δ College | Note |
 |:------:|:---------:|:-----------:|:-----------:|:---------:|:-----|
 | 1955 | +16.6 | +7.2 | +2.6 | +1.0 | First 5yr PRC expansion |
-| 1960 | +11.1 | +6.7 | +2.5 | +0.9 | Great Leap Forward famine (e0 falls to 45) |
+| 1960 | +11.1 | +6.7 | +2.5 | +0.9 | Great Leap Forward famine (life expectancy falls to 45) |
 | 1965 | +10.2 | +7.6 | +1.1 | -0.0 | Recovery; upper_sec slow (+1.1pp) |
 | 1970 | +5.2 | +5.0 | +0.1 | -0.1 | **1970 cohort lower sec was 1960–63 (pre-CR); slowdown reflects GLF aftermath. Upper sec 1963–66 overlaps CR onset. Lower_sec +5.0pp; upper_sec stalls (+0.1pp)** |
 | 1975 | +4.5 | +10.6 | +3.3 | +0.4 | **CR peak. Lower_sec SURGES +10.6pp — community schools. Upper_sec +3.3pp** |
@@ -157,7 +157,7 @@ not for most Chinese people.
 
 ## 4. Life Expectancy and Fertility Through the CR — The Barefoot Doctor Effect
 
-| Period | Life expectancy (e0) | Δ e0 | TFR | Δ TFR |
+| Period | Life expectancy at birth | Δ LE | TFR | Δ TFR |
 |:------:|:-------------------:|:----:|:---:|:-----:|
 | 1950–1954 | 45.4 | — | 6.061 | — |
 | 1955–1959 | 46.3 | +0.9 | 5.792 | -0.269 |
@@ -172,13 +172,13 @@ not for most Chinese people.
 | 2000–2004 | 73.1 | +2.3 | 1.586 | +0.041 |
 
 Life expectancy grew by **+11.1 years** from 1965 to 1980, the exact CR period.
-This is one of the fastest e0 gains China recorded in any 15-year window outside of
+This is one of the fastest life expectancy gains China recorded in any 15-year window outside of
 the post-famine recovery. The barefoot doctor (赤脚医生) programme, launched in 1965
 and massively scaled during the CR, trained approximately 1 million village-level
 health workers by 1975. They provided vaccinations, basic sanitation education, and
 maternal care in areas where no medical infrastructure had previously existed.
 
-For comparison: e0 in 1960 was 45.4 (the Great Leap Forward famine nadir);
+For comparison: life expectancy in 1960 was 45.4 (the Great Leap Forward famine nadir);
 by 1965 it had recovered to 54.4; by 1975 it was 62.5;
 by 1980 it was 65.5. The CR period added ~11 years of
 life expectancy. This is not a record of a society consuming its human capital —
@@ -338,7 +338,7 @@ debate. What is not defensible is treating the urban apex experience as the whol
 | 1949–1966 | Maoist mass literacy campaigns | Entire rural population | Primary: 0% → 60% in 15 years |
 | 1966–1976 | Community schools (民办学校); barefoot teachers | Rural lower secondary | Biggest lower_sec gains in dataset |
 | 1966–1976 | University closure / worker-peasant-soldier admission | Urban elite (negative) | College stagnation at 2–3% |
-| 1966–1976 | Barefoot doctors (赤脚医生); 晚稀少 campaign | Rural health and fertility | e0 +8 yrs; TFR -2.1 in 10 years |
+| 1966–1976 | Barefoot doctors (赤脚医生); 晚稀少 campaign | Rural health and fertility | LE +11 yrs; TFR -2.1 in 10 years |
 | 1978–1999 | Gaokao restoration; Compulsory Education Law 1986 | Upper secondary and university | Upper_sec 12% → 24%; college 3% → 12% |
 | 1999–2015 | University massification (高校扩招) | University | College 12% → 36% in 15 years |
 
@@ -388,7 +388,7 @@ The standard narrative is not wrong. It is just not about China.
 - Cohort year = the year the cohort was approximately 20–24 (completed secondary).
 - Survivorship bias in pre-1980 data: modest upward bias for education rates, making
   the CR-era gains slightly overstated; direction does not change conclusions.
-- e0 and TFR from WCDE SSP2 historical series.
+- Life expectancy and TFR from WCDE SSP2 historical series.
 - GDP data not used directly; income context from World Bank background knowledge.
 
 ## Key References
