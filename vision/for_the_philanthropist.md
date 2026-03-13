@@ -20,7 +20,7 @@ This document is about that question. The answer comes from 189 countries and 14
 
 Education is not a service. It is a compounding process.
 
-The data is unambiguous: a country's lower-secondary completion rate 25 years ago predicts its current lower-secondary completion rate more strongly than any other variable, including income. The coefficient across 189 countries over the long-run panel is close to one. Every percentage point of education added to one generation produces approximately one percentage point of gain in the next — and that generation passes it forward again.
+The data is unambiguous: a country's lower-secondary completion rate 25 years ago predicts its current lower-secondary completion rate more strongly than any other variable, including income. The coefficient across 189 countries over the long-run panel is close to one. Every percentage point of education added to one generation produces approximately one percentage point of gain in the next — and that generation passes it forward again. This is the **T-25 mechanism**: the education of parents at time T shapes the education of their children at T+25, who shape their children at T+50, compounding forward indefinitely.
 
 This means a philanthropic investment in education today does not produce one generation of better-educated children. It produces a permanently higher baseline from which every subsequent generation begins. The return does not depreciate. It compounds.
 

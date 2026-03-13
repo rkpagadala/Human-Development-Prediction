@@ -10,7 +10,7 @@ There is a generation of children being born in your country right now.
 
 In 25 years, they will be your doctors, your engineers, your teachers, your administrators. The question is not whether that generation will exist. It is what they will be capable of — and that question is largely decided by decisions made in the next five years, not the next twenty-five.
 
-This is not a metaphor. It is a measurable relationship. Across 189 countries and 140 years of data, the education level of a parent generation predicts the education level of the child generation with near-clockwork regularity. The coefficient is close to one: every percentage point of lower-secondary completion you add to today's cohort produces approximately one percentage point of gain in the next generation — and that generation passes it forward again.
+This is not a metaphor. It is a measurable relationship. Across 189 countries and 140 years of data, the education level of a parent generation predicts the education level of the child generation with near-clockwork regularity. The coefficient is close to one: every percentage point of lower-secondary completion you add to today's cohort produces approximately one percentage point of gain in the next generation — and that generation passes it forward again. Call this the **T-25 mechanism**: the education of parents at time T shapes the education of their children at T+25, who shape their children at T+50, compounding forward with each generation.
 
 You are not managing a school system. You are setting the starting conditions for a compounding process that will run for a century.
 
