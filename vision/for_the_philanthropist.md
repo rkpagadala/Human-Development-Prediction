@@ -94,19 +94,31 @@ The residual is a map of where deliberate action matters most. It is also a map 
 
 ## The Educational Rupture as a Philanthropic Target
 
-The most powerful thing philanthropic capital can do is not fund schools. It is help governments make and sustain an educational rupture.
+The most powerful thing philanthropic capital can do is help governments run schools and ensure no child is left out.
 
-An educational rupture is a decisive, sustained reorientation in which a government treats education — specifically female lower-secondary completion — as the primary national development mechanism rather than one priority among many. Korea made this rupture in the 1950s. Japan made it in 1872. Nepal approached it in the 1990s. The rupture is not a single decision; it is a durable change in how a government allocates attention, resources, and political capital across years and across successive administrations.
+That sentence is less glamorous than it sounds. It is also exactly what the best cases in history did.
 
-Philanthropic capital can support this in several ways:
+Japan in 1872 did not hire an NGO to go door-to-door. The Meiji government passed a compulsory education law, built schools, trained teachers — low quality at first — and made attendance a government responsibility. Korea did the same. Cuba in 1961 ran a national literacy campaign as a state operation. Nepal's gains in the 1990s and 2000s came from sustained government policy — building rural schools, training teachers, enforcing attendance — maintained across successive administrations. In every fast case, the government was the vehicle. The schools were government schools. The tracking of every child was a government function. The social norm that children belong in school was built by the state, not supplemented by it.
 
-**Measurement and accountability.** Governments that measure completion — not enrolment, completion — and publish those numbers publicly face accountability pressure that sustains commitment across political cycles. Funding measurement systems and civil society organisations that hold governments to education commitments is unglamorous and high-impact.
+This matters for philanthropists because it defines where the leverage actually is.
 
-**Demonstration projects that remove the perceived risk of early action.** The T-25 mechanism means the returns to education investment are invisible for 25 years. Governments face political pressure for short-term results. Philanthropic capital can fund longitudinal tracking that makes the returns visible earlier — documenting what happens to the children of the first cohort of educated mothers, making the compounding legible to policymakers and publics.
+**The Educate Girls lesson — and its limit.** Educate Girls is one of the most rigorously evaluated education organisations in the world. Operating across 30,000 villages in India, their model — community volunteers who go door-to-door to identify out-of-school girls, shift family beliefs, and support learning inside government schools — has enrolled over 2 million girls at $25 per girl per year, with an independently verified effect size of 1.25 standard deviations on learning outcomes. Their 2015 Development Impact Bond, the first of its kind in education, achieved 160% of its learning targets and returned 15% to its investor.
 
-**Teacher training before demand peaks.** This is a bet on a country's future trajectory. A philanthropist who funds a teacher training college in a country currently at 25% lower-secondary completion is funding capacity that will not be needed for 10–15 years. That is exactly the right time to fund it — because by the time the demand exists, the lead time will have passed.
+But Educate Girls exists because Indian government schools are not doing what Japan's government schools did in 1872: tracking every child, ensuring every girl attends, making completion non-negotiable. The volunteers of Team Balika are doing the work that a functional government education system does itself — through teachers, local officials, school administrators. Educate Girls is admirable precisely because it is filling a gap that should not exist. The philanthropic model it represents is second-best: it works where governments have failed, and it works well. But the first-best model — the one that produced Korea and Japan — is the government running the school and leaving no child behind.
 
-**Removal of girls' secondary barriers at scale.** The specific friction — distance, cost, safety, early marriage — varies by country. The principle does not: the intervention that keeps a girl in school through lower secondary produces a 25-year compounding return through her children. The cost per girl of a targeted scholarship or transport subsidy is modest. The return is generational.
+The implication is not to stop funding organisations like Educate Girls. It is to understand what they are: proof that the last-mile activation is achievable cheaply, and a template for what government systems should be doing themselves. The highest-leverage philanthropic investment is not funding the NGO workaround indefinitely — it is using the workaround's evidence to build the government's capacity to do it directly and at scale.
+
+**What to fund concretely:**
+
+- **Government school construction and operation in areas without access** — not prestigious infrastructure, but functional schools within reach of every child. Low quality is acceptable and expected at the start. The T-25 mechanism bootstraps quality across generations; the first generation of schools does not need to be good. It needs to exist.
+
+- **Government capacity to track every child through to completion** — the single operational difference between countries that achieved universal secondary and those that did not is whether the state knew which children were out of school and acted on it. Funding enrollment management systems, teacher attendance tracking, and local accountability structures inside government ministries is unglamorous and high-leverage.
+
+- **Teacher training pipelines built before demand peaks** — secondary teachers need tertiary education; the lead time is 8–12 years. In countries currently at 20–40% lower-secondary completion, the secondary expansion is coming. The question is whether the teacher supply will be ready. Funding government teacher training colleges now is time-sensitive in a way that school buildings are not.
+
+- **Results-based government accountability** — the Educate Girls DIB demonstrated that outcome-linked financing (paying for completion and learning, not enrolment and construction) changes what institutions optimise for. The same structure applied to government education ministries — disbursements tied to independently verified completion rates — creates incentives for governments to do what the best historical cases did: track every child, leave none behind, and measure what actually compounds.
+
+- **Communication of what the historical data already proves** — the T-25 mechanism does not need a new 25-year study. It is confirmed across 189 countries and 140 years of cohort data with a near-unity coefficient. The gap is not evidence; it is legibility. Governments and publics do not act on what they cannot see. Funding the translation of existing historical data into formats that make the compounding chain visible — to ministers, to budget committees, to voters — is the highest-return evidence investment, because the evidence already exists.
 
 ---
 
