@@ -444,29 +444,26 @@ p()
 p("### 6.2 Gender gap trajectory")
 p()
 p("One dimension rarely discussed in standard CR critiques: the Cultural Revolution")
-p("actively promoted gender equality in education and work. The WCDE does not have")
-p("sex-disaggregated cohort reconstruction, but the female deficit index (female/both ratio)")
-p("from the 2015 cohort gives a snapshot. A value > 1.0 means women are now completing")
-p("secondary at HIGHER rates than the population average — which in China's case reflects")
-p("both the post-1980 demographic imbalance (fewer girls born) and genuine female educational")
-p("attainment.")
+p("actively promoted gender equality in education and work. The sex-disaggregated cohort")
+p("reconstruction (WCDE female and male series) lets us track the closing of the gender gap")
+p("through the full cohort series — how much lower female lower-secondary completion was")
+p("relative to the combined average, and when parity was achieved.")
 
-lower_sec_f = pd.read_csv(os.path.join(PROC, "lower_sec_female.csv"), index_col=0)
-lower_sec_b = pd.read_csv(os.path.join(PROC, "lower_sec_both.csv"), index_col=0)
-if "China" in lower_sec_f.index and "China" in lower_sec_b.index:
-    f_vals = lower_sec_f.loc["China"]
-    b_vals = lower_sec_b.loc["China"]
+cohort_f = pd.read_csv(os.path.join(PROC, "cohort_completion_female_long.csv"))
+cohort_b = pd.read_csv(os.path.join(PROC, "cohort_completion_both_long.csv"))
+china_coh_f = cohort_f[cohort_f["country"] == "China"].set_index("cohort_year").sort_index()
+china_coh_b_f = cohort_b[cohort_b["country"] == "China"].set_index("cohort_year").sort_index()
+if len(china_coh_f) and len(china_coh_b_f):
     p()
-    p("| Year | Both sexes lower_sec (obs yr %) | Female lower_sec % | Female/Both ratio |")
-    p("|:----:|:-------------------------------:|:-----------------:|:-----------------:|")
-    for yr in [1950, 1960, 1970, 1980, 1990, 2000, 2010, 2015]:
-        yrstr = str(yr)
-        if yrstr in f_vals.index and yrstr in b_vals.index:
-            fv = f_vals[yrstr]
-            bv = b_vals[yrstr]
+    p("| Cohort | Both sexes lower_sec % | Female lower_sec % | Female/Both ratio |")
+    p("|:------:|:----------------------:|:-----------------:|:-----------------:|")
+    for cy in [1950, 1960, 1970, 1980, 1990, 2000, 2010, 2015]:
+        if cy in china_coh_f.index and cy in china_coh_b_f.index:
+            fv = china_coh_f.loc[cy, "lower_sec"]
+            bv = china_coh_b_f.loc[cy, "lower_sec"]
             if not (np.isnan(fv) or np.isnan(bv) or bv == 0):
                 ratio = fv / bv
-                p(f"| {yr} | {bv:.1f}% | {fv:.1f}% | {ratio:.2f} |")
+                p(f"| {cy} | {bv:.1f}% | {fv:.1f}% | {ratio:.2f} |")
 
 p()
 
@@ -560,14 +557,20 @@ p("standard historiography is **supported at the primary and lower-secondary lev
 p("The WCDE data shows no interruption in primary growth and the largest lower-secondary")
 p("gains of the century during the CR years.")
 p()
-p("Gao's claim is **not supported at the college level**: university completion stagnated")
-p("for 15 years, and the loss of 2–4 million graduates across a decade was economically")
-p("and socially significant.")
+p("The college data does not contradict Gao — it confirms the second half of his argument.")
+p("Gao explicitly acknowledges that the urban educated class was disrupted; that was the")
+p("*point* of the CR from the perspective of its designers. His claim was never that")
+p("university closures were good policy. It was that the standard narrative mistakes the")
+p("experience of the 2–3% who aspired to university for the history of China, while ignoring")
+p("the 80% who were rural peasants. The college stagnation is exactly what he describes:")
+p("the urban elite were hit hard. The data adds precision — 2–4 million graduates not")
+p("produced, a real and serious cost — but it falls entirely within the population Gao")
+p("says bore the disruption.")
 p()
-p("The resolution: both claims are true for different populations. The standard narrative")
-p("is correct for urban educated families — the 2–3% who aspired to university. Gao Mobo")
-p("is correct for rural peasants — the 80% who for the first time got a school within")
-p("walking distance of their village.")
+p("The standard narrative is correct for urban educated families — the 2–3% who aspired to")
+p("university. Gao Mobo is correct for rural peasants — the 80% who for the first time got")
+p("a school within walking distance of their village. These are not contradictory readings")
+p("of the same evidence; they describe different people.")
 p()
 p("---")
 p()

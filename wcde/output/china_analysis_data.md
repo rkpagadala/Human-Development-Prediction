@@ -275,15 +275,13 @@ cohort — approximately 15–20 years later.
 ### 6.2 Gender gap trajectory
 
 One dimension rarely discussed in standard CR critiques: the Cultural Revolution
-actively promoted gender equality in education and work. The WCDE does not have
-sex-disaggregated cohort reconstruction, but the female deficit index (female/both ratio)
-from the 2015 cohort gives a snapshot. A value > 1.0 means women are now completing
-secondary at HIGHER rates than the population average — which in China's case reflects
-both the post-1980 demographic imbalance (fewer girls born) and genuine female educational
-attainment.
+actively promoted gender equality in education and work. The sex-disaggregated cohort
+reconstruction (WCDE female and male series) lets us track the closing of the gender gap
+through the full cohort series — how much lower female lower-secondary completion was
+relative to the combined average, and when parity was achieved.
 
-| Year | Both sexes lower_sec (obs yr %) | Female lower_sec % | Female/Both ratio |
-|:----:|:-------------------------------:|:-----------------:|:-----------------:|
+| Cohort | Both sexes lower_sec % | Female lower_sec % | Female/Both ratio |
+|:------:|:----------------------:|:-----------------:|:-----------------:|
 | 1950 | 9.9% | 4.0% | 0.40 |
 | 1960 | 23.8% | 15.2% | 0.64 |
 | 1970 | 36.5% | 26.9% | 0.74 |
@@ -366,14 +364,20 @@ standard historiography is **supported at the primary and lower-secondary levels
 The WCDE data shows no interruption in primary growth and the largest lower-secondary
 gains of the century during the CR years.
 
-Gao's claim is **not supported at the college level**: university completion stagnated
-for 15 years, and the loss of 2–4 million graduates across a decade was economically
-and socially significant.
+The college data does not contradict Gao — it confirms the second half of his argument.
+Gao explicitly acknowledges that the urban educated class was disrupted; that was the
+*point* of the CR from the perspective of its designers. His claim was never that
+university closures were good policy. It was that the standard narrative mistakes the
+experience of the 2–3% who aspired to university for the history of China, while ignoring
+the 80% who were rural peasants. The college stagnation is exactly what he describes:
+the urban elite were hit hard. The data adds precision — 2–4 million graduates not
+produced, a real and serious cost — but it falls entirely within the population Gao
+says bore the disruption.
 
-The resolution: both claims are true for different populations. The standard narrative
-is correct for urban educated families — the 2–3% who aspired to university. Gao Mobo
-is correct for rural peasants — the 80% who for the first time got a school within
-walking distance of their village.
+The standard narrative is correct for urban educated families — the 2–3% who aspired to
+university. Gao Mobo is correct for rural peasants — the 80% who for the first time got
+a school within walking distance of their village. These are not contradictory readings
+of the same evidence; they describe different people.
 
 ---
 
