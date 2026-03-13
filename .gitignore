@@ -1,3 +1,9 @@
 *.vscode/**
 
 **/*.DS_Store
+
+# Large WCDE raw data files — regenerate with wcde/scripts/01_download.R
+wcde/data/raw/pop_both.csv
+wcde/data/raw/pop_female.csv
+wcde/data/raw/prop_both.csv
+wcde/data/raw/prop_female.csv
