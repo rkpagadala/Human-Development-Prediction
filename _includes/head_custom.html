@@ -1,0 +1,38 @@
+<style>
+table th { cursor: pointer; user-select: none; white-space: nowrap; }
+table th:hover { background: #eef; }
+table th.sort-asc::after  { content: " ▲"; font-size: 0.75em; }
+table th.sort-desc::after { content: " ▼"; font-size: 0.75em; }
+table { border-collapse: collapse; width: 100%; }
+table td, table th { padding: 4px 8px; border: 1px solid #ddd; }
+table tr:nth-child(even) { background: #f9f9f9; }
+</style>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll("table").forEach(function (table) {
+    var headers = table.querySelectorAll("thead th, tr:first-child th");
+    if (!headers.length) return;
+    headers.forEach(function (th, col) {
+      th.addEventListener("click", function () {
+        var asc = !th.classList.contains("sort-asc");
+        headers.forEach(function (h) { h.classList.remove("sort-asc", "sort-desc"); });
+        th.classList.add(asc ? "sort-asc" : "sort-desc");
+        var tbody = table.querySelector("tbody") || table;
+        var rows = Array.from(tbody.querySelectorAll("tr")).filter(function (r) {
+          return r.parentElement.tagName !== "THEAD" && r.querySelectorAll("th").length === 0;
+        });
+        rows.sort(function (a, b) {
+          var av = (a.cells[col] || {}).innerText || "";
+          var bv = (b.cells[col] || {}).innerText || "";
+          // strip formatting: M, %, commas
+          var an = parseFloat(av.replace(/[^0-9.\-]/g, ""));
+          var bn = parseFloat(bv.replace(/[^0-9.\-]/g, ""));
+          if (!isNaN(an) && !isNaN(bn)) return asc ? an - bn : bn - an;
+          return asc ? av.localeCompare(bv) : bv.localeCompare(av);
+        });
+        rows.forEach(function (r) { tbody.appendChild(r); });
+      });
+    });
+  });
+});
+</script>
