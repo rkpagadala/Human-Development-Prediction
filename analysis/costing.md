@@ -6,7 +6,42 @@
 
 ---
 
-## The Scale of the Problem — and Why Philanthropy Cannot Solve It Alone
+## How the Historical Cases Actually Did It
+
+The fastest educational transformations in history were not funded by philanthropy. They were driven by political will, with money as a secondary instrument.
+
+**Japan, 1872.** The Meiji government issued a compulsory education ordinance with almost no budget to implement it. Schools were established in repurposed Buddhist temples and Shinto shrines — existing buildings, no construction cost. Teachers were community members: former samurai, literate merchants, Confucian scholars. No teacher training pipeline existed; the first generation of teachers taught what they knew, imperfectly. Families were required to contribute to school costs directly. The central government's role was mandate and tracking, not funding. Within a generation, Japan had near-universal primary attendance.
+
+**Korea, 1953–1980.** The Korean government expanded secondary education through overcrowded classrooms and undertrained teachers. Class sizes of 60–80 students were standard. Schools operated in double shifts. The state did not wait for quality before expanding access. Teacher training was compressed and below international standards. External financial support (US aid, World Bank) helped at the margins — it did not cause the trajectory. The cause was a government that treated education as non-negotiable.
+
+**Cuba, 1961.** The literacy campaign deployed approximately 268,000 volunteer teachers — most of them teenagers — into rural areas for eight months. No salaries. No school buildings. They taught under trees, in homes, by lamplight. The result: adult illiteracy fell from roughly 24% to under 4% in one year. Cost to the state: logistics, a literacy primer, and political organization. Not teacher salaries. Not infrastructure.
+
+**Nepal, 1990–2015.** From under 10% to 53% lower-secondary completion at $200 per capita GDP. The investment was sustained political commitment to female secondary access across successive governments — building schools in rural areas (simple structures, not prestigious ones), removing cost barriers, training teachers at compressed speed. No exceptional external funding.
+
+The pattern: **mandate + community mobilization + tracking + political staying power**. The money is real but small relative to what governments spend on teacher salaries and school construction as routine education budget items.
+
+---
+
+## What Educate Girls Proves About Cost
+
+Educate Girls operates across 30,000+ villages in India. Their model:
+
+- Community volunteers (Team Balika) go door-to-door to identify out-of-school girls
+- Volunteers shift family beliefs through community engagement
+- Children are enrolled in existing government schools — no new schools built
+- No stipends paid to girls or families
+- No teacher salaries paid — government teachers are already there
+- Curriculum support kits provided to existing classrooms
+
+**Cost: $25 per girl per year.** Effect size: 1.25 standard deviations on learning outcomes (independently verified). Their 2015 Development Impact Bond achieved 160% of its targets.
+
+$25 covers: volunteer training, coordination, curriculum materials, community engagement. Not delivery of education itself — that runs on existing government infrastructure.
+
+The implication: the marginal cost of getting a child into school and keeping them there — when the government school exists — is orders of magnitude lower than building and staffing a school. Educate Girls works precisely because it does not pay for what government already provides. The philanthropic cost is the activation cost, not the delivery cost.
+
+---
+
+## The Scale of the Problem — and Who Needs to Be Reached
 
 From WCDE v3 population data (2025 projections, both sexes, age 15–19):
 
@@ -16,17 +51,7 @@ From WCDE v3 population data (2025 projections, both sexes, age 15–19):
 | Upper secondary | 396.0M | 64% |
 | Completing lower sec but not upper sec | 210.6M | — |
 
-The lower secondary threshold is where the P-25 multiplier is highest and where the 19 target countries are concentrated. Of the 185.5M children not completing lower secondary globally, **42M (23%) live in the 19 countries below 40%** — the countries where the self-sustaining flywheel has not yet started. Upper secondary non-completion is a larger absolute number but spans much wealthier countries where government systems are already functional; the philanthropic case is weakest there.
-
-The annual financing gap to achieve universal secondary education across low- and lower-middle-income countries is **$97 billion per year** through 2030 (UNESCO GEM Report 2023). Total philanthropic flows to education in developing countries are roughly **$2 billion per year** — 2% of the gap.
-
-Philanthropy cannot substitute for government spending. Low-income country governments spend $55 per child per year on education today; a functional system requires $197–250. Closing that gap requires governments raising domestic revenue and shifting ODA.
-
-The philanthropic role is **catalytic**: fund what governments cannot take the risk of funding first, prove it works at scale, and shift the much larger flows of government and donor spending toward what the evidence shows.
-
----
-
-## Who Needs to Be Reached — and How Many
+The lower secondary threshold is where the P-25 multiplier is highest and where the 19 target countries are concentrated. Of the 185.5M children not completing lower secondary globally, **42M (23%) live in the 19 countries below 40%** — the countries where the self-sustaining flywheel has not yet started.
 
 The target population is all children aged 15–19 not completing lower secondary in the 19 countries currently below 40% lower-secondary completion (WCDE v3, 2025 period data). This is **41.97 million children** — both sexes, nearly equal split.
 
@@ -37,7 +62,7 @@ The target population is all children aged 15–19 not completing lower secondar
 | — of whom: girls | 20.8M | 49% |
 | — of whom: boys | 21.2M | 51% |
 
-**The gender split is nearly equal.** This is not primarily a girls-only problem in these countries — boys and girls are failing to reach lower secondary at almost identical rates. The focus on girls is warranted because of the P-25 multiplier (educated mothers have the stronger intergenerational effect), but the investment case for boys is equally strong and the delivery system must reach both.
+**The gender split is nearly equal.** The focus on girls is warranted because of the P-25 multiplier (educated mothers have the stronger intergenerational effect), but the delivery system must reach both.
 
 **Three distinct groups, three distinct interventions:**
 
@@ -47,7 +72,7 @@ The target population is all children aged 15–19 not completing lower secondar
 | Incomplete primary — dropped out | 10.7M | 26% | Retention support, cost removal, re-entry pathways |
 | Completed primary, not in secondary | 19.1M | 45% | Secondary school access, stipends, teacher supply |
 
-The largest single group — 19.1 million children who completed primary but are not transitioning to secondary — represents a system failure at the primary-to-secondary transition, not at enrollment. These children already trust the school system enough to complete primary. The barrier is that secondary is not available, not accessible, or not affordable where they live.
+The largest single group — 19.1 million children who completed primary but are not transitioning to secondary — represents a system failure at the primary-to-secondary transition, not at enrollment. These children already trust the school system. The barrier is that secondary is not available, accessible, or affordable where they live.
 
 **All 19 target countries (2025 WCDE data), ranked by total not completing:**
 
@@ -80,74 +105,58 @@ India sits above the 40% threshold nationally (80% lower secondary) but has 12.2
 
 ---
 
-## What the Bangladesh Case Proves About Scale
+## What Philanthropy Actually Buys
 
-Bangladesh's Female Secondary Stipend Programme (FSSAP), launched in 1994, is the clearest documented case of a government educational rupture triggered by targeted external investment. The programme paid girls' school fees, provided a small cash stipend conditional on 75% attendance and remaining unmarried, and covered exam fees.
+The historical cases show that government will — not external money — is the primary mechanism. Philanthropy's role is to:
+
+1. **Make the will visible and legible** — show governments what their own data says, in a form that ministers and budget committees can act on
+2. **Reduce the political risk of the first move** — fund proof-of-concept at small scale before government takes the risk of national commitment
+3. **Build the operational infrastructure** that governments need but cannot fund out of routine education budgets: enrollment tracking, community mobilization systems, monitoring
+
+What philanthropy does **not** need to fund:
+- Teacher salaries (government education budgets already pay these)
+- School construction (low-quality existing structures work; the P-25 bootstraps quality)
+- Stipends at scale (Bangladesh showed this works; it also showed the government absorbed and scaled it once proven)
+
+**The catalytic cost structure per country:**
+
+| Component | Cost | What it does |
+|---|---|---|
+| Political engagement and evidence translation | $1–3M | Make the mechanism legible to ministers; translate P-25 data into national projections; fund the political case for commitment |
+| Enrollment tracking system (government ministry) | $2–5M one-time | Track every child by name through to completion; the operational difference between countries that achieved universal secondary and those that didn't |
+| Community mobilization training | $50–100/volunteer × 10,000–50,000 volunteers | Train community members to identify out-of-school children and activate families — the Educate Girls model, scaled |
+| Curriculum and learning kits | $5–15/child one-time | Provide materials to existing classrooms; does not replace teachers or buildings |
+| Monitoring and accountability | $1–2M/year | Independent verification of completion rates; basis for government results-based disbursements |
+
+**Per country total: $10–30M over 5 years.** Not $50–150M. The difference is that this framing does not pay for education delivery — it pays for political activation and operational capacity. Government delivers education; philanthropy funds what government cannot take the risk of funding first.
+
+At $10–30M per country, the aggregate philanthropic commitment to tip all 19 below-40% countries is **$190–570M over 5 years** — $38–114M per year. This is 2–6% of current total philanthropic education flows ($2B/year). It is achievable through reallocation, not a step-change in giving.
+
+---
+
+## The Bangladesh Precedent
+
+Bangladesh's Female Secondary Stipend Programme (FSSAP), launched 1994, is the clearest documented case of philanthropic investment triggering government scale-up:
 
 - **Total cost, Phase I (1994–1999):** $71 million — just **1.3% of Bangladesh's total education budget** over that period
 - **Result:** Girls' enrolment in stipend schools increased **105–111%**
 - **Cost-benefit ratio: 3.14** when returns to education were counted
 - **Outcome:** The government scaled it nationally
 
-$71 million over five years — $14 million per year — doubled girls' enrolment and produced a 3:1 return. That is the order of magnitude for a programme that shifted a country's female secondary trajectory. The government then absorbed and scaled what the external investment proved.
-
----
-
-## Unit Costs
-
-| Intervention | Cost | Source |
-|---|---|---|
-| Government spending per child per year (current, LIC) | $55 | World Bank EFW 2024 |
-| Needed for a functional system | $197–250/child/year | UNESCO SDG4 costing |
-| Structured pedagogy / teaching quality improvement | $5–15/child/year | What Works Hub; Kenya Tusome |
-| Girls' retention stipend (Bangladesh model) | $30–70/girl/year | FSSAP evaluation |
-| Teacher trained, distance/blended model | $2,130/teacher | World Bank Ghana case |
-| Teacher trained, conventional pre-service | $3,409/teacher | World Bank Ghana case |
-| Basic primary school, community contracting (SSA) | $60,000–150,000 | World Bank project data |
-| Secondary school block, 8–12 classrooms (SSA) | $200,000–500,000 | World Bank project data |
-
-The cheapest and highest-leverage interventions are not construction. They are stipend and teaching quality programmes — the things that determine whether children near a school actually attend, stay, and learn. At $30–70 per girl per year for a retention stipend, a **$10 million annual commitment reaches 150,000–330,000 girls**. Each is a future mother in the P-25 chain.
-
----
-
-## What a Meaningful Philanthropic Bet Looks Like
-
-A serious commitment to tipping the 22 below-40% countries toward educational rupture requires thinking at two levels: what it takes per country, and what the aggregate looks like.
-
-**Per country:** a 7–10 year, $50–150 million programme, structured around four components:
-
-**1. Girls' retention and completion programme** — stipend plus attendance tracking covering the districts with the lowest female secondary rates.
-- ~$5–15M/year
-- Modelled on Bangladesh FSSAP; conditional on attendance and completion, not just enrolment
-
-**2. Teacher training capacity** — built into government colleges 8–10 years before secondary demand peaks.
-- ~$3–8M one-time investment (distance/blended model: $2,130/teacher)
-- Time-sensitive: secondary schools without trained teachers stall; the pipeline must be built before it is needed
-
-**3. Enrollment management system** — inside the government ministry, tracking every child by name through to completion, not just aggregate statistics.
-- ~$2–5M/year
-- The operational difference between countries that achieved universal secondary and those that did not is whether the state knew which children were missing and acted on it
-
-**4. Results-based disbursements** — government receives more funding when more girls complete, verified independently.
-- Structure of the financing, not an additional cost line
-- Shifts government incentives from construction and headcount toward the outcome that actually compounds: completion
-
-The Bangladesh precedent suggests this order of magnitude is sufficient to move a country's trajectory — if the government has political will and the programme is designed around completion, not enrolment.
-
-**Across all 22 target countries:** At $50–150M per country over 10 years, the aggregate philanthropic commitment to tip all 22 below-40% countries is in the range of **$1.1–3.3 billion over a decade** — $110–330 million per year. Against the $97 billion annual financing gap for all of education globally, this is a precise, bounded, achievable target. It is also 5–17% of current total philanthropic education flows ($2B/year) — meaning it requires a significant reallocation of existing philanthropic capital toward the highest-multiplier countries, not a step-change in total giving.
-
-The 19.2 million girls in these countries at $30–70/girl/year for a retention stipend alone is $576M–$1.34B/year — confirming that stipend programmes alone cannot cover the full gap without government co-financing. The philanthropic role is to fund the proof-of-concept in the first 3–5 years of each country programme, after which government and ODA take over the recurring stipend cost while philanthropy moves to the next country.
+The stipend programme was the proof-of-concept. The government absorbed the recurring cost once the evidence was established. This is the model: philanthropy funds the first five years; government scales the next fifty.
 
 ---
 
 ## The Catalytic Logic
 
-The goal is not to fund a programme in perpetuity. It is to fund the proof that shifts government and ODA allocation.
+The goal is not to fund a programme in perpetuity. It is to fund the proof that shifts government allocation.
 
-Bangladesh's $71M stipend programme became national government policy. Korea's initial education investments attracted World Bank lending once results were visible. Nepal's education budget share rose from 9% to 16% of government spending across the 1990s as completion gains became politically legible.
+Japan's Meiji government committed to universal education before it had the money to deliver it. The commitment came first; the resource mobilization followed, from domestic sources. Korea expanded secondary schools before it had enough trained teachers; the commitment to expand came first and the teacher supply caught up. Cuba deployed volunteer teachers before it had a teacher training system.
 
-Philanthropy funds the first five years. Government scales the next fifty. P-25 does the rest.
+Every fast case in the data followed this sequence: **political commitment → operational build-out → quality improvement over generations.** Not: resource accumulation → then expansion.
+
+Philanthropy's highest-leverage role is to accelerate step one — the political commitment — by reducing the risk of that commitment through small-scale proof, enrollment data, and accountability systems. Everything else the government can do itself, at lower cost than any philanthropic programme, because it has teachers, it has buildings, and it has the only system that ever produced universal education: the state.
 
 ---
 
-*Data sources: UNESCO GEM Report 2023; World Bank Education Finance Watch 2024; FSSAP evaluation (PMC/PubMed); World Bank Ghana teacher training case; What Works Hub structured pedagogy review; World Bank school construction project data.*
+*Data sources: WCDE v3 (population counts, 2025 period projections); UNESCO GEM Report 2023 (financing gap); FSSAP evaluation (PMC/PubMed); Educate Girls Development Impact Bond evaluation; World Bank Ghana teacher training case; Cuba literacy campaign: UNESCO Memory of the World.*
