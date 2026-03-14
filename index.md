@@ -23,6 +23,7 @@ A country's lower-secondary completion rate today predicts its fertility rate, c
 
 ## The Data
 
+- [Who Needs Intervention Today](analysis/intervention_targets_today) — 53.4M children across 19 countries: correct cohort year per education level
 - [Education Gap by Country — 2025](analysis/education_gap_table_2025) — 192 countries: who is not completing primary, lower secondary, upper secondary
 - [Education Gap by Country — 2030](analysis/education_gap_table_2030) — 2030 projection: the current school system's output
 - [Education Gap by Country — 2035](analysis/education_gap_table_2035) — 2035 projection
