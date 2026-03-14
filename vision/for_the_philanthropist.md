@@ -118,7 +118,7 @@ The implication is not to stop funding organisations like Educate Girls. It is t
 
 - **Results-based government accountability** — the Educate Girls DIB demonstrated that outcome-linked financing (paying for completion and learning, not enrolment and construction) changes what institutions optimise for. The same structure applied to government education ministries — disbursements tied to independently verified completion rates — creates incentives for governments to do what the best historical cases did: track every child, leave none behind, and measure what actually compounds.
 
-- **Communication of what the historical data already proves** — P-25 does not need a new 25-year study to confirm it. It is confirmed across 189 countries and 140 years of cohort data with a near-unity coefficient. The gap is not evidence; it is legibility. Governments and publics do not act on what they cannot see. Funding the translation of existing historical data into formats that make the compounding chain visible — to ministers, to budget committees, to voters — is the highest-return evidence investment, because the evidence already exists.
+- **Communication of what the historical data already proves** — P-25 does not need a new 25-year study to confirm it. Across 189 countries and 140 years of data, the education level of one generation reliably predicts the next generation's — more reliably than income does. The gap is not evidence; it is legibility. Governments and publics do not act on what they cannot see. Funding the translation of existing historical data into formats that make the compounding chain visible — to ministers, to budget committees, to voters — is the highest-return evidence investment, because the evidence already exists.
 
 ---
 
