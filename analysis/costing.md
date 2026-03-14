@@ -43,65 +43,63 @@ The implication: the marginal cost of getting a child into school and keeping th
 
 ## The Scale of the Problem — and Who Needs to Be Reached
 
-From WCDE v3 population data (2025 projections, both sexes, age 15–19):
+From WCDE v3 population data (2025, age 20–24, both sexes). Age 20–24 is the correct cohort — old enough to have completed secondary if they were going to:
 
-| Level | Children not completing | % of all 15–19 year olds |
+| Level | People not completing | % of 20–24 cohort |
 |---|---:|---:|
-| **Lower secondary** | **185.5M** | **30%** |
-| Upper secondary | 396.0M | 64% |
-| Completing lower sec but not upper sec | 210.6M | — |
+| **Lower secondary** | **130M** | **22%** |
+| Upper secondary | 230M | 39% |
+| Completing lower sec but not upper sec | 100M | — |
 
-The lower secondary threshold is where the P-25 multiplier is highest and where the 19 target countries are concentrated. Of the 185.5M children not completing lower secondary globally, **42M (23%) live in the 19 countries below 40%** — the countries where the self-sustaining flywheel has not yet started.
+The lower secondary threshold is where the P-25 multiplier is highest and where the 19 target countries are concentrated. Of the 130M not completing lower secondary globally, **30M (23%) are in the 19 countries below 40%** — the countries where the self-sustaining flywheel has not yet started.
 
-The target population is all children aged 15–19 not completing lower secondary in the 19 countries currently below 40% lower-secondary completion (WCDE v3, 2025 period data). This is **41.97 million children** — both sexes, nearly equal split.
+The target population is the 20–24 cohort not completing lower secondary in the 19 countries currently below 40% lower-secondary completion (WCDE v3, 2025).
 
 | | Millions | % of total |
 |---|---:|---:|
-| **Total children 15–19 in target countries** | **49.4M** | |
-| Not completing lower secondary | **42.0M** | **85%** |
-| — of whom: girls | 20.8M | 49% |
-| — of whom: boys | 21.2M | 51% |
+| **Total 20–24 cohort in target countries** | **42.4M** | |
+| Not completing lower secondary | **30.1M** | **71%** |
+| — of whom: girls | 15.4M | 51% |
+| — of whom: boys | 14.7M | 49% |
 
-**The gender split is nearly equal.** The focus on girls is warranted because of the P-25 multiplier (educated mothers have the stronger intergenerational effect), but the delivery system must reach both.
+**The gender split is nearly equal.** Girls are marginally more affected (73% non-completion rate vs 69% for boys). The focus on girls is warranted because of the P-25 multiplier (educated mothers have the stronger intergenerational effect), but the delivery system must reach both.
 
 **Three distinct groups, three distinct interventions:**
 
 | Group | Millions | % | What they need |
 |---|---:|---:|---|
-| No education — never attended school | 12.2M | 29% | School access, enrollment drive, demand activation |
-| Incomplete primary — dropped out | 10.7M | 26% | Retention support, cost removal, re-entry pathways |
-| Completed primary, not in secondary | 19.1M | 45% | Secondary school access, stipends, teacher supply |
+| No education — never attended school | 12.9M | 43% | School access, enrollment drive, demand activation |
+| Incomplete primary — dropped out | 9.5M | 32% | Retention support, cost removal, re-entry pathways |
+| Completed primary, not in secondary | 7.7M | 26% | Secondary school access, transition support |
 
-The largest single group — 19.1 million children who completed primary but are not transitioning to secondary — represents a system failure at the primary-to-secondary transition, not at enrollment. These children already trust the school system. The barrier is that secondary is not available, accessible, or affordable where they live.
+**All 19 target countries (2025 WCDE data, age 20–24), ranked by total not completing:**
 
-**All 19 target countries (2025 WCDE data), ranked by total not completing:**
-
-| Country | LS % | Total 15–19 | No edu | Inc. primary | Primary only | Not completing |
+| Country | LS % | Total 20–24 | No edu | Inc. primary | Primary only | Not completing |
 |---|---:|---:|---:|---:|---:|---:|
-| Ethiopia | 25% | 14.3M | 3.3M | 3.8M | 5.8M | **12.9M** |
-| Afghanistan | 37% | 5.0M | 1.5M | 0.0M | 3.0M | **4.5M** |
-| Mozambique | 28% | 3.8M | 1.0M | 0.9M | 1.2M | **3.1M** |
-| Niger | 17% | 3.1M | 1.0M | 0.6M | 1.3M | **2.9M** |
-| Madagascar | 34% | 3.4M | 0.3M | 1.0M | 1.4M | **2.7M** |
-| Burkina Faso | 18% | 2.7M | 1.1M | 0.7M | 0.5M | **2.4M** |
-| Mali | 38% | 2.8M | 0.8M | 0.4M | 0.8M | **2.1M** |
-| Chad | 28% | 2.1M | 0.5M | 0.5M | 0.8M | **1.8M** |
-| Senegal | 40% | 2.0M | 0.6M | 0.2M | 0.8M | **1.6M** |
-| Burundi | 22% | 1.6M | 0.1M | 0.7M | 0.7M | **1.5M** |
-| Somalia | 30% | 2.1M | 0.4M | 0.7M | 0.3M | **1.5M** |
-| Guinea | 38% | 1.6M | 0.5M | 0.2M | 0.6M | **1.3M** |
-| Rwanda | 33% | 1.6M | 0.0M | 0.6M | 0.6M | **1.2M** |
-| South Sudan | 30% | 1.4M | 0.6M | 0.0M | 0.6M | **1.2M** |
-| Liberia | 40% | 0.7M | 0.1M | 0.2M | 0.3M | **0.5M** |
-| Mauritania | 40% | 0.6M | 0.2M | 0.1M | 0.2M | **0.4M** |
-| Eritrea | 34% | 0.5M | 0.1M | 0.1M | 0.1M | **0.3M** |
-| Guinea-Bissau | 30% | 0.3M | 0.0M | 0.1M | 0.1M | **0.2M** |
+| Ethiopia | 25% | 12.9M | 3.7M | 3.6M | 2.4M | **9.6M** |
+| Afghanistan | 37% | 4.4M | 1.6M | 0.0M | 1.2M | **2.8M** |
+| Mozambique | 28% | 3.3M | 1.1M | 0.8M | 0.5M | **2.4M** |
+| Niger | 17% | 2.5M | 1.0M | 0.5M | 0.6M | **2.1M** |
+| Madagascar | 34% | 2.9M | 0.3M | 0.9M | 0.7M | **1.9M** |
+| Burkina Faso | 18% | 2.2M | 1.1M | 0.5M | 0.2M | **1.8M** |
+| Mali | 38% | 2.2M | 0.8M | 0.4M | 0.2M | **1.4M** |
+| Chad | 28% | 1.7M | 0.5M | 0.4M | 0.3M | **1.2M** |
+| Somalia | 30% | 1.7M | 0.5M | 0.6M | 0.1M | **1.2M** |
+| Senegal | 40% | 1.7M | 0.6M | 0.1M | 0.2M | **1.0M** |
+| Rwanda | 33% | 1.4M | 0.1M | 0.6M | 0.3M | **0.9M** |
+| Burundi | 22% | 1.2M | 0.1M | 0.5M | 0.3M | **0.9M** |
+| Guinea | 38% | 1.4M | 0.5M | 0.2M | 0.2M | **0.9M** |
+| South Sudan | 30% | 1.1M | 0.5M | 0.0M | 0.2M | **0.8M** |
+| Liberia | 40% | 0.5M | 0.1M | 0.1M | 0.1M | **0.3M** |
+| Mauritania | 40% | 0.5M | 0.2M | 0.0M | 0.1M | **0.3M** |
+| Eritrea | 34% | 0.4M | 0.1M | 0.1M | 0.0M | **0.3M** |
+| Guinea-Bissau | 30% | 0.2M | 0.0M | 0.1M | 0.0M | **0.1M** |
 | Djibouti | 34% | 0.1M | 0.0M | 0.0M | 0.0M | **0.1M** |
-| **TOTAL** | | **49.4M** | **12.2M** | **10.7M** | **19.1M** | **42.0M** |
+| **TOTAL** | | **42.4M** | **12.9M** | **9.5M** | **7.7M** | **30.1M** |
 
-Ethiopia alone accounts for 12.9M — 31% of the entire target population. Any serious philanthropic strategy must treat Ethiopia as a primary country focus.
+Ethiopia alone accounts for 9.6M — 32% of the entire target population. Any serious philanthropic strategy must treat Ethiopia as a primary country focus.
 
-India sits above the 40% threshold nationally (80% lower secondary) but has 12.2M girls aged 15–19 not completing — concentrated in Bihar, Uttar Pradesh, and Rajasthan, which are sub-nationally equivalent to the below-40% target. Including India's lagging states, the effective target population rises to approximately 55M children.
+India sits above the 40% threshold nationally but has substantial sub-national populations in Bihar, Uttar Pradesh, and Rajasthan that are equivalent to below-40% countries at the state level.
 
 ---
 

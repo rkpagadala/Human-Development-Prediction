@@ -19,10 +19,11 @@ pop = pd.read_csv(
     os.path.join(os.path.dirname(__file__), "../data/raw/pop_both.csv")
 )
 
-# Filter: scenario 2 (SSP2 medium), age 15-19, year 2025, both sexes
+# Filter: scenario 2 (SSP2 medium), age 20-24, year 2025, both sexes
+# 20-24 reflects completed education; 15-19 are still in school
 df = pop[
     (pop["scenario"] == 2) &
-    (pop["age"] == "15--19") &
+    (pop["age"] == "20--24") &
     (pop["year"] == 2025)
 ].copy()
 
@@ -105,9 +106,9 @@ def fmt_pct(x):
 # ── Build Markdown ─────────────────────────────────────────────────────────────
 lines = []
 
-lines.append("# Education Gap by Country — 2025")
+lines.append("# Education Gap by Country — 2025 (Age 20–24 Cohort)")
 lines.append("")
-lines.append("*WCDE v3, scenario SSP2, age group 15–19, both sexes, year 2025.*")
+lines.append("*WCDE v3, scenario SSP2, age group 20–24, both sexes, year 2025. Age 20–24 reflects completed education — people old enough to have finished secondary if they were going to.*")
 lines.append("")
 lines.append("**Definitions:**")
 lines.append("- **Not completing primary** = no education + incomplete primary")
@@ -125,9 +126,9 @@ g_miss_upper   = result["miss_upper_sec"].sum()
 
 lines.append("## Global Totals")
 lines.append("")
-lines.append(f"| | Millions | % of 15–19 cohort |")
+lines.append(f"| | Millions | % of 20–24 cohort |")
 lines.append(f"|---|---:|---:|")
-lines.append(f"| **Total 15–19 cohort** | **{g_total/1000:.0f}M** | |")
+lines.append(f"| **Total 20–24 cohort** | **{g_total/1000:.0f}M** | |")
 lines.append(f"| Not completing primary | {g_miss_primary/1000:.0f}M | {g_miss_primary/g_total*100:.0f}% |")
 lines.append(f"| Not completing lower secondary | {g_miss_lower/1000:.0f}M | {g_miss_lower/g_total*100:.0f}% |")
 lines.append(f"| Not completing upper secondary | {g_miss_upper/1000:.0f}M | {g_miss_upper/g_total*100:.0f}% |")
@@ -136,7 +137,7 @@ lines.append("")
 # ── Country table ─────────────────────────────────────────────────────────────
 lines.append("## All Countries")
 lines.append("")
-lines.append("| Country | Total 15–19 | Not completing primary | | Not completing lower sec | | Not completing upper sec | |")
+lines.append("| Country | Total 20–24 | Not completing primary | | Not completing lower sec | | Not completing upper sec | |")
 lines.append("|---|---:|---:|---:|---:|---:|---:|---:|")
 
 for _, row in result.iterrows():
