@@ -26,9 +26,9 @@ The pattern across all four: **state mandate + physical access + community mobil
 
 Educate Girls operates across 30,000+ villages in India. Community volunteers (Team Balika) go door-to-door to identify out-of-school girls, shift family beliefs, and enrol children in existing government schools. No stipends. No teacher salaries. Curriculum support kits only.
 
-**Cost: $25 per girl per year.** Effect size: 1.25 standard deviations on learning outcomes (independently verified). Their 2015 Development Impact Bond achieved 160% of its targets.
+Their 2015 Development Impact Bond achieved 160% of its learning targets (IDinsight evaluation). Learning gains: 0.31 standard deviations above the control group over three years.
 
-This is compelling evidence that the **activation cost** — getting a child who lives near a school into that school and keeping her there — is very low. $25 covers volunteer coordination, community engagement, and curriculum materials. Not education delivery itself.
+This is compelling evidence that the **activation cost** — getting a child who lives near a school into that school and keeping her there — is very low. The cost covers volunteer coordination, community engagement, and curriculum materials. Not education delivery itself.
 
 **The limit:** Educate Girls works because Indian government schools exist. A volunteer can enrol a girl in a school that is already staffed and open. In the 19 target countries in this analysis, the binding constraint is not activation — it is that secondary schools often do not exist within reach of rural populations at all. The Educate Girls cost benchmark applies to the activation layer once schools exist; it does not substitute for the prior step of getting schools built and staffed.
 
@@ -110,7 +110,7 @@ The catalytic investment has three components:
 
 **Per country total: $10–30M over 5 years.** This is not a delivery budget. It is the cost of making the case and proving the model so that government takes over. Government delivers at scale; it has the teachers, the buildings, and the mandate authority that no philanthropic programme can replicate.
 
-At $10–30M per country, tipping all 19 below-40% countries costs **$190–570M over 5 years** — $38–114M per year. Against total global philanthropic education flows of roughly $2B per year, this is a precise, bounded, achievable reallocation — not a call for new capital.
+At $10–30M per country, tipping all 19 below-40% countries costs **$190–570M over 5 years** — $38–114M per year. Against total global philanthropic education flows (OECD estimates ~$700M–$1.5B per year depending on period), this is a reallocation of existing capital, not a call for new giving.
 
 ---
 
