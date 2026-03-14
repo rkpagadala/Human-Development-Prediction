@@ -4,59 +4,50 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a data science / ML research project that predicts human development indicators (life expectancy, fertility rate, GDP per capita, education completion rates) for countries using Random Forest and Gradient Boosting Tree algorithms. Notebooks are designed to run in **Google Colab**.
+A research project studying the causal drivers of human development — life expectancy, fertility, GDP per capita, education completion — using longitudinal global data. Started as a collaborative undergraduate ML project (with Jaya Shankar) and extended into causal analysis, generational education effects, and policy work.
 
 ## Running the Code
 
-There are no build/test/lint commands — this is a notebook-based research project. To work with it:
+Analysis scripts are plain Python. No notebooks.
 
 ```bash
-# Install dependencies (no requirements.txt — install manually)
-pip install pandas numpy tensorflow tensorflow_decision_forests matplotlib seaborn scikit-learn
+pip install pandas numpy matplotlib seaborn scikit-learn scipy statsmodels
 
-# Launch Jupyter locally
-jupyter notebook
-
-# Or open notebooks in Google Colab (intended environment)
+# Run any analysis script directly, e.g.:
+python analysis/scripts/lagged_analysis.py
+python wcde/scripts/07_education_outcomes.py
 ```
 
-Key notebooks to run in order:
-1. `data_extract_code/` — extract and preprocess raw data
-2. `interpolation_code/` — fill missing year gaps via linear interpolation
-3. `models/` — train and evaluate ML models
+## Repository Structure
 
-## Architecture
+### `analysis/`
+Research outputs and scripts.
+- `scripts/` — Python analysis scripts (rankings, causal tests, gap analysis, etc.)
+- `findings.md` — main findings summary
+- `leapfrog_brief.md` — countries that leapfrogged development
+- `costing.md` — intervention cost analysis
+- `education_gap_all_countries.md` — education gap tables by country
 
-### Data Pipeline
-- **Raw data sources:** World Bank, WCDE (in `/raw_data/`)
-- **Extraction scripts:** `/data_extract_code/` — parse raw CSVs, normalize country names, convert population strings (e.g. `1.2M` → numeric)
-- **Interpolation:** `/interpolation_code/` — linear interpolation to fill missing yearly data points
-- **Cleaned datasets:** `/datasets/` — 30+ CSVs, one per indicator, with standardized country names (lowercase)
+### `wcde/`
+WCDE v3 data pipeline and long-run generational analysis.
+- `scripts/` — download, process, and analyse WCDE education data back to 1875
+- `data/` — processed WCDE outputs
 
-### Models (`/models/`)
-- 2 × 5 model matrix: 5 target indicators × (all countries / developing countries only)
-- Each model notebook: loads relevant CSVs, merges on country+year, trains Random Forest + Gradient Tree, reports NRMSE and feature importances
-- `All_Models.ipynb` — master notebook combining all models
-- Individual notebooks: `life_expectancy_model.ipynb`, `tfr_model.ipynb`, `GDP_percaptia_model.ipynb`, `education_model.ipynb`, `primary_edu_OL_model.ipynb`
+### `datasets/`
+Cleaned CSVs used by analysis scripts. One file per indicator, sourced from World Bank and WCDE. Country names are lowercase throughout.
 
-### Utility Scripts
-- `data_clean.py` — normalizes country names to lowercase across datasets
-- `cal_per.py` — converts raw feature importance scores to percentages
-- `renaming_countries_mannual.ipynb` — manual country name reconciliation
+Key files: `gdppercapita_us_inflation_adjusted.csv`, `children_per_woman_total_fertility.csv`, `child_mortality_0_5_year_olds_dying_per_1000_born.csv`, `life_expectancy_years.csv`, `gini.csv`, education completion CSVs by level and sex.
 
-### Key Design Decisions
-- **Lagged features:** GDP and child mortality use 10–20 year lagged values to capture generational effects
-- **Feature selection per model:** Not all 14 features are used in every model; selection is documented in `progress.md` and the linked report
-- **Developing countries subset:** Defined as countries in bottom 50% on all indicators in 1960
+### `vision/`
+Policy and philanthropist vision documents.
+
+## Key Design Decisions
+- **Education age group 20–24** — reflects completed education, not enrollment
+- **Lagged features** — GDP and child mortality use 10–20 year lags to capture generational effects
+- **GDP is US inflation-adjusted** per capita
+- **P-25 mechanism** — parental transmission of education; below ~25% lower secondary completion, intergenerational progress is slow
+- **NRMSE < 0.10** — reliable model threshold
 
 ## Key Files
-- `progress.md` — detailed model assumptions, variable importance findings, and development notes
-- `reference.md` — academic references (Preston Curve, education-health links)
-- `Macro level Diagram.png` — architecture visualization
-- `results/README.md` — legend for result PNG files in `/results/`
-
-## Data Conventions
-- Country names are stored in **lowercase** throughout datasets
-- Education data targets age group **20–24** (reflects completed education, not enrollment)
-- GDP is **US inflation-adjusted** per capita
-- NRMSE is the evaluation metric (lower = better); reliable threshold is roughly < 0.10
+- `reference.md` — academic references (Preston Curve, Lutz & Kebede, education-health links)
+- `analysis/findings.md` — main research conclusions
