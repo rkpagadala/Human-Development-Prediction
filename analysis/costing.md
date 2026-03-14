@@ -8,9 +8,19 @@
 
 ## The Scale of the Problem — and Why Philanthropy Cannot Solve It Alone
 
-122 million girls are out of school globally. 64 million children of lower-secondary age are not in school at all. The annual financing gap to achieve universal secondary education across low- and lower-middle-income countries is **$97 billion per year** through 2030 (UNESCO GEM Report 2023). Total philanthropic flows to education in developing countries are roughly **$2 billion per year** — less than 2% of the gap.
+From WCDE v3 population data (2025 projections, both sexes, age 15–19):
 
-Philanthropy cannot substitute for government spending. It never could. Low-income country governments spend $55 per child per year on education today. What is needed for a functional system is $197–250 per child per year. Closing that gap requires governments raising domestic revenue and shifting ODA — not foundations.
+| Level | Children not completing | % of all 15–19 year olds |
+|---|---:|---:|
+| **Lower secondary** | **185.5M** | **30%** |
+| Upper secondary | 396.0M | 64% |
+| Completing lower sec but not upper sec | 210.6M | — |
+
+The lower secondary threshold is where the P-25 multiplier is highest and where the 19 target countries are concentrated. Of the 185.5M children not completing lower secondary globally, **42M (23%) live in the 19 countries below 40%** — the countries where the self-sustaining flywheel has not yet started. Upper secondary non-completion is a larger absolute number but spans much wealthier countries where government systems are already functional; the philanthropic case is weakest there.
+
+The annual financing gap to achieve universal secondary education across low- and lower-middle-income countries is **$97 billion per year** through 2030 (UNESCO GEM Report 2023). Total philanthropic flows to education in developing countries are roughly **$2 billion per year** — 2% of the gap.
+
+Philanthropy cannot substitute for government spending. Low-income country governments spend $55 per child per year on education today; a functional system requires $197–250. Closing that gap requires governments raising domestic revenue and shifting ODA.
 
 The philanthropic role is **catalytic**: fund what governments cannot take the risk of funding first, prove it works at scale, and shift the much larger flows of government and donor spending toward what the evidence shows.
 
@@ -18,49 +28,55 @@ The philanthropic role is **catalytic**: fund what governments cannot take the r
 
 ## Who Needs to Be Reached — and How Many
 
-The target population is girls aged 15–19 currently not completing lower secondary. The WCDE v3 population data (2025 projections) gives the following picture:
+The target population is all children aged 15–19 not completing lower secondary in the 19 countries currently below 40% lower-secondary completion (WCDE v3, 2025 period data). This is **41.97 million children** — both sexes, nearly equal split.
 
-| Lower secondary completion tier | Countries | Girls 15–19 (total) | Girls not completing |
-|---|---:|---:|---:|
-| **Below 40% — philanthropic target** | **22** | **26.6M** | **19.2M** |
-|   of which: below 20% | 2 | 2.9M | 2.4M |
-|   of which: 20–40% | 20 | 23.7M | 16.8M |
-| 40–60% — approaching threshold | 23 | 55.7M | 26.0M |
-| 60–80% — near threshold | 21 | 81.9M | 18.6M |
-| Above 80% — self-sustaining | 70 | 51.7M | 3.3M |
+| | Millions | % of total |
+|---|---:|---:|
+| **Total children 15–19 in target countries** | **49.4M** | |
+| Not completing lower secondary | **42.0M** | **85%** |
+| — of whom: girls | 20.8M | 49% |
+| — of whom: boys | 21.2M | 51% |
 
-**The philanthropic target is all 22 countries below 40% lower-secondary completion: 19.2 million girls aged 15–19 not completing lower secondary.** These are the countries that have not crossed the self-sustaining threshold. Without sustained intervention, progress continues — but slowly, constrained by the low parental base that limits how fast the P-25 compounding can accelerate. Crossing 40% is where the flywheel begins to turn on its own: fertility falls, household resources per child increase, and families pull children into school rather than needing to be pushed. The philanthropic investment buys speed — compressing what would otherwise take two generations into one.
+**The gender split is nearly equal.** This is not primarily a girls-only problem in these countries — boys and girls are failing to reach lower secondary at almost identical rates. The focus on girls is warranted because of the P-25 multiplier (educated mothers have the stronger intergenerational effect), but the investment case for boys is equally strong and the delivery system must reach both.
 
-**All 22 target countries (2025 WCDE data), ranked by girls not completing:**
+**Three distinct groups, three distinct interventions:**
 
-| Country | Lower sec % | Girls 15–19 | Not completing |
-|---|---:|---:|---:|
-| Ethiopia | 27% | 7.0M | 5.1M |
-| Afghanistan | 27% | 2.4M | 1.8M |
-| Tanzania | 41%* | 3.8M | 2.3M |
-| Mali | 24% | 1.6M | 1.2M |
-| Mozambique | 26% | 1.9M | 1.4M |
-| Sudan | 39% | 2.5M | 1.5M |
-| Niger | 14% | 1.5M | 1.3M |
-| Burkina Faso | 17% | 1.3M | 1.1M |
-| Senegal | 27% | 1.4M | 1.0M |
-| Chad | 21% | 1.3M | 1.0M |
-| Guinea | 30% | 0.9M | 0.6M |
-| South Sudan | 21% | 0.9M | 0.7M |
-| Madagascar | 23% | 1.3M | 1.0M |
-| Rwanda | 22% | 0.9M | 0.7M |
-| Liberia | 30% | 0.3M | 0.2M |
-| Sierra Leone | 35%* | 0.5M | 0.3M |
-| Guinea-Bissau | 28% | 0.1M | 0.1M |
-| Cambodia | 39%* | 0.7M | 0.4M |
-| Togo | 36%* | 0.5M | 0.3M |
-| Benin | 37%* | 0.6M | 0.4M |
-| Côte d'Ivoire | 34% | 1.6M | 1.1M |
-| Angola | 33% | 2.1M | 1.4M |
+| Group | Millions | % | What they need |
+|---|---:|---:|---|
+| No education — never attended school | 12.2M | 29% | School access, enrollment drive, demand activation |
+| Incomplete primary — dropped out | 10.7M | 26% | Retention support, cost removal, re-entry pathways |
+| Completed primary, not in secondary | 19.1M | 45% | Secondary school access, stipends, teacher supply |
 
-*Countries marked are near the 40% threshold and may cross it within 5 years without specific intervention — making them highest priority for the next decade.
+The largest single group — 19.1 million children who completed primary but are not transitioning to secondary — represents a system failure at the primary-to-secondary transition, not at enrollment. These children already trust the school system enough to complete primary. The barrier is that secondary is not available, not accessible, or not affordable where they live.
 
-India is a special case: at 80% nationally it sits above the threshold, yet 12.2 million girls aged 15–19 are still not completing — the largest single national gap in the world — concentrated in states (Bihar, Uttar Pradesh, Rajasthan) that are effectively sub-national versions of the below-40% target.
+**All 19 target countries (2025 WCDE data), ranked by total not completing:**
+
+| Country | LS % | Total 15–19 | No edu | Inc. primary | Primary only | Not completing |
+|---|---:|---:|---:|---:|---:|---:|
+| Ethiopia | 25% | 14.3M | 3.3M | 3.8M | 5.8M | **12.9M** |
+| Afghanistan | 37% | 5.0M | 1.5M | 0.0M | 3.0M | **4.5M** |
+| Mozambique | 28% | 3.8M | 1.0M | 0.9M | 1.2M | **3.1M** |
+| Niger | 17% | 3.1M | 1.0M | 0.6M | 1.3M | **2.9M** |
+| Madagascar | 34% | 3.4M | 0.3M | 1.0M | 1.4M | **2.7M** |
+| Burkina Faso | 18% | 2.7M | 1.1M | 0.7M | 0.5M | **2.4M** |
+| Mali | 38% | 2.8M | 0.8M | 0.4M | 0.8M | **2.1M** |
+| Chad | 28% | 2.1M | 0.5M | 0.5M | 0.8M | **1.8M** |
+| Senegal | 40% | 2.0M | 0.6M | 0.2M | 0.8M | **1.6M** |
+| Burundi | 22% | 1.6M | 0.1M | 0.7M | 0.7M | **1.5M** |
+| Somalia | 30% | 2.1M | 0.4M | 0.7M | 0.3M | **1.5M** |
+| Guinea | 38% | 1.6M | 0.5M | 0.2M | 0.6M | **1.3M** |
+| Rwanda | 33% | 1.6M | 0.0M | 0.6M | 0.6M | **1.2M** |
+| South Sudan | 30% | 1.4M | 0.6M | 0.0M | 0.6M | **1.2M** |
+| Liberia | 40% | 0.7M | 0.1M | 0.2M | 0.3M | **0.5M** |
+| Mauritania | 40% | 0.6M | 0.2M | 0.1M | 0.2M | **0.4M** |
+| Eritrea | 34% | 0.5M | 0.1M | 0.1M | 0.1M | **0.3M** |
+| Guinea-Bissau | 30% | 0.3M | 0.0M | 0.1M | 0.1M | **0.2M** |
+| Djibouti | 34% | 0.1M | 0.0M | 0.0M | 0.0M | **0.1M** |
+| **TOTAL** | | **49.4M** | **12.2M** | **10.7M** | **19.1M** | **42.0M** |
+
+Ethiopia alone accounts for 12.9M — 31% of the entire target population. Any serious philanthropic strategy must treat Ethiopia as a primary country focus.
+
+India sits above the 40% threshold nationally (80% lower secondary) but has 12.2M girls aged 15–19 not completing — concentrated in Bihar, Uttar Pradesh, and Rajasthan, which are sub-nationally equivalent to the below-40% target. Including India's lagging states, the effective target population rises to approximately 55M children.
 
 ---
 
