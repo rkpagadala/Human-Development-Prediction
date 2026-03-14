@@ -2,6 +2,8 @@
 
 *Costing document for educational rupture in developing countries. Companion to for_the_philanthropist.md.*
 
+**P-25** — the parental transmission of education: each generation's education level predicts the next generation's, 25 years forward, with a near-unity coefficient across 189 countries and 140 years of data. Every investment in education today compounds through P-25 into the generation born in 2040–2050.
+
 ---
 
 ## The Scale of the Problem — and Why Philanthropy Cannot Solve It Alone

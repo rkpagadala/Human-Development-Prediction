@@ -31,7 +31,7 @@ The standard counterargument is the Preston Curve — the well-known observation
 
 ## Finding 2: Education Compounds Across Generations
 
-Education is not a one-time input. It propagates. The generation you educate today becomes the parents who transmit educational aspiration, capacity, and expectation to the next generation.
+Education is not a one-time input. It propagates. The generation you educate today becomes the parents who transmit educational aspiration, capacity, and expectation to the next generation. This is **P-25** — the parental transmission of education: each generation's education level predicts the next generation's, 25 years forward, with a near-unity coefficient across 189 countries and 140 years of data.
 
 Specifically: a country's primary completion rate 25 years ago predicts its *current* primary completion rate more strongly than its current income level does. The same holds for secondary, and even more strongly for tertiary education:
 

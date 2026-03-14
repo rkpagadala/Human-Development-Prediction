@@ -4,7 +4,7 @@
 
 ## What This Analysis Did
 
-Re-examined the relationship between parental education, income, and human development outcomes across 189 countries from 1960–2015. The analysis uses WCDE v3 data on lower secondary completion rates (age group 20–24 cohort) and applies:
+Re-examined the relationship between parental education, income, and human development outcomes across 189 countries from 1960–2015. The central mechanism throughout is **P-25** — the parental transmission of education: each generation's education level predicts the next generation's 25 years forward, with a near-unity coefficient in the long-run panel. The analysis uses WCDE v3 data on lower secondary completion rates (age group 20–24 cohort) and applies:
 
 - **Fixed effects regression** — country fixed effects to control for all time-invariant country characteristics
 - **Generational transmission modelling** — parental education (T−25 years) predicting child education; child year 1975 → parent year 1950, child year 2015 → parent year 1990
