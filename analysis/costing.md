@@ -67,9 +67,13 @@ Girls are marginally more affected (73% non-completion rate vs 69% for boys). Th
 | Completed lower secondary — stopped there | 5.5M | 13% |
 | Completed upper secondary or more | 6.8M | 16% |
 
-The cascade is stark: 70% start school, 47% complete primary, 29% complete lower secondary, 16% complete upper secondary. The single largest transition gap is primary → lower secondary: of those who finish primary, **39% do not continue into secondary at all**.
+The cascade is stark: 70% start school, 47% complete primary, 29% complete lower secondary, 16% complete upper secondary. There are real failures at every stage.
 
-The root constraint across all three non-completing groups is the same: **secondary schools do not exist within reach of rural populations**. Families have less reason to start or complete primary when there is no secondary to aspire to. Children drop out of primary partly because the path forward is a dead end. Korea and Japan understood this — they built secondary simultaneously with primary precisely because secondary creates the pull that keeps children in primary and brings new children into school. The intervention is not three separate programmes for three separate groups. It is one thing: secondary schools within reach, with a mandate to attend.
+**Primary is genuinely broken.** 30% never start at all; 22% start and drop out before completing. Distance, cost, child labour, early marriage — these are real primary-level barriers that secondary access alone does not fix.
+
+**The primary-to-secondary transition compounds the failure.** Of those who do finish primary, 39% stop there — secondary is either not accessible or not seen as a realistic path. This gap is not a demand problem; it is a supply problem. The school does not exist within reach.
+
+Both levels need to be built simultaneously. Korea and Japan did not wait for primary to saturate before starting secondary — they ran both expansions in parallel, because secondary creates the aspiration that pulls children through primary, and primary creates the cohort that fills secondary schools. The intervention is not sequential. It is concurrent.
 
 **All 19 target countries (2025 WCDE data, age 20–24), ranked by total not completing:**
 
