@@ -27,7 +27,7 @@ The target population is girls aged 15–19 currently not completing lower secon
 | 60–80% — near threshold | 21 | 81.9M | 18.6M |
 | Above 80% — self-sustaining | 70 | 51.7M | 3.3M |
 
-**The philanthropic target is all 22 countries below 40% lower-secondary completion: 19.2 million girls aged 15–19 not completing lower secondary.** These are the countries that have not crossed the self-sustaining threshold. Without sustained intervention, progress continues — but slowly, constrained by the low parental base that limits how fast the T-25 compounding can accelerate. Crossing 40% is where the flywheel begins to turn on its own: fertility falls, household resources per child increase, and families pull children into school rather than needing to be pushed. The philanthropic investment buys speed — compressing what would otherwise take two generations into one.
+**The philanthropic target is all 22 countries below 40% lower-secondary completion: 19.2 million girls aged 15–19 not completing lower secondary.** These are the countries that have not crossed the self-sustaining threshold. Without sustained intervention, progress continues — but slowly, constrained by the low parental base that limits how fast the P-25 compounding can accelerate. Crossing 40% is where the flywheel begins to turn on its own: fertility falls, household resources per child increase, and families pull children into school rather than needing to be pushed. The philanthropic investment buys speed — compressing what would otherwise take two generations into one.
 
 **All 22 target countries (2025 WCDE data), ranked by girls not completing:**
 
@@ -88,7 +88,7 @@ $71 million over five years — $14 million per year — doubled girls' enrolmen
 | Basic primary school, community contracting (SSA) | $60,000–150,000 | World Bank project data |
 | Secondary school block, 8–12 classrooms (SSA) | $200,000–500,000 | World Bank project data |
 
-The cheapest and highest-leverage interventions are not construction. They are stipend and teaching quality programmes — the things that determine whether children near a school actually attend, stay, and learn. At $30–70 per girl per year for a retention stipend, a **$10 million annual commitment reaches 150,000–330,000 girls**. Each is a future mother in the T-25 chain.
+The cheapest and highest-leverage interventions are not construction. They are stipend and teaching quality programmes — the things that determine whether children near a school actually attend, stay, and learn. At $30–70 per girl per year for a retention stipend, a **$10 million annual commitment reaches 150,000–330,000 girls**. Each is a future mother in the P-25 chain.
 
 ---
 
@@ -128,7 +128,7 @@ The goal is not to fund a programme in perpetuity. It is to fund the proof that 
 
 Bangladesh's $71M stipend programme became national government policy. Korea's initial education investments attracted World Bank lending once results were visible. Nepal's education budget share rose from 9% to 16% of government spending across the 1990s as completion gains became politically legible.
 
-Philanthropy funds the first five years. Government scales the next fifty. The T-25 mechanism does the rest.
+Philanthropy funds the first five years. Government scales the next fifty. P-25 does the rest.
 
 ---
 

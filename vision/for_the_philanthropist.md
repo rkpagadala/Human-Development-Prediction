@@ -20,7 +20,7 @@ This document is about that question. The answer comes from 189 countries and 14
 
 Education is not a service. It is a compounding process.
 
-The data is unambiguous: a country's lower-secondary completion rate 25 years ago predicts its current lower-secondary completion rate more strongly than any other variable, including income. The coefficient across 189 countries over the long-run panel is close to one. Every percentage point of education added to one generation produces approximately one percentage point of gain in the next — and that generation passes it forward again. This is the **T-25 mechanism**: the education of parents at time T shapes the education of their children at T+25, who shape their children at T+50, compounding forward indefinitely.
+The data is unambiguous: a country's lower-secondary completion rate 25 years ago predicts its current lower-secondary completion rate more strongly than any other variable, including income. The coefficient across 189 countries over the long-run panel is close to one. Every percentage point of education added to one generation produces approximately one percentage point of gain in the next — and that generation passes it forward again. This is **P-25** — the parental transmission of education: the education of parents at time T shapes the education of their children at T+25, who shape their children at T+50, compounding forward indefinitely.
 
 This means a philanthropic investment in education today does not produce one generation of better-educated children. It produces a permanently higher baseline from which every subsequent generation begins. The return does not depreciate. It compounds.
 
@@ -44,7 +44,7 @@ Countries with 5–20% lower-secondary parental completion produce the highest c
 
 This is where philanthropic capital has its highest leverage: **countries below 40% lower-secondary completion**. This is not an arbitrary cutoff. Approximately 40% female lower-secondary completion is the point at which the demographic flywheel becomes self-sustaining: fertility begins to fall, child survival improves, household resources per child increase, and demand for education rises organically from within the population. Below that threshold, progress continues — but slowly, constrained by the low parental base. Above it, the system accelerates on its own. The philanthropic investment buys speed — compressing what would otherwise take two generations into one.
 
-The 22 countries currently below 40% lower-secondary completion are home to **19.2 million girls aged 15–19 not completing lower secondary** (WCDE v3, 2025). These are the girls whose non-completion will set the parental baseline for the generation born in 2040–2050. Reaching them now is not charity — it is intervening in the T-25 chain at the point of highest leverage, before the next generation's starting conditions are fixed.
+The 22 countries currently below 40% lower-secondary completion are home to **19.2 million girls aged 15–19 not completing lower secondary** (WCDE v3, 2025). These are the girls whose non-completion will set the parental baseline for the generation born in 2040–2050. Reaching them now is not charity — it is intervening in the P-25 chain at the point of highest leverage, before the next generation's starting conditions are fixed.
 
 ---
 
@@ -110,7 +110,7 @@ The implication is not to stop funding organisations like Educate Girls. It is t
 
 **What to fund concretely:**
 
-- **Government school construction and operation in areas without access** — not prestigious infrastructure, but functional schools within reach of every child. Low quality is acceptable and expected at the start. The T-25 mechanism bootstraps quality across generations; the first generation of schools does not need to be good. It needs to exist.
+- **Government school construction and operation in areas without access** — not prestigious infrastructure, but functional schools within reach of every child. Low quality is acceptable and expected at the start. The P-25 bootstraps quality across generations; the first generation of schools does not need to be good. It needs to exist.
 
 - **Government capacity to track every child through to completion** — the single operational difference between countries that achieved universal secondary and those that did not is whether the state knew which children were out of school and acted on it. Funding enrollment management systems, teacher attendance tracking, and local accountability structures inside government ministries is unglamorous and high-leverage.
 
@@ -118,7 +118,7 @@ The implication is not to stop funding organisations like Educate Girls. It is t
 
 - **Results-based government accountability** — the Educate Girls DIB demonstrated that outcome-linked financing (paying for completion and learning, not enrolment and construction) changes what institutions optimise for. The same structure applied to government education ministries — disbursements tied to independently verified completion rates — creates incentives for governments to do what the best historical cases did: track every child, leave none behind, and measure what actually compounds.
 
-- **Communication of what the historical data already proves** — the T-25 mechanism does not need a new 25-year study. It is confirmed across 189 countries and 140 years of cohort data with a near-unity coefficient. The gap is not evidence; it is legibility. Governments and publics do not act on what they cannot see. Funding the translation of existing historical data into formats that make the compounding chain visible — to ministers, to budget committees, to voters — is the highest-return evidence investment, because the evidence already exists.
+- **Communication of what the historical data already proves** — P-25 does not need a new 25-year study to confirm it. It is confirmed across 189 countries and 140 years of cohort data with a near-unity coefficient. The gap is not evidence; it is legibility. Governments and publics do not act on what they cannot see. Funding the translation of existing historical data into formats that make the compounding chain visible — to ministers, to budget committees, to voters — is the highest-return evidence investment, because the evidence already exists.
 
 ---
 
@@ -128,7 +128,7 @@ There are countries today at 15–30% lower-secondary completion that are at an 
 
 Without sustained investment over the next 10–15 years, these countries will cross the self-sustaining threshold around 2050–2060. With it, they cross it in 2035–2040. That gap is a generation — approximately 30 million additional women reaching lower-secondary completion in the earlier scenario relative to the later one, and the cascading fertility, child health, and economic effects that follow from each of those women becoming an educated mother.
 
-That is not a projection. It is the T-25 mechanism, run forward from current data.
+That is not a projection. It is P-25, run forward from current data.
 
 The question is not whether the mechanism will run. It will run regardless. The question is whether it runs at the speed the automatic trajectory produces, or at the speed an educational rupture produces. The difference between those two speeds — measured in human lives, in children surviving infancy, in women with the capacity to shape their own futures — is where your capital operates.
 

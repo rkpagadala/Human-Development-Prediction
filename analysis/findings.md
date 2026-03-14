@@ -108,7 +108,7 @@ South Korea's lower secondary completion by cohort year:
 
 Korea gained +35.7 pp in lower secondary from 1965 to 1980 — second only to Taiwan (+46.5 pp) among all countries in the WCDE data for that period. The generational chain shows compounding: parental gains at each step enabled the next.
 
-**The T-25 mechanism:** The 1960 cohort (41.0% lower sec) became the parents of the 1985 cohort. With parental lower sec at ~51.5%, the 1990 cohort reached 98.2%. Korea ran primary and secondary expansion nearly simultaneously — primary completion was 77.6% in 1960 while lower secondary was already 41.0% (a gap of only 36.6 pp at the starting point, far smaller than most developing countries at comparable income levels).
+**The P-25 mechanism:** The 1960 cohort (41.0% lower sec) became the parents of the 1985 cohort. With parental lower sec at ~51.5%, the 1990 cohort reached 98.2%. Korea ran primary and secondary expansion nearly simultaneously — primary completion was 77.6% in 1960 while lower secondary was already 41.0% (a gap of only 36.6 pp at the starting point, far smaller than most developing countries at comparable income levels).
 
 **Comparison:** China's trajectory was more sequential — primary first, then secondary: lower secondary 23.8% in 1960, still only 47.1% in 1975, when Korea was already at 77.1%. China crossed 50% lower secondary only in 1980.
 

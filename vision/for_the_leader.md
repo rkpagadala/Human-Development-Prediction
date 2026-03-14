@@ -10,7 +10,7 @@ There is a generation of children being born in your country right now.
 
 In 25 years, they will be your doctors, your engineers, your teachers, your administrators. The question is not whether that generation will exist. It is what they will be capable of — and that question is largely decided by decisions made in the next five years, not the next twenty-five.
 
-This is not a metaphor. It is a measurable relationship. Across 189 countries and 140 years of data, the education level of a parent generation predicts the education level of the child generation with near-clockwork regularity. The coefficient is close to one: every percentage point of lower-secondary completion you add to today's cohort produces approximately one percentage point of gain in the next generation — and that generation passes it forward again. Call this the **T-25 mechanism**: the education of parents at time T shapes the education of their children at T+25, who shape their children at T+50, compounding forward with each generation.
+This is not a metaphor. It is a measurable relationship. Across 189 countries and 140 years of data, the education level of a parent generation predicts the education level of the child generation with near-clockwork regularity. The coefficient is close to one: every percentage point of lower-secondary completion you add to today's cohort produces approximately one percentage point of gain in the next generation — and that generation passes it forward again. Call this **P-25** — the parental transmission of education: the education of parents at time T shapes the education of their children at T+25, who shape their children at T+50, compounding forward with each generation.
 
 You are not managing a school system. You are setting the starting conditions for a compounding process that will run for a century.
 
@@ -26,7 +26,7 @@ By 1975, lower-secondary completion had gone from 41% to 77%. By 1990, it was 98
 
 None of that was visible in 1953. All of it was predictable from 1953, if you understood the mechanism.
 
-Japan made the same decision in 1872 — before it was wealthy, before it had good schools, before it had trained teachers. The Meiji government mandated universal compulsory education, including for girls, at a moment when they had almost no resources to deliver it. The first generation of schools was low quality. The teachers were barely educated above their students. That did not matter. What mattered was that the commitment was made and sustained. The first generation of schools produced the teachers for the second generation of schools. The T-25 compounding did the rest.
+Japan made the same decision in 1872 — before it was wealthy, before it had good schools, before it had trained teachers. The Meiji government mandated universal compulsory education, including for girls, at a moment when they had almost no resources to deliver it. The first generation of schools was low quality. The teachers were barely educated above their students. That did not matter. What mattered was that the commitment was made and sustained. The first generation of schools produced the teachers for the second generation of schools. The P-25 compounding did the rest.
 
 ---
 
