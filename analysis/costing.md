@@ -57,15 +57,19 @@ Of the 130M not completing lower secondary globally, **30M (23%) are in the 19 c
 
 Girls are marginally more affected (73% non-completion rate vs 69% for boys). The focus on girls is warranted because of the P-25 multiplier — educated mothers have the stronger intergenerational effect — but the delivery system must reach both.
 
-**Three distinct groups, three distinct problems:**
+**Where the cohort stops (19 target countries, 20–24, both sexes):**
 
-| Group | Millions | % | What is actually missing |
-|---|---:|---:|---|
-| No education — never attended school | 12.9M | 43% | A school within reach; a reason to go |
-| Incomplete primary — dropped out | 9.5M | 32% | A reason to stay; removal of cost or distance barrier |
-| Completed primary, not in secondary | 7.7M | 26% | A secondary school within reach |
+| Stage reached | Millions | % of cohort |
+|---|---:|---:|
+| Never started school | 12.9M | 30% |
+| Started primary, dropped out | 9.5M | 22% |
+| Completed primary — stopped there | 7.7M | 18% |
+| Completed lower secondary — stopped there | 5.5M | 13% |
+| Completed upper secondary or more | 6.8M | 16% |
 
-The first and third groups — 20.6M of the 30.1M — face a physical access problem, not primarily a demand problem. The school does not exist where they live, or secondary does not follow from primary. This is the Korea/Japan problem: build the school first, mandate attendance, demand follows.
+The cascade is stark: 70% start school, 47% complete primary, 29% complete lower secondary, 16% complete upper secondary. The single largest transition gap is primary → lower secondary: of those who finish primary, **39% do not continue into secondary at all**.
+
+The root constraint across all three non-completing groups is the same: **secondary schools do not exist within reach of rural populations**. Families have less reason to start or complete primary when there is no secondary to aspire to. Children drop out of primary partly because the path forward is a dead end. Korea and Japan understood this — they built secondary simultaneously with primary precisely because secondary creates the pull that keeps children in primary and brings new children into school. The intervention is not three separate programmes for three separate groups. It is one thing: secondary schools within reach, with a mandate to attend.
 
 **All 19 target countries (2025 WCDE data, age 20–24), ranked by total not completing:**
 
