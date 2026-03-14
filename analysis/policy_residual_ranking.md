@@ -1,3 +1,7 @@
+---
+layout: page
+---
+
 # Policy-Adjusted Education Ranking — WCDE v3
 
 *Supersedes prior analysis/policy_residual_ranking.md (old model included GDP as predictor — bad control: education causes income, so controlling for income blocks the education signal). This version uses country fixed effects on parental education only. Source: wcde/output/policy_residual.md.*

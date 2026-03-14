@@ -1,3 +1,7 @@
+---
+layout: page
+---
+
 # Global Education Achievement Rankings — WCDE v3 (1960–2025)
 
 *Supersedes prior analysis/education_rankings.md (old World Bank-sourced analysis, 175 countries). This version uses WCDE v3 data, 204 countries. Source: wcde/output/rankings.md.*

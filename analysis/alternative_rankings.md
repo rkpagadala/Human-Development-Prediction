@@ -1,3 +1,7 @@
+---
+layout: page
+---
+
 # Alternative Education Rankings — WCDE v3
 
 *Supersedes prior analysis/alternative_rankings.md (old World Bank-sourced analysis, 175 countries). This version uses WCDE v3 data, 204 countries. Source: wcde/output/alternative_rankings.md.*

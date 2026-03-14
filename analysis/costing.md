@@ -1,3 +1,7 @@
+---
+layout: page
+---
+
 # The Investment: What Philanthropy Can Actually Move
 
 *Costing document for educational rupture in developing countries. Companion to for_the_philanthropist.md.*

@@ -1,3 +1,7 @@
+---
+layout: page
+---
+
 # What Your Country Can Look Like in 25 Years
 
 *A vision document for leaders of developing nations.*

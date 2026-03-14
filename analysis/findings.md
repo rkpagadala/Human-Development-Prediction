@@ -1,3 +1,7 @@
+---
+layout: page
+---
+
 # Human Development Prediction — Findings
 
 *Updated to WCDE v3. All statistics from Wittgenstein Centre for Demography and Global Human Capital (WCDE v3) unless otherwise noted.*

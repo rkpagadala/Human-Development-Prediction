@@ -1,3 +1,7 @@
+---
+layout: page
+---
+
 # Education as the Engine of Development
 ## A Policy Brief for Leaders of Developing Nations
 

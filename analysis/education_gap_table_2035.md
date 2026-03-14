@@ -1,3 +1,7 @@
+---
+layout: page
+---
+
 # Education Gap by Country — 2035 (Age 20–24 Cohort)
 
 *WCDE v3, scenario SSP2, age group 20–24, both sexes, year 2035. Age 20–24 reflects completed education — people old enough to have finished secondary if they were going to.*

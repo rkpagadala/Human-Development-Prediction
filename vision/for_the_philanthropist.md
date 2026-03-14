@@ -1,3 +1,7 @@
+---
+layout: page
+---
+
 # The Highest-Leverage Investment in Human History
 
 *A vision document for philanthropists considering education investment in developing nations.*
