@@ -42,7 +42,7 @@ The data comes from WCDE v3 (189 countries, 2025 estimates). If you do not know 
 
 ## Band 2: 25–40% female lower-secondary completion
 
-*Countries in this band include Uganda (~32%), Tanzania (~35%), Zambia (~38%), Pakistan (~30%), Afghanistan (~20–30% depending on region). This is the critical threshold zone.*
+*Countries in this band include Uganda (~32%), Tanzania (~35%), Zambia (~38%), Pakistan (~30%), Afghanistan (~20–30% depending on region). This is the critical zone.*
 
 **What is happening:** PTE is advancing. The parental generation has a meaningful minority of educated mothers. Extended family channels are activating — aunts, older sisters, grandmothers with some secondary education are beginning to shift household expectations. The automatic trajectory is faster than Band 1, but the demographic conditions that make progress hard — high fertility, rapid population growth, thin household resources per child — have not yet eased.
 

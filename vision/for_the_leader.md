@@ -54,11 +54,11 @@ When female lower-secondary completion rises, the following happens — not as a
 
 **In 15–20 years:** Child mortality falls. Educated mothers navigate health systems more effectively, vaccinate more consistently, recognise illness earlier. The child survival gains from maternal education are larger than the gains from equivalent spending on health infrastructure alone.
 
-**In 20–25 years:** The next generation's education rises. Not because you built more schools — though you did — but because educated parents expect education, support it, and transmit it as a norm. The demand side of education becomes self-sustaining once the first cohort of educated parents reaches parenthood.
+**In 20–25 years:** The next generation's education rises. Not because you built more schools — though you did — but because educated parents expect education, support it, and transmit it as a norm. The demand side of education strengthens continuously as each cohort of educated parents reaches parenthood — but this compounding requires sustained state investment throughout, not just at the start.
 
 **In 25–30 years:** GDP per capita grows. The educated cohort enters the labour force. Productivity rises. Tax base expands. The fiscal returns to the original investment begin to arrive — at exactly the moment when you need resources to push secondary into tertiary.
 
-You do not need to fund all of this. You need to trigger the first link. The chain runs itself.
+You do not need to fund all of this at once. You need to trigger the first link — and sustain the investment through each subsequent generation until the transition is complete.
 
 ---
 

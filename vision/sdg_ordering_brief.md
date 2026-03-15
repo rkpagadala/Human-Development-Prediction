@@ -54,7 +54,7 @@ A girl who completes lower secondary education:
 - Each of her children receives more food, more parental attention, more schooling
 - Her children are twice as likely to survive to age five (SDG 3: health)
 - Her household income rises 10–20% per year of secondary education she completed (SDG 1: poverty; SDG 8: economic growth)
-- Her children are significantly more likely to complete lower secondary themselves (SDG 4: the chain self-sustains)
+- Her children are significantly more likely to complete lower secondary themselves (SDG 4: the chain advances through each generation)
 
 This is not a projection. It is the measured sequence across 189 countries. The question is not whether secondary education for girls produces these outcomes. It does. The question is whether the international funding architecture is structured to deliver secondary education first — or whether it continues to fund the outcomes directly, leaving the mechanism unfunded.
 
