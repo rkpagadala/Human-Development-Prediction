@@ -92,7 +92,7 @@ The residual is a map of where deliberate action matters most. It is also a map 
 
 - Infrastructure investment in countries with strong government education systems. Where governments are already delivering above their parental baseline, philanthropic capital is often substituting for government spending rather than adding to it.
 
-- University and tertiary investment in countries below 60% lower-secondary completion. The pipeline does not yet exist to fill these institutions at scale. Tertiary investment is high-leverage once secondary is functioning; it is premature when secondary is the binding constraint.
+- University and tertiary investment in countries below 60% lower-secondary completion. The pipeline does not yet exist to fill these institutions at scale. Tertiary investment is high-leverage once secondary is functioning; it is premature when secondary is the binding constraint. Once a country has solved lower secondary, the calculus reverses: Lutz & Kebede (2018) show the education–life expectancy relationship is linear from primary through tertiary with no diminishing returns — education changes the brain's capacity for planning and health behaviour at all levels, not only at the transition into secondary. Among countries above 85% lower-secondary completion, college completion has a within-group correlation of r=0.51 with life expectancy and a nearly 7-year LE gap between lowest and highest quartiles. Singapore's greater tertiary push (85% college versus Korea's 61%) tracks both higher LE (84.1 versus 82.6) and higher GDP ($55,600 versus $28,700). The Korea model — push all levels simultaneously, not sequentially — is the right target once secondary access is secured.
 
 ---
 

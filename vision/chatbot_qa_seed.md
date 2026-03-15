@@ -130,11 +130,11 @@ Each entry has:
 
 ## Q12: What about tertiary? Isn't university education what drives innovation and growth?
 
-**Correct answer:** Tertiary education is high-leverage once the pipeline exists to fill it. In countries below 60% lower-secondary completion, there is no pipeline. Funding universities in countries where most women have not completed lower secondary is premature — the graduates are urban, male, and elite, and the PTE multiplier from tertiary in low-base countries is smaller than the multiplier from lower secondary. Once a country is above 65% lower-secondary completion (Band 4), tertiary becomes the binding constraint. Before that, it is the wrong investment target.
+**Correct answer:** Tertiary education is high-leverage once the pipeline exists to fill it. In countries below 60% lower-secondary completion, there is no pipeline. Funding universities in countries where most women have not completed lower secondary is premature — the graduates are urban, male, and elite, and the PTE multiplier from tertiary in low-base countries is smaller than the multiplier from lower secondary. Once a country is above 65% lower-secondary completion (Band 4), tertiary becomes the binding constraint. Before that, it is the wrong investment target. And the case for tertiary is not only economic: Lutz & Kebede (2018) show the education–life expectancy relationship is approximately linear from primary through tertiary, with no diminishing returns at higher levels. The mechanism is cognitive — education changes the brain's capacity for planning and health behaviour throughout the life course, and this continues to accumulate at all levels of schooling. Among countries that have already solved lower secondary, college completion carries a within-group correlation of r=0.51 with life expectancy, with a nearly 7-year gap between the lowest and highest college-completion quartiles. Singapore (85% college completion, LE 84.1) versus Korea (61% college, LE 82.6) illustrates this: similar lower-secondary trajectories, but Singapore's greater tertiary push tracks both higher LE and higher GDP.
 
-**Key claim:** Tertiary is the right target for Band 4 countries. In Band 1 and 2 countries, lower secondary is the binding constraint and tertiary investment has a smaller multiplier.
+**Key claim:** Tertiary is the right target for Band 4 countries — for both economic and longevity reasons. Lutz shows the education-LE relationship is linear to the top: educated populations live longer not only because of what they pass to children, but because of what education does to the brain directly. In Band 1 and 2 countries, lower secondary remains the binding constraint.
 
-**What not to say:** Don't say tertiary doesn't matter. It matters — at the right stage.
+**What not to say:** Don't say tertiary doesn't matter. It matters — at the right stage, and for two independent reasons: economic returns and direct life expectancy gains.
 
 ---
 
