@@ -18,6 +18,14 @@ Amartya Sen's influential 1989 framework (*Hunger and Public Action*, with Drèz
 
 Sen used this framework to argue against the primacy of economic growth and in favour of direct public provision. It has shaped a generation of development economists, practitioners, and donors. It is wrong — not in its conclusion that income alone is insufficient, but in its identification of the mechanism.
 
+The deeper error is that Sen's two categories are not different mechanisms at all. They are the same mechanism — education — producing two different surface appearances depending on the speed of educational expansion and the presence of functioning markets.
+
+Where educational expansion was fast and decisive (Korea, Taiwan), markets amplified the educated workforce's productivity into rapid, visible income growth. The income growth was large and observable; it got credited as the cause. This is what "growth-mediated security" looks like from the outside.
+
+Where educational accumulation was slow and gradual (Kerala, Sri Lanka), there was no income growth fast enough to be visible as a causal signal. The observable welfare activity was state provision. The provision appeared to be working — but it was riding on an educational substrate that had been building quietly for generations. Where the educational substrate is genuinely absent and provision is attempted without it, the gains do not compound. The facade holds only where the education was already there.
+
+Sen observed the surfaces and built a causal theory from them.
+
 ---
 
 ## What Sen Got Wrong
