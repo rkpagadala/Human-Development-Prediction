@@ -102,32 +102,9 @@ happen to have both. This is the human capital causation finding.
 
 ### Education → Life Expectancy
 
-The table shows a sign reversal between OLS and FE that warrants explanation:
-
-| Model | Education β | Initial e0 β |
-|:------|:-----------:|:------------:|
-| OLS: education + initial e0 | **−0.016** | +0.809 |
-| FE: education + initial e0 | **+0.108** | +0.301 |
-
-The OLS coefficient is negative; the FE coefficient is positive. This is not a
-contradiction — it is a ceiling/convergence confound in the cross-sectional comparison.
-
-Countries with the highest education at any given time are also the richest: USA,
-Germany, Japan, Scandinavia. These countries already had high life expectancy at T,
-and were approaching the biological ceiling (~82–85 years). Their e0 could not grow
-much further regardless of education gains. Poorer countries with lower education had
-far more room to grow. So in cross-section, high-education countries appear to have
-*slower* life expectancy growth — not because education hurts, but because they had
-nowhere left to go. The education coefficient in OLS absorbs this ceiling effect and
-goes negative.
-
-Fixed effects removes this confound entirely. It does not compare Germany to Niger;
-it compares Germany in 1980 to Germany in 1960. Within any given country, rising
-education is followed by rising life expectancy — the coefficient is positive, as
-expected. The FE result is the correct one to interpret.
-
-**FE finding:** A 1 pp rise in lower secondary completion at T predicts a **+0.108 year
-increase in life expectancy at T+25**, within the same country over time (R²=0.384).
+**FE:** A 1 pp rise in lower secondary completion at T predicts a **+0.192 year increase in life expectancy at T+25**,
+within the same country over time (R²=0.330).
+Initial life expectancy alone explains R²=0.336.
 
 Mechanism: educated mothers reduce infant mortality (better health behaviors, care
 seeking, nutrition). Educated populations adopt sanitation and healthcare earlier.

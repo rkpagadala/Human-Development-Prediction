@@ -1,7 +1,7 @@
 # Peer Review 2 Tracker
 
 **Review recommendation:** Major Revision
-**Source:** `papers/peer_review_2.md`
+**Source:** `papers/peer_review_2_education_mediated_security.md`
 **Paper:** "Education-Mediated Security: Rethinking the Causal Drivers of Human Development"
 **Last updated:** 2026-03-14
 
