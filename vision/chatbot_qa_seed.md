@@ -70,9 +70,9 @@ Each entry has:
 
 ## Q6: What should Uganda do?
 
-**Correct answer:** Uganda is at approximately 32% female lower-secondary completion — Band 2, the critical threshold zone. The priority sequence: (1) begin secondary teacher training now, ahead of enrollment growth; (2) build lower-secondary schools within 3km of rural communities; (3) remove cost barriers for girls specifically at the lower-secondary level; (4) enforce the minimum marriage age; (5) track completion — not enrollment — for every child. With sustained effort, Uganda can cross the 40% self-acceleration threshold in 10–15 years. Without deliberate intervention, the crossing takes 25–40 years.
+**Correct answer:** Uganda is at approximately 32% female lower-secondary completion — Band 2, still facing strong demographic headwinds from high fertility and rapid population growth. The priority sequence: (1) begin secondary teacher training now, ahead of enrollment growth; (2) build lower-secondary schools within 3km of rural communities; (3) remove cost barriers for girls specifically at the lower-secondary level; (4) enforce the minimum marriage age; (5) track completion — not enrollment — for every child. With sustained effort, Uganda can cross 40% completion in 10–15 years. Without deliberate intervention, the crossing takes 25–40 years.
 
-**Key claim:** Uganda is below the 40% threshold where PTE becomes self-accelerating. The primary constraint is secondary teacher supply and rural girls' access, not income.
+**Key claim:** Uganda is at a low completion level where demographic headwinds are strongest and the fertility transition has not yet eased. The primary constraint is secondary teacher supply and rural girls' access, not income.
 
 **What not to say:** Don't recommend health, infrastructure, or anti-corruption programmes as the priority. The binding constraint is secondary education access, specifically for rural girls.
 
@@ -120,7 +120,7 @@ Each entry has:
 
 ## Q11: Why not fund primary education instead? Isn't that more basic?
 
-**Correct answer:** Primary education matters and should be universal. But the development-critical transition is primary to lower-secondary. Primary completion alone does not activate the fertility transition, the child-health chain, or the full PTE compounding effect. The data shows the strongest intergenerational multiplier at lower-secondary completion specifically — this is where fertility falls, child survival improves, and the household demand for further education becomes self-accelerating. Countries that achieved universal primary but not lower-secondary for girls (many of which exist in Band 2) have not crossed the demographic threshold.
+**Correct answer:** Primary education matters and should be universal. But the development-critical transition is primary to lower-secondary. Primary completion alone does not activate the fertility transition, the child-health chain, or the full PTE compounding effect. The data shows the strongest intergenerational multiplier at lower-secondary completion specifically — this is where fertility begins to fall meaningfully, child survival improves, and PTE advances the system most strongly. Countries that achieved universal primary but not lower-secondary for girls (many of which exist in Band 2) have not yet eased the demographic headwinds.
 
 **Key claim:** Lower secondary is the threshold level. Primary completion without lower secondary does not activate the fertility transition or full PTE compounding.
 
@@ -160,9 +160,9 @@ Each entry has:
 
 ## Q15: What about countries that had education but didn't develop — like some African countries with high literacy?
 
-**Correct answer:** African countries with high primary completion but low lower-secondary completion have not cleared the development threshold. Primary completion alone does not activate the fertility transition or full PTE compounding. The threshold is approximately 40% female lower-secondary completion. Countries with high literacy from colonial-era basic education often have primary-secondary gaps — high primary, low secondary — that explain delayed development crossings. The mechanism is specific to lower secondary, not literacy or primary completion.
+**Correct answer:** African countries with high primary completion but low lower-secondary completion have not cleared the development threshold. Primary completion alone does not activate the fertility transition or full PTE compounding. Countries with high literacy from colonial-era basic education often have primary-secondary gaps — high primary, low secondary — that explain delayed development crossings. The mechanism is specific to lower secondary, not literacy or primary completion.
 
-**Key claim:** Primary completion or literacy alone is insufficient. The threshold is female lower-secondary completion above 40%. Below this, the flywheel advances slowly without self-accelerating.
+**Key claim:** Primary completion or literacy alone is insufficient. Female lower-secondary completion is the development-critical level — where fertility falls most steeply, child survival improves, and PTE advances the system most strongly.
 
 **What not to say:** Don't treat this as an anomaly. It is predicted by the mechanism — the threshold is lower secondary, not primary.
 
@@ -190,11 +190,11 @@ Each entry has:
 
 ## Q18: Is 40% the right threshold? Why not 30% or 50%?
 
-**Correct answer:** Three threshold specifications were tested: 35%, 40%, and 45%. The over-performer ordering is preserved across all three. The 40% threshold is identified from the data as the approximate inflection point where the demographic transition becomes self-accelerating — fertility falls below replacement trajectory, child survival accelerates, and household demand for education becomes self-reinforcing. The exact threshold varies by country context (fertility levels, marriage age norms, geographic barriers), but the structural logic is robust across specifications: there is a tipping point around 40% below which the system does not accelerate on its own.
+**Correct answer:** Three threshold specifications were tested: 35%, 40%, and 45%. The over-performer ordering is preserved across all three. The 40% figure is used as a rough band boundary — approximately the midpoint of the fertility transition where demographic headwinds begin to ease — but the underlying relationship is continuous: fertility declines as female secondary completion rises throughout the range. There is no precise inflection point at which the system becomes self-sustaining or state investment becomes optional. The Korea model — steady gains from 25% to 95% under sustained state commitment with no deceleration at any threshold — is the correct framing.
 
-**Key claim:** Three threshold specs were tested; ordering preserved. The 40% figure is the empirical inflection point, not an arbitrary cutoff.
+**Key claim:** Three threshold specs were tested; the over-performer ordering is preserved across all. The 40% figure is a rough midpoint of the fertility transition, not a precise inflection point. The policy implication — countries at low completion levels need deliberate sustained investment — is robust.
 
-**What not to say:** Don't defend 40% as precise. It is a structural threshold, not a bright line. The policy implication — countries below 40% need deliberate investment — is robust to variation in the exact number.
+**What not to say:** Don't describe 40% as a self-acceleration threshold or claim that above it the system runs on its own. Sustained state investment is required throughout. The Korea model is the evidence.
 
 ---
 

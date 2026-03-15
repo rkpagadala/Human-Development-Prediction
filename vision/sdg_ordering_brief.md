@@ -64,7 +64,7 @@ This is not a projection. It is the measured sequence across 189 countries. The 
 
 Recognizing SDG 4 as the primary driver does not mean abandoning the other goals. It means sequencing investment correctly.
 
-**For bilateral donors:** Shift the aid allocation target from 2–3× health advantage to parity between health and education, with the education fraction weighted toward lower-secondary access in countries below 40% female completion. Below this threshold, the flywheel advances slowly — PTE still operates, but without self-accelerating momentum. Above it, the system accelerates on its own. The donor return on investment is highest precisely where the baseline is lowest.
+**For bilateral donors:** Shift the aid allocation target from 2–3× health advantage to parity between health and education, with the education fraction weighted toward lower-secondary access in countries below 40% female completion. At these low completion levels, the demographic headwinds are strongest — high fertility, rapid population growth, thin household resources per child. Fertility declines continuously as completion rises; investment does not become optional at any threshold. Korea expanded from 25% to 95% under sustained state commitment throughout. The donor return on investment is highest precisely where the baseline is lowest.
 
 **For multilateral institutions:** The SDG monitoring framework should track education completion rates as leading indicators — not lagging outputs — of the health and income goals. A country's lower-secondary completion today predicts its life expectancy and fertility outcomes in 25 years more reliably than its current health spending.
 

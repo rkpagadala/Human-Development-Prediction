@@ -50,7 +50,7 @@ From WCDE v3 population data (2025, age 20–24, both sexes). Age 20–24 is the
 | Upper secondary | 230M | 39% |
 | Completing lower sec but not upper sec | 100M | — |
 
-Of the 130M not completing lower secondary globally, **30M (23%) are in the 19 countries below 40%** — the countries where the flywheel has not yet reached self-accelerating speed.
+Of the 130M not completing lower secondary globally, **30M (23%) are in the 19 countries below 40%** — the countries where the demographic headwind is strongest and the fertility transition has not yet engaged.
 
 | | Millions | % of total |
 |---|---:|---:|

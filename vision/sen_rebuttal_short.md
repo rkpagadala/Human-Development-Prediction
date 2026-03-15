@@ -60,9 +60,9 @@ Cuba is not a counterexample to education-first. It is a case where sufficient e
 
 ## The Policy Implication
 
-Funding direct health provision in populations below 40% female lower-secondary completion produces gains that do not compound. The provision reaches people who cannot fully leverage it. The gains are real and not permanent.
+Funding direct health provision in populations with very low female lower-secondary completion produces gains that do not compound. The provision reaches people who cannot fully leverage it. The gains are real and not permanent.
 
-Funding secondary education in those same populations produces gains that compound across generations through PTE — each educated cohort produces a more educated next cohort, which has lower fertility, lower child mortality, and higher income. The chain self-accelerates above the threshold. Below it, PTE still operates and the system still advances — but slowly, without generating the compounding household demand that makes further progress automatic.
+Funding secondary education in those same populations produces gains that compound across generations through PTE — each educated cohort produces a more educated next cohort, which has lower fertility, lower child mortality, and higher income. Fertility declines continuously as female secondary completion rises; the steepest demographic headwinds are at the lowest completion levels, where high fertility and rapid population growth slow the system. PTE still operates at any level — but sustained state investment is required all the way to near-universal completion. Korea expanded steadily to 95% under sustained state investment throughout, with no point at which the state's role diminished.
 
 Sen described fiscal routing. The data identifies the mechanism. The mechanism is education.
 

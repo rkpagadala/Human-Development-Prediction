@@ -44,9 +44,9 @@ The data comes from WCDE v3 (189 countries, 2025 estimates). If you do not know 
 
 *Countries in this band include Uganda (~32%), Tanzania (~35%), Zambia (~38%), Pakistan (~30%), Afghanistan (~20–30% depending on region). This is the critical threshold zone.*
 
-**What is happening:** PTE is beginning to accelerate. The parental generation has a meaningful minority of educated mothers. Extended family channels are activating — aunts, older sisters, grandmothers with some secondary education are beginning to shift household expectations. The automatic trajectory is faster than Band 1, but still below the self-acceleration threshold.
+**What is happening:** PTE is advancing. The parental generation has a meaningful minority of educated mothers. Extended family channels are activating — aunts, older sisters, grandmothers with some secondary education are beginning to shift household expectations. The automatic trajectory is faster than Band 1, but the demographic conditions that make progress hard — high fertility, rapid population growth, thin household resources per child — have not yet eased.
 
-**The threshold significance:** Approximately 40% female lower-secondary completion is where the demographic flywheel becomes self-accelerating. Fertility begins to fall, child survival improves, household resources per child increase, and demand for secondary education rises organically. Below 40%, PTE still operates and each percentage point advances — but it requires deliberate policy to push above the automatic trajectory. Above 40%, the system begins to pull itself forward.
+**The demographic context:** Fertility declines continuously as female secondary completion rises; the steepest demographic headwinds are at the lowest completion levels. There is no precise threshold above which the state's work is done. Korea expanded steadily from 25% to 95% under sustained state commitment throughout — 10–14 percentage points gained per five years with no deceleration at any point. The 40% level is a rough midpoint of the fertility transition, not a special inflection point, and crossing it is not a signal to ease investment.
 
 **The constraint:** In Band 2, the school supply problem is partially solved — schools exist. The binding constraints are now: (a) the last-mile activation problem (families who have not yet internalized secondary as normal), (b) secondary teacher availability lagging secondary demand growth, (c) quality sufficient to keep girls enrolled through completion rather than dropping out after a year.
 
@@ -62,7 +62,7 @@ The data comes from WCDE v3 (189 countries, 2025 estimates). If you do not know 
 
 5. **Target the hardest-to-reach 20%.** The girls who are not completing lower secondary in Band 2 countries are disproportionately rural, from the poorest households, from ethnic or linguistic minorities, from communities with the highest early marriage rates. The automatic trajectory will bring the easy cases; the deliberate intervention must focus on the cases the automatic trajectory leaves behind.
 
-**Expected horizon:** Band 2 countries with sustained effort can cross 40% — the self-acceleration threshold — in 8–15 years. This is the highest-priority zone for philanthropic capital: the multiplier is largest here because the system is closest to self-acceleration, and the marginal investment compresses time to threshold rather than starting from scratch.
+**Expected horizon:** Band 2 countries with sustained effort can cross 40% in 8–15 years. This is the highest-priority zone for philanthropic capital: the multiplier is largest here because the demographic headwinds are still strong and the marginal investment compresses the transition rather than starting from scratch. But crossing 40% is not the finish line — it is a rough midpoint of the fertility transition. Korea crossed 40% in 1960 and kept investing at full pace for another 25 years until near-universal completion. That is the model: sustained state commitment throughout, with no point at which investment becomes optional.
 
 ---
 
@@ -70,7 +70,7 @@ The data comes from WCDE v3 (189 countries, 2025 estimates). If you do not know 
 
 *Countries in this band include India (~55%), Bolivia (~60%), Cambodia (~48%), Ghana (~55%), Morocco (~52%). This is the acceleration zone.*
 
-**What is happening:** The demographic flywheel is engaged. Fertility is falling. The PTE signal is strong — educated mothers exist in sufficient numbers to make secondary completion a household norm. The automatic trajectory is meaningful; deliberate intervention is additive, not essential.
+**What is happening:** Fertility is falling. The PTE signal is strong — educated mothers exist in sufficient numbers to make secondary completion a household norm in many communities. The automatic trajectory is meaningful; deliberate intervention remains important, though the most acute barriers have eased.
 
 **The constraint:** The binding constraint has shifted from access to quality and upper-secondary transition. Girls who complete lower secondary increasingly want to continue. The capacity of upper-secondary systems to absorb them is often the bottleneck. Teacher quality is now a more important constraint than teacher quantity.
 
@@ -92,7 +92,7 @@ The data comes from WCDE v3 (189 countries, 2025 estimates). If you do not know 
 
 *Countries include most of Latin America, Southeast Asia, most of East Asia, much of the Middle East, and all OECD countries. The primary mechanism is now operating at near-full capacity.*
 
-**What is happening:** PTE is self-accelerating. The demographic transition is well underway. The binding constraints are now quality, tertiary access, and upper-secondary completion — not lower-secondary access.
+**What is happening:** PTE is operating at near-full strength. The demographic transition is well underway. The binding constraints are now quality, tertiary access, and upper-secondary completion — not lower-secondary access.
 
 **Focus areas:** Upper-secondary and tertiary completion. STEM education. Gender parity in higher education and the labour market. These are real and important issues. But they are not the mechanism that lifts Band 1 and Band 2 countries. Band 4 country philanthropy and development policy should be focused on Band 1 and Band 2, not Band 4.
 

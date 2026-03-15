@@ -45,7 +45,7 @@ Policy and philanthropist vision documents.
 - **Education age group 20–24** — reflects completed education, not enrollment
 - **Lagged features** — GDP and child mortality use 10–20 year lags to capture generational effects
 - **GDP is US inflation-adjusted** per capita
-- **PTE mechanism** — Parental Transmission of Education; PTE operates at any completion level, but below ~40% lower secondary the system advances slowly and does not self-accelerate — deliberate policy is needed to push above the automatic trajectory
+- **PTE mechanism** — Parental Transmission of Education; PTE operates at any completion level. Fertility declines continuously as female secondary completion rises; the steepest demographic headwinds are at the lowest completion levels. No threshold above which state investment becomes optional. Korea model: sustained state investment from 25% to 95%, steady 10–14pp gains per five years with no inflection.
 - **NRMSE < 0.10** — reliable model threshold
 
 ## Key Files

@@ -46,7 +46,7 @@ The intergenerational multiplier is not uniform. It is largest where the parenta
 
 Countries with 5–20% lower-secondary parental completion produce the highest child-generation gains per unit of educational investment. The data shows countries like Maldives (β=5.7 — each 1pp of parental education produces 5.7pp of child education), Yemen (5.7), Rwanda (3.9), Bhutan (3.2), Cape Verde (3.1), Bangladesh (2.4), Nepal (2.1), India (1.4). These multipliers are not anomalies. They reflect the structural reality that gains compound fastest where the base is lowest — because the ceiling is farthest away and demand is most suppressed.
 
-This is where philanthropic capital has its highest leverage: **countries below 40% lower-secondary completion**. This is not an arbitrary cutoff. Approximately 40% female lower-secondary completion is the inflection point at which the demographic flywheel becomes self-accelerating: fertility begins to fall, child survival improves, household resources per child increase, and demand for education rises organically from within the population. Below that threshold, PTE still operates and progress continues — but slowly, without generating its own compounding momentum. Above it, the system accelerates on its own. The philanthropic investment buys speed — compressing what would otherwise take two generations into one.
+This is where philanthropic capital has its highest leverage: **countries below 40% lower-secondary completion**. This is not an arbitrary cutoff. Fertility declines continuously as female secondary completion rises; the steepest demographic headwinds are at the lowest completion levels, where high fertility and rapid population growth dilute the gains from each educated cohort. PTE still operates and progress continues at any level — but slowly at low bases, against the headwind of those demographic pressures. The philanthropic investment buys speed — compressing what would otherwise take two generations into one. Crossing 40% is not the finish line; it is a rough midpoint of the fertility transition. Korea went from 25% to 95% under sustained state commitment throughout. The goal is near-universal completion, not any intermediate threshold.
 
 The 19 countries currently below 40% lower-secondary completion are home to **42 million children aged 15–19 not completing lower secondary** — girls and boys in nearly equal numbers (WCDE v3, 2025). The focus on girls is warranted by the PTE multiplier: educated mothers have the stronger intergenerational effect on the next generation's education, health, and fertility. But the delivery system must reach all children. These are the children whose non-completion will set the parental baseline for the generation born in 2040–2050. Reaching them now is not charity — it is intervening in the PTE chain at the point of highest leverage, before the next generation's starting conditions are fixed.
 
@@ -72,7 +72,7 @@ The countries with the largest positive residuals in 2015 — Maldives (+35pp), 
 
 The countries with the largest negative residuals — Qatar (−4.8pp at $63,000 per capita), several Gulf states — demonstrate the inverse: income alone, without educational commitment, produces underperformance. Oil wealth does not automatically build an educated population.
 
-The residual is a map of where deliberate action matters most. It is also a map of where your capital has the greatest marginal impact: in countries where the automatic trajectory is too slow, where the parental base is too low to generate self-accelerating demand, and where a focused, sustained intervention can shift the trajectory durably.
+The residual is a map of where deliberate action matters most. It is also a map of where your capital has the greatest marginal impact: in countries where the automatic trajectory is too slow, where the parental base is too low for PTE to advance the system quickly, and where a focused, sustained intervention can shift the trajectory durably.
 
 ---
 
@@ -128,9 +128,9 @@ The implication is not to stop funding organisations like Educate Girls. It is t
 
 ## The Counterfactual That Should Motivate You
 
-There are countries today at 15–30% lower-secondary completion that are at an inflection point. The parental base is just high enough that the system is beginning to generate its own demand. The government is willing but under-resourced. The specific barriers to girls' secondary attendance are known and addressable.
+There are countries today at 15–30% lower-secondary completion where deliberate investment can compress the generational trajectory. The parental base is beginning to grow. The government is willing but under-resourced. The specific barriers to girls' secondary attendance are known and addressable.
 
-Without sustained investment over the next 10–15 years, these countries will cross the self-acceleration threshold around 2050–2060. With it, they cross it in 2035–2040. That gap is a generation — approximately 30 million additional women reaching lower-secondary completion in the earlier scenario relative to the later one, and the cascading fertility, child health, and economic effects that follow from each of those women becoming an educated mother.
+Without sustained investment over the next 10–15 years, these countries will reach near-universal completion around 2050–2060. With it, they reach it in 2035–2040. That gap is a generation — approximately 30 million additional women reaching lower-secondary completion in the earlier scenario relative to the later one, and the cascading fertility, child health, and economic effects that follow from each of those women becoming an educated mother.
 
 That is not a projection. It is PTE, run forward from current data.
 
