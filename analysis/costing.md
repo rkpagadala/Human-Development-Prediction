@@ -6,7 +6,7 @@ layout: page
 
 *Costing document for educational rupture in developing countries. Companion to for_the_philanthropist.md.*
 
-**P-25** — the parental transmission of education: across 189 countries and 140 years of data, the education level of one generation reliably predicts the next generation's — more reliably than income does. Every investment in education today compounds through P-25 into the generation born in 2040–2050.
+**PTE** (Parental Transmission of Education): across 189 countries and 140 years of data, the education level of one generation reliably predicts the next generation's — more reliably than income does. Every investment in education today compounds through PTE into the generation born in 2040–2050.
 
 ---
 
@@ -50,7 +50,7 @@ From WCDE v3 population data (2025, age 20–24, both sexes). Age 20–24 is the
 | Upper secondary | 230M | 39% |
 | Completing lower sec but not upper sec | 100M | — |
 
-Of the 130M not completing lower secondary globally, **30M (23%) are in the 19 countries below 40%** — the countries where the self-sustaining flywheel has not yet started.
+Of the 130M not completing lower secondary globally, **30M (23%) are in the 19 countries below 40%** — the countries where the flywheel has not yet reached self-accelerating speed.
 
 | | Millions | % of total |
 |---|---:|---:|
@@ -59,7 +59,7 @@ Of the 130M not completing lower secondary globally, **30M (23%) are in the 19 c
 | — of whom: girls | 15.4M | 51% |
 | — of whom: boys | 14.7M | 49% |
 
-Girls are marginally more affected (73% non-completion rate vs 69% for boys). The focus on girls is warranted because of the P-25 multiplier — educated mothers have the stronger intergenerational effect — but the delivery system must reach both.
+Girls are marginally more affected (73% non-completion rate vs 69% for boys). The focus on girls is warranted because of the PTE multiplier — educated mothers have the stronger intergenerational effect — but the delivery system must reach both.
 
 **Where the cohort stops (19 target countries, 20–24, both sexes):**
 
@@ -114,7 +114,7 @@ Government will is the primary mechanism. Philanthropy cannot manufacture it. Wh
 
 The catalytic investment has three components:
 
-**1. Evidence translation** — Governments in these countries often lack the national-level data that makes the P-25 mechanism legible to ministers and budget committees. Funding the translation of existing historical data (which already exists) into country-specific projections — "if your current cohort reaches 40% lower secondary, this is what your 2050 fertility rate looks like" — is the highest-return evidence investment because no new research is needed. Cost: **$1–3M per country**.
+**1. Evidence translation** — Governments in these countries often lack the national-level data that makes the PTE mechanism legible to ministers and budget committees. Funding the translation of existing historical data (which already exists) into country-specific projections — "if your current cohort reaches 40% lower secondary, this is what your 2050 fertility rate looks like" — is the highest-return evidence investment because no new research is needed. Cost: **$1–3M per country**.
 
 **2. Enrollment tracking inside government ministries** — The single operational difference between countries that achieved universal secondary and those that did not is whether the state knew which children were out of school and acted on it. Japan tracked attendance. Korea tracked enrollment. Cuba sent volunteers to find every non-literate adult by name. Funding a child-tracking system inside a government ministry — not an NGO database — is unglamorous and high-leverage. Cost: **$2–5M one-time per country**.
 
@@ -132,7 +132,7 @@ Every fast case followed the same sequence: **political commitment → physical 
 
 The countries in this table are not waiting for money. Several have had significant aid flows for decades without crossing the 40% threshold. What they have not had is a government that treated secondary education as non-negotiable — the way Meiji Japan, post-war Korea, and post-revolution Cuba did.
 
-Philanthropy's highest-leverage role is to fund what governments cannot take the political risk of funding first: the small-scale proof that the mechanism works. Once the proof exists, the government has both the evidence and the political cover to commit. P-25 does the rest.
+Philanthropy's highest-leverage role is to fund what governments cannot take the political risk of funding first: the small-scale proof that the mechanism works. Once the proof exists, the government has both the evidence and the political cover to commit. PTE does the rest.
 
 ---
 

@@ -5,7 +5,7 @@ title: Education & Human Development
 
 ## The Core Finding
 
-Across 189 countries and 140 years of data, the education level of one generation reliably predicts the next generation's — more reliably than income does. This is **P-25**: the parental transmission of education.
+Across 189 countries and 140 years of data, the education level of one generation reliably predicts the next generation's — more reliably than income does. This is **PTE** — Parental Transmission of Education.
 
 A country's lower-secondary completion rate today predicts its fertility rate, child survival, and GDP per capita in 25 years — and the education level of the generation born in 2040–2050.
 
@@ -28,7 +28,7 @@ A country's lower-secondary completion rate today predicts its fertility rate, c
 
 ## The Analysis
 
-- [Findings](analysis/findings) — Full statistical findings: regression results, P-25 mechanism, robustness tests
+- [Findings](analysis/findings) — Full statistical findings: regression results, PTE mechanism, robustness tests
 - [Policy Residual Rankings](analysis/policy_residual_ranking) — Which countries delivered education above what their history predicted
 - [Education Rankings](analysis/education_rankings) — Current lower-secondary completion by country
 - [Alternative Rankings](analysis/alternative_rankings) — Rankings by improvement rate and other metrics

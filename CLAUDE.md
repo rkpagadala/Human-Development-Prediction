@@ -45,7 +45,7 @@ Policy and philanthropist vision documents.
 - **Education age group 20–24** — reflects completed education, not enrollment
 - **Lagged features** — GDP and child mortality use 10–20 year lags to capture generational effects
 - **GDP is US inflation-adjusted** per capita
-- **P-25 mechanism** — parental transmission of education; below ~25% lower secondary completion, intergenerational progress is slow
+- **PTE mechanism** — Parental Transmission of Education; PTE operates at any completion level, but below ~40% lower secondary the system advances slowly and does not self-accelerate — deliberate policy is needed to push above the automatic trajectory
 - **NRMSE < 0.10** — reliable model threshold
 
 ## Key Files

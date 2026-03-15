@@ -35,7 +35,7 @@ The standard counterargument is the Preston Curve — the well-known observation
 
 ## Finding 2: Education Compounds Across Generations
 
-Education is not a one-time input. It propagates. The generation you educate today becomes the parents who transmit educational aspiration, capacity, and expectation to the next generation. This is **P-25** — the parental transmission of education: across 189 countries and 140 years of data, the education level of one generation reliably predicts the next generation's — more reliably than income does.
+Education is not a one-time input. It propagates. The generation you educate today becomes the parents who transmit educational aspiration, capacity, and expectation to the next generation. This is **PTE** — Parental Transmission of Education: across 189 countries and 140 years of data, the education level of one generation reliably predicts the next generation's — more reliably than income does.
 
 Specifically: a country's primary completion rate 25 years ago predicts its *current* primary completion rate more strongly than its current income level does. The same holds for secondary, and even more strongly for tertiary education:
 
@@ -155,7 +155,7 @@ These are not separate effects requiring separate interventions. They are one ch
 
 ## The Failure Mode to Avoid
 
-The most common failure mode is the absence of an **educational rupture** — treating education as one priority among many rather than the primary mechanism through which everything else becomes possible. This manifests as sequential thinking: get the economy moving first, then invest in education; finish primary before starting secondary; wait for schools to be better-resourced before expanding access. The history of the fast compressors shows this logic is backwards at every step. You do not need income to start; starting is how you eventually get income. You do not need good schools to begin; the first generation of low-quality schools produces the teachers and parents who build the second generation of better ones. The P-25 compounding does the work — but only if you start.
+The most common failure mode is the absence of an **educational rupture** — treating education as one priority among many rather than the primary mechanism through which everything else becomes possible. This manifests as sequential thinking: get the economy moving first, then invest in education; finish primary before starting secondary; wait for schools to be better-resourced before expanding access. The history of the fast compressors shows this logic is backwards at every step. You do not need income to start; starting is how you eventually get income. You do not need good schools to begin; the first generation of low-quality schools produces the teachers and parents who build the second generation of better ones. The PTE compounding does the work — but only if you start.
 
 The cost of not making the educational rupture is not just slow progress. It is that the intergenerational baseline compounds in the wrong direction. Every year of delayed secondary expansion is a cohort of parents who transmit lower educational expectations to their children, who transmit less to theirs. The gap between where you are and where you could be widens automatically without the rupture.
 

@@ -1,0 +1,458 @@
+---
+mainfont: "DejaVu Serif"
+CJKmainfont: "Noto Serif CJK SC"
+---
+
+# Education as the Sole Primary Driver of Human Development: Against Sen's Bifurcation of Development Pathways
+
+**Krishna Pagadala**
+
+*Working paper, 2026*
+
+---
+
+## Abstract
+
+Amartya Sen's distinction between growth-mediated and support-led security has structured development policy debates for four decades. We argue the dichotomy is not merely incomplete — it is wrong in its identification of cause. Neither economic growth nor direct state provision is an independent mechanism of human development. Income is a downstream consequence of education. Direct provision is infrastructure that educated populations demand through political pressure and utilize through micro-decisions — it works when education is present to activate it, and stalls or reverses when provision is removed from an educated population, as China's post-1980 health dismantling shows. Education is the necessary and primary driver; everything else is contingent on it.
+
+We define development concretely as crossing both thresholds simultaneously: total fertility below the United States in 1960 (TFR < 3.67) and life expectancy above it (LE > 70.1 years) — two outcomes that education directly drives and that do not require high income to achieve. Bangladesh's TFR crossed in 2000 but development is recorded at 2011, when the LE threshold was also crossed. Using 189-country panel data (1975–2015) from the Wittgenstein Centre for Demography and Global Human Capital (WCDE v3) with country fixed effects and a 25-year generational lag, we show that parental lower secondary completion predicts within-country educational outcomes at β=0.485 (R²=0.464), nearly double the explanatory power of GDP alone (R²=0.266). A century-long panel (28 countries, 1900–2015) finds near-unity generational transmission (FE β=0.960). Education at T predicts GDP, life expectancy, and total fertility 25 years forward after controlling for initial conditions, confirming education's upstream causal position.
+
+Sen's canonical support-led cases — Kerala, China, and Sri Lanka — each crossed the development threshold at precisely the interval that PTE (Parental Transmission of Education, ~25 years per generation) predicts from their prior education investments: Kerala ~1982, Sri Lanka 1991, China 1997. Taiwan crossed in 1972, South Korea in 1986 — the same mechanism expressing itself differently. The variation in speed is explained by the rupture margin (how decisively the expansion exceeded the base-adjusted threshold rate) and whether structural disruption to the LE pathway occurred during the compounding period. The generational transmission mechanism operates below the level at which political disruptions occur. PTE does not require states to propagate once an educated population exists — it requires parents. State disruption and civil war affect institutions and economies; they do not interrupt the household transmission of educational aspiration from parents to children. What states are required for is the prior step: initiating and sustaining the educational investment that creates the educated population in the first place.
+
+These findings extend Easterlin (1981) and Lutz & Kebede (2018) to the within-country identification of the generational mechanism and directly challenge institutions-first accounts: the parental education coefficient survives country fixed effects absorbing all time-invariant institutional quality.
+
+**Keywords:** education; generational transmission; human development; Preston Curve; PTE; GPTE; GGPTE; Sen; leapfrog development; educational rupture
+
+---
+
+## 1. Introduction
+
+In *Hunger and Public Action* (Drèze & Sen, 1989), Amartya Sen drew a distinction that became foundational to development thinking: some countries secure welfare through economic growth (growth-mediated security); others through direct state provision regardless of income (support-led security). Kerala, Sri Lanka, and China were the paradigm cases of the second type — populations with welfare outcomes far above what their incomes predicted.
+
+The framework was politically important. It challenged the then-dominant view that growth was the necessary precondition for welfare and opened space for direct intervention. Its influence on the Millennium Development Goals, the Human Development Index, and direct service delivery programmes across the developing world is difficult to overstate.
+
+We argue the framework is wrong in a specific and consequential way — not incomplete, but causally backwards on both ends. Sen's two categories are not competing mechanisms — they are both downstream effects of education. Growth-mediated security looks like income causing welfare; it is educated populations generating income and using it. Support-led security looks like provision causing welfare; it is educated populations demanding provision, building the institutions that deliver it, and using it effectively when it arrives. Income and provision both correlate with welfare outcomes because they are both produced by education. Sen observed the correlates and called them causes. The causal structure runs entirely from education — everything else is consequence.
+
+Economic growth is not a pathway to welfare. It is produced by education and trails behind it. Direct state provision is not a mechanism of welfare improvement. It is infrastructure that educated populations first demand — through political pressure, electoral accountability, and civic organization — and then utilize effectively through household micro-decisions that only educated people make well. Remove the education and the growth does not sustain, because an uneducated workforce cannot generate it. Remove the education and the provision does not work, because uneducated populations do not know how to use clinics, follow vaccination schedules, interpret nutrition guidance, or hold providers accountable.
+
+Education is the sole primary driver. This claim requires precise definition. It does not mean education explains all variance in welfare outcomes, or that income and institutions have zero effect at the margin. It means education is the *necessary condition* — the asymmetric input without which no other mechanism operates independently. The test is simple: remove education, and income growth does not sustain (an uneducated workforce cannot generate it), provision does not work (uneducated populations cannot effectively demand or use it), and institutions do not produce welfare (they require educated citizens to populate and hold them accountable). Reverse the test: remove income, and education still works — Bangladesh crossed both development thresholds at $1,250 per capita. Remove provision, and education still works — Korea and Taiwan achieved development with minimal welfare states. The asymmetry defines primacy. No other variable survives this test.
+
+Income is a byproduct — a nice one, but a consequence. Direct provision is scaffolding — it produces real welfare gains early in development, but cannot be sustained without the educated population that demands, maintains, and effectively uses it. Provision competes with education for the same scarce fiscal resources, and this competition is not theoretical — it is the revealed structure of global development policy.
+
+The Millennium Development Goals (2000–2015) organized international political attention and donor reporting requirements around eight targets, of which five were direct health and nutrition provision metrics (child mortality, maternal mortality, HIV/AIDS, malaria, hunger) and one was primary school enrollment — not secondary completion. The Sustainable Development Goals (2015–2030) made the implicit hierarchy explicit: SDG 1 is No Poverty, SDG 2 is Zero Hunger, SDG 3 is Good Health — education is SDG 4. Income first, provision second and third, education fourth. This is not an accident of numbering; it reflects the institutional consensus on causal order. The paper's argument inverts that order: education is the necessary upstream input, and poverty, hunger, and poor health are its absence.
+
+The MDG/SDG achievements that did occur — documented child mortality reductions, maternal mortality improvements, hunger reduction — are not evidence that this ordering is correct. They are evidence that the global educational rupture since 1950 produced the institutional capacity to deliver welfare internationally: the WHO, UNICEF, PEPFAR, the Global Fund, and GAVI are staffed and led by educated workers from educated countries, deploying welfare technology to populations without yet the domestic educational base to generate it themselves. The SDG goals are not goals constructed by populations that lack education — they are goals constructed by the educated class in developed countries, delivered to less-educated countries as global PTE. The achievements are real; their causal interpretation is wrong. They are not proof that provision works without education. They are proof that when a sufficiently educated global class exists, it can export welfare gains to populations below the self-acceleration threshold — temporarily, externally, and without changing the underlying trajectory unless domestic educational investment follows.
+
+PEPFAR, the Global Fund for AIDS/TB/Malaria, and GAVI collectively disburse tens of billions annually into health provision infrastructure. OECD Development Assistance Committee data shows health has consistently received 2–3× the aid allocation of education across the post-MDG period; within education aid, secondary receives a fraction of what primary receives (OECD DAC, 2022). Low-income governments facing these donor incentives rationally allocate domestic budgets to match donor conditions — clinic construction is fundable, secondary school expansion often is not.
+
+The fiscal competition is not a hypothetical. Every low-income finance minister knows that announcing a health programme attracts bilateral donors, multilateral loans, and UN technical assistance. Announcing a secondary school construction programme attracts far less. This institutional tilt is the direct policy legacy of Sen's framework: if development is achieved through support-led welfare provision, fund the provision. The claim of this paper is that forty years of that institutional consensus has systematically underfunded the only mechanism that compounds — and that the countries which developed fastest (Korea, Taiwan, Bangladesh) are precisely those that ignored donor priorities and invested in secondary education above what their incomes and donor conditions would have predicted.
+
+This matters for policy in a direct way. If the reason Kerala's welfare improved was direct public provision, the implication is to fund direct provision. If the reason was that Kerala had achieved high female literacy rates in the decades before those outcomes improved — and that literate women made better household decisions and created the political demand for the services that then followed — the implication is that education is the primary investment and everything else is secondary infrastructure. These are different programmes with different timelines, different leverage points, and different long-run trajectories.
+
+The purpose of this paper is to establish the education-only account empirically and theoretically. Section 2 develops the theoretical framework from Easterlin (1981) through Lutz & Kebede (2018) to the generational transmission mechanism (PTE). Section 3 defines development concretely using USA 1960 benchmarks and establishes why this definition is appropriate. Section 4 addresses the bad control problem and the fragility of provision-led welfare. Section 5 presents the empirical evidence. Section 6 reports results. Section 7 provides the decisive test: when did Sen's canonical cases actually develop, and does the timing track education or provision? Section 8 addresses the institutional challenge. Section 9 discusses the educational rupture as the one exogenous political decision from which everything else follows. Section 10 states limitations.
+
+---
+
+## 2. Theoretical Framework
+
+### 2.1 Easterlin's Founding Argument
+
+The education-first account of development has a precise starting point. Easterlin (1981), in "Why Isn't the Whole World Developed?", asked why modern economic growth had failed to diffuse uniformly given the post-war availability of production technology. His answer was specific: the binding constraint was the absence of mass schooling systems. Technology transfers when it encounters a literate, numerate population capable of deploying it. Without that population, it does not transfer, regardless of capital access or external assistance.
+
+Easterlin located this empirically in the historical spread of education systems. The divergence in economic growth between early and late industrializers tracked the divergence in mass schooling — driven originally by the Protestant Reformation's insistence on personal scripture-reading, which produced mass literacy as a side-effect of religious practice across Northern Europe. The distribution of development in 1960 was substantially the distribution of schooling in 1860.
+
+### 2.2 Lutz and the Preston Curve
+
+Lutz & Kebede (2018) take Easterlin's historical argument into the data. They reinterpret the Preston Curve (Preston 1975) — the positive relationship between national income and life expectancy — by replacing income with education on the x-axis. Two findings emerge. First, the education–life expectancy relationship is tighter than the income–life expectancy relationship. Second, and more important, the upward shift of the curve over time — the fact that populations live longer today at the same income levels than in 1960 — largely disappears when education is on the x-axis. The "wealth buys health" reading of the Preston Curve is an education story that income was proxying for, because income and education are correlated but income is downstream of education in the causal chain (Lutz 2009).
+
+Deaton (2013) offers an alternative account of the curve's upward shift: global diffusion of health knowledge and technology — antibiotics, vaccines, oral rehydration therapy — produced life expectancy gains independent of both income and education. This account is not inconsistent with the education-primary claim but clarifies the mechanism: technology diffuses in principle to all countries simultaneously, yet uptake is not uniform. The differential uptake tracks education. It is educated mothers who consistently vaccinate their children; it is literate communities that follow oral rehydration protocols; it is educated populations that build the political demand for the health infrastructure that distributes the technology. Deaton identifies what became available globally; education identifies who could use it.
+
+Lutz & Kebede (2018) document one further finding that bears directly on this point: life expectancy at the lowest education level in 2010 *exceeds* the 1970 baseline for that same level — the only level at which a genuine upward Preston Curve shift remains when education replaces income on the x-axis. This residual is the global educational rupture operating through international institutions: educated actors in developed countries produced vaccines, antibiotics, and oral rehydration protocols; educated supply chains distributed them; educated administrators at WHO and UNICEF directed them to the populations with the lowest educational bases. This is provision — but provision that is education-mediated at the system level. It is the global analogue of the barefoot doctor argument: the doctors arrived from outside because the educational base inside was absent. Sen's "support-led security" in its MDG-era form is not evidence that provision works without education. It is evidence of the global educated class — concentrated in wealthy countries and international institutions — functioning as an external educated parent for populations that had not yet built their own educational base. The mechanism is still PTE; the scale is international rather than household.
+
+### 2.3 The Generational Transmission Mechanism: PTE, GPTE, GGPTE
+
+The micro-level process connecting these macro observations is generational transmission. We introduce a three-level taxonomy that unifies the observed variation in development lag lengths:
+
+- **PTE** (Parental Transmission of Education): the child's educational attainment is predicted by the parent's, with an approximately 25-year lag. This is the base unit of the mechanism.
+- **GPTE** (Grandparental Transmission of Education): the grandparent's education predicts the grandchild's, operating across approximately 50 years through two sequential PTE cycles.
+- **GGPTE** (Great-Grandparental Transmission of Education): three cycles, approximately 75 years.
+
+The unit interval is not assumed. A woman completing lower secondary at age 15–18 has children reaching school age 20–30 years later. Across a 140-year panel (28 countries, 1900–2015), the within-country PTE transmission coefficient approaches unity (FE β=0.960): a 1 percentage point gain in one generation predicts nearly a 1 percentage point gain in the next, compounding forward. The full lag profile — measured empirically at every year from lag 0 to lag 100 — confirms that the transmission signal persists across all three generational depths: R²=0.369 at lag 25 (PTE), R²=0.194 at lag 50 (GPTE), R²=0.112 at lag 75 (GGPTE) (Figure A1; outcome: life expectancy, within-country FE).
+
+The taxonomy directly explains the variation in development lag lengths across cases. Countries whose educational rupture was decisive and recent crossed at PTE distance. Countries whose educational base was built gradually across two generations crossed at GPTE distance. Countries where education accumulated through social reform over three or more generations crossed at GGPTE distance. The lag length is not a free parameter fitted to match each case — it is the number of generational cycles required to compound from the starting educational base to the threshold at which self-accelerating household demand takes over. This answers directly why Taiwan crossed at ~20 years and Kerala at ~60–70 years: they are PTE and GGPTE cases respectively, determined by when their educational ruptures occurred and from what base.
+
+The compounding has a non-linear structure. In the WCDE panel, countries below approximately 40% lower secondary completion show substantially slower generational progress: the parental baseline is too low to generate the household demand that accelerates further expansion. PTE still operates and the system still advances — but slowly, and without self-propelling momentum. Above this threshold, demand becomes self-propelling — each educated cohort produces a larger share of parents who expect and invest in schooling for their children. Full derivation of this inflection point is developed in companion work on the PTE mechanism.
+
+Critically, PTE/GPTE/GGPTE are household mechanisms. They operate through millions of individual family decisions — whether to send a daughter to secondary school, how many children to have, whether to vaccinate, how to interpret health information. States can create conditions for these decisions; they cannot make them. Political upheaval and civil war are simply irrelevant to the generational transmission mechanism, because they operate at a different level of society. The mechanism does not need to survive disruption — it runs beneath it.
+
+The PTE taxonomy names the nuclear household channel but does not exhaust the transmission network. Two additional channels operate at shorter timescales and explain why aggregate educational gains can sometimes move faster than a strict 25-year reading of PTE predicts.
+
+The **sibling channel** operates within the same household at variable lags: 2–20 years, depending on family size. In high-fertility societies, the gap between any two siblings can range from 2 to 20 years, so across a full sibship the oldest-to-youngest span can approach PTE timescales within the same family; an oldest sibling completing lower secondary transmits educational norms, tutoring, and aspirational expectations to the youngest siblings at lags approaching the parental interval. As fertility falls — itself a consequence of rising female education — sibling gaps narrow, sibling cohorts shrink, and this within-family channel weakens. The mechanism is self-limiting in exactly the right direction: sibling transmission is strongest when it is most needed (early educational transition, high fertility, low parental base) and attenuates as PTE from educated parents takes over. This also explains the smooth decay in Figure A1. If PTE were a single discrete 25-year mechanism, the R² lag profile would show a peak at lag 25 and rapid decay on either side. Instead, the profile decays gradually across lags 0–100. The sibling channel contributes signal at lags 5–20 years; PTE at lag 25; GPTE at lag 50; GGPTE at lag 75. The smooth aggregate curve is the empirical signature of these overlapping channels — a theoretical prediction of the multi-channel structure, not a statistical artifact or evidence against specificity.
+
+The **extended family channel** operates across aunts, uncles, and grandparents present in child-rearing (2–25 years). This channel is disproportionately strong in extended-family household structures — South Asia, sub-Saharan Africa, East Asia — precisely the societies where development intervention matters most and where intergenerational household composition is densest. An educated aunt or uncle in the household independently predicts niece and nephew attainment above what parental education alone forecasts. The policy implication is not purely academic: educating any member of an extended family household produces downstream effects beyond that individual's own future children. The return on educating one woman ripples through the kin network at timescales shorter than the nuclear PTE interval.
+
+The mechanism can also operate at supranational scale. Where a country lacks the domestic educational base to generate PTE-mediated welfare improvement from within, international institutions staffed by educated workers from educated countries can deliver welfare technology — vaccines, oral rehydration protocols, nutrition programmes — that produces welfare gains the domestic educational base could not yet sustain independently. This is what we term *global PTE*: the global educated class acting, collectively, as an educated parent for populations still below the self-acceleration threshold. It is still education-mediated; the education is simply located in the institutions delivering the intervention rather than in the households receiving it. The critical distinction is that global PTE produces welfare gains that are externally sustained — durable only as long as the international institutions maintain them — while domestic PTE produces gains that compound into the next generation automatically. Global PTE buys time; domestic PTE changes trajectory.
+
+### 2.4 The Two Pathways from an Educated Population
+
+An educated population generates welfare through two pathways, and both originate in education:
+
+**Pathway 1 — Micro-decisions.** Educated individuals — primarily mothers — make better decisions about nutrition, sanitation, vaccination, birth spacing, and investment in children. These decisions aggregate into lower child mortality, longer life expectancy, lower fertility, and higher educational attainment in the next generation. The welfare outcome is the sum of household decisions that only education enables. The state does not make these decisions; it creates the educated population that then makes them.
+
+**Pathway 2 — Political pressure and utilization.** Educated populations demand better governance, hold governments accountable, and elect welfare states into existence. The direct provision that Sen observes in Kerala, Sri Lanka, and China was not independent of the educational levels of those populations — it was demanded by them, enabled by their political agency, and effective because they knew how to use it.
+
+Sen observed the outputs of both pathways and built a typology from them. He never asked what caused those outputs. The answer, in both cases, is education — created by state investment made twenty-five years earlier.
+
+---
+
+## 3. Defining Development
+
+We operationalize development concretely: a country is developed when it has simultaneously achieved **TFR < 3.67** and **life expectancy > 70.1 years** — the 1960 values for the United States.
+
+This definition is deliberate and theoretically motivated on three grounds.
+
+First, 1960 is the natural baseline for the post-colonial world. Seventeen African countries gained independence in 1960 alone; the decade marks the inflection point at which most of the developing world began its independent trajectory. The development question is precisely: from the moment of decolonization, which countries achieved human welfare outcomes that surpassed the global hegemon? That is a theoretically precise question, not an arbitrary one.
+
+Second, the USA in 1960 was the unambiguous global hegemon — the world's largest economy and dominant military power for fifteen years. A country that exceeds both its TFR and life expectancy thresholds has out-performed the richest, most powerful nation on earth on the metrics that matter for human welfare. The bar is meaningful.
+
+Third, the USA in 1960 was itself still mid-demographic transition. Its TFR of 3.67 is the baby boom peak — the country had not yet completed the fertility transition. Crossing below that threshold means going further than the hegemon had gone, not meeting a low standard.
+
+The definition measures what education drives. TFR and life expectancy are precisely the outcomes that the T+25 lagged models below show education predicting most strongly — and they require neither high income nor a particular type of government to achieve, making them appropriate for cross-regime, cross-income comparison. GDP is excluded by design: measuring development through income would beg the question against an education-primary account.
+
+The development dating analysis in Section 7 is robust to alternative threshold specifications. Appendix Table A4 shows crossing dates for five cases with full World Bank WDI coverage under three specifications. Absolute dates shift by 3–12 years. The broad ordering is stable (Cuba earliest, Bangladesh latest among the crossed cases), with one near-tie: Korea and Sri Lanka are within 5–12 years of each other across specs, and their ordering reverses under the loose definition (Sri Lanka 1979, Korea 1981) relative to the main (Korea 1986, Sri Lanka 1991). This near-tie is itself informative: Korea and Sri Lanka made educational investments at similar historical depths, and the margin between them depends on how you weight TFR vs. LE progress — not on which had more provision. The argument depends on approximate relative timing, not exact threshold values or pairwise rank within near-tied cases.
+
+The USA itself completed the fertility transition twelve years later, in 1972 — confirming that 3.67 is a mid-transition benchmark, not a low bar. The countries that had already crossed both thresholds by 1960 were those with the longest prior histories of mass education: Scandinavia, the Netherlands, France, Switzerland, the United Kingdom, Australia, and New Zealand. Japan — despite a TFR of 2.04 — had life expectancy of 68.3, just below the threshold; it crossed in the mid-1960s. This confirms that the threshold captures educational development, not wealth.
+
+---
+
+## 4. The Bad Control Problem and the Fragility of Provision-Led Welfare
+
+A methodological note bears directly on every model in this literature. When researchers include current GDP per capita as a control variable alongside education in regressions of development outcomes, they commit what Pearl (2009) calls the bad control error — see also Angrist & Pischke (2009, ch. 3): they condition on a variable that is itself caused by the variable of interest.
+
+Education causes GDP — confirmed below (education at T predicts GDP at T+25, FE β=+0.0110 log-points per 1pp education gain). Including current GDP as a control blocks part of the education signal through the income channel. The result is a biased downward estimate of education's true effect.
+
+This is not a peripheral technical point. It is why the empirical literature has systematically underestimated education's contribution and overstated income's independent role. Figure A1 (Appendix) provides direct evidence from the lag structure: income's within-country predictive power for life expectancy peaks contemporaneously and collapses with lag length, while education's predictive power decays slowly across 100 years — the two curves belong to different causal structures.
+
+Our primary analysis excludes GDP from the policy residual specification for precisely this reason. The residual measures education delivered above the generational baseline, without crediting any achievement to the income that education itself generated.
+
+The fragility of provision-led welfare gains illustrates the same point from a different direction. Uganda in 1960 had a higher life expectancy than India — and maintained that advantage for eighteen consecutive years (Uganda 49.0, India 45.8 in 1960; Uganda 53.1, India 52.8 at the peak in 1977). This was the product of post-independence political will and public health investment. When Idi Amin's regime destroyed that political will from 1971, the provision collapsed, and Uganda's life expectancy plateaued and then declined. India crossed Uganda in 1978 and by 1984 was 6 years ahead. India's trajectory was slower but anchored in education and therefore durable; Uganda's was faster but anchored in state provision and therefore fragile. Welfare gains built on provision alone are only as durable as the political will that sustains them. Welfare gains built on education compound through households regardless of who is in power.
+
+China under Deng is structurally similar to Uganda under Amin in the health dimension: both represent political decisions that dismantled health provision, causing life expectancy to stagnate or decline. The critical difference is the educational foundation beneath each case. China had built mass primary and lower secondary education through the 1950s campaigns and CR-era community schools; when Deng dismantled the barefoot doctor system, the increasingly educated population eventually rebuilt health access through political pressure and household-level health decisions — a 15-year delay before crossing the development threshold in 1997. Uganda had no comparable educational foundation; when Amin destroyed provision, there was no recovery mechanism beneath it. By 1993, Uganda's life expectancy had fallen to 47.8 — below its 1960 level — and its TFR remained at 7.1, unmoved across three decades. The damage was permanent in the sense that matters: sixty-five years after independence, Uganda has crossed neither development threshold.
+
+A reviewer might object that Uganda's LE depression after 1985 reflects the AIDS epidemic rather than — or in addition to — the absence of educational foundation, and that the comparison to India therefore conflates two different shocks. The objection inverts the causal arrow. Uganda's HIV prevalence peaked at approximately 15% in the early 1990s. India's peaked at approximately 0.4% — despite comparable exposure routes and no biological difference in transmission. The differential is behavior change: educated populations can understand transmission mechanisms, negotiate condom use, access testing, and act on prevention information; uneducated populations cannot do these things effectively. Vandemoortele & Delamonica (2000) documented education as the primary determinant of HIV prevention behavior precisely for this reason, calling it the "social vaccine" — the mechanism is the same household micro-decision pathway that drives all health outcomes in this framework. Uganda was hit catastrophically by AIDS because its educated adult population had been destroyed under Amin and never rebuilt; India contained the epidemic because its female education, while low by global standards, was sufficient to enable behavior change in exposed communities. AIDS is not an independent confound for the Uganda comparison. It is the same mechanism — absent educational foundation, no behavior-change capacity — expressing itself through a different pathogen.
+
+Sen's framework predicts that support-led welfare gains are durable. Uganda is the test case he did not consider: what does support-led security look like when the support stops? The answer is in the data. The presence or absence of the educational foundation is precisely what distinguishes a temporary setback from an irreversible one.
+
+A note on causal identification is warranted before presenting this evidence. The canonical approach to identifying education effects is instrumental variables: Duflo (2001) exploits variation in school construction across Indonesian districts to identify the causal effect of education on individual earnings. That design works because the instrument varies education exposure at short-run individual timescales — the relevant lag between schooling and earnings is five to fifteen years. It cannot be replicated at 25-year generational timescales across 189 countries: there is no instrument that varies parental educational attainment for entire national cohorts in a way that is random with respect to child development outcomes a quarter-century later. Our identification strategy therefore rests on three structures. First, temporal ordering: parental cohort precedes child cohort by biological necessity, ruling out reverse causality at the individual level. Second, the lag-decay shape: if education were simply slow-moving autocorrelation, its lag profile would not be structurally distinguishable from GDP's. The two profiles are distinguishable (Figure A1) — GDP's predictive power collapses rapidly beyond a contemporaneous lag; education's decays slowly across three generational depths. Autocorrelation cannot produce two structurally different decay shapes from the same dataset. Third, and most directly, the natural experiments below — cases where parental education was exogenously disrupted — produce outcomes that pure autocorrelation cannot predict.
+
+Cambodia under the Khmer Rouge (1975–1979) provides the most direct available test of the PTE mechanism — and the closest thing in the historical record to a natural experiment. The regime deliberately targeted educated adults: teachers, university graduates, professionals, anyone wearing glasses. The parental education stock of an entire cohort was physically eliminated. PTE predicts a specific downstream consequence: the children of the eliminated cohort — reaching secondary school age approximately 25 years later — should show depressed attainment relative to regional trend, with recovery only in the following generation.
+
+The WCDE data confirms this precisely. Cambodia's lower secondary completion was 9.6% in 1975 and on a modest upward trajectory comparable to its neighbours. After the genocide, completion declined to 9.1% by 1985, recovered slowly under Vietnamese administration, and then — after the Paris Accords and UN transitional authority (1991–1993) — jumped to 28.2% by 1995 on aid-driven school reconstruction. Then it stalled. From 1996 to 2010, completion plateaued at 29–32%, unmoved despite continued external investment. The plateau ends around 2011 and completion crosses 40% by 2014.
+
+The PTE clock explains the plateau exactly. The children reaching secondary school in 1996–2010 were born approximately 1982–1996 — their parents were the KR-era cohort (born ~1955–1975) whose own education was destroyed between ages 5 and 20. The parental baseline of this cohort was near zero; their children inherited that baseline. The recovery from 2011 onward corresponds to the post-KR cohort's children (parents educated after 1979) finally dominating the school-age population. Twenty-five years from the end of the genocide (1979) lands at 2004 — precisely the midpoint of the plateau.
+
+Compare Cambodia to Vietnam over the same period: Vietnam started at 17.2% in 1960 and reached 74.3% by 2015 without interruption. Cambodia, on a similar pre-1975 trajectory, should have been at 50–60% by 2000. It was at 32%. The gap is the PTE shadow of the genocide: one generation of destroyed parental education, expressing itself in the educational attainment of the next.
+
+This is not selection on the dependent variable. The shock (genocide of educated adults) is exogenous to the outcome (subsequent educational attainment), the timing is specified by the mechanism (25 years), and the data matches the prediction. No provision account predicts this pattern — there was substantial aid-driven provision from 1991. What provision could not replace was the parental baseline that the Khmer Rouge had eliminated.
+
+---
+
+## 5. Data and Empirical Strategy
+
+### 5.1 Data
+
+Education data are from WCDE v3 (Lutz et al. 2021): lower secondary completion rates for the 20–24 age cohort, which reflects completed education rather than enrolment. Coverage: 189 countries, 1975–2015 at five-year intervals (1,701 country-years). Long-run analysis uses a 28-country subsample extending back to 1900, selected for data quality; survivorship bias in this selection slightly overstates β, making the near-unity finding conservative. GDP data: World Bank, constant 2017 USD, per capita, log-transformed. Life expectancy and TFR: World Bank and UN Population Division. Parental education: each country's lower secondary completion lagged 25 years (T−25).
+
+A reviewer may object that completion measures quantity rather than quality, and that Hanushek & Woessmann (2008, 2015) show cognitive skills — not years of schooling — drive growth. The objection applies to a different question. Hanushek & Woessmann's dataset begins in 1960 and spans roughly 40 years; their test score measures do not exist before international assessments began in the 1960s. The educational ruptures that explain Korea, Taiwan, Sri Lanka, and Kerala all precede their data. More fundamentally, quality follows quantity in the historical sequence: a literate, numerate population is the precondition for any test to administer. WCDE completion is the appropriate measure for a 50–100 year generational mechanism; Hanushek & Woessmann's quality measures capture downstream returns to education already achieved. A further confound: their cross-country test score comparisons largely contrast developed with developing countries. Second-generation learners in high-completion countries outscore first-generation learners in low-completion countries not because their schools are superior but because educated parents transmit cognitive advantage at home — the PTE mechanism operating within their "quality" variable. What they identify as school quality is partly accumulated parental education — teachers in high-completion countries are themselves second-generation learners, bringing higher baseline preparation into the classroom. Both the student and the teacher effects are expressions of prior generational accumulation, not independent inputs.
+
+### 5.2 Empirical Strategy
+
+Primary specification — country fixed effects regression:
+
+$$E_{it} = \alpha_i + \beta_1 E_{i,t-25} + \varepsilon_{it}$$
+
+where $\alpha_i$ absorbs all time-invariant country characteristics including institutions, geography, culture, and colonial history. The coefficient is identified entirely from within-country variation over time.
+
+Comparison specifications:
+
+$$E_{it} = \alpha_i + \beta_2 \ln Y_{it} + \varepsilon_{it}$$
+
+$$E_{it} = \alpha_i + \beta_1 E_{i,t-25} + \beta_2 \ln Y_{it} + \varepsilon_{it}$$
+
+For development outcomes, forward-lagged by 25 years to eliminate reverse causality:
+
+$$O_{i,t+25} = \alpha_i + \gamma_1 E_{it} + \gamma_2 O_{it} + \varepsilon_{it}$$
+
+where $O_{it}$ controls for initial outcome levels. $O_{it}$ is not a bad control in the Pearl (2009) sense: it is caused by *prior* education ($E_{i,t-25}$), not by $E_{it}$ itself — the T+25 mechanism means $E_{it}$ has not yet had time to affect $O_{it}$. Conditioning on initial outcomes is conservative; it absorbs prior trajectory and makes $\gamma_1$ a lower bound on education's true effect.
+
+**On year fixed effects.** We do not include year fixed effects in the primary specification because the T−25 parental education variable is a lagged transformation of the same educational trend being studied — year dummies absorb the generational mechanism itself, not a spurious artefact. Adding country + year FE reduces the parental coefficient to β=0.086 (R²=0.010), not because the mechanism is weak but because two-way FE strips out the very cross-time variation through which PTE operates (see Appendix Table A1).
+
+The logic is as follows. Year FEs ask: after removing what all countries shared in a given year, does parental education predict child education? But what all countries shared across this period — rising education levels post-decolonization — is precisely the post-decolonization global rupture that PTE predicts and explains. Conditioning it out is not controlling for a confounder; it is conditioning away the signal. The correct analogy: studying whether rain causes crop growth using year FEs in a dataset where rainfall is globally correlated across years would remove the very variation you are trying to study. The identifying variation is the within-country generational compounding; year FEs remove the time dimension through which that compounding operates.
+
+A further test: the long-run 28-country panel (1900–2015) produces β=0.960 — stronger than the post-1975 result — in a period when no global education trend existed. Countries before decolonization were moving slowly and unevenly; there is no common upward trend for year FEs to absorb. If the β=0.485 result were a time-trend artefact, the pre-trend period should produce a weaker coefficient. It produces a stronger one. The mechanism is not the trend.
+
+A deeper objection holds that year FEs absorb the global health technology diffusion that Deaton (2013) describes — the spread of vaccines, antibiotics, and oral rehydration therapy that reduced mortality across all countries from the 1960s onward — and that this is a legitimate confounder. We dispute the premise. The global welfare improvements documented across the MDG era (1990–2015) did not occur independently of education: they occurred because the global educational rupture since 1950 produced the educated institutions (WHO, UNICEF, GAVI), educated supply chains, and educated workers that designed, manufactured, and administered the interventions. The global health improvement and the global educational rupture are not independent co-movements that year FEs disentangle — they are the same process at different institutional scales. Year FEs absorbing this co-movement absorb a genuine causal signal, not a spurious confounder. What they remove is not "global health technology diffusion as an independent mechanism" but "education-mediated welfare delivery operating through international institutions rather than domestic households." This is the Section 2.2 global PTE finding: the residual shift in life expectancy at the lowest education level is education-mediated provision from outside, not provision independent of education. Conditioning on year FEs is equivalent to controlling for the global PTE mechanism — removing part of the signal the paper is trying to identify.
+
+The appropriate test for spurious time-trend correlation is a placebo: CO2 emissions per capita, lagged 25 years, has the same monotone trend structure as parental education across the same panel but no theoretical mechanism linking it to child education. Its within-country R² is 0.007, against 0.464 for parental education — a 60-fold difference. A reviewer may object that CO2 and education do not share identical within-country variation structure; this is correct and is precisely the point — CO2's within-country variation is driven by industrialisation patterns, not generational transmission, so it serves as a valid null. If the parental education finding were a time-trend artefact, any variable with a similar global trend would produce it. CO2 does not. The finding is specific to educational transmission.
+
+---
+
+## 6. Results
+
+### 6.1 Education vs. GDP as Predictors of Attainment
+
+**Table 1.** Country fixed effects regressions: child lower secondary completion on parental education and log GDP per capita. 189 countries, 1975–2015, 1,701 country-years.
+
+| Model | Parental edu β | Log GDP β | R² (within) |
+|---|---|---|---|
+| (1) FE: child ~ parent | **0.485\*\*\*** | — | **0.464** |
+| (2) FE: child ~ log GDP | — | 15.808\*\*\* | 0.266 |
+| (3) FE: child ~ parent + log GDP | 0.490\*\*\* | 5.142\*\*\* | 0.531 |
+
+*Standard errors clustered by country. \*\*\* p<0.001.*
+
+Parental education alone (R²=0.464) explains within-country educational variation at 1.74 times the rate of GDP alone (R²=0.266). In the combined model, the parental coefficient barely changes (0.485 → 0.490), confirming that GDP adds marginal power without displacing the generational mechanism.
+
+A reviewer might object that education is a slow-moving stock and any lagged slow-moving variable will mechanically produce high within-country R². GDP per capita is equally slow-moving and autocorrelated — yet produces R²=0.266 against education's R²=0.464. The informative test is not the level but the shape of the relationship across lag lengths. Figure A1 (Appendix) shows that education's predictive power for life expectancy decays slowly over 100 years (R²=0.528 at lag 0, R²=0.061 at lag 100), while GDP's collapses rapidly to near-zero beyond lag 50. Two slow-moving variables with different lag-decay profiles cannot both be explained by persistence alone — the shapes belong to different causal structures.
+
+In the century-long panel (28 countries, 1900–2015, 672 observations): FE β=0.960 — near-unity transmission across a century. The decline from β=0.960 to β=0.485 between the long-run and post-1975 panels is not a methodological artefact; it reflects three simultaneous compressions of within-country variation that occur post-1950 but not before. First, domestic educational ruptures above parental baselines: the policy over-performers in Table 3 are precisely those states delivering education beyond what parental transmission alone would predict, compressing within-country variation in a way that mechanically reduces the generational coefficient. Second, global welfare delivery from international institutions (WHO, UNICEF, GAVI) reducing child mortality and improving life expectancy even in low-education countries — compressing the outcome variation that education would otherwise predict. Third, the consequent reduction in cross-time within-country variance that year FEs then absorb when included. All three compressions operate through the same underlying cause: the global educational rupture since 1950 produced both domestic state capacity and international institutional capacity to supplement the parental transmission signal.
+
+Before 1950, mass education was not a state priority even in the West — no UNESCO programmes, no compulsory education laws outside a handful of early industrializers, no global education trend, no international health institutions operating at scale. The only mechanism transmitting educational attainment across generations was parental: PTE in its pure form. Near-unity is exactly what structural transmission predicts when neither states nor global institutions are supplementing the parental signal. β=0.485 is not evidence that PTE is weaker post-1975 — it is evidence that the mechanism is now operating alongside supplementary channels that it generated. The mechanism is not weaker; the supplementary channels are stronger. β=0.485 with the global rupture operating alongside global PTE institutions is equivalent in structural terms to β=0.960 without them.
+
+### 6.2 Education Predicts Development Outcomes 25 Years Forward
+
+**Table 2.** Fixed effects regressions: development outcomes at T+25 on education at T, controlling for initial outcomes.
+
+| Outcome at T+25 | Education β | Initial outcome β | R² (within) |
+|---|---|---|---|
+| Log GDP per capita | +0.0110\*\*\* | +0.217\*\*\* | 0.454 |
+| Life expectancy (years) | +0.108\*\*\* | +0.301\*\*\* | 0.384 |
+| Total fertility rate | −0.0316\*\*\* | +0.037\* | 0.367 |
+
+Each 1pp gain in lower secondary completion at T predicts: 1.1% higher income, 0.108 more years of life, and 0.032 fewer children per woman at T+25, identified from within-country variation after controlling for initial conditions.
+
+The TFR result is decisive: initial fertility barely predicts subsequent fertility change once education is included (β=0.037). Demographic momentum does not drive the transition — education does, operating through micro-decisions made by educated women about their own bodies and households.
+
+### 6.3 Policy Over-Performers
+
+**Table 3.** Countries delivering education above generational baseline, 2015 FE residuals. The residual measures how far a country exceeded its own predicted within-country trajectory — not a global average, but performance above each country's own historical trend.
+
+| Country | FE residual above baseline | GDP per capita (2015) |
+|---|---|---|
+| Maldives | +34.9 pp | $7,530 |
+| Cape Verde | +26.3 pp | $3,030 |
+| Bhutan | +26.1 pp | $2,750 |
+| Tunisia | +25.5 pp | $3,860 |
+| Nepal | +17.8 pp | $902 |
+| Viet Nam | +16.0 pp | $2,090 |
+| Bangladesh | +15.8 pp | $1,250 |
+| India | +14.1 pp | $1,610 |
+
+Nepal at $902, Bangladesh at $1,250, Vietnam at $2,090: the premise that income is the prerequisite for educational over-performance is directly refuted. These countries made the decision to treat education as the primary investment and produced outcomes that outpaced both their demographic inheritance and their income.
+
+---
+
+## 7. When Did Sen's Cases Actually Develop?
+
+This is the empirical core of the argument against Sen. If the support-led account is correct, we should see welfare improvements tracking the provision of services. If the education-mediated account is correct, we should see development — as defined by the TFR and life expectancy thresholds — occurring at one PTE interval (~25 years) after sustained education investment, regardless of what state provision was present.
+
+**Table 4.** Year of development (TFR < 3.67 AND life expectancy > 70.1) and relationship to prior education investment.
+
+| Country | Developed by | TFR < 3.67 | LE > 70.1 | Primary education investment | Lag | Depth |
+|---|---|---|---|---|---|---|
+| Taiwan | **1972** | 1972 | 1972 | 1950s simultaneous primary + secondary expansion | ~20 yrs | **PTE** |
+| South Korea | **1986** | 1975 | 1986 | 1953–65 simultaneous expansion | ~21–33 yrs | **PTE** |
+| Bangladesh | **2011** | 2000 | 2011 | 1990s–2000s sustained girls' education expansion; policy over-performer (+15.8pp, Table 3) | ~20 yrs | **PTE** |
+| Cuba | **1972** | 1972 | 1970 | Prior accumulation to 49.7% lower sec by 1960; 1961 campaign completed the rupture | ~11 yrs on base | **PTE** |
+| Sri Lanka | **1991** | 1977 | 1991 | 1940s–50s colonial and missionary literacy | ~40 yrs | **GPTE** |
+| China | **1997** | 1975 | 1997 | 1950s mass campaigns + CR-era community schools (largest lower sec gains in dataset) | ~45 yrs from base | **GPTE** |
+| Kerala† | **~1982** | ~1973 | ~1981 | Early 20th C social reform literacy movements | ~60–70 yrs | **GGPTE** |
+| Uganda | **not yet** | not yet (TFR 5.68 in 2015) | not yet (LE 63.9 in 2015) | No sustained educational rupture; post-independence provision collapsed under Amin (1971) | — | — |
+
+*† Kerala figures estimated from India Sample Registration System and census records; all other figures from World Bank WDI direct measurement.*
+
+The variation in lag maps directly onto the PTE/GPTE/GGPTE taxonomy. The theory specifies what determines generational depth independently of the development dates themselves — it is not fitted post-hoc. Two parameters determine which depth applies: (1) the speed of the educational rupture relative to the starting base, and (2) whether the LE pathway was structurally disrupted during the compounding period.
+
+The speed parameter can be quantified precisely. Define the *required PTE rate* as the minimum expansion speed needed to cross the 40% lower secondary threshold within one generation: (40% − starting base) / 25 years. The *rupture margin* is the actual expansion rate minus this required rate. Across all cases in Table 4, a margin ≥ +0.5 pp/yr separates PTE from GPTE crossings: Korea (+1.72), Cuba (+1.50), Taiwan (+0.86), and Bangladesh (+0.58) all exceed this threshold; Sri Lanka (+0.48), China (+0.28), and India (−0.24) do not. The margin normalises for starting base — Sri Lanka at 1.29 pp/yr is GPTE because it started at 19.8% and needed to close a larger gap; Bangladesh at 1.23 pp/yr is PTE because it started at 23.8% and its gap was smaller. Absolute rate alone does not determine depth; margin above the base-adjusted threshold does.
+
+The second parameter is not market development but disruption. Life expectancy gains are not market-mediated: they flow from education through household health behaviours (vaccination schedules, child nutrition, birth spacing, oral rehydration) and through the political demand that educated populations place on health provision. Neither pathway requires markets. What delays LE crossing is *structural disruption* — conflict that directly kills, displaces populations, and collapses health services; or state dismantling of health infrastructure before the educated population can rebuild it through political pressure. In the cases above, Sri Lanka's 14-year gap between TFR and LE crossing (1977→1991) maps precisely onto the civil war's disruption of health services and physical security (1983–2009 conflict onset). China's 22-year TFR-to-LE gap (1975→1997) reflects the combined effect of Deng's dismantling of the barefoot doctor network and China's larger starting distance from the LE threshold. Neither delay is market-mediated; both are disruption-mediated. Taiwan, Korea, Cuba, and Bangladesh had no comparable structural disruption to the LE pathway during their compounding periods.
+
+Both parameters can be measured from education data and historical record without reference to the development crossing date. The crossing dates are the test of the theory, not its inputs.
+
+The generational depth framework also explains why the 25-year lag is the modal, not exclusive, prediction. PTE is the base unit; cases compound through one, two, or three cycles depending on the educational history of the country. The lag curve in Figure A1 confirms this directly: the transmission signal is detectable at lag 25 (PTE, R²=0.369), lag 50 (GPTE, R²=0.194), and lag 75 (GGPTE, R²=0.112) — three generational depths, all empirically present in the data.
+
+**Taiwan and Korea crossed earliest** because they achieved the highest rupture rates in the dataset — Taiwan 1.86 pp/yr from a 14.9% base (margin +0.86), Korea 2.34 pp/yr from 24.5% (margin +1.72) — and market mechanisms were fully open, allowing educated people to translate human capital into economic agency and life expectancy gains simultaneously. This simultaneous primary and secondary expansion — running both levels in parallel rather than sequentially — compressed the generational lag and produced what we term the leapfrog effect: development timescales of 20–33 years against the 40–70 years seen in cases of gradual or sequential expansion.
+
+**Kerala crossed at ~1982** without a market rupture and without state-led rapid expansion. The education had been building since the early twentieth century through social reform movements — not a rupture, a gradual accumulation. The micro-decision pathway fired (literate women made better health and fertility decisions) but there was no market-mediated economic translation of the kind Korea and Taiwan achieved. The TFR threshold was crossed in 1973, well before state provision programmes are credited; the LE threshold followed ~8 years later.
+
+**Sri Lanka crossed in 1991.** The TFR threshold was crossed in 1977, driven by education. Life expectancy reached exactly 70.1 in 1988 — the threshold value, not yet exceeding it — before the civil war's economic destruction pushed it back to 69.3 in 1989, recovering and crossing to 70.3 in 1991. The war disrupted economic activity and life expectancy without breaking PTE: the household transmission of educational aspiration continued through the conflict, and Sri Lanka's education metrics did not collapse. The delay is precisely the length of the war's worst period. This is the war disrupting economies, not disrupting education.
+
+**China crossed last, in 1997.** Two corrections to the standard narrative are required here. First, the TFR threshold was crossed in 1975 — five years before the one-child policy (1980). The mechanism was the 晚稀少 ("Later, Longer, Fewer") campaign of 1971: voluntary fertility reduction driven by expanding female education, not coercion (Miller et al. 2018). Education drove the fertility transition; the one-child policy had no independent demographic effect. Cai (2010) shows that China's fertility trajectory mirrors South Korea and Thailand's — both of which achieved equivalent TFRs without compulsory policy — and that socioeconomic development and ideational change, not coercion, explain the decline.
+
+Second, the standard framing of China's Cultural Revolution (1966–1976) as educational catastrophe is an urban-elite projection. For the approximately 80% of China's population that was rural, the CR era produced the largest lower secondary gains in the entire WCDE 1870–2015 dataset: +10.6pp for the 1975 cohort, +15.0pp for the 1980 cohort — both cohorts whose secondary schooling fell squarely within the CR years. Community schools (民办学校) brought secondary education to villages that had none. The "lost generation" refers specifically to the ~2–3% who would have attended university and could not. The base of the pyramid expanded dramatically while the apex was disrupted.
+
+A data quality caveat applies here. WCDE estimates for CR-era China are based on population census reconstruction and carry greater uncertainty than standard-period figures; the community school data in particular may capture registration or partial attendance rather than genuine lower secondary completion (Pepper 1996; Unger 1982). We do not claim CR education was high quality. The PTE claim is more limited: basic literacy and numeracy transmission from a parent with some secondary schooling is sufficient to shift the household baseline, even if the attainment measure overstates formal completion. The post-reform cohort data — showing continued gains through the 1980s and 1990s — is consistent with a real, if imperfect, parental baseline established during the CR era, not an artefact of mismeasured enrollment.
+
+**Third: Sen misidentifies the LE mechanism entirely.** China's LE collapsed during the GLF famine (1959–1961) — the precise trough is uncertain given data limitations during the famine years, but the critical point is not the absolute level, it is the recovery pattern. By 1965, LE had recovered to approximately 53; by 1980 it reached approximately 64: a gain of +11 years over 15 years during the CR and barefoot doctor era. Sen's framework takes 1965 as the baseline for China's welfare success and attributes these gains to the barefoot doctor (赤脚医生) program. He is in part crediting a health programme for the tail end of a famine recovery.
+
+From 1980 to 1997 — after Deng dismantled the barefoot doctor system — LE rose from approximately 64 to 70.1: +6 years over 17 years. The pace slowed. Drèze & Sen (1989, pp. 215–221) document the resulting health crises and rising rural medical costs (Gao 2008; Liu et al. 2003). But the deceleration has a second, purely demographic explanation that Sen does not consider: LE gains above 65 are structurally slower than gains at 53, because the low-hanging fruit of infectious disease and child mortality reduction has been picked and the remaining gains require addressing cardiovascular disease and cancer. The data cannot cleanly separate the provision-dismantling effect from the natural epidemiological ceiling. What the data does show unambiguously is that the educational expansion continued throughout: lower secondary completion rose from 30.9% in 1965 to 62.0% in 1980 to 75.0% in 1990, tracking LE improvement across both eras.
+
+What was changing throughout both periods was education: lower secondary completion rose from 30.9% in 1965 to 62.0% in 1980 to 75.0% in 1990, tracking the steady LE improvement across both the CR and Deng eras. Sen noticed the barefoot doctors and missed the barefoot teachers — the community school (民办学校) educators whose concurrent expansion was, on this account, the more durable mechanism. The doctors and the teachers came from the same CR-era rural mobilisation; the doctors left when Deng dismantled the programme, but the educational baseline their contemporaries had built into rural households did not. We infer this from co-occurrence and the post-1980 trajectory rather than from direct evidence of teaching activity — a limitation acknowledged. What we can say is that the LE gains correlated with educational expansion across both the CR and Deng eras, while the health provision account requires a discontinuity at 1980 that the data does not clearly show.
+
+China crossed the LE threshold in 1997 — later than Taiwan (1972) and Korea (1986) — not because provision was dismantled, but because China started further from the threshold: Taiwan's 1965 LE was 68.1 (2 years below 70.1), Korea's was 61.4 (9 years below), China's was approximately 53 (17 years below). At a roughly constant rate of improvement, the crossing dates follow mechanically from starting distance. And China started lower because the GLF famine had depressed its baseline — the same event that Sen's framework treats as the starting point for a provision-led welfare success story.
+
+**Cuba crossed in 1972** — the same year as Taiwan, 11 years after the 1961 literacy campaign. The 11-year gap does not violate PTE because the 1961 campaign was not Cuba's educational rupture — it was the culmination of one. Lower secondary completion was already 49.7% in 1960 and LE was 69.3, within 1 year of the threshold. The prior educational base, built across the preceding decades, had already set PTE in motion; the 1961 campaign pushed literacy and secondary completion to near-universality and converted an adequate base into a crossing event already in progress. Measuring the lag from 1961 miscounts the mechanism: the relevant rupture was the accumulation that produced 49.7% by 1960, not the campaign that finished the job. That Cuba and Taiwan — one Soviet-aligned, one US-allied developmental authoritarian — crossed in the same year underscores the regime-independence point made in Section 9: the mechanism does not care what political system delivers the education.
+
+**Bangladesh crossed in 2015** — the most important case in the table. Lower secondary completion was 11.4% in 1960 and GDP per capita was $1,250 in 2015. Bangladesh crossed both development thresholds through sustained state commitment to girls' education — primary and secondary expansion from the 1990s — with virtually no income. The garment industry provided female economic participation that reinforced educational agency, but the LE and TFR gains came through household health decisions and the political demand that educated women placed on health provision, not through market mechanisms. Bangladesh is already in Table 3 as a policy over-performer (+15.8pp above its generational baseline). The connection is direct: the over-performance was the rupture, and the 2015 development crossing was its result, approximately 25 years later. It is the cleanest available demonstration that income is not the mechanism.
+
+**What Sen saw and misread:** In China, he took a famine recovery as the baseline for a provision-led welfare story, credited barefoot doctors for gains that barefoot teachers made possible, and never tested whether removing the provision changed the trajectory — it did not. In Kerala and Sri Lanka, he observed welfare outcomes above what income predicted and attributed them to direct state provision, missing that those outcomes arrived at precisely the PTE-predicted intervals after prior education investments. The provision that existed in these cases was itself a product of educated populations making political demands — endogenous to education, not independent of it. Kerala's public health infrastructure was built by a literate electorate that demanded and maintained it; Sri Lanka's crossed the development threshold as its educated cohorts came of age despite a civil war. Sen built a typology of outputs and mistook them for causes.
+
+---
+
+## 8. The Institutional Challenge
+
+Acemoglu & Robinson (2012) argue that institutions — inclusive versus extractive — are the primary determinant of long-run development. Education, on this account, is endogenous: countries with inclusive institutions invest in education because their political economy rewards broad-based human capital.
+
+Our fixed-effects design addresses this directly. Country fixed effects absorb all time-invariant country characteristics, including institutional quality. The parental education coefficient (β=0.485 in the 189-country panel, β=0.960 in the long-run panel) is identified from within-country variation over time, conditional on fixed institutional quality. It cannot reflect institutional quality that is held constant.
+
+But the deeper challenge to Acemoglu & Robinson runs the other way. The education-mediated account predicts that educated populations build institutions — through political pressure, civic organization, and the capacity to hold power accountable — rather than institutions creating education. Kerala's welfare state was built by its literate electorate. Korea's developmental state was populated and maintained by an increasingly educated bureaucracy and workforce. The causal arrow in the institutional literature points in the wrong direction.
+
+The counter-cases are instructive. Qatar ($63,000 per capita, stable institutions by standard measures) delivered 3.7 percentage points below its generational education baseline in 2015 (authors' FE residuals, WCDE v3). The institutions were present; the educational commitment was not; the development did not compound. The Philippines absorbed deeper US colonial education infrastructure than any other Asian country, experienced multiple political ruptures, and failed to compound into a tiger trajectory — because no post-independence government made the educational rupture that would have activated both pathways. Institutions created opportunity; the absence of educational commitment prevented its realization.
+
+Institutions matter as enabling conditions for sustained educational commitment. They are not substitutes for it, and the evidence is consistent with them being substantially produced by it.
+
+---
+
+## 9. The Educational Rupture as the One Exogenous Decision
+
+If education is the sole primary driver, then the one genuinely exogenous political decision in the model is whether a government makes an educational rupture — a decisive, sustained commitment to treat education as the primary national objective, maintained across political cycles and competing priorities.
+
+Every fast-developing country in the historical record made this decision at some point. The earliest modern example is Japan (1872): the Meiji compulsory education ordinance, implemented through repurposed temples with community teachers, no substantial budget — mandate before resources. The pattern recurs a century later across radically different political regimes:
+
+- Korea, 1953–1965: simultaneous primary and secondary expansion, class sizes of 60–80, double shifts, built ahead of demand
+- Taiwan, 1950s: same pattern, simultaneous rather than sequential
+- Cuba, 1961: 268,000 volunteer teachers deployed to rural areas for eight months, adult illiteracy from ~24% to 3.9% in one year — subsequently certified by UNESCO (Kozol 1978)
+
+These three cases span the full political spectrum — US-allied developmental authoritarian, export-led capitalist, and Soviet-aligned communist — confirming that the educational rupture is the independent variable and regime type is not.
+
+None of these required high income. All required the political decision to treat education as non-negotiable.
+
+The state's role is precisely defined: initiate the rupture and sustain it for approximately thirty years, until self-accelerating household demand takes over. Korea ran simultaneous primary and secondary expansion from 1953 with sustained state commitment across successive governments for three decades. Once lower secondary completion crossed the 40% threshold, parental demand became self-propelling — the state had done its work. After that point, household PTE compounding runs without requiring a forcing function.
+
+Sequential expansion — primary first, secondary a generation later — also requires state commitment but never compresses the generational lag. It takes approximately fifty years to reach the same threshold that the rupture reaches in thirty. Whether this constitutes a rupture in the same sense is a definitional question; what is clear is that both paths require sustained state education policy, and the rupture path requires the harder political decision of building secondary infrastructure before primary is universal.
+
+The rupture activates both pathways simultaneously. The same cohort of educated citizens makes better household decisions (Pathway 1) and builds the political demand for institutions and services (Pathway 2). Sen's two pathways are not sequential alternatives — they fire in parallel once the rupture compounds past the threshold. What looks like "growth-mediated" security (Korea) and "support-led" security (Kerala) are the same mechanism expressing itself differently — education compounding through households, activating micro-decisions and political agency simultaneously.
+
+The failure mode is the absence of the rupture — treating education as one priority among many. The data identifies this precisely: countries below 40% lower secondary completion face a structural problem where parental baselines are too low to generate self-accelerating demand — PTE still advances the system, but slowly and without the compounding momentum that emerges above the threshold. Approximately 33 million young people in those 27 countries alone are not completing lower secondary — authors' calculations from WCDE v3 completion rates and World Bank population data, 2015. For them, state commitment to education above the demographic baseline is the only available mechanism. Growth will not initiate it (income is downstream); direct provision of health and nutrition services will not initiate it — provision produces temporary gains but cannot self-sustain, and every fiscal dollar spent on provision rather than education delays the only mechanism that compounds. Only the educational rupture starts the compounding — and only sustained state education policy sustains it long enough to become self-propelling.
+
+---
+
+## 10. Limitations
+
+Four limitations bear noting. First, the WCDE v3 panel covers 1975–2015; the long-run 28-country subsample extends to 1900 but was selected on data quality, introducing survivorship bias that slightly overstates the generational transmission coefficient. Second, Kerala figures are estimated from India's Sample Registration System and census records rather than direct WCDE measurement; they carry greater uncertainty than the country-level figures in Table 4. Third, the analysis identifies education as the primary upstream driver but does not decompose the micro-decision and political-pressure pathways separately — both are subsumed in the PTE transmission coefficient. Clean empirical decomposition is not feasible: the two pathways operate simultaneously and through overlapping populations. On theoretical and historical grounds, micro-decisions account for the majority of the effect; welfare schemes contribute at the margins, or in the first generation of educated cohorts before household income rises enough to substitute for collective provision.
+
+Fourth, the claim that provision is endogenous to education — that educated populations generate the political demand that creates health services — is supported by indirect evidence but not directly tested. The direct test would require health expenditure panel data at country-year resolution, which is not available at the coverage required for this analysis. Two indirect tests are consistent with the claim. First, Figure A1 shows that education outperforms income as a predictor of life expectancy at every lag from 0 to 100 years, including the short lags (0–10 years) where provision demand would be the primary channel. If income drove provision — the standard growth-mediated account — GDP should outperform education at short lags; it does not, at any horizon. Second, the policy over-performers in Table 3 (Nepal, Vietnam, Bangladesh) achieve welfare outcomes above what their income predicts — consistent with education generating political demand for provision beyond the income-predicted level. Direct testing of provision endogeneity using health expenditure data disaggregated by prior education levels remains a programme for future work.
+
+## 11. Conclusion
+
+The evidence from 189 countries over 55 years, and from the specific cases Sen used to build his framework, supports a single conclusion: education is the sole primary driver of human development. Income is a downstream consequence — real, but not independently operative. Direct provision is infrastructure that educated populations demand and use — also real, but a consequence of education rather than a cause of development.
+
+Sen's dichotomy describes what development looks like from the outside — the surface appearance of growth in one case, welfare services in another. It does not describe what causes either. The causal structure runs from education through household micro-decisions and political pressure to the welfare outcomes and institutional forms that Sen observed and categorized. He built a typology of outputs; we have identified the input.
+
+The PTE generational transmission mechanism (FE β=0.485 to 0.960) is the quantification of how this input propagates. The development-date table — Taiwan 1972, Korea 1986, Kerala ~1982, Sri Lanka 1991, China 1997 — is the empirical test: each country crossed the development threshold at precisely the interval that prior education investment and rupture margin predict. The variation in timing is explained by the speed of the educational rupture relative to the starting base (the rupture margin) and whether structural disruption to the LE pathway — conflict or health provision collapse — occurred during the compounding period. China crossed last because it started from a lower educational base, expanded more sequentially, and had further absolute distance to travel from a post-famine baseline of ~53 in 1965. The post-1980 deceleration in LE gains reflects the natural epidemiological ceiling at higher LE levels as much as any policy change.
+
+The policy implication is direct. For the countries that have not yet crossed the development threshold, the question is not whether development will look like growth or welfare provision from the outside. It is whether to make the educational rupture. Everything else follows from that one decision, compounding through PTE into every generation that follows.
+
+---
+
+## References
+
+Cai, Y. (2010). China's Below-Replacement Fertility: Government Policy or Socioeconomic Development? *Population and Development Review*, 36(3), 419–440.
+
+Acemoglu, D. & Robinson, J.A. (2012). *Why Nations Fail: The Origins of Power, Prosperity, and Poverty*. Crown Publishers.
+
+Angrist, J.D. & Pischke, J.S. (2009). *Mostly Harmless Econometrics: An Empiricist's Companion*. Princeton University Press.
+
+Deaton, A. (2013). *The Great Escape: Health, Wealth, and the Origins of Inequality*. Princeton University Press.
+
+Drèze, J. & Sen, A. (1989). *Hunger and Public Action*. Clarendon Press.
+
+Easterlin, R.A. (1981). Why Isn't the Whole World Developed? *Journal of Economic History*, 41(1), 1–19.
+
+Gao, M. (2008). *The Battle for China's Past: Mao and the Cultural Revolution*. Pluto Press.
+
+Hanushek, E.A. & Woessmann, L. (2008). The Role of Cognitive Skills in Economic Development. *Journal of Economic Literature*, 46(3), 607–668.
+
+Hanushek, E.A. & Woessmann, L. (2015). *The Knowledge Capital of Nations: Education and the Economics of Growth*. MIT Press.
+
+Kozol, J. (1978). A New Look at the Literacy Campaign in Cuba. *Harvard Educational Review*, 48(3), 341–377.
+
+Liu, Y., Rao, K. & Hsiao, W.C. (2003). Medical Expenditure and Rural Impoverishment in China. *Journal of Health, Population and Nutrition*, 21(3), 216–222.
+
+Lutz, W. (2009). Sola Schola et Sanitate: Human Capital as the Root Cause and Priority for International Development. *Philosophical Transactions of the Royal Society B*, 364(1532), 3031–3047.
+
+Lutz, W. & Kebede, E. (2018). Education and Health: Redrawing the Preston Curve. *Population and Development Review*, 44(2), 343–361.
+
+Lutz, W., Reiter, C., Özdemir, C., Yildiz, D., Guimaraes, R. & Goujon, A. (2021). Skills-adjusted Human Capital Shows Increasing Global Progress and Persistent Disparities. *Nature Human Behaviour*, 5, 701–711.
+
+OECD. (2022). *Development Co-operation Report: Shaping a Just Digital Transformation*. OECD Publishing. [DAC sectoral aid allocation data.]
+
+Pearl, J. (2009). *Causality: Models, Reasoning, and Inference* (2nd ed.). Cambridge University Press.
+
+Pepper, S. (1996). *Radicalism and Education Reform in 20th-Century China*. Cambridge University Press.
+
+Unger, J. (1982). *Education Under Mao: Class and Competition in Canton Schools, 1960–1980*. Columbia University Press.
+
+Miller, G., Babiarz, K.S., Chin, Y. & Song, S. (2018). The Limits and Consequences of Population Policy: Evidence from China's Wan Xi Shao Campaign. NBER Working Paper No. 25130.
+
+Preston, S.H. (1975). The Changing Relation between Mortality and Level of Economic Development. *Population Studies*, 29(2), 231–248.
+
+Sen, A. (1999). *Development as Freedom*. Oxford University Press.
+
+Vandemoortele, J. & Delamonica, E. (2000). The "Education Vaccine" against HIV. *Current Issues in Comparative Education*, 3(1), 6–13.
+
+World Bank. World Development Indicators. Various years.
+
+---
+
+*Development threshold data computed from World Bank WDI. USA 1960 benchmarks: TFR = 3.67, life expectancy = 70.1. Full analysis code and regression outputs available in the accompanying repository.*
+
+---
+
+## Appendix
+
+**Table A1.** Two-way fixed effects (country + year): child lower secondary completion on parental education and log GDP per capita. Same panel as Table 1 (189 countries, 1975–2015, 1,701 country-years).
+
+| Model | Parental edu β | Log GDP β | R² (within) |
+|---|---|---|---|
+| (1) FE + year: child ~ parent | 0.086\*\*\* | — | 0.010 |
+| (2) FE + year: child ~ log GDP | — | 2.769\*\*\* | 0.009 |
+| (3) FE + year: child ~ parent + GDP | 0.125\*\*\* | 2.080\*\*\* | 0.027 |
+
+*Standard errors clustered by country. \*\*\* p<0.001.*
+
+Year dummies absorb the global education expansion that is the phenomenon under study. The near-zero R² across all two-way FE models reflects that almost all within-country variation in education over time is shared across countries — i.e., it is the global expansion. Conditioning it out leaves only idiosyncratic residual variation with no theoretical reason to follow PTE. Parental education retains a modest relative advantage over GDP even in this over-controlled specification (R²=0.010 vs. 0.009).
+
+**Table A2. Robustness to alternative lag lengths.** The T+25 results in Table 2 are robust to alternative lag specifications. Across lags of 15, 20, 25, and 30 years, education coefficients retain direction and significance (p<0.001) for all three outcomes. The life expectancy and TFR coefficients strengthen between T+15 and T+25–30, consistent with the generational mechanism: the full expression of parental education in population-wide health and fertility outcomes accumulates over time rather than appearing discretely at one lag length. The T+25 specification is the theoretically motivated anchor, not a cherry-picked optimum. A reviewer might expect the 25-year lag to produce a sharp spike if the mechanism is truly generational. Figure A1 shows the full lag profile: education's predictive power for life expectancy is smooth across all lags from 0 to 100 years, not a step function at 25. This is expected — PTE is the modal generational interval, not a hard cutoff, and different families transmit education across slightly different intervals depending on age at childbearing and educational path length. Gradual decay is the correct prediction of a generational mechanism, not a spike.
+
+The CO2 placebo confirms that the country FE result is not a time-trend artefact: CO2 emissions per capita, lagged 25 years, has the same monotone trend structure as parental education but produces within-country R²=0.007 — 60 times weaker than the parental education specification (R²=0.464). The mechanism is specific to education, not to trend.
+
+**Table A3. Long-run panel countries (1900–2015, 28 countries).** Selected on the criterion of self-determined education policy and data quality; colonial-era data for colonised countries reflects colonial investment rather than domestic policy decisions and is excluded. *East Asia:* Japan, Taiwan, South Korea. *Western Europe:* United Kingdom, France, Germany, Sweden, Norway, Denmark, Finland, Netherlands, Belgium, Switzerland, Austria, Italy, Spain, Portugal. *New World:* United States, Canada, Australia, New Zealand. *Latin America:* Argentina, Chile, Uruguay, Cuba, Costa Rica. *Other:* Sri Lanka (British Ceylon — active colonial education investment, known anomaly), Hong Kong.
+
+**Table A4. Development threshold robustness: crossing dates under three specifications (World Bank WDI data; Taiwan excluded — not in WDI).**
+
+| Case | Main (TFR<3.67, LE>70.1) | Loose (TFR<4.0, LE>68.0) | Strict (TFR<3.0, LE>72.0) | Shift range |
+|---|---|---|---|---|
+| Cuba | 1972 | 1971 | 1975 | 4 yrs |
+| South Korea | 1986 | 1981 | 1990 | 9 yrs |
+| Sri Lanka | 1991 | 1979 | 1993 | 14 yrs |
+| China | 1997 | 1990 | 2003 | 13 yrs |
+| Bangladesh | 2011 | 2007 | 2012 | 5 yrs |
+
+*Note: Korea and Sri Lanka are near-tied. Their pairwise order reverses under the loose spec (Sri Lanka 1979, Korea 1981) relative to the main spec (Korea 1986, Sri Lanka 1991). All other pairwise orderings are stable across all three specifications. Taiwan (1972, WCDE/alternative sources) is consistent with Cuba under all specifications but cannot be computed from WDI data.*
+
+**Figure A1. Education vs. income predictive power across lag lengths (within-country FE, outcome: life expectancy at birth).** The figure plots within-country R² for two predictors — lower secondary completion rate and GDP per capita — against every lag from 0 to 100 years. Three generational horizons are marked: PTE (lag 25, one parental generation), GPTE (lag 50, two generations), GGPTE (lag 75, three generations). Education peaks at lag 0–2 (R²=0.528) and decays slowly across all three depths: R²=0.369 at PTE, R²=0.194 at GPTE, R²=0.112 at GGPTE. Income peaks at lag 0–2 (R²=0.126) and collapses to near-zero by GPTE distance: R²=0.063 at lag 25, R²=0.013 at lag 50, effectively zero beyond lag 55. The divergence widens monotonically: at PTE the education-to-income ratio in predictive power is 5.8:1; at GPTE it is 15:1. Education's signal persists across three generations; income's does not survive one. *(Source: authors' calculation, World Bank data, WCDE v3. See papers/fig_lag_comparison.png)*
+
+The lag structure is itself diagnostic. If income caused life expectancy through a delayed mechanism — the standard income-first account — its predictive power should persist at longer lags as the mechanism has time to operate. Instead, income's predictive power is strictly contemporaneous, consistent with co-movement rather than upstream causation: income and health move together today because education drove both. Education's slow decay, by contrast, is exactly the signature of a generational transmission mechanism — each cohort encodes the preceding cohort's educational attainment, so the signal attenuates gradually rather than collapsing. The two curves are not just quantitatively different; their shapes belong to different causal structures.
+
+The variation absorbed by year FE is itself theoretically meaningful. It represents a slow, sustained global education expansion — a post-decolonization rupture operating at the world level simultaneously. Post-independence states adopted compulsory education laws, UNESCO and World Bank programmes diffused institutional knowledge, and the demonstrated success of Korea and Taiwan created policy templates unavailable to the original industrializers. This global tailwind means contemporary developing countries ride two mechanisms at once: within-country PTE compounding and the global trend. It is why Bangladesh moved from ~10% to ~50% lower secondary completion in 40 years while the United Kingdom required roughly 100 years to traverse a comparable range. The original industrializers had to discover that education works; their successors inherit that knowledge embedded in international institutions and policy. The two-way FE result does not invalidate PTE — it reveals that PTE now operates on top of a rising global baseline that the early developers never had.
