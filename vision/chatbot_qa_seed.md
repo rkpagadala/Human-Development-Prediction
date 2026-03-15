@@ -60,11 +60,13 @@ Each entry has:
 
 ## Q5: Sen showed that Kerala and Cuba achieved good outcomes without high income. Doesn't that support direct provision?
 
-**Correct answer:** Sen's cases confirm the conclusion but misidentify the mechanism. Kerala had female literacy 40 percentage points above the Indian national average *decades before* its health outcomes diverged from comparable states. The health gains arrived after the education was already there. Cuba was already at 49.7% lower-secondary completion in 1960 before the revolution reorganized service delivery. In both cases, the educational base preceded and enabled the provision. Sen described fiscal routing — how money moved. He did not identify what made the routing work. The answer is education.
+**Correct answer:** Sen's cases are the confirmation, not the counterargument. Kerala had female literacy 40 percentage points above the Indian national average *decades before* its health outcomes diverged. The educational base was already there; the health services rode on it. Cuba was already at 49.7% lower-secondary completion in 1960 before the revolution reorganized service delivery. The revolution changed fiscal routing; it did not create educated Cubans. Sen saw the services and credited them. He was looking at the surface, not the cause. The real question is: what happens when you try the same services in a population at 10% lower-secondary completion? The gains do not compound and do not sustain. Uganda is the test case Sen did not consider.
 
-**Key claim:** Sen's own cases show education preceding the outcomes he attributes to direct provision. He misidentifies the mechanism as provision when the mechanism is education.
+Sen's two categories — growth-mediated and support-led — are the same mechanism operating under different conditions. Fast educational expansion with functioning markets produces visible income growth; that gets credited. Slow educational accumulation without markets produces visible state services; those get credited. The mechanism is education in both cases. Sen observed the surfaces and built a typology from them.
 
-**What not to say:** Don't say Sen was "wrong about everything." He was right that income-first development fails. He misidentified why support-led development worked.
+**Key claim:** Sen's cases show education preceding the outcomes he attributes to services. His typology is an artefact of educational tempo and market presence — not two competing mechanisms.
+
+**What not to say:** Don't say Sen was "wrong about everything." He was right that income-first development fails. He misidentified why his own cases worked — it was slow educational accumulation, not the services that rode on top of it.
 
 ---
 

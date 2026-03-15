@@ -46,13 +46,13 @@ In every one of Sen's cases, education precedes the outcome. In no case does pro
 
 ## The Unified Claim
 
-Sen's dichotomy should be collapsed into a single mechanism: **education-mediated security**.
+Sen's dichotomy should be collapsed entirely. There is one mechanism: education.
 
-Growth-mediated security works when education drives productivity, which drives growth, which funds services. Education is upstream of the entire chain — not a downstream benefit of growth. This is the finding from 189 countries: parental lower-secondary completion predicts GDP growth 25 years later (FE β=+0.011 log-points per percentage-point gain, controlling for initial income). Income growth does not substitute for the generational education pathway; it follows from it.
+Sen's two categories are the same mechanism — education — producing two different surface appearances depending on the speed of educational expansion and the presence of functioning markets. Where educational expansion is fast and markets function, education produces rapid visible income growth. That income growth gets credited. This is what "growth-mediated security" looks like from outside. Where expansion is slow and markets are absent, income growth is invisible; state services are the only observable welfare activity. They get credited instead. This is what "support-led security" looks like from outside. The mechanism is education in both cases. The typology is an artefact of tempo and context.
 
-Support-led security works when public provision reaches a population that can use it effectively. Literate mothers have lower child mortality not primarily because services were provided to them, but because they know when to seek care, follow treatment protocols, and transmit health knowledge within households. The provision is necessary but insufficient. The education is the multiplier.
+Parental lower-secondary completion predicts GDP growth 25 years later (FE β=+0.011 log-points per percentage-point gain, 189 countries). It predicts life expectancy and fertility through the household micro-decision channel — educated mothers know when to seek care, follow treatment protocols, vaccinate children, and space births. These outcomes arrive because of who the mothers are, not because of what services were provided to them.
 
-Sen is right that Kerala and Sri Lanka achieved welfare outcomes without high income. He misidentifies why. It wasn't direct provision *instead of* growth. It was education *instead of both* — which then enabled both.
+Sen is right that Kerala and Sri Lanka achieved outcomes without high income. He misidentifies why. The slow educational accumulation was already there; the services rode on it. In genuinely low-education contexts — where the educational base is absent — the same services fail to sustain themselves.
 
 ---
 
@@ -62,15 +62,15 @@ Cuba in 1961 ran a national literacy campaign and subsequently achieved health o
 
 The mechanism is PTE. Cuba was already at 49.7% lower-secondary completion in 1960 — among the highest in Latin America before the revolution. The 1961 campaign completed a process that was already underway. The educational base that made the health provision functional was not created in 1961; it existed. The revolution reorganized fiscal routing. It did not create educated Cubans from scratch.
 
-Cuba is not a counterexample to education-first. It is a case where sufficient educational base already existed to make provision work rapidly. The same provision, dropped on a population at 10% lower-secondary completion, would have produced different results — as the data from comparable interventions in low-base countries confirms.
+Cuba is not a counterexample to education-first. Cuba was already at 49.7% lower-secondary completion in 1960 — the educational base was already there. The revolution reorganized fiscal routing but did not create educated Cubans. The educational expansion preceded the services. The services rode on the base. The same services, deployed to a population at 10% lower-secondary completion, would not have compounded — as the data from comparable low-base contexts confirms.
 
 ---
 
 ## The Policy Implication
 
-Funding direct health provision in populations with very low female lower-secondary completion produces gains that do not compound. The provision reaches people who cannot fully leverage it. The gains are real and not permanent.
+In populations with very low female lower-secondary completion, the mechanism does not exist. Health services can be delivered, but they cannot self-sustain or compound — there is no educational base through which the household micro-decision channel operates. The gains are real while the external delivery continues. They do not carry forward into the next generation.
 
-Funding secondary education in those same populations produces gains that compound across generations through PTE — each educated cohort produces a more educated next cohort, which has lower fertility, lower child mortality, and higher income. Fertility declines continuously as female secondary completion rises; the steepest demographic headwinds are at the lowest completion levels, where high fertility and rapid population growth slow the system. PTE still operates at any level — but sustained state investment is required all the way to near-universal completion. Korea expanded steadily to 95% under sustained state investment throughout, with no point at which the state's role diminished.
+Secondary education in those same populations activates the mechanism. Each educated cohort produces a more educated next cohort, which has lower fertility, lower child mortality, and higher income. The gains compound across generations through PTE — automatically, through households, regardless of which government is in power. Fertility declines continuously as female secondary completion rises; sustained state investment is required all the way to near-universal completion. Korea expanded steadily to 95% under sustained state commitment throughout.
 
 Sen described fiscal routing. The data identifies the mechanism. The mechanism is education.
 
