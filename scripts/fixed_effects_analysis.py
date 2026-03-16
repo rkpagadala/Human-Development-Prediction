@@ -21,22 +21,38 @@ Fixed-effects and first-differences analysis to address the two methodological g
    tigers, non-tigers, rich, poor?
 """
 
+import os
 import pandas as pd
 import numpy as np
 from sklearn.linear_model import LinearRegression
 
-ROOT = "datasets/"
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+REPO_ROOT = os.path.dirname(SCRIPT_DIR)
+WCDE_PROC = os.path.join(REPO_ROOT, "wcde", "data", "processed")
+WB_DIR = os.path.join(REPO_ROOT, "data")  # World Bank WDI downloads
 
-DATASETS = {
-    "Primary_OL":         ROOT + "Primary_OL.csv",
-    "Lower_Secondary_OL": ROOT + "Lower_Secondary_OL.csv",
-    "Higher_Secondary":   ROOT + "Higher_Secondary_fin_complete.csv",
-    "female_Primary_OL":  ROOT + "female_Primary_OL.csv",
-    "gdp":                ROOT + "gdppercapita_us_inflation_adjusted.csv",
-    "co2":                ROOT + "co2_emissions_tonnes_per_person.csv",
-    "tfr":                ROOT + "children_per_woman_total_fertility.csv",
-    "life_expectancy":    ROOT + "life_expectancy_years.csv",
-}
+# WCDE v3 education data (completion %, 5-year intervals)
+# Converted to OL (out-of-school) and interpolated to annual for this script
+def load_wcde_as_ol(filename):
+    """Load WCDE completion CSV, convert to OL rate, interpolate to annual."""
+    df = pd.read_csv(os.path.join(WCDE_PROC, filename), index_col="country")
+    df.columns = [int(c) for c in df.columns]
+    ol = 100.0 - df  # completion → out-of-school
+    # Interpolate to annual
+    all_years = list(range(min(df.columns), max(df.columns) + 1))
+    ol = ol.reindex(columns=all_years).interpolate(axis=1, method="linear")
+    ol = ol.bfill(axis=1).ffill(axis=1)
+    ol.columns = [str(c) for c in ol.columns]
+    ol.index = ol.index.str.lower()
+    return ol
+
+def load_wb(filename):
+    """Load World Bank WDI CSV (Country x Year wide format)."""
+    df = pd.read_csv(os.path.join(WB_DIR, filename))
+    df["Country"] = df["Country"].str.lower()
+    return df.set_index("Country")
+
+DATASETS = {}  # populated below after function defs
 
 PARENTAL_LAG = 25
 SCHOOLING_LAG = 12
@@ -48,7 +64,22 @@ def load(path):
     return df.set_index("Country")
 
 print("Loading data...")
-dfs = {name: load(path) for name, path in DATASETS.items()}
+# WCDE education data (converted to OL rate, interpolated to annual, lowercased)
+dfs = {
+    "Primary_OL":         load_wcde_as_ol("primary_both.csv"),
+    "Lower_Secondary_OL": load_wcde_as_ol("lower_sec_both.csv"),
+    "Higher_Secondary":   load_wcde_as_ol("upper_sec_both.csv"),
+    "female_Primary_OL":  load_wcde_as_ol("primary_female.csv"),
+}
+# World Bank data
+for name, filename in [
+    ("gdp",             "gdppercapita_us_inflation_adjusted.csv"),
+    ("co2",             "co2_emissions_tonnes_per_person.csv"),
+    ("tfr",             "children_per_woman_total_fertility.csv"),
+    ("life_expectancy", "life_expectancy_years.csv"),
+]:
+    dfs[name] = load_wb(filename)
+
 all_countries = sorted(
     set(dfs["gdp"].index) &
     set(dfs["Primary_OL"].index) &

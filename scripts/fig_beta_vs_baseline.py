@@ -5,7 +5,7 @@ Generates Figure 1 for:
   "Education as the Sole Primary Driver of Human Development"
 
 Output:
-  papers/fig_beta_vs_baseline.png
+  paper/fig_beta_vs_baseline.png
 
 What it does:
   For each country, computes the intergenerational education transmission
@@ -18,7 +18,7 @@ What it does:
   (durability).
 
 Data source:
-  WCDE v3 long-run cohort data (1875-2015), processed by pte-human-development
+  WCDE v3 long-run cohort data (1875-2015), processed by education-rupture
   pipeline. Lower secondary completion, age 20-24, both sexes.
 
 Key parameters:
@@ -38,8 +38,9 @@ from sklearn.linear_model import LinearRegression
 
 # ── paths ─────────────────────────────────────────────────────────────────────
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-PTE_PROC   = os.path.join(SCRIPT_DIR, "../../../pte-human-development/data/processed")
-OUT        = os.path.join(SCRIPT_DIR, "../../papers/fig_beta_vs_baseline.png")
+REPO_ROOT  = os.path.dirname(SCRIPT_DIR)
+PTE_PROC   = os.path.join(REPO_ROOT, "wcde", "data", "processed")
+OUT        = os.path.join(REPO_ROOT, "paper", "fig_beta_vs_baseline.png")
 
 # ── parameters ────────────────────────────────────────────────────────────────
 WINDOW_SIZE = 25    # years (6 cohorts at 5-year intervals)
@@ -76,20 +77,24 @@ def beta_for_window(country, child_start, child_end):
 # ── countries to plot ─────────────────────────────────────────────────────────
 # Selected to show full range: early developer (USA), rapid state (Korea),
 # current low-baseline (Bangladesh), large developing (India)
+# start_year: first sliding window start. Korea/Taiwan start later to avoid
+# mechanically unstable β at near-zero denominators.
 COUNTRIES = [
-    ("United States of America",  "USA",        "#2166ac", "o"),
-    ("Republic of Korea",         "Korea",      "#d6604d", "s"),
-    ("Bangladesh",                "Bangladesh",  "#1b7837", "^"),
-    ("India",                     "India",       "#762a83", "D"),
+    ("United States of America",       "USA",         "#2166ac", "o",  1900),
+    ("Republic of Korea",              "Korea",       "#d6604d", "s",  1920),
+    ("Taiwan Province of China",       "Taiwan",      "#e08214", "v",  1930),
+    ("Philippines",                    "Philippines", "#878787", "P",  1920),
+    ("Bangladesh",                     "Bangladesh",  "#1b7837", "^",  1900),
+    ("India",                          "India",       "#762a83", "D",  1900),
 ]
 
 # ── compute sliding-window β ─────────────────────────────────────────────────
 fig, ax = plt.subplots(figsize=(9, 5.5))
 
-for country_name, label, color, marker in COUNTRIES:
+for country_name, label, color, marker, start_year in COUNTRIES:
     baselines = []
     betas = []
-    for start in range(1900, 1996, STEP):
+    for start in range(start_year, 1996, STEP):
         end = start + WINDOW_SIZE
         beta, avg_parent = beta_for_window(country_name, start, end)
         if not np.isnan(beta) and not np.isnan(avg_parent):
@@ -130,10 +135,10 @@ print(f"Saved: {OUT}")
 
 # ── summary table ─────────────────────────────────────────────────────────────
 print("\nKey values:")
-for country_name, label, _, _ in COUNTRIES:
+for country_name, label, _, _, start_year in COUNTRIES:
     print(f"\n  {label}:")
     print(f"  {'Window':<15} {'β':>8} {'Avg parent%':>12}")
-    for start in range(1900, 1996, STEP):
+    for start in range(start_year, 1996, STEP):
         end = start + WINDOW_SIZE
         beta, avg_parent = beta_for_window(country_name, start, end)
         if not np.isnan(beta):
