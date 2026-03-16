@@ -16,7 +16,7 @@ And some dollars land at the base of an intergenerational compounding chain at a
 
 The question is how to find the second kind.
 
-This document is about that question. The answer comes from 189 countries and 140 years of data on how education actually propagates through populations — and from the historical cases of societies that transformed themselves within a single generation.
+This document is about that question. The answer comes from 187 countries and 140 years of data on how education actually propagates through populations — and from the historical cases of societies that transformed themselves within a single generation.
 
 ---
 
@@ -24,7 +24,7 @@ This document is about that question. The answer comes from 189 countries and 14
 
 Education is not a service. It is a compounding process.
 
-The data is unambiguous: a country's lower-secondary completion rate 25 years ago predicts its current lower-secondary completion rate more strongly than any other variable, including income. The coefficient across 189 countries over the long-run panel is close to one. Every percentage point of education added to one generation produces approximately one percentage point of gain in the next — and that generation passes it forward again. This is **PTE** — Parental Transmission of Education: the education of parents at time T shapes the education of their children at T+25, who shape their children at T+50 (GPTE), compounding forward indefinitely.
+The data is unambiguous: a country's lower-secondary completion rate 25 years ago predicts its current lower-secondary completion rate more strongly than any other variable, including income. The coefficient across 187 countries over the long-run panel is close to one. Every percentage point of education added to one generation produces approximately one percentage point of gain in the next — and that generation passes it forward again. This is **PTE** — the parental transmission of education: the education of parents at time T shapes the education of their children at T+25, who shape their children at T+50, compounding forward indefinitely.
 
 This means a philanthropic investment in education today does not produce one generation of better-educated children. It produces a permanently higher baseline from which every subsequent generation begins. The return does not depreciate. It compounds.
 
@@ -46,7 +46,7 @@ The intergenerational multiplier is not uniform. It is largest where the parenta
 
 Countries with 5–20% lower-secondary parental completion produce the highest child-generation gains per unit of educational investment. The data shows countries like Maldives (β=5.7 — each 1pp of parental education produces 5.7pp of child education), Yemen (5.7), Rwanda (3.9), Bhutan (3.2), Cape Verde (3.1), Bangladesh (2.4), Nepal (2.1), India (1.4). These multipliers are not anomalies. They reflect the structural reality that gains compound fastest where the base is lowest — because the ceiling is farthest away and demand is most suppressed.
 
-This is where philanthropic capital has its highest leverage: **countries below 40% lower-secondary completion**. This is not an arbitrary cutoff. Fertility declines continuously as female secondary completion rises; the steepest demographic headwinds are at the lowest completion levels, where high fertility and rapid population growth dilute the gains from each educated cohort. PTE still operates and progress continues at any level — but slowly at low bases, against the headwind of those demographic pressures. The philanthropic investment buys speed — compressing what would otherwise take two generations into one. Crossing 40% is not the finish line; it is a rough midpoint of the fertility transition. Korea went from 25% to 95% under sustained state commitment throughout. The goal is near-universal completion, not any intermediate threshold.
+This is where philanthropic capital has its highest leverage: **countries below 40% lower-secondary completion**. This is not an arbitrary cutoff. Approximately 40% female lower-secondary completion is the point at which the demographic flywheel becomes self-sustaining: fertility begins to fall, child survival improves, household resources per child increase, and demand for education rises organically from within the population. Below that threshold, progress continues — but slowly, constrained by the low parental base. Above it, the system accelerates on its own. The philanthropic investment buys speed — compressing what would otherwise take two generations into one.
 
 The 19 countries currently below 40% lower-secondary completion are home to **42 million children aged 15–19 not completing lower secondary** — girls and boys in nearly equal numbers (WCDE v3, 2025). The focus on girls is warranted by the PTE multiplier: educated mothers have the stronger intergenerational effect on the next generation's education, health, and fertility. But the delivery system must reach all children. These are the children whose non-completion will set the parental baseline for the generation born in 2040–2050. Reaching them now is not charity — it is intervening in the PTE chain at the point of highest leverage, before the next generation's starting conditions are fixed.
 
@@ -56,9 +56,9 @@ The 19 countries currently below 40% lower-secondary completion are home to **42
 
 Japan's Meiji government launched universal compulsory education in 1872 with almost no resources. The first generation of schools was staffed by teachers who had minimal training. The physical infrastructure was basic. None of that was a barrier, because the mechanism is not quality-dependent at the start — it is participation-dependent. A low-quality school that a girl attends and completes produces an educated mother. An unbuilt school produces nothing.
 
-Nepal went from under 10% lower-secondary completion in 1990 to 53% by 2015 — 18 percentage points above what its parental education history predicted. At $200 per capita GDP. With difficult terrain, landlocked geography, and ethnic fragmentation. The instrument was not technology or curriculum innovation. It was sustained political commitment to female secondary access — building schools in rural areas, removing cost barriers, enforcing attendance, training teachers before demand peaked.
+Nepal went from under 10% lower-secondary completion in 1990 to 53% by 2015 — 18 percentage points above what its parental education history predicted. At $423 per capita GDP. With difficult terrain, landlocked geography, and ethnic fragmentation. The instrument was not technology or curriculum innovation. It was sustained political commitment to female secondary access — building schools in rural areas, removing cost barriers, enforcing attendance, training teachers before demand peaked.
 
-Bangladesh at $1,250 per capita. Vietnam at $2,090. Bhutan at $2,750. All delivered 16–26 percentage points above their parental baseline by 2015. The pattern across all of them: deliberate removal of barriers specific to girls' secondary attendance, sustained over a decade or more, regardless of which government was in power.
+Bangladesh at $1,224 per capita. Vietnam at $2,578. Bhutan at $2,954. All delivered 16–26 percentage points above their parental baseline by 2015. The pattern across all of them: deliberate removal of barriers specific to girls' secondary attendance, sustained over a decade or more, regardless of which government was in power.
 
 These are not anomalies. They are proof of concept for what philanthropic investment, correctly directed, can support and accelerate.
 
@@ -72,7 +72,7 @@ The countries with the largest positive residuals in 2015 — Maldives (+35pp), 
 
 The countries with the largest negative residuals — Qatar (−4.8pp at $63,000 per capita), several Gulf states — demonstrate the inverse: income alone, without educational commitment, produces underperformance. Oil wealth does not automatically build an educated population.
 
-The residual is a map of where deliberate action matters most. It is also a map of where your capital has the greatest marginal impact: in countries where the automatic trajectory is too slow, where the parental base is too low for PTE to advance the system quickly, and where a focused, sustained intervention can shift the trajectory durably.
+The residual is a map of where deliberate action matters most. It is also a map of where your capital has the greatest marginal impact: in countries where the automatic trajectory is too slow, where the parental base is too low to generate self-sustaining demand, and where a focused, sustained intervention can shift the trajectory durably.
 
 ---
 
@@ -92,7 +92,7 @@ The residual is a map of where deliberate action matters most. It is also a map 
 
 - Infrastructure investment in countries with strong government education systems. Where governments are already delivering above their parental baseline, philanthropic capital is often substituting for government spending rather than adding to it.
 
-- University and tertiary investment in countries below 60% lower-secondary completion. The pipeline does not yet exist to fill these institutions at scale. Tertiary investment is high-leverage once secondary is functioning; it is premature when secondary is the binding constraint. Once a country has solved lower secondary, the calculus reverses: Lutz & Kebede (2018) show the education–life expectancy relationship is linear from primary through tertiary with no diminishing returns — education changes the brain's capacity for planning and health behaviour at all levels, not only at the transition into secondary. Among countries above 85% lower-secondary completion, college completion has a within-group correlation of r=0.51 with life expectancy and a nearly 7-year LE gap between lowest and highest quartiles. Singapore's greater tertiary push (85% college versus Korea's 61%) tracks both higher LE (84.1 versus 82.6) and higher GDP ($55,600 versus $28,700). The Korea model — push all levels simultaneously, not sequentially — is the right target once secondary access is secured.
+- University and tertiary investment in countries below 60% lower-secondary completion. The pipeline does not yet exist to fill these institutions at scale. Tertiary investment is high-leverage once secondary is functioning; it is premature when secondary is the binding constraint.
 
 ---
 
@@ -114,7 +114,7 @@ The implication is not to stop funding organisations like Educate Girls. It is t
 
 **What to fund concretely:**
 
-- **Government school construction and operation in areas without access** — not prestigious infrastructure, but functional schools within reach of every child. Low quality is acceptable and expected at the start. PTE bootstraps quality across generations; the first generation of schools does not need to be good. It needs to exist.
+- **Government school construction and operation in areas without access** — not prestigious infrastructure, but functional schools within reach of every child. Low quality is acceptable and expected at the start. The PTE bootstraps quality across generations; the first generation of schools does not need to be good. It needs to exist.
 
 - **Government capacity to track every child through to completion** — the single operational difference between countries that achieved universal secondary and those that did not is whether the state knew which children were out of school and acted on it. Funding enrollment management systems, teacher attendance tracking, and local accountability structures inside government ministries is unglamorous and high-leverage.
 
@@ -122,15 +122,15 @@ The implication is not to stop funding organisations like Educate Girls. It is t
 
 - **Results-based government accountability** — the Educate Girls DIB demonstrated that outcome-linked financing (paying for completion and learning, not enrolment and construction) changes what institutions optimise for. The same structure applied to government education ministries — disbursements tied to independently verified completion rates — creates incentives for governments to do what the best historical cases did: track every child, leave none behind, and measure what actually compounds.
 
-- **Communication of what the historical data already proves** — PTE does not need a new 25-year study to confirm it. Across 189 countries and 140 years of data, the education level of one generation reliably predicts the next generation's — more reliably than income does. The gap is not evidence; it is legibility. Governments and publics do not act on what they cannot see. Funding the translation of existing historical data into formats that make the compounding chain visible — to ministers, to budget committees, to voters — is the highest-return evidence investment, because the evidence already exists.
+- **Communication of what the historical data already proves** — PTE does not need a new 25-year study to confirm it. Across 187 countries and 140 years of data, the education level of one generation reliably predicts the next generation's — more reliably than income does. The gap is not evidence; it is legibility. Governments and publics do not act on what they cannot see. Funding the translation of existing historical data into formats that make the compounding chain visible — to ministers, to budget committees, to voters — is the highest-return evidence investment, because the evidence already exists.
 
 ---
 
 ## The Counterfactual That Should Motivate You
 
-There are countries today at 15–30% lower-secondary completion where deliberate investment can compress the generational trajectory. The parental base is beginning to grow. The government is willing but under-resourced. The specific barriers to girls' secondary attendance are known and addressable.
+There are countries today at 15–30% lower-secondary completion that are at an inflection point. The parental base is just high enough that the system is beginning to generate its own demand. The government is willing but under-resourced. The specific barriers to girls' secondary attendance are known and addressable.
 
-Without sustained investment over the next 10–15 years, these countries will reach near-universal completion around 2050–2060. With it, they reach it in 2035–2040. That gap is a generation — approximately 30 million additional women reaching lower-secondary completion in the earlier scenario relative to the later one, and the cascading fertility, child health, and economic effects that follow from each of those women becoming an educated mother.
+Without sustained investment over the next 10–15 years, these countries will cross the self-sustaining threshold around 2050–2060. With it, they cross it in 2035–2040. That gap is a generation — approximately 30 million additional women reaching lower-secondary completion in the earlier scenario relative to the later one, and the cascading fertility, child health, and economic effects that follow from each of those women becoming an educated mother.
 
 That is not a projection. It is PTE, run forward from current data.
 
@@ -148,4 +148,4 @@ The return is not visible in five years. It is visible in twenty-five. That is e
 
 ---
 
-*Based on analysis of WCDE v3 data, 189 countries, 1875–2015. Full methodology in the accompanying technical documentation.*
+*Based on analysis of WCDE v3 data, 187 countries, 1875–2015. Full methodology in the accompanying technical documentation.*

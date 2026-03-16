@@ -1,13 +1,10 @@
 PANDOC = pandoc
 ENGINE = --pdf-engine=xelatex
 
-all: education_mediated_security.pdf education_mediated_security_energy.pdf
+all: education_mediated_security.pdf
 
-education_mediated_security.pdf: education_mediated_security.md fig_lag_comparison.png
+education_mediated_security.pdf: education_mediated_security.md fig_lag_comparison.png fig_beta_vs_baseline.png
 	$(PANDOC) education_mediated_security.md -o $@ $(ENGINE)
-
-education_mediated_security_energy.pdf: education_mediated_security_energy.md fig_lag_comparison.png
-	$(PANDOC) education_mediated_security_energy.md -o $@ $(ENGINE)
 
 clean:
 	rm -f *.pdf

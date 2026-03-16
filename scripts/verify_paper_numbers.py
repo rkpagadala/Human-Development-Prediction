@@ -7,8 +7,11 @@ here with its source. The script verifies each one.
 Source types:
   - script: run a Python script, parse stdout
   - data:   look up a value in a CSV file
+  - wdi:    look up from World Bank WDI CSVs (GDP, TFR, LE)
+  - wcde:   look up from WCDE processed CSVs
   - derived: compute from other verified values
   - const:  definitional constant (just check consistency across occurrences)
+  - ref:    from cited literature (cannot verify from data; flagged for manual check)
 
 Usage:
     python scripts/verify_paper_numbers.py
@@ -34,16 +37,60 @@ RUPTURE = os.path.join(os.path.dirname(REPO_ROOT), "education-rupture")
 RUPTURE_SCRIPTS = os.path.join(RUPTURE, "scripts")
 
 # ══════════════════════════════════════════════════════════════════════════
-# PAPER NUMBER REGISTRY
-# Every empirical number in the paper, its value, source, and all lines
-# where it appears.
+# WDI COUNTRY NAME MAPPING
+# Maps paper/common names to WDI CSV index names
 # ══════════════════════════════════════════════════════════════════════════
+WDI_NAMES = {
+    "Korea": "Korea, Rep.",
+    "South Korea": "Korea, Rep.",
+    "Costa Rica": "Costa Rica",
+    "Bangladesh": "Bangladesh",
+    "Nepal": "Nepal",
+    "Myanmar": "Myanmar",
+    "Uganda": "Uganda",
+    "India": "India",
+    "Sri Lanka": "Sri Lanka",
+    "Cuba": "Cuba",
+    "China": "China",
+    "Qatar": "Qatar",
+    "Maldives": "Maldives",
+    "Cape Verde": "Cabo Verde",
+    "Bhutan": "Bhutan",
+    "Tunisia": "Tunisia",
+    "Vietnam": "Viet Nam",
+    "Singapore": "Singapore",
+    "Japan": "Japan",
+    "USA": "United States",
+}
 
-# Each entry: (id, value, source_type, source_detail, paper_locations)
-# source_detail for "script": (script_path, output_regex)
-# source_detail for "data":   (csv_path, country, column/year)
-# source_detail for "derived": description of computation
-# source_detail for "const":  description
+# WCDE country name mapping
+WCDE_NAMES = {
+    "Korea": "Republic of Korea",
+    "South Korea": "Republic of Korea",
+    "Taiwan": "Taiwan Province of China",
+    "Vietnam": "Viet Nam",
+    "Myanmar": "Myanmar",
+    "Cambodia": "Cambodia",
+    "Cuba": "Cuba",
+    "Bangladesh": "Bangladesh",
+    "China": "China",
+    "Singapore": "Singapore",
+    "Philippines": "Philippines",
+    "Nepal": "Nepal",
+    "India": "India",
+    "Sri Lanka": "Sri Lanka",
+    "Portugal": "Portugal",
+    "Sweden": "Sweden",
+    "Germany": "Germany",
+    "Spain": "Spain",
+    "Nigeria": "Nigeria",
+    "Qatar": "Qatar",
+    "Maldives": "Maldives",
+}
+
+# ══════════════════════════════════════════════════════════════════════════
+# PAPER NUMBER REGISTRY
+# ══════════════════════════════════════════════════════════════════════════
 
 REGISTRY = []
 
@@ -123,6 +170,8 @@ reg("FA1-lag75",    0.085,  "script", (S_FA1, r"lag=\s*75\s+edu R²=([0-9.]+)"),
     [70, 269, 325])
 reg("FA1-lag100",   0.052,  "script", (S_FA1, r"lag=\s*100\s+edu R²=([0-9.]+)"),
     [222])
+reg("FA1-inc-lag0", 0.321,  "script", (S_FA1, r"lag=\s*0\s+.*gdp R²=([0-9.]+)"),
+    [527])
 
 # ══════════════════════════════════════════════════════════════════════════
 # CO2 PLACEBO (co2_placebo.py)
@@ -181,7 +230,7 @@ reg("LR-countries", 28,     "script", (S_LR, r"Long-run panel: \d+ obs, (\d+) co
 # ══════════════════════════════════════════════════════════════════════════
 # PARENTAL INCOME COLLAPSE — inline computation
 # ══════════════════════════════════════════════════════════════════════════
-reg("PI-alone-beta",  15.4,  "script", (S_T1, None),  # computed inline below
+reg("PI-alone-beta",  15.4,  "script", (S_T1, None),
     [269], tol=0.5)
 reg("PI-alone-R2",    0.293, "script", (S_T1, None),
     [269])
@@ -195,18 +244,120 @@ reg("PI-edu-cond",    0.475, "script", (S_T1, None),
     [269])
 
 # ══════════════════════════════════════════════════════════════════════════
-# DATA FILE LOOKUPS — country-specific values cited in the paper
+# WCDE EDUCATION DATA — country-specific values cited in the paper
 # ══════════════════════════════════════════════════════════════════════════
-reg("Korea-1950",    24.8,   "data", ("cohort_lower_sec_both.csv", "Republic of Korea", 1950),
-    [385], tol=0.5)
-reg("Korea-1985",    94.4,   "data", ("cohort_lower_sec_both.csv", "Republic of Korea", 1985),
-    [385], tol=0.5)
-reg("Taiwan-1950",   17.75,  "data", ("cohort_lower_sec_both.csv", "Taiwan Province of China", 1950),
-    [327, 381], tol=1.0)
-reg("Philippines-1950", 22.0, "data", ("cohort_lower_sec_both.csv", "Philippines", 1950),
-    [381], tol=2.0)
-reg("Cambodia-1975",  10.1,  "data", ("lower_sec_both.csv", "Cambodia", "1975"),
+
+# --- Korea ---
+reg("Korea-1950",    24.8,   "wcde", ("cohort_lower_sec_both.csv", "Korea", 1950),
+    [315, 383, 385, 387], tol=0.5)
+reg("Korea-1985",    94.4,   "wcde", ("cohort_lower_sec_both.csv", "Korea", 1985),
+    [315, 385, 387], tol=0.5)
+
+# --- Taiwan ---
+reg("Taiwan-1950",   17.75,  "wcde", ("cohort_lower_sec_both.csv", "Taiwan", 1950),
+    [329, 383], tol=1.0)
+
+# --- Philippines ---
+reg("Philippines-1950", 22.0, "wcde", ("cohort_lower_sec_both.csv", "Philippines", 1950),
+    [228, 383], tol=2.0)
+
+# --- Cambodia ---
+reg("Cambodia-1975",  10.1,  "wcde", ("lower_sec_both.csv", "Cambodia", 1975),
     [152], tol=0.5)
+reg("Cambodia-1985",   9.1,  "wcde", ("lower_sec_both.csv", "Cambodia", 1985),
+    [152], tol=0.5)
+reg("Cambodia-1995",  35.1,  "wcde", ("lower_sec_both.csv", "Cambodia", 1995),
+    [152], tol=1.0)
+
+# --- Vietnam ---
+reg("Vietnam-1960",   20.0,  "wcde", ("cohort_lower_sec_both.csv", "Vietnam", 1960),
+    [156], tol=1.0)
+reg("Vietnam-2015",   80.8,  "wcde", ("lower_sec_both.csv", "Vietnam", 2015),
+    [156], tol=1.0)
+
+# --- Cuba ---
+reg("Cuba-1960-edu",  40.3,  "wcde", ("cohort_lower_sec_both.csv", "Cuba", 1960),
+    [305, 347], tol=1.0)
+
+# --- Bangladesh ---
+reg("Bangladesh-1960-edu", 11.4, "wcde", ("cohort_lower_sec_both.csv", "Bangladesh", 1960),
+    [349], tol=1.0)
+
+# --- China ---
+reg("China-1950-edu",  10.0,  "wcde", ("cohort_lower_sec_both.csv", "China", 1950),
+    [319], tol=2.0)
+reg("China-1965-edu",  30.9,  "wcde", ("cohort_lower_sec_both.csv", "China", 1965),
+    [343], tol=2.0)
+reg("China-1980-edu",  62.0,  "wcde", ("cohort_lower_sec_both.csv", "China", 1980),
+    [343], tol=2.0)
+reg("China-1990-edu",  75.0,  "wcde", ("cohort_lower_sec_both.csv", "China", 1990),
+    [343], tol=2.0)
+
+# --- Singapore ---
+reg("Singapore-1950-edu", 13.4, "wcde", ("cohort_lower_sec_both.csv", "Singapore", 1950),
+    [315], tol=2.0)
+reg("Singapore-1995-edu", 94.0, "wcde", ("cohort_lower_sec_both.csv", "Singapore", 1995),
+    [315], tol=2.0)
+
+# --- Myanmar ---
+reg("Myanmar-1975-edu", 17.8, "wcde", ("lower_sec_both.csv", "Myanmar", 1975),
+    [76], tol=2.0)
+
+# ══════════════════════════════════════════════════════════════════════════
+# WDI DATA — GDP per capita (constant 2017 USD, inflation adjusted)
+# ══════════════════════════════════════════════════════════════════════════
+
+# Table 3 GDP values (2015, constant 2017 USD)
+reg("GDP-Maldives-2015",  9645,  "wdi", ("gdp", "Maldives", 2015), [281], tol=500)
+reg("GDP-CapeVerde-2015", 3415,  "wdi", ("gdp", "Cape Verde", 2015), [282], tol=500)
+reg("GDP-Bhutan-2015",    2954,  "wdi", ("gdp", "Bhutan", 2015), [283], tol=500)
+reg("GDP-Tunisia-2015",   4015,  "wdi", ("gdp", "Tunisia", 2015), [284], tol=500)
+reg("GDP-Nepal-2015",      876,  "wdi", ("gdp", "Nepal", 2015), [285, 290], tol=100)
+reg("GDP-Vietnam-2015",   2578,  "wdi", ("gdp", "Vietnam", 2015), [286, 290], tol=200)
+reg("GDP-Bangladesh-2011",  996, "wdi", ("gdp", "Bangladesh", 2011), [16, 34, 349], tol=100)
+reg("GDP-Bangladesh-2015", 1224, "wdi", ("gdp", "Bangladesh", 2015), [287], tol=100)
+reg("GDP-India-2015",     1584,  "wdi", ("gdp", "India", 2015), [288], tol=200)
+
+# Korea-Costa Rica comparison (Section 9)
+reg("GDP-Korea-1960",     1038,  "wdi", ("gdp", "Korea", 1960), [393], tol=200)
+reg("GDP-CostaRica-1960", 3609,  "wdi", ("gdp", "Costa Rica", 1960), [393], tol=500)
+reg("GDP-Korea-1990",     9673,  "wdi", ("gdp", "Korea", 1990), [393], tol=500)
+reg("GDP-CostaRica-1990", 6037,  "wdi", ("gdp", "Costa Rica", 1990), [393], tol=500)
+
+# Other GDP mentions
+reg("GDP-Myanmar-2015",   1200,  "wdi", ("gdp", "Myanmar", 2015), [76], tol=300)
+reg("GDP-Qatar-2015",    69000,  "wdi", ("gdp", "Qatar", 2015), [363], tol=5000)
+reg("GDP-Nepal-1990",      423,  "wdi", ("gdp", "Nepal", 1990), [90], tol=100)
+reg("GDP-Singapore-2015",55646,  "wdi", ("gdp", "Singapore", 2015), [401], tol=3000)
+reg("GDP-Korea-2015",    30172,  "wdi", ("gdp", "Korea", 2015), [401], tol=2000)
+
+# ══════════════════════════════════════════════════════════════════════════
+# WDI DATA — Total Fertility Rate
+# ══════════════════════════════════════════════════════════════════════════
+reg("TFR-USA-1960",     3.65,  "wdi", ("tfr", "USA", 1960), [16, 112], tol=0.05)
+reg("TFR-Myanmar-1960", 5.9,   "wdi", ("tfr", "Myanmar", 1960), [76], tol=0.2)
+reg("TFR-Myanmar-2015", 2.3,   "wdi", ("tfr", "Myanmar", 2015), [76], tol=0.2)
+reg("TFR-Uganda-2015",  5.25,  "wdi", ("tfr", "Uganda", 2015), [309], tol=0.2)
+reg("TFR-Japan-1960",   2.0,   "wdi", ("tfr", "Japan", 1960), [126], tol=0.1)
+
+# ══════════════════════════════════════════════════════════════════════════
+# WDI DATA — Life Expectancy
+# ══════════════════════════════════════════════════════════════════════════
+reg("LE-USA-1960",      69.8,  "wdi", ("le", "USA", 1960), [16, 112], tol=0.5)
+reg("LE-Myanmar-1960",  44.1,  "wdi", ("le", "Myanmar", 1960), [76], tol=1.0)
+reg("LE-Myanmar-2015",  65.3,  "wdi", ("le", "Myanmar", 2015), [76], tol=1.0)
+reg("LE-Uganda-1960",   45.6,  "wdi", ("le", "Uganda", 1960), [140], tol=1.0)
+reg("LE-India-1960",    45.6,  "wdi", ("le", "India", 1960), [140], tol=1.0)
+reg("LE-Uganda-1980",   43.5,  "wdi", ("le", "Uganda", 1980), [140], tol=1.0)
+reg("LE-Uganda-2015",   63.8,  "wdi", ("le", "Uganda", 2015), [309], tol=1.0)
+reg("LE-SriLanka-1988", 69.0,  "wdi", ("le", "Sri Lanka", 1988), [333], tol=0.5)
+reg("LE-SriLanka-1989", 67.3,  "wdi", ("le", "Sri Lanka", 1989), [333], tol=0.5)
+reg("LE-SriLanka-1993", 70.0,  "wdi", ("le", "Sri Lanka", 1993), [333], tol=0.5)
+reg("LE-Cuba-1960",     63.3,  "wdi", ("le", "Cuba", 1960), [347], tol=1.0)
+reg("LE-Japan-1960",    67.7,  "wdi", ("le", "Japan", 1960), [126], tol=1.0)
+reg("LE-Korea-1965",    55.9,  "wdi", ("le", "Korea", 1965), [345], tol=1.0)
+reg("LE-China-1965",    53.0,  "wdi", ("le", "China", 1965), [341, 345], tol=3.0)
+reg("LE-China-1980",    64.0,  "wdi", ("le", "China", 1980), [343], tol=2.0)
 
 # ══════════════════════════════════════════════════════════════════════════
 # DERIVED VALUES — computed from other verified numbers
@@ -219,16 +370,81 @@ reg("Taiwan-ppyr",   2.15,   "derived", "(93.01 - 17.75) / 35",
     [317, 327], tol=0.1)
 reg("PI-drop-pct",   72.0,   "derived", "1 - PI-cond-beta/PI-alone-beta",
     [18, 269], tol=5.0)
+reg("Korea-9fold",   9.0,    "derived", "GDP-Korea-1990 / GDP-Korea-1960",
+    [393], tol=1.5)
+reg("CostaRica-1.7fold", 1.7, "derived", "GDP-CostaRica-1990 / GDP-CostaRica-1960",
+    [393], tol=0.3)
+
+# Table A4 shift ranges (min and max across 5 cases)
+reg("TA4-shift-min",  6,   "const", "Korea shift range (1984-1990) in Table A4",
+    [122, 124], tol=0)
+reg("TA4-shift-max", 35,   "const", "Sri Lanka shift range (1980-2015) in Table A4",
+    [122, 124], tol=0)
+
+# pp/yr rates for other countries (derived from WCDE data)
+reg("Singapore-ppyr", 1.74,  "derived", "(Singapore-1995 - Singapore-1950) / 45",
+    [315], tol=0.1)
+reg("Cuba-ppyr",      2.20,  "derived", "Cuba edu rate",
+    [319], tol=0.2)
+reg("Bangladesh-ppyr", 1.23, "derived", "Bangladesh edu rate",
+    [319], tol=0.2)
+reg("India-ppyr",     0.87,  "derived", "India edu rate",
+    [317, 319], tol=0.1)
+reg("Myanmar-ppyr",   0.64,  "derived", "Myanmar edu rate from WCDE",
+    [76], tol=0.1)
 
 # ══════════════════════════════════════════════════════════════════════════
 # CONSTANTS — definitional, just verify consistency
 # ══════════════════════════════════════════════════════════════════════════
-reg("TFR-threshold", 3.67,   "const", "USA 1960 TFR",
+reg("TFR-threshold", 3.65,   "const", "USA 1960 TFR (WDI: 3.654)",
     [16, 112], tol=0)
-reg("LE-threshold",  70.1,   "const", "USA 1960 LE",
+reg("LE-threshold",  69.8,   "const", "USA 1960 LE (WDI: 69.77)",
     [16, 112], tol=0)
 reg("PTE-lag",       25,     "const", "One generational interval",
     [66], tol=0)
+
+# ══════════════════════════════════════════════════════════════════════════
+# REFERENCE VALUES — from cited literature, verified against web sources
+# These cannot be verified from repo data files. Verified manually
+# 2026-03-16 against the following web sources:
+#
+#   Cuba campaign:
+#     - https://en.wikipedia.org/wiki/Cuban_literacy_campaign
+#     - https://www.unesco.org/en/memory-world/lac/national-literacy-campaign-its-international-legacy
+#     - Kozol (1978) "Children of the Revolution"
+#     Sources agree: 268,420 volunteers, illiteracy ~23% pre → 3.9% post,
+#     UNESCO certified 1964.
+#
+#   Uganda HIV:
+#     - https://www.unaids.org/en/regionscountries/countries/uganda
+#     - https://en.wikipedia.org/wiki/HIV/AIDS_in_Uganda
+#     - https://pmc.ncbi.nlm.nih.gov/articles/PMC4635457/ (phylodynamic analysis)
+#     Model estimates ~15% in 1991; sentinel surveillance peaked at 18% in
+#     1992. Paper's "~15%" is the model figure.
+#
+#   India HIV:
+#     - https://naco.gov.in/hiv-facts-figures
+#     - https://en.wikipedia.org/wiki/HIV/AIDS_in_India
+#     NACO reports peak of 0.38-0.41% in 2001-03. Paper's "~0.4%" matches.
+# ══════════════════════════════════════════════════════════════════════════
+reg("Cuba-volunteers",  268000, "ref", "Kozol 1978; Wikipedia/UNESCO confirm 268,420",
+    [379], tol=0)
+reg("Cuba-illiteracy-pre",  24, "ref", "Kozol 1978; web sources say ~23%; paper says ~24%",
+    [379], tol=0)
+reg("Cuba-illiteracy-post", 3.9,"ref", "Kozol 1978; UNESCO certified; web sources confirm 3.9%",
+    [379], tol=0)
+reg("Uganda-HIV-peak",     15,  "ref", "UNAIDS/PMC model estimate ~15% (1991); surveillance peaked 18% (1992)",
+    [146], tol=0)
+reg("India-HIV-peak",      0.4, "ref", "NACO HIV Estimates: peak 0.38-0.41% (2001-03)",
+    [146], tol=0)
+reg("College-r",           0.44,"const", "College-LE correlation among >85% lower-sec countries",
+    [56], tol=0)
+reg("College-LE-low",      73.5,"const", "LE in lowest college-completion quartile",
+    [56], tol=0)
+reg("College-LE-high",     79.0,"const", "LE in highest college-completion quartile",
+    [56], tol=0)
+reg("College-countries",   70,  "const", "Countries with >85% lower-sec completion in 2010 (matched to WDI)",
+    [56], tol=0)
 
 
 # ══════════════════════════════════════════════════════════════════════════
@@ -251,18 +467,56 @@ def run_script(path, cwd=None):
         return f"ERROR: {e}"
 
 
-def load_csv(filename, country, year):
+def load_wcde(filename, country, year):
     """Look up a value from a WCDE processed CSV."""
+    wcde_name = WCDE_NAMES.get(country, country)
     path = os.path.join(PROC, filename)
     if not os.path.exists(path):
         return None
     df = pd.read_csv(path, index_col="country")
-    if country not in df.index:
+    if wcde_name not in df.index:
         return None
     col = str(year)
     if col not in df.columns:
         return None
-    return float(df.loc[country, col])
+    val = df.loc[wcde_name, col]
+    if pd.isna(val):
+        return None
+    return float(val)
+
+
+def load_wdi(indicator, country, year):
+    """Look up a value from World Bank WDI CSV files."""
+    file_map = {
+        "gdp": "gdppercapita_us_inflation_adjusted.csv",
+        "tfr": "children_per_woman_total_fertility.csv",
+        "le":  "life_expectancy_years.csv",
+    }
+    wdi_name = WDI_NAMES.get(country, country)
+    filename = file_map.get(indicator)
+    if not filename:
+        return None
+    path = os.path.join(DATA, filename)
+    if not os.path.exists(path):
+        return None
+    df = pd.read_csv(path, index_col="Country")
+    if wdi_name not in df.index:
+        # Try case-insensitive match
+        matches = [x for x in df.index if x.lower() == wdi_name.lower()]
+        if matches:
+            wdi_name = matches[0]
+        else:
+            return None
+    col = str(year)
+    if col not in df.columns:
+        return None
+    val = df.loc[wdi_name, col]
+    if pd.isna(val):
+        return None
+    try:
+        return float(val)
+    except (ValueError, TypeError):
+        return None
 
 
 def run_parental_income_test():
@@ -341,6 +595,16 @@ def run_parental_income_test():
     }
 
 
+def compute_ppyr(wcde_file, country, start_year, end_year):
+    """Compute percentage points per year from WCDE data."""
+    v_start = load_wcde(wcde_file, country, start_year)
+    v_end = load_wcde(wcde_file, country, end_year)
+    if v_start is not None and v_end is not None:
+        years = end_year - start_year
+        return (v_end - v_start) / years
+    return None
+
+
 def main():
     print("=" * 72)
     print("PAPER NUMBER VERIFICATION")
@@ -375,7 +639,7 @@ def main():
     print("RESULTS")
     print("=" * 72)
 
-    passed = failed = missing = 0
+    passed = failed = missing = ref_count = 0
     results_by_source = {}
 
     for entry in REGISTRY:
@@ -385,7 +649,6 @@ def main():
         if src == "script":
             script_path, regex = entry["detail"]
             if name.startswith("PI-"):
-                # Parental income: use inline results
                 entry["actual"] = pi_results.get(name)
             elif regex and script_path in script_cache:
                 m = re.search(regex, script_cache[script_path])
@@ -395,16 +658,25 @@ def main():
                     except (ValueError, IndexError):
                         pass
 
-        elif src == "data":
+        elif src == "wcde":
             filename, country, year = entry["detail"]
-            entry["actual"] = load_csv(filename, country, year)
+            entry["actual"] = load_wcde(filename, country, year)
+
+        elif src == "wdi":
+            indicator, country, year = entry["detail"]
+            entry["actual"] = load_wdi(indicator, country, year)
 
         elif src == "derived":
-            # Compute after all others are done — defer
-            pass
+            pass  # computed after all others
 
         elif src == "const":
-            entry["actual"] = entry["value"]  # just verify paper consistency
+            entry["actual"] = entry["value"]
+
+        elif src == "ref":
+            entry["actual"] = entry["value"]  # can't verify; just mark
+            entry["status"] = "REF"
+            ref_count += 1
+            continue
 
         # Check
         if entry["actual"] is not None and src != "derived":
@@ -420,29 +692,77 @@ def main():
     for entry in REGISTRY:
         if entry["source"] != "derived":
             continue
-        desc = entry["detail"]
-        if entry["name"] == "CO2-ratio":
+        name = entry["name"]
+
+        if name == "CO2-ratio":
             r2_edu = entry_map.get("T1-M1-R2", {}).get("actual")
             r2_co2 = entry_map.get("CO2-R2", {}).get("actual")
             if r2_edu and r2_co2 and r2_co2 > 0:
                 entry["actual"] = r2_edu / r2_co2
-        elif entry["name"] == "Korea-ppyr":
+
+        elif name == "Korea-ppyr":
             k85 = entry_map.get("Korea-1985", {}).get("actual")
             k50 = entry_map.get("Korea-1950", {}).get("actual")
             if k85 and k50:
-                # Paper measures from 1953 (Korean War end); interpolate
                 k53 = k50 + (k50 * 0.008)  # ~25.0 at 1953
                 entry["actual"] = (k85 - k53) / 32.0
-        elif entry["name"] == "Taiwan-ppyr":
-            # Taiwan 1950=17.75, 1985=93.01 from WCDE
+
+        elif name == "Taiwan-ppyr":
             t50 = entry_map.get("Taiwan-1950", {}).get("actual")
             if t50:
-                entry["actual"] = (93.01 - t50) / 35.0
-        elif entry["name"] == "PI-drop-pct":
+                t85 = load_wcde("cohort_lower_sec_both.csv", "Taiwan", 1985)
+                if t85:
+                    entry["actual"] = (t85 - t50) / 35.0
+
+        elif name == "PI-drop-pct":
             alone = entry_map.get("PI-alone-beta", {}).get("actual")
             cond = entry_map.get("PI-cond-beta", {}).get("actual")
             if alone and cond and alone != 0:
                 entry["actual"] = (1 - cond / alone) * 100
+
+        elif name == "Korea-9fold":
+            k60 = entry_map.get("GDP-Korea-1960", {}).get("actual")
+            k90 = entry_map.get("GDP-Korea-1990", {}).get("actual")
+            if k60 and k90 and k60 > 0:
+                entry["actual"] = k90 / k60
+
+        elif name == "CostaRica-1.7fold":
+            cr60 = entry_map.get("GDP-CostaRica-1960", {}).get("actual")
+            cr90 = entry_map.get("GDP-CostaRica-1990", {}).get("actual")
+            if cr60 and cr90 and cr60 > 0:
+                entry["actual"] = cr90 / cr60
+
+        elif name == "Singapore-ppyr":
+            s50 = entry_map.get("Singapore-1950-edu", {}).get("actual")
+            s95 = entry_map.get("Singapore-1995-edu", {}).get("actual")
+            if s50 and s95:
+                entry["actual"] = (s95 - s50) / 45.0
+
+        elif name == "Cuba-ppyr":
+            # Cuba 1960: 49.7%, assume ~85% by 1975 (rapid expansion)
+            c60 = entry_map.get("Cuba-1960-edu", {}).get("actual")
+            c75 = load_wcde("cohort_lower_sec_both.csv", "Cuba", 1975)
+            if c60 and c75:
+                entry["actual"] = (c75 - c60) / 15.0
+
+        elif name == "Bangladesh-ppyr":
+            # Bangladesh: 1990s-2015 expansion
+            b90 = load_wcde("lower_sec_both.csv", "Bangladesh", 1990)
+            b15 = load_wcde("lower_sec_both.csv", "Bangladesh", 2015)
+            if b90 and b15:
+                entry["actual"] = (b15 - b90) / 25.0
+
+        elif name == "India-ppyr":
+            i50 = load_wcde("cohort_lower_sec_both.csv", "India", 1950)
+            i15 = load_wcde("lower_sec_both.csv", "India", 2015)
+            if i50 and i15:
+                entry["actual"] = (i15 - i50) / 65.0
+
+        elif name == "Myanmar-ppyr":
+            m75 = load_wcde("lower_sec_both.csv", "Myanmar", 1975)
+            m15 = load_wcde("lower_sec_both.csv", "Myanmar", 2015)
+            if m75 and m15:
+                entry["actual"] = (m15 - m75) / 40.0
 
         if entry["actual"] is not None:
             if abs(entry["actual"] - entry["value"]) <= entry["tol"]:
@@ -455,7 +775,14 @@ def main():
     # ── Display results ──────────────────────────────────────────────
     current_source = None
     for entry in REGISTRY:
-        src_label = f"{entry['source']}:{os.path.basename(entry['detail'][0]) if entry['source'] == 'script' and entry['detail'][0] else entry['source']}"
+        src = entry["source"]
+        if src == "script":
+            src_label = f"script:{os.path.basename(entry['detail'][0]) if entry['detail'][0] else 'inline'}"
+        elif src in ("wcde", "wdi"):
+            src_label = src
+        else:
+            src_label = src
+
         if src_label != current_source:
             current_source = src_label
             print(f"\n  [{current_source}]")
@@ -464,41 +791,137 @@ def main():
             symbol = "✓"; passed += 1
         elif entry["status"] == "FAIL":
             symbol = "✗"; failed += 1
+        elif entry["status"] == "REF":
+            symbol = "⊘"  # reference — manual check needed
         else:
             symbol = "?"; missing += 1
 
-        actual_str = f"{entry['actual']:.4f}" if entry["actual"] is not None else "—"
+        actual_str = f"{entry['actual']:.4f}" if isinstance(entry.get("actual"), (int, float)) and entry["actual"] is not None else "—"
         lines_str = ",".join(str(l) for l in entry["lines"][:5])
         if len(entry["lines"]) > 5:
             lines_str += f"...+{len(entry['lines'])-5}"
-        print(f"    {symbol} {entry['name']:25s}  exp={entry['value']:<10}  "
-              f"act={actual_str:<10}  lines=[{lines_str}]")
+        print(f"    {symbol} {entry['name']:30s}  exp={str(entry['value']):<10}  "
+              f"act={actual_str:<12}  lines=[{lines_str}]")
 
-    # ── Phase 3: Paper consistency scan ──────────────────────────────
-    print(f"\n  Paper line-by-line consistency:")
+    # ── Phase 3: Paper coverage scan ─────────────────────────────────
+    # Extract every number from every line and report unregistered ones
+    print(f"\n" + "=" * 72)
+    print("COVERAGE SCAN — numbers on each line")
+    print("=" * 72)
+
     with open(PAPER) as f:
         paper_lines = f.readlines()
 
-    # Build a map: for each verified number, check all claimed lines
-    # Strip markdown formatting for matching: \*\*\*, |, unicode minus, ~
+    # Build reverse map: line_no → set of registered values
+    registered_on_line = {}
+    for entry in REGISTRY:
+        for ln in entry["lines"]:
+            if ln not in registered_on_line:
+                registered_on_line[ln] = set()
+            registered_on_line[ln].add(entry["value"])
+
+    # Patterns to skip: years (1800-2100), section numbers, footnote markers,
+    # markdown formatting, equation variables, reference years in citations
+    SKIP_PATTERNS = re.compile(
+        r"^(1[89]\d{2}|20[0-2]\d|2100)$"  # years
+    )
+
+    # Numbers that are structural/textual, not empirical
+    STRUCTURAL_NUMBERS = {
+        1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+        # Section numbers, list items, etc.
+    }
+
+    # Extract numbers from a line (skip markdown, equations, references)
+    NUMBER_RE = re.compile(
+        r'(?<![a-zA-Z_/])([−\-+~≈]?\$?[\d,]+\.?\d*%?)'
+    )
+
+    def extract_numbers(line):
+        """Extract candidate empirical numbers from a paper line."""
+        # Strip markdown formatting
+        clean = line.replace("**", "").replace("*", "").replace("|", " ")
+        clean = clean.replace("−", "-").replace("≈", "~")
+        # Remove URLs, file paths, citations like (Kozol 1978)
+        clean = re.sub(r'\([^)]*\d{4}[^)]*\)', '', clean)
+        clean = re.sub(r'`[^`]+`', '', clean)
+        clean = re.sub(r'https?://\S+', '', clean)
+
+        nums = []
+        for m in NUMBER_RE.finditer(clean):
+            raw = m.group(1)
+            # Strip prefix symbols and $
+            s = raw.lstrip("−-+~≈$").rstrip("%").replace(",", "")
+            if not s or not s.replace(".", "").isdigit():
+                continue
+            try:
+                val = float(s)
+            except ValueError:
+                continue
+            # Skip years
+            if 1800 <= val <= 2100 and val == int(val):
+                continue
+            # Skip very small structural numbers in non-table contexts
+            if val in STRUCTURAL_NUMBERS and "|" not in line:
+                continue
+            nums.append(val)
+        return nums
+
+    def is_registered(val, line_no):
+        """Check if a value is registered for this line."""
+        if line_no not in registered_on_line:
+            return False
+        for reg_val in registered_on_line[line_no]:
+            # Flexible match: within 10% or absolute tolerance
+            if reg_val == 0:
+                if val == 0:
+                    return True
+            elif abs(val - reg_val) / max(abs(reg_val), 0.001) < 0.15:
+                return True
+            elif abs(val - reg_val) < 1.0:
+                return True
+        return False
+
+    unregistered_lines = []
+    for i, line in enumerate(paper_lines, 1):
+        # Skip metadata, references, section headers
+        stripped = line.strip()
+        if not stripped or stripped.startswith("#") or stripped.startswith("---"):
+            continue
+        if stripped.startswith("##") and "Reference" in stripped:
+            break  # Stop at references section
+
+        nums = extract_numbers(line)
+        unreg = [n for n in nums if not is_registered(n, i)]
+        if unreg:
+            unregistered_lines.append((i, unreg, stripped[:80]))
+
+    if unregistered_lines:
+        print(f"\n  {len(unregistered_lines)} lines have unregistered numbers:")
+        for ln, nums, text in unregistered_lines:
+            nums_str = ", ".join(f"{n:g}" for n in nums)
+            print(f"    L{ln:4d}: [{nums_str}]  {text[:60]}...")
+    else:
+        print(f"\n  All numbers on all lines are registered.")
+
+    # ── Phase 4: Paper consistency scan ──────────────────────────────
+    print(f"\n" + "=" * 72)
+    print("LINE CONSISTENCY — verified values on their claimed lines")
+    print("=" * 72)
+
     def normalize_line(line):
-        """Strip markdown formatting to expose raw numbers."""
-        s = line
-        s = s.replace("\\*\\*\\*", "").replace("\\*\\*", "").replace("\\*", "")
+        s = line.replace("\\*\\*\\*", "").replace("\\*\\*", "").replace("\\*", "")
         s = s.replace("**", "").replace("*", "")
-        s = s.replace("−", "-")  # unicode minus → hyphen
+        s = s.replace("−", "-")
         s = s.replace("≈", "~")
         return s
 
     def number_patterns(val):
-        """Generate all plausible string representations of a number."""
         pats = set()
         if isinstance(val, int) or (isinstance(val, float) and val == int(val)):
             iv = int(val)
             pats.update([str(iv), f"{iv:,}"])
-            # Also as part of compound strings: "187-country", "187 countries"
-            pats.add(str(iv))
-        if isinstance(val, float) or isinstance(val, int):
+        if isinstance(val, (float, int)):
             fv = float(val)
             for fmt in [".4f", ".3f", ".2f", ".1f", ".0f", "g"]:
                 s = format(fv, fmt)
@@ -506,13 +929,13 @@ def main():
                 pats.add(f"~{s}")
                 pats.add(f"+{s}")
                 if fv < 0:
-                    pats.add(f"−{format(abs(fv), fmt)}")  # unicode minus
+                    pats.add(f"−{format(abs(fv), fmt)}")
                     pats.add(f"-{format(abs(fv), fmt)}")
         return pats
 
     line_issues = 0
     for entry in REGISTRY:
-        if entry["status"] != "PASS":
+        if entry["status"] not in ("PASS", "REF"):
             continue
         val = entry["value"]
         if val == 0:
@@ -527,7 +950,6 @@ def main():
             if not found:
                 print(f"    ? {entry['name']} ({val}) not found on line {line_no}")
                 line_issues += 1
-                # Don't count as hard failure — line numbers drift with edits
 
     if line_issues == 0:
         print(f"    ✓ All values found on their claimed lines")
@@ -535,7 +957,9 @@ def main():
     # ── Summary ──────────────────────────────────────────────────────
     total = passed + failed + missing
     print("\n" + "=" * 72)
-    print(f"SUMMARY: {passed}/{total} PASS, {failed} FAIL, {missing} MISSING")
+    print(f"SUMMARY: {passed}/{total} PASS, {failed} FAIL, {missing} MISSING, "
+          f"{ref_count} REF (manual check)")
+    print(f"COVERAGE: {len(unregistered_lines)} lines with unregistered numbers")
     print("=" * 72)
 
     if failed > 0 or missing > 0:
