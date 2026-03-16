@@ -387,10 +387,48 @@ def main():
     for desc, ref in UNVERIFIED:
         print(f"    — {desc}  [{ref}]")
 
+    # ── Paper consistency scan ────────────────────────────────────────
+    # Grep the paper for known stale values that should not appear anywhere.
+    # This catches the class of error where a number is updated in tables
+    # but a body-text reference is missed.
+    print(f"\n  Paper consistency scan:")
+    with open(PAPER, "r") as f:
+        paper_text = f.read()
+    paper_lines = paper_text.split("\n")
+
+    STALE_PATTERNS = [
+        # (regex, description, what it should be)
+        (r"\b189[- ]countr", "189 countries (should be 187)"),
+        (r"\b1,?701\b", "1,701 obs (should be 1,683)"),
+        (r"R²=0\.004", "CO2 R²=0.004 (should be 0.089)"),
+        (r"100-fold|100 times weaker", "100-fold CO2 claim (should be ~5-fold)"),
+        (r"p=0\.67", "p=0.67 parental income (should be p=0.04)"),
+        (r"R²=0\.464", "R²=0.464 (pre-rerun Table 1 R²)"),
+        (r"β=0\.485\b", "β=0.485 (should be 0.482)"),
+        (r"R²≈0\.29 in both", "R²≈0.29 (should be ~0.26-0.27)"),
+        (r"\b0\.0110\b", "β=0.0110 GDP (should be 0.012)"),
+        (r"R²=0\.454", "R²=0.454 GDP forward (should be 0.354)"),
+        (r"1,?285 obs", "1,285 obs Table A1 GDP (should be 1,229)"),
+        (r"\b164 countries\b", "164 countries Table A1 GDP (should be 148)"),
+    ]
+
+    stale_found = 0
+    for pattern, desc in STALE_PATTERNS:
+        for i, line in enumerate(paper_lines, 1):
+            if re.search(pattern, line):
+                print(f"    ✗ STALE line {i}: {desc}")
+                stale_found += 1
+                failed += 1
+
+    if stale_found == 0:
+        print(f"    ✓ No stale values found ({len(STALE_PATTERNS)} patterns checked)")
+
     # Summary
     total = passed + failed + missing
     print("\n" + "=" * 72)
     print(f"SUMMARY: {passed}/{total} PASS, {failed} FAIL, {missing} MISSING")
+    if stale_found > 0:
+        print(f"         {stale_found} stale values found in paper text")
     print(f"         {len(UNVERIFIED)} claims have no backing script")
     print("=" * 72)
 
