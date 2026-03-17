@@ -22,37 +22,29 @@ You are not managing a school system. You are setting the starting conditions fo
 
 ## What the Fast Cases Did
 
-Korea in 1953 was a country in rubble. GDP per capita of $1,038 — lower than many sub-Saharan African countries today. Widespread malnutrition and disease. The government decided that education was not one priority among many. It was the mechanism through which everything else would become possible.
+Korea in 1953 was a country in rubble. GDP per capita of $1,038 — lower than many sub-Saharan African countries today. Widespread malnutrition and disease. The government made education the unconditional national priority and held that commitment for thirty-five years.
 
-From 24.8% lower-secondary completion in 1950, Korea expanded at a steady 10–14 percentage points per five years — reaching 94.4% by 1985. Class sizes of 60–80. Double shifts. Schools built ahead of demand. The generation educated in the 1950s became the parents who expected more for their children. The generation educated in the 1970s became the engineers and entrepreneurs of the Korean industrial surge. None of that was visible in 1953. All of it was predictable.
+They built schools with class sizes of 60–80, ran double shifts, and expanded access faster than demand. Within one generation, Korea went from 25% to 95% secondary completion. The generation educated in the 1950s became the parents who expected more for their children. The generation educated in the 1970s became the engineers and entrepreneurs of the Korean industrial surge. None of that was visible in 1953. All of it was predictable.
 
-Japan made the same decision in 1872 — before it was wealthy, before it had good schools, before it had trained teachers. Cuba made it in 1961. Nepal made it in the 1990s at $423 per capita. Bangladesh crossed both development thresholds in 2014 at $1,159. None of them were wealthy first. None of them waited for disease or malnutrition to be solved first — every successful educational rupture in history was made *through* poverty, not after escaping it.
+Japan made the same decision in 1872 — before it was wealthy, before it had good schools, before it had trained teachers. Cuba made it in 1961. Nepal made it in the 1990s at $423 per capita. Bangladesh in 2014 — at just $1,159 per capita — had higher life expectancy and lower fertility than the United States did in 1960. None of them were wealthy first. None of them waited for disease or malnutrition to be solved first — every country that made this decision made it *through* poverty, not after escaping it.
 
 ---
 
 ## What This Means for Your Country
 
-You do not need to be Korea. Look at what Nepal did.
+Korea did this from rubble. Nepal did it while poor. The starting point does not matter.
 
-Nepal in 1990 had lower-secondary completion below 10%. No colonial educational legacy. Difficult terrain, ethnic and linguistic fragmentation. By 2015, completion had reached 53% — 18 percentage points above what Nepal's own parental history would have predicted. Nepal is not a tiger economy. But a girl born there in 1990 had a fundamentally different life than a girl born in 1965, because governments in the intervening period made education a sustained priority.
+Nepal in 1990 was landlocked, fragmented, poor — GDP per capita of $423. No special advantages. But a girl born there in 1990 had a fundamentally different life than a girl born in 1965, because governments in the intervening period made education a sustained priority. By 2015, Nepal had outperformed its own history by a wide margin.
 
-Bangladesh, Vietnam, Bhutan — all delivered 16–26 percentage points above their parental baseline. None were wealthy. All made the choice.
+Bangladesh, Vietnam, Bhutan — same story. None were wealthy. All made the choice.
 
 ---
 
-## The Chain You Are Triggering
+## What Education Triggers
 
-When female lower-secondary completion rises, the following happens — not as a hope, but as a measured sequence:
+When female lower-secondary completion rises, everything moves at once. Fertility falls — educated women have fewer children, later, and each child receives more resources. Child mortality drops — educated mothers vaccinate, recognise illness earlier, navigate health systems. The next generation's education rises — because educated parents expect and transmit it as a norm. Income follows — educated workers are productive workers.
 
-**In 10–15 years:** Fertility falls. Educated women have fewer children, later. Each child in a smaller family receives more resources.
-
-**In 15–20 years:** Child mortality falls. Educated mothers navigate health systems more effectively, vaccinate more consistently, recognise illness earlier.
-
-**In 20–25 years:** The next generation's education rises — not just because you built schools, but because educated parents expect and transmit education as a norm.
-
-**In 25–30 years:** GDP per capita grows. The educated cohort enters the labour force. Tax base expands. The fiscal returns arrive at exactly the moment you need resources to push secondary into tertiary.
-
-You do not need to fund all of this. You need to trigger the first link.
+Korea and Singapore did not wait for these to happen one at a time. They pushed education and watched all of it arrive together. The same educated cohort that makes better household decisions also builds the political demand for health systems, accountability, and rule of law. It is one mechanism producing every outcome development policy has been trying to fund separately.
 
 ---
 
@@ -60,7 +52,7 @@ You do not need to fund all of this. You need to trigger the first link.
 
 Every year you delay is a year of compounding in the wrong direction. The children born this year will be parents in 25 years. If this cohort reaches only primary, the next generation starts from a lower base — against the headwind of high fertility and rapid population growth.
 
-Cambodia shows the extreme: the Khmer Rouge destroyed one generation of educated adults, and completion plateaued for fifteen years despite international investment in school rebuilding. You can rebuild a school in a year. You cannot rebuild the parental generation that would have filled it.
+The Philippines shows what quiet delay looks like. In 1950, the Philippines and Korea had nearly identical secondary completion — around 22–25%. Korea made the decision. The Philippines treated education as one priority among many. Korea reached 95% in 35 years. The Philippines took 65 years to reach 75%. No catastrophe, no war — just decades of not deciding.
 
 ---
 
