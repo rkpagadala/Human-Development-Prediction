@@ -12,7 +12,7 @@ layout: page
 
 There is a generation of children being born in your country right now. In 25 years, they will be your doctors, engineers, teachers, administrators. What they will be capable of is largely decided by decisions made in the next five years, not the next twenty-five.
 
-Across 187 countries, the education level of a parent generation predicts the education level of the child generation with near-clockwork regularity. At low baselines — where your country most likely sits — each percentage point you add to today's cohort produces *more* than one percentage point in the next generation, because state investment and household transmission compound together. That generation passes it forward again. This is **PTE** — the Parental Transmission of Education.
+Across 187 countries, the education level of one generation predicts the next with near-clockwork regularity. Educate one generation and the next does even better — because educated parents expect education for their children, and that expectation compounds forward.
 
 Education is the only development input that never depreciates. Health spending stops working when you stop spending. Income collapses in crisis. Education endures because it lives in millions of households, not in state budgets. Once a mother is educated, that fact shapes her children's lives regardless of what happens to the economy or the government.
 
@@ -22,21 +22,19 @@ You are not managing a school system. You are setting the starting conditions fo
 
 ## What the Fast Cases Did
 
-Korea in 1953 was a country in rubble. GDP per capita of $1,038 — lower than many sub-Saharan African countries today. Widespread malnutrition and disease. The government made education the unconditional national priority and held that commitment for thirty-five years.
+Korea in 1953 was a country in rubble — poorer than many sub-Saharan African countries today, with widespread malnutrition and disease. The government made education the unconditional national priority and held that commitment for thirty-five years.
 
 They built schools with class sizes of 60–80, ran double shifts, and expanded access faster than demand. Within one generation, Korea went from 25% to 95% secondary completion. The generation educated in the 1950s became the parents who expected more for their children. The generation educated in the 1970s became the engineers and entrepreneurs of the Korean industrial surge. None of that was visible in 1953. All of it was predictable.
 
-Japan made the same decision in 1872 — before it was wealthy, before it had good schools, before it had trained teachers. Cuba made it in 1961. Nepal made it in the 1990s at $423 per capita. Bangladesh in 2014 — at just $1,159 per capita — had higher life expectancy and lower fertility than the United States did in 1960. None of them were wealthy first. None of them waited for disease or malnutrition to be solved first — every country that made this decision made it *through* poverty, not after escaping it.
+Japan made the same decision in 1872 — before it was wealthy, before it had good schools, before it had trained teachers. Cuba made it in 1961. Nepal made it in the 1990s. Bangladesh by 2014 had higher life expectancy and lower fertility than the United States did in 1960. None of them were wealthy first. None of them waited for disease or malnutrition to be solved first — every country that made this decision made it *through* poverty, not after escaping it.
 
 ---
 
-## What This Means for Your Country
+## It Works From Any Starting Point
 
-Korea did this from rubble. Nepal did it while poor. The starting point does not matter.
+A girl born in Nepal in 1990 had a fundamentally different life than a girl born there in 1965 — because governments in the intervening period made education a sustained priority. Nepal was landlocked, fragmented, poor. No special advantages. By 2015, it had outperformed its own history by a wide margin.
 
-Nepal in 1990 was landlocked, fragmented, poor — GDP per capita of $423. No special advantages. But a girl born there in 1990 had a fundamentally different life than a girl born in 1965, because governments in the intervening period made education a sustained priority. By 2015, Nepal had outperformed its own history by a wide margin.
-
-Bangladesh, Vietnam, Bhutan — same story. None were wealthy. All made the choice.
+Bangladesh, Vietnam, Bhutan — same story. Rich countries, poor countries, large countries, small countries. The mechanism does not care about geography, regime type, or colonial history. It cares whether the decision was made.
 
 ---
 
@@ -70,7 +68,7 @@ None of this requires wealth. Korea did it at $1,038 per capita. Nepal at $423. 
 
 **Are you going to make the educational rupture, or manage the automatic trajectory?**
 
-The automatic trajectory is not nothing. Countries on the automatic path do improve — slowly, one generation at a time. That is the difference between crossing 50% lower-secondary completion in 2040 versus 2070.
+The automatic trajectory is not nothing. Countries on the automatic path do improve — slowly, one generation at a time. That is the difference between your grandchildren living in a developed country or your great-grandchildren still waiting.
 
 The leaders who made the rupture did not know with certainty it would work. They knew the mechanism was sound and committed to it anyway. The data now confirms what those decisions produced.
 
