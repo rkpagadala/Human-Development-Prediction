@@ -36,7 +36,7 @@ The first generation of schools does not need to be good. Korea ran class sizes 
 
 No single leader saw this through from start to finish. What matters is that someone starts and no one stops. Nearly every country today already has a higher starting point than Korea did — the starting point is there, the decision is not. Reorient your own priorities, and demand that developed nations reorient theirs: aid that funds health while underfunding secondary education funds outcomes without funding the mechanism.
 
-**Every country that developed made this decision once. This is yours.**
+Every country will get there eventually. Spain took 450 years. Korea took 35. **How fast is your decision.**
 
 ---
 
