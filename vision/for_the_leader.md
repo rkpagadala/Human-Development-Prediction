@@ -26,7 +26,7 @@ The Philippines shows what happens without the decision. In 1950, the Philippine
 
 The first generation of schools does not need to be perfect. Korea ran class sizes of 60–80 with double shifts. Japan staffed its first schools with barely trained teachers in repurposed temples. China used barefoot teachers in village schools. Those first students become the teachers and parents who build better schools. Start with what you have.
 
-The conventional wisdom says get rich first, everything else follows. Spain was the richest empire on earth for two hundred years and did not develop until it finally educated its people in the 1970s. Britain took centuries. The United States and Japan each took about a century. Korea did it in thirty-five years. Wealth was never the mechanism.
+The conventional wisdom says get rich first, everything else follows. Spain was the richest empire on earth for two hundred years and did not develop until it finally educated its people in the 1970s. Britain took centuries. The United States and Japan each took about a century. Korea did it in thirty-five years. Wealth was never the mechanism. Education is.
 
 ---
 

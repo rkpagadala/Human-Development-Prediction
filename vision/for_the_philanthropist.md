@@ -34,7 +34,7 @@ When girls reach secondary completion, the chain accelerates:
 - The next generation's education rises — educated mothers transmit educational norms
 - GDP per capita grows — the educated cohort enters the labour market a generation later
 
-You are not funding a school. You are funding the starting condition for a chain that runs for a century.
+You are not funding a school. You are funding every generation that follows.
 
 ---
 
@@ -44,7 +44,7 @@ The compounding multiplier is largest where the parental base is lowest. Countri
 
 At some point, the system becomes self-sustaining: fertility falls, child survival improves, household resources per child increase, and demand for education rises from within the population. Your capital buys speed to that point — compressing what would otherwise take two generations into one.
 
-The conventional wisdom says get rich first, education follows. Spain was the richest empire on earth for two hundred years and did not develop until it finally educated its people in the 1970s. Gulf states with the highest per capita income in the world underperform their wealth in education, life expectancy, and fertility. Wealth was never the mechanism. Education was.
+The conventional wisdom says get rich first, education follows. Spain was the richest empire on earth for two hundred years and did not develop until it finally educated its people in the 1970s. Gulf states with the highest per capita income in the world underperform their wealth in education, life expectancy, and fertility. Wealth was never the mechanism. Education is.
 
 ---
 
@@ -75,15 +75,17 @@ The lesson is not that Educate Girls failed. It is that even the best NGO in the
 
 ## The Ask
 
-Not a large gift to a prestigious university in a country already at 95% completion.
+Not a large gift to a prestigious university in a country already at 90% secondary completion.
 
 A sustained commitment to female secondary access in countries where most girls do not finish school, maintained across a decade, funding government capacity — not substituting for it — with measurement that tracks completion, not enrollment.
 
 Every country will get there eventually. Your investment determines how fast. A generation of girls educated now becomes a generation of educated mothers — and their children start from a higher floor, permanently. A generation missed is a generation whose children start from the same place their parents did.
 
-Most philanthropic capital in development funds health. Health is a symptom. Education is the cause.
+Health, poverty, women's empowerment — every problem philanthropists fund is downstream of this one. Education is the upstream investment that makes every other one work.
 
-**How fast is your investment.**
+You can read this because someone educated your mother.
+
+**She cannot.**
 
 ---
 
