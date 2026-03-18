@@ -32,11 +32,13 @@ The conventional wisdom says get rich first, everything else follows. Spain was 
 
 ## The Decision
 
-Keep every child in school. Universal primary, universal lower secondary, universal upper secondary — then a substantial share into college.
+Nearly every country today already has a higher starting point than Korea did — the starting point is there, the decision is not.
 
-No single leader saw this through from start to finish. What matters is that someone starts and no one stops. Nearly every country today already has a higher starting point than Korea did — the starting point is there, the decision is not. Reorient your own priorities, and demand that developed nations reorient theirs: aid that funds health instead of education funds the symptom, not the cause.
+Keep every child in school. Universal primary, universal lower secondary, universal upper secondary — then a substantial share into college. Reorient your own priorities, and demand that developed nations reorient theirs: aid that funds health instead of education funds the symptom, not the cause.
 
-Every country will get there eventually. Spain took 450 years. Korea took 35. **How fast is your decision.**
+Every country will get there eventually. Spain took 450 years. Korea took 35.
+
+**How fast is your decision.**
 
 ---
 
