@@ -42,7 +42,7 @@ You are not funding a school. You are funding every generation that follows.
 
 The compounding multiplier is largest where the parental base is lowest. Countries where most parents never completed secondary school produce the highest gains per unit of investment — because the ceiling is farthest away and every educated girl becomes the first educated mother in her family's history.
 
-At some point, the system becomes self-sustaining: fertility falls, child survival improves, household resources per child increase, and demand for education rises from within the population. Your capital buys speed to that point — compressing what would otherwise take two generations into one.
+At some point, the system becomes self-sustaining: fertility falls, child survival improves, household resources per child increase, and demand for education rises from within the population. Your capital buys speed to that point — compressing what would otherwise take two generations into one. Every cohort of girls that passes through without secondary completion is a cohort whose children start from the same floor.
 
 The conventional wisdom says get rich first, education follows. Spain was the richest empire on earth for two hundred years and did not develop until it finally educated its people in the 1970s. Gulf states with the highest per capita income in the world underperform their wealth in education, life expectancy, and fertility. Wealth was never the mechanism. Education is.
 
@@ -60,7 +60,6 @@ This defines where philanthropic leverage actually is — in the cheap, high-lev
 
 - **Removing barriers specific to girls' secondary attendance.** Distance, safety, cost, early marriage. These are not expensive relative to their impact.
 
-- **Results-based accountability** — disbursements tied to independently verified completion rates, not enrollment and construction.
 ---
 
 ## The Educate Girls Lesson
@@ -77,7 +76,7 @@ The lesson is not that Educate Girls failed. It is that even the best NGO in the
 
 Not a large gift to a prestigious university in a country already at 90% secondary completion.
 
-A sustained commitment to female secondary access in countries where most girls do not finish school, maintained across a decade, funding government capacity — not substituting for it — with measurement that tracks completion, not enrollment.
+A sustained commitment to female secondary access in countries where most girls do not finish school, maintained across a decade, funding government capacity — not substituting for it — with disbursements tied to independently verified completion rates, not enrollment.
 
 Every country will get there eventually. Your investment determines how fast. A generation of girls educated now becomes a generation of educated mothers — and their children start from a higher floor, permanently. A generation missed is a generation whose children start from the same place their parents did.
 
