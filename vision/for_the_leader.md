@@ -18,9 +18,9 @@ You already know this from your own family — educated parents produce educated
 
 ## The Evidence
 
-Korea in 1953 was poorer than many sub-Saharan African countries today — widespread malnutrition and disease. The government made education the unconditional priority and held it for thirty-five years. Within one generation, Korea went from 25% to 95% secondary completion. Within fifteen years, fertility fell from 5.6 to 3.0 children per woman and life expectancy rose from 56 to 65 — families got smaller and people lived longer, before Korea was rich.
+Korea in 1953 was poorer than many sub-Saharan African countries today — widespread malnutrition and disease. The government made education the unconditional priority and held it for thirty-five years. Within one generation, Korea went from 25% to 95% secondary completion. Within fifteen years, children per woman fell from 5.6 to 3.0 and life expectancy rose from 56 to 65 — families got smaller and people lived longer, before Korea was rich.
 
-Japan made the same decision in 1872. Cuba in 1961. Nepal in the 1990s. Bangladesh by 2014 had higher life expectancy and lower fertility than the United States did in 1960. Every country that made this decision made it *through* poverty, not after escaping it.
+Japan made the same decision in 1872. Cuba in 1961. Nepal in the 1990s. Bangladesh by 2014 had higher life expectancy and fewer children per woman than the United States did in 1960. Every country that made this decision made it *through* poverty, not after escaping it.
 
 The Philippines shows what happens without the decision. In 1950, the Philippines and Korea had nearly identical secondary completion. Korea made the decision. The Philippines treated education as one priority among many. Korea reached 95% in 35 years. The Philippines took 65 years to reach 75%. No catastrophe, no war — just decades of not deciding.
 
@@ -28,7 +28,7 @@ The Philippines shows what happens without the decision. In 1950, the Philippine
 
 ## The Decision
 
-Keep every child in school. Universal primary, universal lower secondary, universal upper secondary — then a substantial share into college. The conventional wisdom says get rich first, everything else follows. That idea has been wrong for two centuries. The countries that succeeded put education first, whatever they called it.
+Keep every child in school. Universal primary, universal lower secondary, universal upper secondary — then a substantial share into college. The conventional wisdom says get rich first, everything else follows. That idea has been wrong for centuries. Every country that developed — knowingly or unknowingly — put education first. Britain and the United States took centuries. Japan and Korea did it in decades. Spain and Portugal were the richest empires on earth for two hundred years and did not develop until they finally educated their people in the 1970s. Wealth was never the mechanism. Britain and the United States took centuries. Japan and Korea did it in decades. Spain and Portugal were the richest empires on earth for two hundred years and did not develop until they finally educated their people in the 1970s. Wealth was never the mechanism.
 
 Treat education as the non-negotiable item in every budget negotiation — the floor, not the ceiling. The fast-expanding countries allocated 15–20% of government expenditure to education. That is the floor. Build secondary and primary simultaneously. Measure completion, not enrolment — the outcome that compounds is the child who finishes.
 
