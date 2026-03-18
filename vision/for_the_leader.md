@@ -24,11 +24,13 @@ Japan made the same decision in 1872. Cuba in 1961. Nepal in the 1990s. Banglade
 
 The Philippines shows what happens without the decision. In 1950, the Philippines and Korea had nearly identical secondary completion. Korea made the decision. The Philippines treated education as one priority among many. Korea reached 95% in 35 years. The Philippines took 65 years to reach 75%. No catastrophe, no war — just decades of not deciding.
 
+The conventional wisdom says get rich first, everything else follows. Spain and Portugal were the richest empires on earth for two hundred years and did not develop until they finally educated their people in the 1970s. Britain and the United States took centuries to develop — unknowingly, through education. Japan and Korea did it knowingly, in decades. Wealth was never the mechanism.
+
 ---
 
 ## The Decision
 
-Keep every child in school. Universal primary, universal lower secondary, universal upper secondary — then a substantial share into college. The conventional wisdom says get rich first, everything else follows. That idea has been wrong for centuries. Every country that developed — knowingly or unknowingly — put education first. Britain and the United States took centuries. Japan and Korea did it in decades. Spain and Portugal were the richest empires on earth for two hundred years and did not develop until they finally educated their people in the 1970s. Wealth was never the mechanism.
+Keep every child in school. Universal primary, universal lower secondary, universal upper secondary — then a substantial share into college.
 
 The first generation of schools does not need to be good. Korea ran class sizes of 60–80 with double shifts. Japan staffed its first schools with barely trained teachers in repurposed temples. China used barefoot teachers in village schools. Those first students become the teachers and parents who build better schools. Start with what you have.
 
