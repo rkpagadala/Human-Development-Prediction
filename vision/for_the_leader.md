@@ -10,11 +10,9 @@ layout: page
 
 ## The Promise
 
-There is a generation of children being born in your country right now. They will become your doctors, engineers, teachers, administrators. What they will be capable of is largely decided by decisions made in the next five years.
+There is a generation of children being born in your country right now. They will become your factory workers, technicians, nurses, teachers, engineers. What they will be capable of depends on whether they are educated — and every year that decision is delayed is a cohort of children who miss it, and whose children inherit that gap.
 
-Across 187 countries, the education level of one generation predicts the next with near-clockwork regularity. Educate one generation and the next does even better — because educated parents expect education for their children, and that expectation compounds forward.
-
-Education is the only development input that never depreciates. Health spending stops working when you stop spending. Income collapses in crisis. Education endures because it lives in millions of households, not in state budgets. Once a mother is educated, that fact shapes her children's lives regardless of what happens to the economy or the government.
+You already know this from your own family — educated parents produce educated children, and uneducated parents produce uneducated children. What the data shows is that this works at national scale exactly the same way. Once a generation is educated, it stays educated. It lives in households, not in state budgets. Health spending stops working when you stop spending. Income collapses in crisis. Education endures. Once a mother is educated, that shapes her children's lives regardless of what happens to the economy or the government. The state creates the education; families make it permanent.
 
 You are not managing a school system. You are shaping what your country becomes.
 
