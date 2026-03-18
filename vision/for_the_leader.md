@@ -10,9 +10,9 @@ layout: page
 
 ## The Promise
 
-Your country can be developed in thirty to forty years. Japan did it. Korea did it. Singapore did it. They did it by educating their people first.
+Your country can be developed in thirty to forty years — your people living longer, healthier lives, with smaller families and real economic opportunity. Japan did it. Korea did it. Singapore did it. They did it by educating their people first.
 
-You already know this from your own family — educated parents produce educated children, and uneducated parents produce uneducated children. The data shows this works at national scale exactly the same way. Once a generation is educated, it stays educated. The state creates the education; families make it permanent.
+Once a country is developed, it stays developed — because of its education. You already know this from your own family: educated parents produce educated children, and uneducated parents produce uneducated children. The state creates the education; families make it permanent.
 
 ---
 
@@ -28,7 +28,7 @@ The Philippines shows what happens without the decision. In 1950, the Philippine
 
 ## The Decision
 
-Keep every child in school. Universal primary, universal lower secondary, universal upper secondary — then a substantial share into college. The conventional wisdom says get rich first, everything else follows. That idea has been wrong for centuries. Every country that developed — knowingly or unknowingly — put education first. Britain and the United States took centuries. Japan and Korea did it in decades. Spain and Portugal were the richest empires on earth for two hundred years and did not develop until they finally educated their people in the 1970s. Wealth was never the mechanism. Britain and the United States took centuries. Japan and Korea did it in decades. Spain and Portugal were the richest empires on earth for two hundred years and did not develop until they finally educated their people in the 1970s. Wealth was never the mechanism.
+Keep every child in school. Universal primary, universal lower secondary, universal upper secondary — then a substantial share into college. The conventional wisdom says get rich first, everything else follows. That idea has been wrong for centuries. Every country that developed — knowingly or unknowingly — put education first. Britain and the United States took centuries. Japan and Korea did it in decades. Spain and Portugal were the richest empires on earth for two hundred years and did not develop until they finally educated their people in the 1970s. Wealth was never the mechanism.
 
 Treat education as the non-negotiable item in every budget negotiation — the floor, not the ceiling. The fast-expanding countries allocated 15–20% of government expenditure to education. That is the floor. Build secondary and primary simultaneously. Measure completion, not enrolment — the outcome that compounds is the child who finishes.
 
@@ -38,4 +38,4 @@ No single leader saw this through from start to finish. What matters is that som
 
 ---
 
-*WCDE v3 and World Bank WDI data, 187 countries, 1950–2015. Pagadala (2026), "Education-Mediated Security."*
+*educationfirst.world*
