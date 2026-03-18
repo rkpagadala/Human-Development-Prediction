@@ -24,6 +24,8 @@ Japan made the same decision in 1872. Cuba in 1961. Nepal in the 1990s. Banglade
 
 The Philippines shows what happens without the decision. In 1950, the Philippines and Korea had nearly identical secondary completion. Korea made the decision. The Philippines treated education as one priority among many. Korea reached 95% in 35 years. The Philippines took 65 years to reach 75%. No catastrophe, no war — just decades of not deciding.
 
+The first generation of schools does not need to be perfect. Korea ran class sizes of 60–80 with double shifts. Japan staffed its first schools with barely trained teachers in repurposed temples. China used barefoot teachers in village schools. Those first students become the teachers and parents who build better schools. Start with what you have.
+
 The conventional wisdom says get rich first, everything else follows. Spain was the richest empire on earth for two hundred years and did not develop until it finally educated its people in the 1970s. Britain took centuries. The United States and Japan each took about a century. Korea did it in thirty-five years. Wealth was never the mechanism.
 
 ---
@@ -31,8 +33,6 @@ The conventional wisdom says get rich first, everything else follows. Spain was 
 ## The Decision
 
 Keep every child in school. Universal primary, universal lower secondary, universal upper secondary — then a substantial share into college.
-
-The first generation of schools does not need to be perfect. Korea ran class sizes of 60–80 with double shifts. Japan staffed its first schools with barely trained teachers in repurposed temples. China used barefoot teachers in village schools. Those first students become the teachers and parents who build better schools. Start with what you have.
 
 No single leader saw this through from start to finish. What matters is that someone starts and no one stops. Nearly every country today already has a higher starting point than Korea did — the starting point is there, the decision is not. Reorient your own priorities, and demand that developed nations reorient theirs: aid that funds health instead of education funds the symptom, not the cause.
 
