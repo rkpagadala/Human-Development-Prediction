@@ -1,0 +1,22 @@
+name: Trigger Site Update on Push
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  trigger-update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: POST to educationfirst.world/update_data
+        run: |
+          response=$(curl -s -w "\n%{http_code}" -X POST https://educationfirst.world/update_data)
+          http_code=$(echo "$response" | tail -n1)
+          body=$(echo "$response" | sed '$d')
+          echo "HTTP $http_code"
+          echo "$body"
+          if [ "$http_code" -ne 200 ]; then
+            echo "Request failed"
+            exit 1
+          fi
