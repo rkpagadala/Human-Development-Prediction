@@ -69,52 +69,31 @@
 
         /* --- BACK --- */
         .back {
+            flex-direction: row;
+            align-items: center;
             justify-content: space-between;
+        }
+        .back .left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
         .back .name {
             font-size: 13pt;
             font-weight: 700;
             color: #1a1a2e;
         }
-        .back .role {
-            font-size: 8pt;
-            color: #666;
-            margin-top: 0.03in;
-        }
         .back .contact-info {
-            margin-top: 0.12in;
+            margin-top: 0.1in;
         }
         .back .contact-info div {
             font-size: 8pt;
             color: #444;
             margin-bottom: 0.04in;
         }
-        .back .bottom-section {
-            margin-top: auto;
-            padding-top: 0.1in;
-            border-top: 1px solid #e8e8e8;
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
-        }
-        .back .data-line {
-            font-size: 7pt;
-            color: #888;
-            line-height: 1.4;
-        }
-        .back .site-small {
-            font-size: 8pt;
-            font-weight: 600;
-            color: #2563eb;
-        }
-        .back .qr-section {
-            display: flex;
-            align-items: center;
-            gap: 0.08in;
-        }
-        .back .qr-section canvas {
-            width: 0.65in;
-            height: 0.65in;
+        .back canvas {
+            width: 0.75in;
+            height: 0.75in;
         }
 
         /* Print styles */
@@ -166,18 +145,14 @@
 
 <div class="label">Back</div>
 <div class="card back">
-    <div>
+    <div class="left">
         <div class="name">Krishna Pagadala</div>
         <div class="contact-info">
             <div>rkrishna.pagadala@gmail.com</div>
             <div>educationfirst.world</div>
         </div>
     </div>
-    <div class="bottom-section">
-        <div class="qr-section">
-            <canvas id="qr" width="65" height="65"></canvas>
-        </div>
-    </div>
+    <canvas id="qr" width="75" height="75"></canvas>
 </div>
 
 <div class="instructions">
