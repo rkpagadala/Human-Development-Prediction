@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>educationfirst.world — Business Card</title>
+    <style>
+        @page { margin: 0; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+            background: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+            gap: 2rem;
+        }
+        .label {
+            font-size: 0.8rem;
+            color: #999;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 0.5rem;
+        }
+        .card {
+            width: 3.5in;
+            height: 2in;
+            background: #ffffff;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0.4in;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* --- FRONT --- */
+        .front {
+            text-align: center;
+            align-items: center;
+        }
+        .front .site {
+            font-size: 16pt;
+            font-weight: 700;
+            color: #1a1a2e;
+            letter-spacing: 0.02em;
+            margin-bottom: 0.15in;
+        }
+        .front .tagline {
+            font-size: 8.5pt;
+            color: #444;
+            font-style: italic;
+            line-height: 1.5;
+            margin-bottom: 0.15in;
+        }
+        .front .punchline {
+            font-size: 7.5pt;
+            color: #666;
+            line-height: 1.5;
+        }
+        .front .accent-line {
+            width: 1.2in;
+            height: 2px;
+            background: linear-gradient(90deg, #2563eb, #10b981);
+            margin: 0.12in auto;
+        }
+
+        /* --- BACK --- */
+        .back {
+            justify-content: space-between;
+        }
+        .back .name {
+            font-size: 13pt;
+            font-weight: 700;
+            color: #1a1a2e;
+        }
+        .back .role {
+            font-size: 8pt;
+            color: #666;
+            margin-top: 0.03in;
+        }
+        .back .contact-info {
+            margin-top: 0.12in;
+        }
+        .back .contact-info div {
+            font-size: 8pt;
+            color: #444;
+            margin-bottom: 0.04in;
+        }
+        .back .bottom-section {
+            margin-top: auto;
+            padding-top: 0.1in;
+            border-top: 1px solid #e8e8e8;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        .back .data-line {
+            font-size: 7pt;
+            color: #888;
+            line-height: 1.4;
+        }
+        .back .site-small {
+            font-size: 8pt;
+            font-weight: 600;
+            color: #2563eb;
+        }
+        .back .qr-section {
+            display: flex;
+            align-items: center;
+            gap: 0.08in;
+        }
+        .back .qr-section canvas {
+            width: 0.65in;
+            height: 0.65in;
+        }
+
+        /* Print styles */
+        @media print {
+            body {
+                background: white;
+                padding: 0.5in;
+            }
+            .card {
+                box-shadow: none;
+                border: 1px solid #ddd;
+                break-inside: avoid;
+            }
+            .label { display: none; }
+        }
+
+        .instructions {
+            max-width: 3.5in;
+            font-size: 0.85rem;
+            color: #666;
+            line-height: 1.6;
+            margin-top: 1rem;
+            padding: 1rem;
+            background: #fff;
+            border-radius: 4px;
+        }
+        .instructions h3 {
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+        .instructions ul {
+            padding-left: 1.2rem;
+        }
+        .instructions li {
+            margin-bottom: 0.3rem;
+        }
+        @media print { .instructions { display: none; } }
+    </style>
+</head>
+<body>
+
+<div class="label">Front</div>
+<div class="card front">
+    <div class="site">educationfirst.world</div>
+    <div class="accent-line"></div>
+    <div class="tagline">Education is the cause.<br>Everything else is downstream.</div>
+    <div class="punchline">Spain took 450 years. Korea took 35.<br>How fast is your decision.</div>
+</div>
+
+<div class="label">Back</div>
+<div class="card back">
+    <div>
+        <div class="name">Krishna Pagadala</div>
+        <div class="contact-info">
+            <div>rkrishna.pagadala@gmail.com</div>
+            <div>educationfirst.world</div>
+        </div>
+    </div>
+    <div class="bottom-section">
+        <div class="data-line">
+            187 countries. 140 years.<br>
+            The evidence is clear.
+        </div>
+        <div class="qr-section">
+            <canvas id="qr" width="65" height="65"></canvas>
+        </div>
+    </div>
+</div>
+
+<div class="instructions">
+    <h3>Printing</h3>
+    <ul>
+        <li><strong>Vistaprint</strong> — upload this as a custom design or use their editor. 250 cards ~$15-20, 2-day shipping. Order by Wednesday for Saturday.</li>
+        <li><strong>Staples / FedEx Office</strong> — same day pickup. Bring this file on a USB or email it. Ask for standard business card size (3.5 x 2 inches), matte finish.</li>
+        <li><strong>At home</strong> — print on cardstock, cut to 3.5 x 2 inches. Avery 8371 perforated card sheets work well.</li>
+    </ul>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
+<script>
+    var qr = qrcode(0, 'M');
+    qr.addData('https://educationfirst.world');
+    qr.make();
+    var canvas = document.getElementById('qr');
+    var ctx = canvas.getContext('2d');
+    var size = qr.getModuleCount();
+    var cellSize = canvas.width / size;
+    for (var r = 0; r < size; r++) {
+        for (var c = 0; c < size; c++) {
+            ctx.fillStyle = qr.isDark(r, c) ? '#1a1a2e' : '#ffffff';
+            ctx.fillRect(c * cellSize, r * cellSize, cellSize, cellSize);
+        }
+    }
+</script>
+</body>
+</html>
