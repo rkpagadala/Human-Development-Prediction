@@ -8,7 +8,7 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
-            background: #f0f0f0;
+            background: #e0e0e0;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -26,7 +26,7 @@
             width: 3.5in;
             height: 2in;
             background: #ffffff;
-            border-radius: 4px;
+            border-radius: 0;
             box-shadow: 0 2px 8px rgba(0,0,0,0.15);
             display: flex;
             flex-direction: column;
@@ -44,27 +44,27 @@
         .front .site {
             font-size: 16pt;
             font-weight: 700;
-            color: #1a1a2e;
+            color: #000;
             letter-spacing: 0.02em;
             margin-bottom: 0.15in;
         }
+        .front .accent-line {
+            width: 1.2in;
+            height: 1px;
+            background: #000;
+            margin: 0.12in auto;
+        }
         .front .tagline {
             font-size: 8.5pt;
-            color: #444;
+            color: #000;
             font-style: italic;
             line-height: 1.5;
             margin-bottom: 0.15in;
         }
         .front .punchline {
             font-size: 7.5pt;
-            color: #666;
+            color: #333;
             line-height: 1.5;
-        }
-        .front .accent-line {
-            width: 1.2in;
-            height: 2px;
-            background: linear-gradient(90deg, #2563eb, #10b981);
-            margin: 0.12in auto;
         }
 
         /* --- BACK --- */
@@ -81,14 +81,14 @@
         .back .name {
             font-size: 13pt;
             font-weight: 700;
-            color: #1a1a2e;
+            color: #000;
         }
         .back .contact-info {
             margin-top: 0.1in;
         }
         .back .contact-info div {
             font-size: 8pt;
-            color: #444;
+            color: #333;
             margin-bottom: 0.04in;
         }
         .back canvas {
@@ -104,7 +104,7 @@
             }
             .card {
                 box-shadow: none;
-                border: 1px solid #ddd;
+                border: 1px solid #ccc;
                 break-inside: avoid;
             }
             .label { display: none; }
@@ -118,7 +118,6 @@
             margin-top: 1rem;
             padding: 1rem;
             background: #fff;
-            border-radius: 4px;
         }
         .instructions h3 {
             color: #333;
@@ -158,8 +157,8 @@
 <div class="instructions">
     <h3>Printing</h3>
     <ul>
-        <li><strong>Vistaprint</strong> — upload this as a custom design or use their editor. 250 cards ~$15-20, 2-day shipping. Order by Wednesday for Saturday.</li>
-        <li><strong>Staples / FedEx Office</strong> — same day pickup. Bring this file on a USB or email it. Ask for standard business card size (3.5 x 2 inches), matte finish.</li>
+        <li><strong>Vistaprint</strong> — upload this as a custom design or use their editor. 250 cards ~$15-20, 2-day shipping.</li>
+        <li><strong>Staples / FedEx Office</strong> — same day pickup. Bring this file on a USB or email it. Standard business card size (3.5 x 2 inches), <strong>matte finish, black and white</strong>.</li>
         <li><strong>At home</strong> — print on cardstock, cut to 3.5 x 2 inches. Avery 8371 perforated card sheets work well.</li>
     </ul>
 </div>
@@ -175,7 +174,7 @@
     var cellSize = canvas.width / size;
     for (var r = 0; r < size; r++) {
         for (var c = 0; c < size; c++) {
-            ctx.fillStyle = qr.isDark(r, c) ? '#1a1a2e' : '#ffffff';
+            ctx.fillStyle = qr.isDark(r, c) ? '#000000' : '#ffffff';
             ctx.fillRect(c * cellSize, r * cellSize, cellSize, cellSize);
         }
     }
