@@ -188,7 +188,7 @@ reg("Fig1-USA-beta-high",   1.9, "script", (S_BETA, r"1900-1925\s+([0-9.]+)"),
 reg("Fig1-USA-beta-low",   0.08, "script", (S_BETA, r"1980-2005\s+([0-9.]+)\s+91"),
     [228], tol=0.02)
 reg("Fig1-Korea-beta-high", 6.5, "script", (S_BETA, r"1920-1945\s+([0-9.]+)\s+1\.1"),
-    [228], tol=0.1)
+    [228, 238], tol=0.1)
 reg("Fig1-Korea-beta-3.6",  3.6, "script", (S_BETA, r"1930-1955\s+([0-9.]+)\s+2\.9"),
     [228], tol=0.1)
 reg("Fig1-Korea-beta-1.8",  1.8, "script", (S_BETA, r"1960-1985\s+([0-9.]+)\s+23"),
@@ -201,6 +201,37 @@ reg("Fig1-Phil-beta-high",  4.4, "script", (S_BETA, r"1920-1945\s+([0-9.]+)\s+1\
     [228], tol=0.1)
 reg("Fig1-Phil-beta-low",   0.4, "script", (S_BETA, r"1990-2015\s+([0-9.]+)\s+48"),
     [228, 383], tol=0.1)
+
+# ══════════════════════════════════════════════════════════════════════════
+# BASELINE GROUP ANALYSIS (beta_by_baseline_group.py)
+# ══════════════════════════════════════════════════════════════════════════
+S_GRP = os.path.join(REPO_ROOT, "scripts", "beta_by_baseline_group.py")
+reg("Grp-low-beta",    1.585, "script", (S_GRP, r"Low \(<20%\)\s+([0-9.]+)"),
+    [242], tol=0.05)
+reg("Grp-low-R2",      0.706, "script", (S_GRP, r"Low \(<20%\)\s+[0-9.]+\s+([0-9.]+)"),
+    [242], tol=0.02)
+reg("Grp-low-n",       423,   "script", (S_GRP, r"Low \(<20%\)\s+[0-9.]+\s+[0-9.]+\s+(\d+)"),
+    [242], tol=0)
+reg("Grp-low-countries", 47,  "script", (S_GRP, r"Low \(<20%\)\s+[0-9.]+\s+[0-9.]+\s+\d+\s+(\d+)"),
+    [242], tol=0)
+reg("Grp-med-beta",    0.713, "script", (S_GRP, r"Medium \(20-60%\)\s+([0-9.]+)"),
+    [242], tol=0.05)
+reg("Grp-med-R2",      0.716, "script", (S_GRP, r"Medium \(20-60%\)\s+[0-9.]+\s+([0-9.]+)"),
+    [242], tol=0.02)
+reg("Grp-med-n",       675,   "script", (S_GRP, r"Medium \(20-60%\)\s+[0-9.]+\s+[0-9.]+\s+(\d+)"),
+    [242], tol=0)
+reg("Grp-med-countries", 75,  "script", (S_GRP, r"Medium \(20-60%\)\s+[0-9.]+\s+[0-9.]+\s+\d+\s+(\d+)"),
+    [242], tol=0)
+reg("Grp-high-beta",   0.176, "script", (S_GRP, r"High \(>60%\)\s+([0-9.]+)"),
+    [242], tol=0.05)
+reg("Grp-high-R2",     0.442, "script", (S_GRP, r"High \(>60%\)\s+[0-9.]+\s+([0-9.]+)"),
+    [242], tol=0.02)
+reg("Grp-high-n",      585,   "script", (S_GRP, r"High \(>60%\)\s+[0-9.]+\s+[0-9.]+\s+(\d+)"),
+    [242], tol=0)
+reg("Grp-high-countries", 65, "script", (S_GRP, r"High \(>60%\)\s+[0-9.]+\s+[0-9.]+\s+\d+\s+(\d+)"),
+    [242], tol=0)
+reg("Grp-low-beta-round", 1.5, "derived", "Floor of Grp-low-beta for policy statement (β>1.5)",
+    [244], tol=0.15)
 
 # ══════════════════════════════════════════════════════════════════════════
 # TABLE 2 — Forward predictions (07_education_outcomes.py)
@@ -892,6 +923,11 @@ def main():
             c75 = load_wcde("cohort_lower_sec_both.csv", "China", 1975)
             if c70 is not None and c75 is not None:
                 entry["actual"] = c75 - c70
+
+        elif name == "Grp-low-beta-round":
+            grp = entry_map.get("Grp-low-beta", {}).get("actual")
+            if grp is not None:
+                entry["actual"] = round(grp, 1)
 
         if entry["actual"] is not None:
             if abs(entry["actual"] - entry["value"]) <= entry["tol"]:
