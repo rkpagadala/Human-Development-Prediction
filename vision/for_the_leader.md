@@ -42,4 +42,4 @@ Every country will get there eventually. Spain took 450 years. Korea took 35.
 
 ---
 
-*educationfirst.world*
+*[educationfirst.world](https://educationfirst.world)*

@@ -88,4 +88,4 @@ You can read this because someone educated your mother.
 
 ---
 
-*educationfirst.world*
+*[educationfirst.world](https://educationfirst.world)*
