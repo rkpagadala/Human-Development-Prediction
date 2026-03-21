@@ -219,7 +219,7 @@ The workers who staffed China's export manufacturing economy in the 1980s and 19
 the people who made Deng's economic miracle physically possible — were literate and
 partially secondary-educated because of Mao and the Cultural Revolution, not because of
 Deng. The human capital stock that absorbed foreign direct investment, followed factory
-instructions, and trained the next generation through the T-25 multiplier was built in
+instructions, and trained the next generation through parental transmission of education was built in
 the 1950s literacy campaigns and the CR period. A rural workforce at 15%
 primary completion (China's level in 1950) cannot sustain export manufacturing. At 86%
 primary and 62% lower secondary — the level when Deng's reforms began — it can.
