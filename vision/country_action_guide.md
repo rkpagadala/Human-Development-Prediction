@@ -12,7 +12,7 @@ layout: page
 
 Find the band that matches your country's current female lower-secondary completion rate (the percentage of women aged 20–24 who have completed lower secondary school). Then follow the sequence for your band.
 
-The data comes from WCDE v3 (189 countries, 2025 estimates). If you do not know your country's rate, the World Bank's EdStats database and the UNESCO Institute for Statistics both carry recent estimates. Use the 20–24 age cohort, not the enrollment rate — completion is what compounds through Parental Transmission of Education (PTE), not enrollment.
+The data comes from WCDE v3 (189 countries, 2025 estimates). If you do not know your country's rate, the World Bank's EdStats database and the UNESCO Institute for Statistics both carry recent estimates. Use the 20–24 age cohort, not the enrollment rate — completion is what transmits through Parental Transmission of Education (PTE), not enrollment.
 
 ---
 
@@ -76,7 +76,7 @@ The data comes from WCDE v3 (189 countries, 2025 estimates). If you do not know 
 
 **The sequence:**
 
-1. **Shift the investment target to upper-secondary and tertiary.** Lower secondary is now functioning. The multiplier has shifted: the highest marginal returns are now to completing upper secondary and to tertiary access, particularly in fields (medicine, teaching, engineering) that compound through the workforce. Female upper-secondary completion in Band 3 countries is the PTE mechanism for the next generation.
+1. **Shift the investment target to upper-secondary and tertiary.** Lower secondary is now functioning. The multiplier has shifted: the highest marginal returns are now to completing upper secondary and to tertiary access, particularly in fields (medicine, teaching, engineering) that feed back into the workforce. Female upper-secondary completion in Band 3 countries is the PTE mechanism for the next generation.
 
 2. **Invest in teacher quality, not just quantity.** Countries in Band 3 typically have sufficient secondary teachers. The quality of teaching — not just coverage — now affects completion rates. Professional development, classroom materials, teacher accountability systems, and selective expansion of teacher training rather than mass expansion are the right instruments.
 

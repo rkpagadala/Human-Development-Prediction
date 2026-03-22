@@ -20,7 +20,7 @@ Each entry has:
 
 ## Q1: Why not fund health directly? It saves lives now.
 
-**Correct answer:** Health provision in populations below 40% female lower-secondary completion produces gains that do not compound. Child survival improves, but the next cohort still starts from a low-education parental base. Education gains compound across generations through PTE — an educated mother produces more educated children, who have lower fertility, better health, and higher income. Direct health spending is not wasted, but it is downstream of the mechanism. Countries that funded education first (Japan 1872, Korea 1953, Nepal 1990) achieved health outcomes faster and more durably than comparable countries that funded health first.
+**Correct answer:** Health provision in populations below 40% female lower-secondary completion produces gains that do not accumulate. Child survival improves, but the next cohort still starts from a low-education parental base. Education transmits across generations through PTE — an educated mother transmits education to her children, who have lower fertility, better health, and higher income. Direct health spending is not wasted, but it is downstream of the mechanism. Countries that funded education first (Japan 1872, Korea 1953, Nepal 1990) achieved health outcomes faster and more durably than comparable countries that funded health first.
 
 **Key claim:** Education produces health as an outcome. Health spending does not produce education. The causal arrow runs one way.
 
@@ -60,7 +60,7 @@ Each entry has:
 
 ## Q5: Sen showed that Kerala and Cuba achieved good outcomes without high income. Doesn't that support direct provision?
 
-**Correct answer:** Sen's cases are the confirmation, not the counterargument. Kerala had female literacy 40 percentage points above the Indian national average *decades before* its health outcomes diverged. The educational base was already there; the health services rode on it. Cuba was already at 49.7% lower-secondary completion in 1960 before the revolution reorganized service delivery. The revolution changed fiscal routing; it did not create educated Cubans. Sen saw the services and credited them. He was looking at the surface, not the cause. The real question is: what happens when you try the same services in a population at 10% lower-secondary completion? The gains do not compound and do not sustain. Uganda is the test case Sen did not consider.
+**Correct answer:** Sen's cases are the confirmation, not the counterargument. Kerala had female literacy 40 percentage points above the Indian national average *decades before* its health outcomes diverged. The educational base was already there; the health services rode on it. Cuba was already at 40.3% lower-secondary completion in 1960 before the revolution reorganized service delivery. The revolution changed fiscal routing; it did not create educated Cubans. Sen saw the services and credited them. He was looking at the surface, not the cause. The real question is: what happens when you try the same services in a population at 10% lower-secondary completion? The gains do not accumulate and do not sustain. Uganda is the test case Sen did not consider.
 
 Sen's two categories — growth-mediated and support-led — are the same mechanism operating under different conditions. Fast educational expansion with functioning markets produces visible income growth; that gets credited. Slow educational accumulation without markets produces visible state services; those get credited. The mechanism is education in both cases. Sen observed the surfaces and built a typology from them.
 
@@ -122,9 +122,9 @@ Sen's two categories — growth-mediated and support-led — are the same mechan
 
 ## Q11: Why not fund primary education instead? Isn't that more basic?
 
-**Correct answer:** Primary education matters and should be universal. But the development-critical transition is primary to lower-secondary. Primary completion alone does not activate the fertility transition, the child-health chain, or the full PTE compounding effect. The data shows the strongest intergenerational multiplier at lower-secondary completion specifically — this is where fertility begins to fall meaningfully, child survival improves, and PTE advances the system most strongly. Countries that achieved universal primary but not lower-secondary for girls (many of which exist in Band 2) have not yet eased the demographic headwinds.
+**Correct answer:** Primary education matters and should be universal. But the development-critical transition is primary to lower-secondary. Primary completion alone does not activate the fertility transition, the child-health chain, or the full PTE transmission effect. The data shows the strongest intergenerational multiplier at lower-secondary completion specifically — this is where fertility begins to fall meaningfully, child survival improves, and PTE advances the system most strongly. Countries that achieved universal primary but not lower-secondary for girls (many of which exist in Band 2) have not yet eased the demographic headwinds.
 
-**Key claim:** Lower secondary is the threshold level. Primary completion without lower secondary does not activate the fertility transition or full PTE compounding.
+**Key claim:** Lower secondary is the threshold level. Primary completion without lower secondary does not activate the fertility transition or full PTE transmission.
 
 **What not to say:** Don't say primary is less important. Say: primary is necessary but insufficient. The binding constraint in development is lower-secondary completion for girls.
 
@@ -162,7 +162,7 @@ Sen's two categories — growth-mediated and support-led — are the same mechan
 
 ## Q15: What about countries that had education but didn't develop — like some African countries with high literacy?
 
-**Correct answer:** African countries with high primary completion but low lower-secondary completion have not cleared the development threshold. Primary completion alone does not activate the fertility transition or full PTE compounding. Countries with high literacy from colonial-era basic education often have primary-secondary gaps — high primary, low secondary — that explain delayed development crossings. The mechanism is specific to lower secondary, not literacy or primary completion.
+**Correct answer:** African countries with high primary completion but low lower-secondary completion have not cleared the development threshold. Primary completion alone does not activate the fertility transition or full PTE transmission. Countries with high literacy from colonial-era basic education often have primary-secondary gaps — high primary, low secondary — that explain delayed development crossings. The mechanism is specific to lower secondary, not literacy or primary completion.
 
 **Key claim:** Primary completion or literacy alone is insufficient. Female lower-secondary completion is the development-critical level — where fertility falls most steeply, child survival improves, and PTE advances the system most strongly.
 
@@ -172,9 +172,9 @@ Sen's two categories — growth-mediated and support-led — are the same mechan
 
 ## Q16: Why 25 years? Isn't that a convenient assumption?
 
-**Correct answer:** The 25-year lag is not assumed — it is measured. The parental-transmission coefficient is estimated by matching the 20–24 cohort in any year to the 20–24 cohort 25 years earlier (who are now the parents). The long-run panel (1900–2015, 28 countries) uses this structure and finds FE β=0.960. The smooth decay in the lag profile — predictive power declining gradually from lag 0 to lag 100 — is a direct prediction of the multi-channel transmission structure: sibling transmission fires at 2–20 years, PTE at 25 years, GPTE (grandparental) at 50 years, GGPTE (great-grandparental) at 75 years. If transmission were a single discrete 25-year mechanism, the profile would show a step pattern. The smooth decay confirms the multi-channel structure.
+**Correct answer:** The 25-year lag is not assumed — it is measured. The parental-transmission coefficient is estimated by matching the 20–24 cohort in any year to the 20–24 cohort 25 years earlier (who are now the parents). The long-run panel (1900–2015, 28 countries) uses this structure and finds FE β=0.960. The smooth decay in the lag profile — predictive power declining gradually from lag 0 to lag 100 — is a direct prediction of the multi-channel transmission structure: sibling transmission fires at 2–20 years, PTE at 25 years, second-generation transmission at 50 years, third-generation at 75 years. If transmission were a single discrete 25-year mechanism, the profile would show a step pattern. The smooth decay confirms the multi-channel structure.
 
-**Key claim:** 25 years is measured as the modal intergenerational interval, confirmed by the long-run panel. The smooth lag-decay profile confirms multi-channel transmission, not a single 25-year step.
+**Key claim:** 25 years is measured as the modal intergenerational interval, confirmed by the long-run panel. The smooth lag-decay profile confirms multi-channel transmission across generations, not a single 25-year step.
 
 **What not to say:** Don't defend the 25-year lag as an approximation. It is an empirical finding confirmed across the full dataset.
 
@@ -212,9 +212,9 @@ Sen's two categories — growth-mediated and support-led — are the same mechan
 
 ## Q20: This sounds like it'll take 25 years. Politicians need results now.
 
-**Correct answer:** Two things are true simultaneously. First, some effects arrive within a political term: fertility decline begins within 10–15 years of female lower-secondary expansion, which is measurable and politically visible. Teacher employment and school construction generate immediate economic activity and employment. Enrollment growth is visible within 2–3 years. Second, the full compounding is a 25-year mechanism — this is not a weakness, it is the nature of generational change. Every political leader who made the educational rupture — Meiji Japan, post-independence Korea, Nepal in the 1990s — made it knowing the payoff would arrive for their successors, not for themselves. The question for any leader is whether they are building the country their children will inherit, or managing the country they received.
+**Correct answer:** Two things are true simultaneously. First, some effects arrive within a political term: fertility decline begins within 10–15 years of female lower-secondary expansion, which is measurable and politically visible. Teacher employment and school construction generate immediate economic activity and employment. Enrollment growth is visible within 2–3 years. Second, the full generational transmission is a 25-year mechanism — this is not a weakness, it is the nature of generational change. Every political leader who made the educational rupture — Meiji Japan, post-independence Korea, Nepal in the 1990s — made it knowing the payoff would arrive for their successors, not for themselves. The question for any leader is whether they are building the country their children will inherit, or managing the country they received.
 
-**Key claim:** Short-run indicators (fertility, enrollment, teacher employment) are visible within a political term. The full compounding is 25 years. Every fast-developer made this investment anyway.
+**Key claim:** Short-run indicators (fertility, enrollment, teacher employment) are visible within a political term. The full generational transmission is 25 years. Every fast-developer made this investment anyway.
 
 **What not to say:** Don't promise results within a 5-year term. Some are visible; the mechanism is generational. Be honest about the timescale.
 

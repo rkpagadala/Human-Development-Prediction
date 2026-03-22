@@ -62,7 +62,7 @@ At each step, the question Smith did not ask was not asked. Nobody in this chain
 
 ## What the Data Shows
 
-Across 187 countries from 1950 to 2015, the education level of one generation predicts the next generation's education through Parental Transmission of Education (PTE) with a fixed-effects coefficient of 0.482–0.960 (0.482 in the 187-country panel; 0.960 in a 28-country long-run panel from 1900 to 2015). Education predicts GDP growth 25 years forward. GDP does not predict education forward with comparable strength.
+Across 187 countries from 1950 to 2015, the education level of one generation predicts the next generation's education through Parental Transmission of Education (PTE) with a fixed-effects coefficient of 0.482–0.960 (0.482 in the 187-country panel; 0.960 in a 28-country long-run panel from 1900 to 2015). Education predicts GDP growth 25 years forward. At a single lag, both variables predict each other — but education's signal persists across three generations while income's collapses within one (Figure A1).
 
 The causal arrow is not Smith's arrow. It is not Becker's arrow. It runs from education to productivity to income — not from income to education to productivity. Every country that achieved sustained development in the twentieth century did so by building secondary education when it was poor, not after it became wealthy.
 

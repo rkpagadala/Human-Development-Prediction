@@ -8,11 +8,11 @@ layout: page
 
 ---
 
-## Where Does a Dollar Compound Most?
+## Where Does a Dollar Matter Most?
 
 Every philanthropic dollar spent on education is not equal. Some fill gaps governments would have filled anyway. Some reach students who would have made it regardless.
 
-And some land at the base of an intergenerational compounding chain — and produce returns that multiply across two, three, four generations.
+And some reach the first girl in her family's history to complete secondary school — and everything that follows is different, for every generation after her.
 
 This document is about finding the second kind.
 
@@ -20,9 +20,9 @@ This document is about finding the second kind.
 
 ## The Mechanism
 
-Education is not a service. It is a compounding process.
+Education is not a service. It is a transmission process.
 
-The state educates the first generation. After that, educated parents produce educated children — the process continues on its own. The state creates the education; families make it permanent.
+The state reaches children whose parents were never educated. After that, educated parents transmit education to their children — the process continues on its own. The state extends reach; families make it permanent.
 
 The mechanism lives in households, not in state budgets, and persists through economic crises and political turbulence.
 
@@ -40,11 +40,11 @@ You are not funding a school. You are funding every generation that follows.
 
 ## Where Your Capital Has the Highest Leverage
 
-The compounding multiplier is largest where the parental base is lowest. Countries where most parents never completed secondary school produce the highest gains per unit of investment — because the ceiling is farthest away and every educated girl becomes the first educated mother in her family's history.
+The transmission multiplier is largest where the parental base is lowest. Countries where most parents never completed secondary school produce the highest gains per unit of investment — because every educated girl becomes the first educated mother in her family's history, and she transmits what she has to every child she raises.
 
 At some point, the system becomes self-sustaining: fertility falls, child survival improves, household resources per child increase, and demand for education rises from within the population. Your capital buys speed to that point — compressing what would otherwise take two generations into one. Every cohort of girls that passes through without secondary completion is a cohort whose children start from the same floor.
 
-The conventional wisdom says get rich first, education follows. Spain was the richest empire on earth for two hundred years and did not develop until it finally educated its people in the 1970s. Gulf states with the highest per capita income in the world underperform their wealth in education, life expectancy, and fertility. Wealth was never the mechanism. Education is.
+The instinct is to fund what people visibly need — food, health, security. That instinct is deep: three billion years of life competing for scarce resources trained every brain to ask *what do people need?* But education, riding on fossil fuels, is what reduces fertility and mortality. That is fundamental. Everything else is downstream. Spain was the richest empire on earth for two hundred years and did not develop until it finally educated its people in the 1970s. Gulf states with the highest per capita income in the world underperform their wealth in education, life expectancy, and fertility. Wealth was never the mechanism. Education is.
 
 ---
 
@@ -68,7 +68,7 @@ Educate Girls is the best-in-class example. Thirty thousand villages in India, o
 
 And it illustrates exactly why the NGO model has a ceiling. Educate Girls spent eighteen years solving primary enrolment — sequentially, one level at a time, constrained at every step by government capacity. Korea pushed all levels simultaneously and reached 95% secondary completion in thirty-five years. India is still not building enough secondary schools. So Educate Girls has now launched Pragati — an alternative credentialing programme through the open school system, because the government schools do not exist. That is a workaround for a workaround — admirable, but a sign of what happens when government does not build the system.
 
-The lesson is not that Educate Girls failed. It is that even the best NGO in the world cannot substitute for a government that builds the whole system at once. The philanthropic investment that matters is the one that pushes government to act — at every level, simultaneously — not the one that funds increasingly creative workarounds for government inaction.
+The lesson is not that Educate Girls failed. It is that even the best NGO in the world cannot substitute for a government that reaches every unreached child at every level simultaneously. The philanthropic investment that matters is the one that pushes government to act — at every level, simultaneously — not the one that funds increasingly creative workarounds for government inaction.
 
 ---
 
@@ -80,7 +80,7 @@ A sustained commitment to female secondary access in countries where most girls 
 
 Every country will get there eventually. Your investment determines how fast. A generation of girls educated now becomes a generation of educated mothers — and their children start from a higher floor, permanently. A generation missed is a generation whose children start from the same place their parents did.
 
-Health, poverty, women's empowerment — every problem philanthropists fund is downstream of this one. Education is the upstream investment that makes every other one work.
+Health, poverty, women's empowerment — every problem philanthropists fund is downstream of this one. Education is the fundamental investment that makes every other one work.
 
 You can read this because someone educated your mother.
 

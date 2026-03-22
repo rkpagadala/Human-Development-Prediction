@@ -12,7 +12,7 @@ layout: page
 
 Your country can be developed in thirty to forty years — your people living longer, healthier lives, with smaller families and real economic opportunity. Japan did it. Korea did it. Singapore did it. They did it by educating their people first.
 
-Once a country is developed, it stays developed — because of its education. You already know this from your own family: educated parents produce educated children. The state creates the education; families make it permanent.
+Once a country is developed, it stays developed — because educated parents transmit education to their children. The state reaches the children whose parents were never educated. Families transmit what they have. Together, the gains are permanent.
 
 ---
 
@@ -26,11 +26,13 @@ The Philippines shows what happens without the decision. In 1950, the Philippine
 
 The first generation of schools does not need to be perfect. Korea ran class sizes of 60–80 with double shifts. Japan staffed its first schools with barely trained teachers in repurposed temples. China used barefoot teachers in village schools. Those first students become the teachers and parents who build better schools. Start with what you have.
 
-The conventional wisdom says get rich first, everything else follows. Spain was the richest empire on earth for two hundred years and did not develop until it finally educated its people in the 1970s. Britain took centuries. The United States and Japan each took about a century. Korea did it in thirty-five years. Wealth was never the mechanism. Education is.
+The conventional wisdom says get rich first, everything else follows. That instinct is deep — three billion years of life competing for scarce resources trained every brain to ask *what do people need?* Food, health, money. But education, riding on fossil fuels, is what reduces fertility and mortality. That is fundamental. Everything else is downstream. Spain was the richest empire on earth for two hundred years and did not develop until it finally educated its people in the 1970s. Wealth was never the mechanism. Education is.
 
 ---
 
 ## The Decision
+
+Your state's job is to reach the unreached. A parent with primary education transmits primary, perhaps lower secondary. But children whose parents were never educated receive nothing without the state. You close that gap: build schools where none exist, reach populations that household transmission alone cannot reach, and progressively extend the level — primary first, then lower secondary, then higher.
 
 Nearly every country today already has a higher starting point than Korea did — the starting point is there, the decision is not.
 

@@ -22,7 +22,7 @@ The deeper error is that Sen's two categories are not different mechanisms at al
 
 Where educational expansion was fast and decisive (Korea, Taiwan), markets amplified the educated workforce's productivity into rapid, visible income growth. The income growth was large and observable; it got credited as the cause. This is what "growth-mediated security" looks like from the outside.
 
-Where educational accumulation was slow and gradual (Kerala, Sri Lanka), there was no income growth fast enough to be visible as a causal signal. The observable welfare activity was state provision. The provision appeared to be working — but it was riding on an educational substrate that had been building quietly for generations. Where the educational substrate is genuinely absent and provision is attempted without it, the gains do not compound. The facade holds only where the education was already there.
+Where educational accumulation was slow and gradual (Kerala, Sri Lanka), there was no income growth fast enough to be visible as a causal signal. The observable welfare activity was state provision. The provision appeared to be working — but it was riding on an educational substrate that had been building quietly for generations. Where the educational substrate is genuinely absent and provision is attempted without it, the gains do not accumulate. The facade holds only where the education was already there.
 
 Sen observed the surfaces and built a causal theory from them.
 
@@ -60,17 +60,17 @@ Sen is right that Kerala and Sri Lanka achieved outcomes without high income. He
 
 Cuba in 1961 ran a national literacy campaign and subsequently achieved health outcomes comparable to middle-income countries. This looks like support-led security: state provision of health without income growth.
 
-The mechanism is PTE. Cuba was already at 49.7% lower-secondary completion in 1960 — among the highest in Latin America before the revolution. The 1961 campaign completed a process that was already underway. The educational base that made the health provision functional was not created in 1961; it existed. The revolution reorganized fiscal routing. It did not create educated Cubans from scratch.
+The mechanism is PTE. Cuba was already at 40.3% lower-secondary completion in 1960 — among the highest in Latin America before the revolution. The post-revolution exodus hollowed the professional class; the 1961 literacy campaign rebuilt and expanded the educational base. The revolution reorganized fiscal routing. It did not create educated Cubans from scratch.
 
-Cuba is not a counterexample to education-first. Cuba was already at 49.7% lower-secondary completion in 1960 — the educational base was already there. The revolution reorganized fiscal routing but did not create educated Cubans. The educational expansion preceded the services. The services rode on the base. The same services, deployed to a population at 10% lower-secondary completion, would not have compounded — as the data from comparable low-base contexts confirms.
+Cuba is not a counterexample to education-first. The educational base was already there. The same services, deployed to a population at 10% lower-secondary completion, would not have accumulated — as the data from comparable low-base contexts confirms.
 
 ---
 
 ## The Policy Implication
 
-In populations with very low female lower-secondary completion, the mechanism does not exist. Health services can be delivered, but they cannot self-sustain or compound — there is no educational base through which the household micro-decision channel operates. The gains are real while the external delivery continues. They do not carry forward into the next generation.
+In populations with very low female lower-secondary completion, the mechanism does not exist. Health services can be delivered, but they cannot self-sustain — there is no educational base through which the household micro-decision channel operates. The gains are real while the external delivery continues. They do not carry forward into the next generation.
 
-Secondary education in those same populations activates the mechanism. Each educated cohort produces a more educated next cohort, which has lower fertility, lower child mortality, and higher income. The gains compound across generations through PTE — automatically, through households, regardless of which government is in power. Fertility declines continuously as female secondary completion rises; sustained state investment is required all the way to near-universal completion. Korea expanded steadily to 95% under sustained state commitment throughout.
+Secondary education in those same populations activates the mechanism. Each educated cohort transmits education to the next, which has lower fertility, lower child mortality, and higher income. The state reaches unreached children; PTE transmits what parents have. Together, the gains are irreversible. Fertility declines continuously as female secondary completion rises; sustained state investment is required all the way to near-universal completion.
 
 Sen described fiscal routing. The data identifies the mechanism. The mechanism is education.
 

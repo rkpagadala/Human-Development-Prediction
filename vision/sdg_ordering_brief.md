@@ -22,7 +22,7 @@ This brief argues for one change: recognize SDG 4 as the primary driver of SDGs 
 
 ## What the Evidence Shows
 
-Across 189 countries from 1875 to 2015, the education level of one generation predicts the education level of the next with a fixed-effects coefficient of 0.485–0.960 — more reliably than income, health spending, or institutional quality. The mechanism is Parental Transmission of Education (PTE): the education of parents at time T shapes the education of their children at T+25, who shape their children at T+50, compounding forward with each generation.
+Across 189 countries from 1875 to 2015, the education level of one generation predicts the education level of the next with a fixed-effects coefficient of 0.485–0.960 — more reliably than income, health spending, or institutional quality. The mechanism is Parental Transmission of Education (PTE): the education of parents at time T shapes the education of their children at T+25, who shape their children at T+50, transmitting forward with each generation.
 
 Education at time T predicts GDP per capita at T+25. It predicts life expectancy at T+25. It predicts fertility at T+25. Income at time T does not predict education at T+25 as strongly as prior education does.
 
@@ -40,7 +40,7 @@ OECD DAC data shows health receives approximately 2–3 times more international
 
 This allocation is the SDG ordering expressed in dollars. It is also, consequently, an allocation that systematically underfunds the mechanism and overfunds the outcomes.
 
-The result is predictable: interventions that deliver health services to populations without secondary education produce gains that do not compound. Child survival improves for a decade; then the absence of an educated parent generation limits what the next cohort can achieve. The gain is real and reversible. Education gains compound and are structurally irreversible — a generation of educated parents cannot be uneducated.
+The result is predictable: interventions that deliver health services to populations without secondary education produce gains that do not accumulate. Child survival improves for a decade; then the absence of an educated parent generation limits what the next cohort can achieve. The gain is real and reversible. Education gains are structurally irreversible — a generation of educated parents cannot be uneducated.
 
 The countries with the largest positive departures from their income-predicted development levels — Maldives, Cape Verde, Bhutan, Tunisia, Nepal, Vietnam, Bangladesh — all had one thing in common: sustained political commitment to female secondary education above what their economic baseline would have produced automatically. None of them achieved this through health spending alone. None of them achieved this through income growth alone. All of them made education the priority when they were poor, and income and health followed.
 
@@ -68,7 +68,7 @@ Recognizing SDG 4 as the primary driver does not mean abandoning the other goals
 
 **For multilateral institutions:** The SDG monitoring framework should track education completion rates as leading indicators — not lagging outputs — of the health and income goals. A country's lower-secondary completion today predicts its life expectancy and fertility outcomes in 25 years more reliably than its current health spending.
 
-**For national governments:** Countries below 40% female lower-secondary completion have one binding constraint. Not health spending. Not income. The binding constraint is the parental education base. Every year of delay in pushing secondary completion is a year of compounding in the wrong direction — the generation born today will be the parents of the generation born in 2050, and their educational capacity is being set now.
+**For national governments:** Countries below 40% female lower-secondary completion have one binding constraint. Not health spending. Not income. The binding constraint is the parental education base. Every year of delay in pushing secondary completion is a year lost — the generation born today will be the parents of the generation born in 2050, and their educational capacity is being set now.
 
 ---
 
