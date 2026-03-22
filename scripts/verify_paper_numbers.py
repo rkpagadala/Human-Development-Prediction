@@ -249,7 +249,7 @@ reg("T2-LE-R2",     0.384,  "script", (S_EDU, r"e0\(T\+25\) \| FE:\s+edu \+ e0:.
 reg("T2-LE-init",   0.301,  "script", (S_EDU, r"e0\(T\+25\) \| FE:\s+edu \+ e0:.*e0_t:([0-9.-]+)"),
     [259])
 reg("T2-TFR-beta", -0.032,  "script", (S_EDU, r"TFR\(T\+25\) \| FE:\s+edu \+ tfr: low_t:([0-9.-]+)"),
-    [260, 271])
+    [260])
 reg("T2-TFR-R2",    0.367,  "script", (S_EDU, r"TFR\(T\+25\) \| FE:\s+edu \+ tfr:.*R²=([0-9.]+)"),
     [260])
 reg("T2-TFR-init",  0.037,  "script", (S_EDU, r"TFR\(T\+25\) \| FE:\s+edu \+ tfr:.*tfr_t:([0-9.-]+)"),
@@ -498,15 +498,15 @@ reg("TA4-strict-LE",  71.2,  "const", "Strict spec: USA 1972 LE",
 reg("Singapore-ppyr", 1.74,  "derived", "(Singapore-1995 - Singapore-1950) / 45",
     [321], tol=0.1)
 reg("Cuba-ppyr",      2.20,  "derived", "Cuba edu rate",
-    [325], tol=0.2)
+    [323], tol=0.2)
 reg("Cuba-ppyr-2.27", 2.27,  "derived", "Cuba edu rate (Table A4 footnote)",
     [527], tol=0.2)
 reg("China-ppyr",     1.50,  "derived", "China edu rate from WCDE",
-    [325, 527], tol=0.2)
+    [323, 527], tol=0.2)
 reg("Bangladesh-ppyr", 1.23, "derived", "Bangladesh edu rate",
-    [325], tol=0.2)
+    [323], tol=0.2)
 reg("India-ppyr",     0.87,  "derived", "India edu rate",
-    [323, 325], tol=0.1)
+    [321, 323], tol=0.1)
 reg("Myanmar-ppyr",   0.64,  "derived", "Myanmar edu rate from WCDE",
     [82], tol=0.1)
 reg("PI-incr-R2",    0.014,  "derived", "GDP adds only 0.014 R2 beyond edu alone",
@@ -516,17 +516,17 @@ reg("GDP-beta-pct",  1.2,    "derived", "T2-GDP-beta × 100 (log-point → %)",
 reg("College-LE-gradient", 5.5, "derived", "College-LE-high - College-LE-low",
     [62], tol=0.1)
 reg("China-CR-gain", 10.6,   "derived", "China CR-era cohort gain (1975 - 1970)",
-    [343], tol=2.0)
+    [341], tol=2.0)
 
 # ══════════════════════════════════════════════════════════════════════════
 # CONSTANTS — definitional, just verify consistency
 # ══════════════════════════════════════════════════════════════════════════
 reg("TFR-threshold", 3.65,   "const", "USA 1960 TFR (WDI: 3.654)",
-    [16, 18, 118, 126, 132, 150, 304, 306, 493], tol=0)
+    [16, 18, 118, 126, 132, 150, 304, 493], tol=0)
 reg("LE-threshold",  69.8,   "const", "USA 1960 LE (WDI: 69.77)",
-    [18, 118, 304, 306, 351, 493], tol=0)
+    [18, 118, 304, 493], tol=0)
 reg("PTE-lag",       25,     "const", "One generational interval",
-    [72, 140, 154, 156, 164, 176, 186, 194, 198, 200, 202, 210, 256, 264, 275, 302, 333], tol=0)
+    [72, 140, 154, 198, 200, 275, 333], tol=0)
 
 # ══════════════════════════════════════════════════════════════════════════
 # REFERENCE VALUES — from cited literature, verified against web sources
@@ -553,11 +553,11 @@ reg("PTE-lag",       25,     "const", "One generational interval",
 #     NACO reports peak of 0.38-0.41% in 2001-03. Paper's "~0.4%" matches.
 # ══════════════════════════════════════════════════════════════════════════
 reg("Cuba-volunteers",  268000, "ref", "Kozol 1978; Wikipedia/UNESCO confirm 268,420",
-    [385], tol=0)
+    [383], tol=0)
 reg("Cuba-illiteracy-pre",  24, "ref", "Kozol 1978; web sources say ~23%; paper says ~24%",
-    [385], tol=0)
+    [383], tol=0)
 reg("Cuba-illiteracy-post", 3.9,"ref", "Kozol 1978; UNESCO certified; web sources confirm 3.9%",
-    [385], tol=0)
+    [383], tol=0)
 reg("Uganda-HIV-peak",     15,  "ref", "UNAIDS/PMC model estimate ~15% (1991); surveillance peaked 18% (1992)",
     [152], tol=0)
 reg("India-HIV-peak",      0.4, "ref", "NACO HIV Estimates: peak 0.38-0.41% (2001-03)",
