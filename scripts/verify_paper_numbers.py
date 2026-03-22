@@ -114,188 +114,188 @@ S_LR    = os.path.join(RUPTURE_SCRIPTS, "04b_long_run_generational.py")
 # TABLE 1 — Country FE regressions (table_1_main.py)
 # ══════════════════════════════════════════════════════════════════════════
 reg("T1-obs",        1683,   "script", (S_T1, r"\(1\) child ~ parent_edu\s+\[N=(\d+)"),
-    [170, 212, 493], tol=0)
+    [174, 216, 499], tol=0)
 reg("T1-countries",  187,    "script", (S_T1, r"\(1\) child ~ parent_edu\s+\[N=\d+, (\d+) countries"),
-    [18, 148, 170, 212, 407], tol=0)
+    [18, 154, 174, 216, 405, 411, 499], tol=0)
 reg("T1-M1-beta",   0.482,  "script", (S_T1, r"Table 1 Model \(1\): β=([0-9.]+)"),
-    [18, 216, 220, 222, 224, 226, 242, 244, 269, 399, 401])
+    [220, 224, 226, 228, 230, 246, 248, 405])
 reg("T1-M1-R2",     0.455,  "script", (S_T1, r"Table 1 Model \(1\):.*R²=([0-9.]+)"),
-    [18, 204, 216, 220, 222, 224, 269, 505, 507])
+    [18, 208, 220, 224, 226, 228, 513])
 reg("T1-M2-beta",   15.369, "script", (S_T1, r"Table 1 Model \(2\): β=([0-9.]+)"),
-    [217])
+    [221])
 reg("T1-M2-R2",     0.256,  "script", (S_T1, r"Table 1 Model \(2\):.*R²=([0-9.]+)"),
-    [18, 217])
+    [18, 221, 226])
 reg("T1-M3-beta-edu", 0.519, "script", (S_T1, r"Table 1 Model \(3\): β_edu=([0-9.]+)"),
-    [218, 222])
+    [222, 226])
 reg("T1-M3-beta-gdp", 5.470, "script", (S_T1, r"Table 1 Model \(3\):.*β_gdp=([0-9.]+)"),
-    [218])
+    [222])
 reg("T1-M3-R2",     0.556,  "script", (S_T1, r"Table 1 Model \(3\):.*R²=([0-9.]+)"),
-    [218])
+    [222])
 reg("T1-fem-beta",  0.419,  "script", (S_T1, r"Footnote: female β=([0-9.]+)"),
-    [220])
+    [224])
 reg("T1-fem-R2",    0.388,  "script", (S_T1, r"Footnote: female.*R²=([0-9.]+)"),
-    [220])
+    [224])
 
 # ══════════════════════════════════════════════════════════════════════════
 # TABLE A1 — Two-way FE (table_a1_two_way_fe.py)
 # ══════════════════════════════════════════════════════════════════════════
 reg("TA1-M1-beta",  0.080,  "script", (S_TA1, r"Table A1 Model \(1\): β=([0-9.]+)"),
-    [196, 224, 497])
+    [200, 228, 503])
 reg("TA1-M1-R2",    0.009,  "script", (S_TA1, r"Table A1 Model \(1\):.*R²=([0-9.]+)"),
-    [196, 224, 497, 501, 503])
+    [200, 228, 503, 509])
 reg("TA1-M2-beta",  3.930,  "script", (S_TA1, r"Table A1 Model \(2\): β=([0-9.]+)"),
-    [498])
+    [504])
 reg("TA1-M2-R2",    0.027,  "script", (S_TA1, r"Table A1 Model \(2\):.*R²=([0-9.]+)"),
-    [498, 501, 503])
+    [504, 509])
 reg("TA1-M3-beta-edu", 0.239, "script", (S_TA1, r"Table A1 Model \(3\): β_edu=([0-9.]+)"),
-    [499])
+    [505])
 reg("TA1-M3-beta-gdp", 3.174, "script", (S_TA1, r"Table A1 Model \(3\):.*β_gdp=([0-9.]+)"),
-    [499])
+    [505])
 reg("TA1-M3-R2",    0.095,  "script", (S_TA1, r"Table A1 Model \(3\):.*R²=([0-9.]+)"),
-    [499])
+    [505])
 reg("TA1-GDP-obs",  1229,   "script", (S_TA1, r"With GDP:\s+(\d+) obs"),
-    [493], tol=0)
+    [499], tol=0)
 reg("TA1-GDP-countries", 148, "script", (S_TA1, r"With GDP:\s+\d+ obs, (\d+) countries"),
-    [493], tol=0)
+    [499], tol=0)
 
 # ══════════════════════════════════════════════════════════════════════════
 # FIGURE A1 — Lag decay (fig_a1_lag_decay.py)
 # ══════════════════════════════════════════════════════════════════════════
 reg("FA1-lag0",     0.562,  "script", (S_FA1, r"lag=\s*0\s+edu R²=([0-9.]+)"),
-    [222, 269, 525])
+    [226, 273, 533])
 reg("FA1-lag25",    0.364,  "script", (S_FA1, r"lag=\s*25\s+edu R²=([0-9.]+)"),
-    [70, 269, 325, 327, 527])
+    [76, 273, 331, 533])
 reg("FA1-lag50",    0.171,  "script", (S_FA1, r"lag=\s*50\s+edu R²=([0-9.]+)"),
-    [70, 269, 325, 327])
+    [76, 273, 331, 533])
 reg("FA1-lag75",    0.085,  "script", (S_FA1, r"lag=\s*75\s+edu R²=([0-9.]+)"),
-    [70, 269, 325, 327])
+    [76, 273, 331, 533])
 reg("FA1-lag100",   0.052,  "script", (S_FA1, r"lag=\s*100\s+edu R²=([0-9.]+)"),
-    [222])
+    [226])
 reg("FA1-inc-lag0", 0.321,  "script", (S_FA1, r"lag=\s*0\s+.*gdp R²=([0-9.]+)"),
-    [527])
+    [533])
 
 # ══════════════════════════════════════════════════════════════════════════
 # CO2 PLACEBO (co2_placebo.py)
 # ══════════════════════════════════════════════════════════════════════════
 reg("CO2-R2",       0.089,  "script", (S_CO2, r"CO2 placebo R² = ([0-9.]+)"),
-    [204, 224, 505, 507])
+    [208, 228, 513])
 
 # ══════════════════════════════════════════════════════════════════════════
 # FIGURE 1 — Country-specific sliding-window betas (fig_beta_vs_baseline.py)
 # ══════════════════════════════════════════════════════════════════════════
 reg("Fig1-USA-beta-high",   1.9, "script", (S_BETA, r"1900-1925\s+([0-9.]+)"),
-    [228], tol=0.1)
+    [232], tol=0.1)
 reg("Fig1-USA-beta-low",   0.08, "script", (S_BETA, r"1980-2005\s+([0-9.]+)\s+91"),
-    [228], tol=0.02)
+    [232], tol=0.02)
 reg("Fig1-Korea-beta-high", 6.5, "script", (S_BETA, r"1920-1945\s+([0-9.]+)\s+1\.1"),
-    [228, 238], tol=0.1)
+    [232], tol=0.1)
 reg("Fig1-Korea-beta-3.6",  3.6, "script", (S_BETA, r"1930-1955\s+([0-9.]+)\s+2\.9"),
-    [228], tol=0.1)
+    [232], tol=0.1)
 reg("Fig1-Korea-beta-1.8",  1.8, "script", (S_BETA, r"1960-1985\s+([0-9.]+)\s+23"),
-    [228], tol=0.1)
+    [232], tol=0.1)
 reg("Fig1-Korea-beta-low",  0.2, "script", (S_BETA, r"1980-2005\s+([0-9.]+)\s+58"),
-    [228], tol=0.05)
+    [232], tol=0.05)
 reg("Fig1-Taiwan-beta",     5.1, "script", (S_BETA, r"1930-1955\s+([0-9.]+)\s+1\.2"),
-    [228], tol=0.1)
+    [232], tol=0.1)
 reg("Fig1-Phil-beta-high",  4.4, "script", (S_BETA, r"1920-1945\s+([0-9.]+)\s+1\.5"),
-    [228], tol=0.1)
+    [232], tol=0.1)
 reg("Fig1-Phil-beta-low",   0.4, "script", (S_BETA, r"1990-2015\s+([0-9.]+)\s+48"),
-    [228, 383], tol=0.1)
+    [232, 387], tol=0.1)
 
 # ══════════════════════════════════════════════════════════════════════════
 # BASELINE GROUP ANALYSIS (beta_by_baseline_group.py)
 # ══════════════════════════════════════════════════════════════════════════
 S_GRP = os.path.join(REPO_ROOT, "scripts", "beta_by_baseline_group.py")
 reg("Grp-low-beta",    1.585, "script", (S_GRP, r"Low \(<20%\)\s+([0-9.]+)"),
-    [242], tol=0.05)
+    [246], tol=0.05)
 reg("Grp-low-R2",      0.706, "script", (S_GRP, r"Low \(<20%\)\s+[0-9.]+\s+([0-9.]+)"),
-    [242], tol=0.02)
+    [246], tol=0.02)
 reg("Grp-low-n",       423,   "script", (S_GRP, r"Low \(<20%\)\s+[0-9.]+\s+[0-9.]+\s+(\d+)"),
-    [242], tol=0)
+    [246], tol=0)
 reg("Grp-low-countries", 47,  "script", (S_GRP, r"Low \(<20%\)\s+[0-9.]+\s+[0-9.]+\s+\d+\s+(\d+)"),
-    [242], tol=0)
+    [246], tol=0)
 reg("Grp-med-beta",    0.713, "script", (S_GRP, r"Medium \(20-60%\)\s+([0-9.]+)"),
-    [242], tol=0.05)
+    [246], tol=0.05)
 reg("Grp-med-R2",      0.716, "script", (S_GRP, r"Medium \(20-60%\)\s+[0-9.]+\s+([0-9.]+)"),
-    [242], tol=0.02)
+    [246], tol=0.02)
 reg("Grp-med-n",       675,   "script", (S_GRP, r"Medium \(20-60%\)\s+[0-9.]+\s+[0-9.]+\s+(\d+)"),
-    [242], tol=0)
+    [246], tol=0)
 reg("Grp-med-countries", 75,  "script", (S_GRP, r"Medium \(20-60%\)\s+[0-9.]+\s+[0-9.]+\s+\d+\s+(\d+)"),
-    [242], tol=0)
+    [246], tol=0)
 reg("Grp-high-beta",   0.176, "script", (S_GRP, r"High \(>60%\)\s+([0-9.]+)"),
-    [242], tol=0.05)
+    [246], tol=0.05)
 reg("Grp-high-R2",     0.442, "script", (S_GRP, r"High \(>60%\)\s+[0-9.]+\s+([0-9.]+)"),
-    [242], tol=0.02)
+    [246], tol=0.02)
 reg("Grp-high-n",      585,   "script", (S_GRP, r"High \(>60%\)\s+[0-9.]+\s+[0-9.]+\s+(\d+)"),
-    [242], tol=0)
+    [246], tol=0)
 reg("Grp-high-countries", 65, "script", (S_GRP, r"High \(>60%\)\s+[0-9.]+\s+[0-9.]+\s+\d+\s+(\d+)"),
-    [242], tol=0)
+    [246], tol=0)
 reg("Grp-low-beta-round", 1.5, "derived", "Floor of Grp-low-beta for policy statement (β>1.5)",
-    [244], tol=0.15)
+    [248], tol=0.15)
 
 # ══════════════════════════════════════════════════════════════════════════
 # TABLE 2 — Forward predictions (07_education_outcomes.py)
 # ══════════════════════════════════════════════════════════════════════════
 reg("T2-GDP-beta",  0.012,  "script", (S_EDU, r"log GDP\(T\+25\) \| FE:\s+edu \+ GDP: low_t:([0-9.-]+)"),
-    [134, 254, 267])
+    [140, 258])
 reg("T2-GDP-R2",    0.354,  "script", (S_EDU, r"log GDP\(T\+25\) \| FE:\s+edu \+ GDP:.*R²=([0-9.]+)"),
-    [254])
+    [258])
 reg("T2-GDP-init",  0.173,  "script", (S_EDU, r"log GDP\(T\+25\) \| FE:\s+edu \+ GDP:.*log_gdp_t:([0-9.-]+)"),
-    [254])
+    [258])
 reg("T2-LE-beta",   0.108,  "script", (S_EDU, r"e0\(T\+25\) \| FE:\s+edu \+ e0: low_t:([0-9.-]+)"),
-    [255, 267])
+    [259, 271])
 reg("T2-LE-R2",     0.384,  "script", (S_EDU, r"e0\(T\+25\) \| FE:\s+edu \+ e0:.*R²=([0-9.]+)"),
-    [255])
+    [259])
 reg("T2-LE-init",   0.301,  "script", (S_EDU, r"e0\(T\+25\) \| FE:\s+edu \+ e0:.*e0_t:([0-9.-]+)"),
-    [255])
+    [259])
 reg("T2-TFR-beta", -0.032,  "script", (S_EDU, r"TFR\(T\+25\) \| FE:\s+edu \+ tfr: low_t:([0-9.-]+)"),
-    [256])
+    [260, 271])
 reg("T2-TFR-R2",    0.367,  "script", (S_EDU, r"TFR\(T\+25\) \| FE:\s+edu \+ tfr:.*R²=([0-9.]+)"),
-    [256])
+    [260])
 reg("T2-TFR-init",  0.037,  "script", (S_EDU, r"TFR\(T\+25\) \| FE:\s+edu \+ tfr:.*tfr_t:([0-9.-]+)"),
-    [256, 273])
+    [260, 277])
 # Panel B
 reg("T2-PB-GDP-beta",   14.85, "script", (S_EDU, r"edu\(T\+25\) \| FE:\s+GDP only: log_gdp_t:([0-9.-]+)"),
-    [262], tol=0.1)
+    [266], tol=0.1)
 reg("T2-PB-GDP-R2",     0.272, "script", (S_EDU, r"edu\(T\+25\) \| FE:\s+GDP only:.*R²=([0-9.]+)"),
-    [262, 269])
+    [266, 273])
 reg("T2-PB-cond-gdp",   3.780, "script", (S_EDU, r"edu\(T\+25\) \| FE:\s+GDP \+ init edu: log_gdp_t:([0-9.-]+)"),
-    [263], tol=0.1)
+    [267], tol=0.1)
 reg("T2-PB-cond-edu",   0.485, "script", (S_EDU, r"edu\(T\+25\) \| FE:\s+GDP \+ init edu:.*low_t:([0-9.-]+)"),
-    [263], tol=0.01)
+    [267], tol=0.01)
 reg("T2-PB-cond-R2",    0.500, "script", (S_EDU, r"edu\(T\+25\) \| FE:\s+GDP \+ init edu:.*R²=([0-9.]+)"),
-    [263])
+    [267])
 reg("T2-PB-n",          828,   "script", (S_EDU, r"edu\(T\+25\) \| FE:\s+GDP only:.*n=(\d+)"),
-    [265], tol=0)
+    [269], tol=0)
 # Forward R² symmetry
 reg("T2-fwd-edu-R2",    0.259, "script", (S_EDU, r"log GDP\(T\+25\) \| FE:\s+edu only:.*R²=([0-9.]+)"),
-    [269])
+    [273])
 
 # ══════════════════════════════════════════════════════════════════════════
 # LONG-RUN PANEL (04b_long_run_generational.py)
 # ══════════════════════════════════════════════════════════════════════════
 reg("LR-beta",      0.960,  "script", (S_LR, r"Country FE \(full, 1900-2015\): β=([0-9.]+)"),
-    [70, 226, 242, 399, 401])
+    [76, 228, 230, 246, 405])
 reg("LR-obs",       672,    "script", (S_LR, r"Long-run panel: (\d+) obs"),
-    [226], tol=0)
+    [230], tol=0)
 reg("LR-countries", 28,     "script", (S_LR, r"Long-run panel: \d+ obs, (\d+) countries"),
-    [70, 170, 200, 226, 401], tol=0)
+    [76, 174, 204, 228, 230, 236, 246, 405, 515], tol=0)
 
 # ══════════════════════════════════════════════════════════════════════════
 # PARENTAL INCOME COLLAPSE — inline computation
 # ══════════════════════════════════════════════════════════════════════════
 reg("PI-alone-beta",  15.4,  "script", (S_T1, None),
-    [271], tol=0.5)
+    [275], tol=0.5)
 reg("PI-alone-R2",    0.293, "script", (S_T1, None),
-    [269, 271])
+    [275])
 reg("PI-cond-beta",   4.3,   "script", (S_T1, None),
-    [269, 271], tol=0.5)
+    [275], tol=0.5)
 reg("PI-cond-p",      0.04,  "script", (S_T1, None),
-    [269, 271], tol=0.01)
+    [275], tol=0.01)
 reg("PI-edu-alone",   0.553, "script", (S_T1, None),
-    [269, 271])
+    [275])
 reg("PI-edu-cond",    0.475, "script", (S_T1, None),
-    [269, 271])
+    [275])
 
 # ══════════════════════════════════════════════════════════════════════════
 # WCDE EDUCATION DATA — country-specific values cited in the paper
@@ -303,134 +303,134 @@ reg("PI-edu-cond",    0.475, "script", (S_T1, None),
 
 # --- Korea ---
 reg("Korea-1950",    24.8,   "wcde", ("cohort_lower_sec_both.csv", "Korea", 1950),
-    [315, 383, 387], tol=0.5)
+    [319, 387, 391], tol=0.5)
 reg("Korea-1985",    94.4,   "wcde", ("cohort_lower_sec_both.csv", "Korea", 1985),
-    [315, 387], tol=0.5)
+    [319, 391], tol=0.5)
 
 # --- Taiwan ---
 reg("Taiwan-1950",   17.75,  "wcde", ("cohort_lower_sec_both.csv", "Taiwan", 1950),
-    [329, 383], tol=1.0)
+    [232, 333, 387], tol=1.0)
 
 # --- Philippines ---
 reg("Philippines-1950", 22.0, "wcde", ("cohort_lower_sec_both.csv", "Philippines", 1950),
-    [228, 383], tol=2.0)
+    [232, 387], tol=2.0)
 
 # --- Cambodia ---
 reg("Cambodia-1975",  10.1,  "wcde", ("lower_sec_both.csv", "Cambodia", 1975),
-    [152], tol=0.5)
+    [158], tol=0.5)
 reg("Cambodia-1985",   9.5,  "wcde", ("lower_sec_both.csv", "Cambodia", 1985),
-    [152], tol=0.5)
+    [158], tol=0.5)
 reg("Cambodia-1995",  35.1,  "wcde", ("lower_sec_both.csv", "Cambodia", 1995),
-    [152, 160], tol=1.0)
+    [160], tol=1.0)
 reg("Cambodia-2000",  36.3,  "wcde", ("lower_sec_both.csv", "Cambodia", 2000),
-    [156], tol=1.0)
+    [], tol=1.0)
 
 # --- Vietnam ---
 reg("Vietnam-1960",   20.0,  "wcde", ("cohort_lower_sec_both.csv", "Vietnam", 1960),
-    [156], tol=1.0)
+    [164], tol=1.0)
 reg("Vietnam-2015",   80.8,  "wcde", ("lower_sec_both.csv", "Vietnam", 2015),
-    [156], tol=1.0)
+    [164], tol=1.0)
 
 # --- Cuba ---
 reg("Cuba-1960-edu",  40.3,  "wcde", ("cohort_lower_sec_both.csv", "Cuba", 1960),
-    [304, 347], tol=1.0)
+    [308, 351], tol=1.0)
 
 # --- Bangladesh ---
 reg("Bangladesh-1960-edu", 11.4, "wcde", ("cohort_lower_sec_both.csv", "Bangladesh", 1960),
-    [349], tol=1.0)
+    [353], tol=1.0)
 
 # --- China ---
 reg("China-1950-edu",  10.0,  "wcde", ("cohort_lower_sec_both.csv", "China", 1950),
-    [319], tol=2.0)
+    [323], tol=2.0)
 reg("China-1965-edu",  30.9,  "wcde", ("cohort_lower_sec_both.csv", "China", 1965),
-    [343], tol=2.0)
+    [347], tol=2.0)
 reg("China-1980-edu",  62.0,  "wcde", ("cohort_lower_sec_both.csv", "China", 1980),
-    [343], tol=2.0)
+    [347], tol=2.0)
 reg("China-1990-edu",  75.0,  "wcde", ("cohort_lower_sec_both.csv", "China", 1990),
-    [343], tol=2.0)
+    [347], tol=2.0)
 
 # --- Singapore ---
 reg("Singapore-1950-edu", 13.4, "wcde", ("cohort_lower_sec_both.csv", "Singapore", 1950),
-    [315], tol=2.0)
+    [319], tol=2.0)
 reg("Singapore-1995-edu", 94.0, "wcde", ("cohort_lower_sec_both.csv", "Singapore", 1995),
-    [315], tol=2.0)
+    [319], tol=2.0)
 
 # --- Myanmar ---
 reg("Myanmar-1975-edu", 17.8, "wcde", ("lower_sec_both.csv", "Myanmar", 1975),
-    [76], tol=2.0)
+    [82], tol=2.0)
 
 # --- Philippines ---
 reg("Philippines-2015-edu", 75.0, "wcde", ("lower_sec_both.csv", "Philippines", 2015),
-    [228], tol=3.0)
+    [232], tol=3.0)
 
 # --- Historical European education (from Easterlin 1981 / Lutz 2009, not WCDE) ---
 # WCDE 1900 cohort values differ: Portugal=0.2%, Spain=0.26%, Sweden=1.6%, Germany=63%.
 # Paper cites Easterlin (1981) and Lutz (2009) for these; likely literacy or primary
 # enrollment rates, not lower-secondary completion. Registered as ref.
 reg("Portugal-1900-edu",  1.0,  "ref", "Easterlin 1981 / Lutz 2009; not WCDE lower-sec",
-    [174], tol=0)
+    [178], tol=0)
 reg("Spain-1900-edu",     0.3,  "ref", "Easterlin 1981; not WCDE lower-sec",
-    [174], tol=0)
+    [178], tol=0)
 reg("Sweden-1900-edu",    7.0,  "ref", "Easterlin 1981; not WCDE lower-sec",
-    [174], tol=0)
+    [178], tol=0)
 reg("Germany-1900-edu",  20.0,  "ref", "Easterlin 1981; not WCDE lower-sec",
-    [174], tol=0)
+    [178], tol=0)
 
 # ══════════════════════════════════════════════════════════════════════════
 # WDI DATA — GDP per capita (constant 2017 USD, inflation adjusted)
 # ══════════════════════════════════════════════════════════════════════════
 
 # Table 3 GDP values (2015, constant 2017 USD)
-reg("GDP-Maldives-2015",  9645,  "wdi", ("gdp", "Maldives", 2015), [281], tol=500)
-reg("GDP-CapeVerde-2015", 3415,  "wdi", ("gdp", "Cape Verde", 2015), [282], tol=500)
-reg("GDP-Bhutan-2015",    2954,  "wdi", ("gdp", "Bhutan", 2015), [283], tol=500)
-reg("GDP-Tunisia-2015",   4015,  "wdi", ("gdp", "Tunisia", 2015), [284], tol=500)
-reg("GDP-Nepal-2015",      876,  "wdi", ("gdp", "Nepal", 2015), [285, 290], tol=100)
-reg("GDP-Vietnam-2015",   2578,  "wdi", ("gdp", "Vietnam", 2015), [286, 290], tol=200)
-reg("GDP-Bangladesh-2014", 1159, "wdi", ("gdp", "Bangladesh", 2014), [16, 34, 349], tol=100)
-reg("GDP-Bangladesh-2015", 1224, "wdi", ("gdp", "Bangladesh", 2015), [287, 290], tol=100)
-reg("GDP-India-2015",     1584,  "wdi", ("gdp", "India", 2015), [288], tol=200)
+reg("GDP-Maldives-2015",  9645,  "wdi", ("gdp", "Maldives", 2015), [285], tol=500)
+reg("GDP-CapeVerde-2015", 3415,  "wdi", ("gdp", "Cape Verde", 2015), [286], tol=500)
+reg("GDP-Bhutan-2015",    2954,  "wdi", ("gdp", "Bhutan", 2015), [287], tol=500)
+reg("GDP-Tunisia-2015",   4015,  "wdi", ("gdp", "Tunisia", 2015), [288], tol=500)
+reg("GDP-Nepal-2015",      876,  "wdi", ("gdp", "Nepal", 2015), [289, 294], tol=100)
+reg("GDP-Vietnam-2015",   2578,  "wdi", ("gdp", "Vietnam", 2015), [290, 294], tol=200)
+reg("GDP-Bangladesh-2014", 1159, "wdi", ("gdp", "Bangladesh", 2014), [16, 40, 353], tol=100)
+reg("GDP-Bangladesh-2015", 1224, "wdi", ("gdp", "Bangladesh", 2015), [291, 294], tol=100)
+reg("GDP-India-2015",     1584,  "wdi", ("gdp", "India", 2015), [292], tol=200)
 
 # Korea-Costa Rica comparison (Section 9)
-reg("GDP-Korea-1960",     1038,  "wdi", ("gdp", "Korea", 1960), [393], tol=200)
-reg("GDP-CostaRica-1960", 3609,  "wdi", ("gdp", "Costa Rica", 1960), [393], tol=500)
-reg("GDP-Korea-1990",     9673,  "wdi", ("gdp", "Korea", 1990), [393], tol=500)
-reg("GDP-CostaRica-1990", 6037,  "wdi", ("gdp", "Costa Rica", 1990), [393], tol=500)
+reg("GDP-Korea-1960",     1038,  "wdi", ("gdp", "Korea", 1960), [397], tol=200)
+reg("GDP-CostaRica-1960", 3609,  "wdi", ("gdp", "Costa Rica", 1960), [397], tol=500)
+reg("GDP-Korea-1990",     9673,  "wdi", ("gdp", "Korea", 1990), [397], tol=500)
+reg("GDP-CostaRica-1990", 6037,  "wdi", ("gdp", "Costa Rica", 1990), [397], tol=500)
 
 # Other GDP mentions
-reg("GDP-Myanmar-2015",   1200,  "wdi", ("gdp", "Myanmar", 2015), [76], tol=300)
-reg("GDP-Qatar-2015",    69000,  "wdi", ("gdp", "Qatar", 2015), [363], tol=5000)
-reg("GDP-Nepal-1990",      423,  "wdi", ("gdp", "Nepal", 1990), [90], tol=100)
-reg("GDP-Singapore-2015",55646,  "wdi", ("gdp", "Singapore", 2015), [401], tol=3000)
-reg("GDP-Korea-2015",    30172,  "wdi", ("gdp", "Korea", 2015), [401], tol=2000)
+reg("GDP-Myanmar-2015",   1200,  "wdi", ("gdp", "Myanmar", 2015), [82], tol=300)
+reg("GDP-Qatar-2015",    69000,  "wdi", ("gdp", "Qatar", 2015), [367], tol=5000)
+reg("GDP-Nepal-1990",      423,  "wdi", ("gdp", "Nepal", 1990), [96], tol=100)
+reg("GDP-Singapore-2015",55646,  "wdi", ("gdp", "Singapore", 2015), [405], tol=3000)
+reg("GDP-Korea-2015",    30172,  "wdi", ("gdp", "Korea", 2015), [405], tol=2000)
 
 # ══════════════════════════════════════════════════════════════════════════
 # WDI DATA — Total Fertility Rate
 # ══════════════════════════════════════════════════════════════════════════
-reg("TFR-USA-1960",     3.65,  "wdi", ("tfr", "USA", 1960), [16, 112], tol=0.05)
-reg("TFR-Myanmar-1960", 5.9,   "wdi", ("tfr", "Myanmar", 1960), [76], tol=0.2)
-reg("TFR-Myanmar-2015", 2.3,   "wdi", ("tfr", "Myanmar", 2015), [76], tol=0.2)
-reg("TFR-Uganda-2015",  5.25,  "wdi", ("tfr", "Uganda", 2015), [309], tol=0.2)
-reg("TFR-Japan-1960",   2.0,   "wdi", ("tfr", "Japan", 1960), [126], tol=0.1)
+reg("TFR-USA-1960",     3.65,  "wdi", ("tfr", "USA", 1960), [16, 118], tol=0.05)
+reg("TFR-Myanmar-1960", 5.9,   "wdi", ("tfr", "Myanmar", 1960), [82], tol=0.2)
+reg("TFR-Myanmar-2015", 2.3,   "wdi", ("tfr", "Myanmar", 2015), [82], tol=0.2)
+reg("TFR-Uganda-2015",  5.25,  "wdi", ("tfr", "Uganda", 2015), [313], tol=0.2)
+reg("TFR-Japan-1960",   2.0,   "wdi", ("tfr", "Japan", 1960), [132], tol=0.1)
 
 # ══════════════════════════════════════════════════════════════════════════
 # WDI DATA — Life Expectancy
 # ══════════════════════════════════════════════════════════════════════════
-reg("LE-USA-1960",      69.8,  "wdi", ("le", "USA", 1960), [112], tol=0.5)
-reg("LE-Myanmar-1960",  44.1,  "wdi", ("le", "Myanmar", 1960), [76], tol=1.0)
-reg("LE-Myanmar-2015",  65.3,  "wdi", ("le", "Myanmar", 2015), [76], tol=1.0)
-reg("LE-Uganda-1960",   45.6,  "wdi", ("le", "Uganda", 1960), [140], tol=1.0)
-reg("LE-India-1960",    45.6,  "wdi", ("le", "India", 1960), [140], tol=1.0)
-reg("LE-Uganda-1980",   43.5,  "wdi", ("le", "Uganda", 1980), [140], tol=1.0)
-reg("LE-Uganda-2015",   63.8,  "wdi", ("le", "Uganda", 2015), [309], tol=1.0)
-reg("LE-SriLanka-1988", 69.0,  "wdi", ("le", "Sri Lanka", 1988), [333], tol=0.5)
-reg("LE-SriLanka-1989", 67.3,  "wdi", ("le", "Sri Lanka", 1989), [333], tol=0.5)
+reg("LE-USA-1960",      69.8,  "wdi", ("le", "USA", 1960), [118], tol=0.5)
+reg("LE-Myanmar-1960",  44.1,  "wdi", ("le", "Myanmar", 1960), [82], tol=1.0)
+reg("LE-Myanmar-2015",  65.3,  "wdi", ("le", "Myanmar", 2015), [82], tol=1.0)
+reg("LE-Uganda-1960",   45.6,  "wdi", ("le", "Uganda", 1960), [146], tol=1.0)
+reg("LE-India-1960",    45.6,  "wdi", ("le", "India", 1960), [146], tol=1.0)
+reg("LE-Uganda-1980",   43.5,  "wdi", ("le", "Uganda", 1980), [146], tol=1.0)
+reg("LE-Uganda-2015",   63.8,  "wdi", ("le", "Uganda", 2015), [313], tol=1.0)
+reg("LE-SriLanka-1988", 69.0,  "wdi", ("le", "Sri Lanka", 1988), [337], tol=0.5)
+reg("LE-SriLanka-1989", 67.3,  "wdi", ("le", "Sri Lanka", 1989), [337], tol=0.5)
 reg("LE-SriLanka-1993", 70.0,  "wdi", ("le", "Sri Lanka", 1993), [], tol=0.5)
-reg("LE-Cuba-1960",     63.3,  "wdi", ("le", "Cuba", 1960), [347], tol=1.0)
-reg("LE-Japan-1960",    67.7,  "wdi", ("le", "Japan", 1960), [126], tol=1.0)
-reg("LE-Korea-1965",    55.9,  "wdi", ("le", "Korea", 1965), [345], tol=1.0)
-reg("LE-China-1965",    53.0,  "wdi", ("le", "China", 1965), [341, 345], tol=3.0)
-reg("LE-China-1980",    64.0,  "wdi", ("le", "China", 1980), [341, 343], tol=2.0)
+reg("LE-Cuba-1960",     63.3,  "wdi", ("le", "Cuba", 1960), [351], tol=1.0)
+reg("LE-Japan-1960",    67.7,  "wdi", ("le", "Japan", 1960), [132], tol=1.0)
+reg("LE-Korea-1965",    55.9,  "wdi", ("le", "Korea", 1965), [349], tol=1.0)
+reg("LE-China-1965",    53.0,  "wdi", ("le", "China", 1965), [345, 349], tol=3.0)
+reg("LE-China-1980",    64.0,  "wdi", ("le", "China", 1980), [345, 347], tol=2.0)
 
 # ══════════════════════════════════════════════════════════════════════════
 # TABLE 3 — FE residuals (computed inline from country FE model)
@@ -438,96 +438,95 @@ reg("LE-China-1980",    64.0,  "wdi", ("le", "China", 1980), [341, 343], tol=2.0
 # Table 3 FE residuals — verified manually against analysis/policy_residual_ranking.md
 # The exact computation depends on which model specification is used; registered as ref.
 reg("T3-Maldives-resid",    34.9, "ref", "Table 3 FE residual (policy_residual_ranking.md)",
-    [281], tol=0)
-reg("T3-CapeVerde-resid",   26.3, "ref", "Table 3 FE residual",
-    [282], tol=0)
-reg("T3-Bhutan-resid",      26.1, "ref", "Table 3 FE residual",
-    [283], tol=0)
-reg("T3-Tunisia-resid",     25.5, "ref", "Table 3 FE residual",
-    [284], tol=0)
-reg("T3-Nepal-resid",       17.8, "ref", "Table 3 FE residual",
     [285], tol=0)
-reg("T3-Vietnam-resid",     16.0, "ref", "Table 3 FE residual",
+reg("T3-CapeVerde-resid",   26.3, "ref", "Table 3 FE residual",
     [286], tol=0)
-reg("T3-Bangladesh-resid",  15.8, "ref", "Table 3 FE residual",
-    [287, 305, 349], tol=0)
-reg("T3-India-resid",       14.1, "ref", "Table 3 FE residual",
+reg("T3-Bhutan-resid",      26.1, "ref", "Table 3 FE residual",
+    [287], tol=0)
+reg("T3-Tunisia-resid",     25.5, "ref", "Table 3 FE residual",
     [288], tol=0)
+reg("T3-Nepal-resid",       17.8, "ref", "Table 3 FE residual",
+    [289], tol=0)
+reg("T3-Vietnam-resid",     16.0, "ref", "Table 3 FE residual",
+    [290], tol=0)
+reg("T3-Bangladesh-resid",  15.8, "ref", "Table 3 FE residual",
+    [291, 309, 353], tol=0)
+reg("T3-India-resid",       14.1, "ref", "Table 3 FE residual",
+    [292], tol=0)
 reg("T3-Qatar-resid",       3.7,  "ref", "Table 3 FE residual (negative in paper: -3.7pp)",
-    [363], tol=0)
+    [367], tol=0)
 
 # ══════════════════════════════════════════════════════════════════════════
 # DERIVED VALUES — computed from other verified numbers
 # ══════════════════════════════════════════════════════════════════════════
 reg("CO2-ratio",     5.0,    "derived", "T1-M1-R2 / CO2-R2 ≈ 5",
-    [204, 505], tol=1.0)
+    [513], tol=1.0)
 reg("Korea-ppyr",    2.14,   "derived", "(Korea-1985 - Korea-1953) / 32",
-    [313, 327, 329, 521], tol=0.1)
+    [319, 333, 527], tol=0.1)
 reg("Taiwan-ppyr",   2.15,   "derived", "(93.01 - 17.75) / 35",
-    [317, 327, 329], tol=0.1)
+    [323, 333], tol=0.1)
 reg("PI-drop-pct",   72.0,   "derived", "1 - PI-cond-beta/PI-alone-beta",
-    [269, 271], tol=5.0)
+    [275], tol=5.0)
 reg("Korea-9fold",   9.0,    "derived", "GDP-Korea-1990 / GDP-Korea-1960",
-    [393], tol=1.5)
+    [397], tol=1.5)
 reg("CostaRica-1.7fold", 1.7, "derived", "GDP-CostaRica-1990 / GDP-CostaRica-1960",
-    [393], tol=0.3)
+    [397], tol=0.3)
 
 # Table A4 shift ranges (min and max across 5 cases)
 reg("TA4-shift-min",  6,   "const", "Korea shift range (1984-1990) in Table A4",
-    [122, 124, 516], tol=0)
+    [130, 522, 527], tol=0)
 reg("TA4-shift-max", 35,   "const", "Sri Lanka shift range (1980-2015) in Table A4",
-    [122, 124, 517, 521], tol=0)
+    [130, 523, 527], tol=0)
 
 # Table A4 individual shift values
 reg("TA4-Cuba-shift",   7,  "const", "Cuba shift range in Table A4",
-    [515], tol=0)
+    [521], tol=0)
 reg("TA4-China-shift",  7,  "const", "China shift range in Table A4",
-    [518], tol=0)
+    [524], tol=0)
 
 # Table A4 threshold variants
 reg("TA4-loose-TFR",  4.0,  "const", "Loose spec: TFR < 4.0",
-    [513], tol=0)
+    [519], tol=0)
 reg("TA4-loose-LE",   68.0,  "const", "Loose spec: LE > 68.0",
-    [513], tol=0)
+    [519], tol=0)
 reg("TA4-strict-TFR", 2.1,  "const", "Strict spec: replacement fertility",
-    [511, 513], tol=0)
+    [517, 519, 527], tol=0)
 reg("TA4-strict-LE",  71.2,  "const", "Strict spec: USA 1972 LE",
-    [513], tol=0)
+    [519], tol=0)
 
 # pp/yr rates for other countries (derived from WCDE data)
 reg("Singapore-ppyr", 1.74,  "derived", "(Singapore-1995 - Singapore-1950) / 45",
-    [315], tol=0.1)
+    [321], tol=0.1)
 reg("Cuba-ppyr",      2.20,  "derived", "Cuba edu rate",
-    [319], tol=0.2)
+    [325], tol=0.2)
 reg("Cuba-ppyr-2.27", 2.27,  "derived", "Cuba edu rate (Table A4 footnote)",
-    [521], tol=0.2)
+    [527], tol=0.2)
 reg("China-ppyr",     1.50,  "derived", "China edu rate from WCDE",
-    [319, 521], tol=0.2)
+    [325, 527], tol=0.2)
 reg("Bangladesh-ppyr", 1.23, "derived", "Bangladesh edu rate",
-    [319], tol=0.2)
+    [325], tol=0.2)
 reg("India-ppyr",     0.87,  "derived", "India edu rate",
-    [317, 319], tol=0.1)
+    [323, 325], tol=0.1)
 reg("Myanmar-ppyr",   0.64,  "derived", "Myanmar edu rate from WCDE",
-    [76], tol=0.1)
+    [82], tol=0.1)
 reg("PI-incr-R2",    0.014,  "derived", "GDP adds only 0.014 R2 beyond edu alone",
-    [271], tol=0.005)
+    [277], tol=0.005)
 reg("GDP-beta-pct",  1.2,    "derived", "T2-GDP-beta × 100 (log-point → %)",
-    [267], tol=0.1)
+    [273], tol=0.1)
 reg("College-LE-gradient", 5.5, "derived", "College-LE-high - College-LE-low",
-    [56], tol=0.1)
+    [62], tol=0.1)
 reg("China-CR-gain", 10.6,   "derived", "China CR-era cohort gain (1975 - 1970)",
-    [337], tol=2.0)
+    [343], tol=2.0)
 
 # ══════════════════════════════════════════════════════════════════════════
 # CONSTANTS — definitional, just verify consistency
 # ══════════════════════════════════════════════════════════════════════════
 reg("TFR-threshold", 3.65,   "const", "USA 1960 TFR (WDI: 3.654)",
-    [16, 18, 112, 120, 126, 144, 298, 300, 487], tol=0)
+    [16, 18, 118, 126, 132, 150, 304, 306, 493], tol=0)
 reg("LE-threshold",  69.8,   "const", "USA 1960 LE (WDI: 69.77)",
-    [18, 112, 298, 300, 345, 487], tol=0)
+    [18, 118, 304, 306, 351, 493], tol=0)
 reg("PTE-lag",       25,     "const", "One generational interval",
-    [66, 134, 148, 150, 158, 170, 180, 188, 192, 194, 196, 204,
-     250, 258, 269, 296, 327], tol=0)
+    [72, 140, 154, 156, 164, 176, 186, 194, 198, 200, 202, 210, 256, 264, 275, 302, 333], tol=0)
 
 # ══════════════════════════════════════════════════════════════════════════
 # REFERENCE VALUES — from cited literature, verified against web sources
@@ -554,23 +553,23 @@ reg("PTE-lag",       25,     "const", "One generational interval",
 #     NACO reports peak of 0.38-0.41% in 2001-03. Paper's "~0.4%" matches.
 # ══════════════════════════════════════════════════════════════════════════
 reg("Cuba-volunteers",  268000, "ref", "Kozol 1978; Wikipedia/UNESCO confirm 268,420",
-    [379], tol=0)
+    [385], tol=0)
 reg("Cuba-illiteracy-pre",  24, "ref", "Kozol 1978; web sources say ~23%; paper says ~24%",
-    [379], tol=0)
+    [385], tol=0)
 reg("Cuba-illiteracy-post", 3.9,"ref", "Kozol 1978; UNESCO certified; web sources confirm 3.9%",
-    [379], tol=0)
+    [385], tol=0)
 reg("Uganda-HIV-peak",     15,  "ref", "UNAIDS/PMC model estimate ~15% (1991); surveillance peaked 18% (1992)",
-    [146], tol=0)
+    [152], tol=0)
 reg("India-HIV-peak",      0.4, "ref", "NACO HIV Estimates: peak 0.38-0.41% (2001-03)",
-    [146], tol=0)
+    [152], tol=0)
 reg("College-r",           0.44,"const", "College-LE correlation among >85% lower-sec countries",
-    [56], tol=0)
+    [62], tol=0)
 reg("College-LE-low",      73.5,"const", "LE in lowest college-completion quartile",
-    [56], tol=0)
+    [62], tol=0)
 reg("College-LE-high",     79.0,"const", "LE in highest college-completion quartile",
-    [56], tol=0)
+    [62], tol=0)
 reg("College-countries",   70,  "const", "Countries with >85% lower-sec completion in 2010 (matched to WDI)",
-    [56], tol=0)
+    [62], tol=0)
 
 
 # ══════════════════════════════════════════════════════════════════════════
@@ -992,7 +991,7 @@ def main():
         0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
         # Table 4/narrative lag values and time spans
         22, 24, 25, 26, 28, 30, 32, 34, 35, 40, 42, 43, 45,
-        49, 50, 55, 59, 60, 65, 70, 75, 80, 90, 92, 94, 100, 140, 187,
+        49, 50, 55, 59, 60, 65, 70, 75, 80, 90, 92, 94, 100, 140, 150, 187,
     }
 
     # Section reference pattern (e.g. "Section 2.4", "Section 5.1")
